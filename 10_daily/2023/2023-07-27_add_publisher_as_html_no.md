@@ -3,9 +3,9 @@ layout: page
 title: "Add Publisher as HTML - No"
 slug: "add_publisher_as_html_no"
 created_at: "2023-07-27 16:07:34"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "80605d5c-598e-4cb7-a809-755c5e41dd46"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Add Publisher as HTML - No

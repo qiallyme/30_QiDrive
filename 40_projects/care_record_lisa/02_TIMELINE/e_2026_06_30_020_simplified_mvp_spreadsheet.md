@@ -3,8 +3,8 @@ layout: page
 title: Event: Simplified MVP spreadsheet created after 27-column version was overwhelming
 slug: simplified-mvp-spreadsheet-created-after-27-column-version-was-overwhelming
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - record-admin
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 2a922f4394344b5088e414cd629408f9
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Simplified MVP spreadsheet created after 27-column version was overwhelming

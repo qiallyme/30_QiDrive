@@ -3,9 +3,9 @@ layout: page
 title: "Emotional tone-deafness analysis"
 slug: "emotional_tone_deafness_analysis"
 created_at: "2025-11-07 12:23:17"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "690e390b-b83c-832c-9bc7-5414a27fa3d1"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Emotional tone-deafness analysis

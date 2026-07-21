@@ -6,12 +6,12 @@ summary: Overview of clinical documentation files created in initial batch
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Summary of initial clinical documentation created by C2 (Clinical Synthesizer)
-tags: []
+tags:
   - clinical
   - summary
   - c2
   - empowerqnow713
-keywords: []
+keywords:
   - completion
   - summary
   - clinical

@@ -3,9 +3,9 @@ layout: page
 title: "Emotional Overwhelm and Resentment"
 slug: "emotional_overwhelm_and_resentment"
 created_at: "2026-05-18 17:15:15"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a0b8f4c-cd88-83ea-8430-76ca2dfb559f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Emotional Overwhelm and Resentment

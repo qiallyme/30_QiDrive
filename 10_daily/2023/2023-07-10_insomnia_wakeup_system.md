@@ -3,9 +3,9 @@ layout: page
 title: "Insomnia Wakeup System"
 slug: "insomnia_wakeup_system"
 created_at: "2023-07-10 06:02:39"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "dceb5433-913d-44bf-901c-dc2f5c532306"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Insomnia Wakeup System

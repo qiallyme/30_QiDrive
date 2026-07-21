@@ -3,7 +3,7 @@ layout: page
 title: "Zaitullah Begins Work with U.S. Forces"
 slug: "zaitullah_begins_work_with_us_forces"
 created_at: "2020-01-01"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["relationship"]
 category: "relationship"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: ea866e8a8e924f35af0943b00e0c5fce
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Zaitullah Begins Work with U.S. Forces

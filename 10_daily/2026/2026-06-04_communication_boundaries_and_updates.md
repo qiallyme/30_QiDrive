@@ -3,9 +3,9 @@ layout: page
 title: "Communication Boundaries and Updates"
 slug: "communication_boundaries_and_updates"
 created_at: "2026-06-04 20:02:11"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a221fc0-fe20-83ea-8621-ea1369d2d37c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Communication Boundaries and Updates

@@ -3,8 +3,8 @@ layout: page
 title: Event: In-hospital medication observations
 slug: in-hospital-medication-observations
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - medical-care
@@ -22,6 +22,7 @@ realm_label: ""
 uid: daf9c9fa68934cc49f9d0076b18cf5b6
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: In-hospital medication observations

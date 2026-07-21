@@ -3,8 +3,8 @@ layout: page
 title: 🧠 **PERSONALITY ARCHITECTURE & COGNITIVE STYLE**
 slug: personality-architecture-cognitive-style
 status: active
-updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:17-04:00"
+tags:
   - empowerqnow713
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: b375be7b343947778232ffed3d6be3d3
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # 🧠 **PERSONALITY ARCHITECTURE & COGNITIVE STYLE**

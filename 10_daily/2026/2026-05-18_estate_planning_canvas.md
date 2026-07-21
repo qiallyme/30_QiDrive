@@ -3,9 +3,9 @@ layout: page
 title: "Estate Planning Canvas"
 slug: "estate_planning_canvas"
 created_at: "2026-05-18 23:34:01"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a0be82d-0ebc-83ea-a8e4-7b98624850ab"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Estate Planning Canvas

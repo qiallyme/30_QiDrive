@@ -48,3 +48,7 @@ Thumbs.db
 **/*_ingested/**
 *.dat
 combined.txt
+
+# Ignore ChatGPT bulk data exports (exceed GitHub 100MB limit)
+01_inbox/ai_chats/ChatGPT/data_exports/**/*.html
+01_inbox/ai_chats/ChatGPT/data_exports/**/conversations.json

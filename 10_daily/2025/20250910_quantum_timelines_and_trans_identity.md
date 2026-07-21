@@ -13,7 +13,7 @@ qi_decimal: 2.99.00-01.SYS
 layout: page
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 author: ""
 keywords: []
 aliases: []
@@ -25,6 +25,14 @@ uid: ef5dac45c4a140208adc01293c7d32aa
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: event
+event_type: ""
+people: []
+location: ""
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 ---

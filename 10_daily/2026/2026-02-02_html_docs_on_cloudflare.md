@@ -3,9 +3,9 @@ layout: page
 title: "HTML Docs on Cloudflare"
 slug: "html_docs_on_cloudflare"
 created_at: "2026-02-02 17:24:22"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69813214-75b0-832b-8be3-09dbd42c0b4d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # HTML Docs on Cloudflare

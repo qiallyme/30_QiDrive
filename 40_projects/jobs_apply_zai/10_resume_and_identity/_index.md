@@ -4,6 +4,25 @@ type: index
 status: active
 generated_by: qilabs-housekeeping
 generated_at: "20260716-071124"
+layout: page
+slug: 10-resume-and-identity
+summary: ""
+created_at: "2026-07-16T07:30:57-04:00"
+updated_at: "2026-07-16T07:30:57-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: bdcf030bd04a469e813019e2cde4ccb4
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+index_scope: ""
 ---
 
 # 10_resume_and_identity
@@ -15,3 +34,4 @@ generated_at: "20260716-071124"
 - [[README|README]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

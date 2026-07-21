@@ -3,8 +3,8 @@ layout: page
 title: Texts Raw
 slug: texts-raw
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 0e547eda14e54474bd8dbb92d8f46624
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Texts Raw

@@ -3,8 +3,8 @@ layout: page
 title: F03 phone device technical failures
 slug: f03-phone-device-technical-failures
 status: active
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: e6726958aaee4eba828222208095b6de
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # F03 phone device technical failures

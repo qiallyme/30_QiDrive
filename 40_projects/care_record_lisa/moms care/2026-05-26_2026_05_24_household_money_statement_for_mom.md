@@ -5,7 +5,7 @@ slug: 2026-05-24-household-money-statement-for-mom
 summary: ""
 status: publish
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:19-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: f57ccaa48b2e4e56b821c144f71866be
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Household Money Statement — May 2026

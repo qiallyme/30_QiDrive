@@ -3,9 +3,9 @@ layout: page
 title: "Dairy and Digestive Issues"
 slug: "dairy_and_digestive_issues"
 created_at: "2026-05-13 11:41:14"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a04a992-4258-83ea-8cb0-f144d3d997d6"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Dairy and Digestive Issues

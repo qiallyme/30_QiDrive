@@ -3,9 +3,9 @@ layout: page
 title: "Phone Numbers with Vibes"
 slug: "phone_numbers_with_vibes"
 created_at: "2026-02-17 19:50:25"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69951adb-7290-8328-a09c-a2dea4747a41"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Phone Numbers with Vibes

@@ -3,9 +3,9 @@ layout: page
 title: "Document Pick-up List"
 slug: "document_pick_up_list"
 created_at: "2023-07-15 13:30:04"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "2f19c93f-fe67-470c-bd99-70b42ee0835c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Document Pick-up List

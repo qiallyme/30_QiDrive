@@ -1,5 +1,6 @@
 ---
 layout: template
+type: activity
 title: {{name}}
 slug: name
 status: active

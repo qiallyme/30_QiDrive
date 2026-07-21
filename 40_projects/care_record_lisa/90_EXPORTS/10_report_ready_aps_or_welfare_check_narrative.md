@@ -5,7 +5,7 @@ slug: 10-report-ready-aps-or-welfare-check-narrative
 summary: ""
 status: publish
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:19-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 62c8e8c62e9c4129b3a0867ec0a278ff
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Report-Ready Narrative — APS or Welfare Check

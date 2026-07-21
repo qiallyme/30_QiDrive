@@ -3,8 +3,8 @@ layout: section
 title: — The QiDex Manual Of Me
 slug: the-qidex-manual-of-me
 status: publish
-updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:17-04:00"
+tags:
   - moc
   - empowerqnow713
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 9a154da848bc480da2cd90cd7bdee142
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # — The QiDex Manual Of Me

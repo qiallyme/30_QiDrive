@@ -3,9 +3,9 @@ layout: page
 title: "Court Filing Strategy"
 slug: "court_filing_strategy"
 created_at: "2026-02-26 15:49:54"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69a0bffc-6154-8328-9b47-afabdab4dbfc"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Court Filing Strategy

@@ -3,9 +3,9 @@ layout: page
 title: "Mortgage Servicing Issues"
 slug: "mortgage_servicing_issues"
 created_at: "2026-04-04 18:58:21"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69d1a59b-7de0-832c-b88c-57517e7d699f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Mortgage Servicing Issues

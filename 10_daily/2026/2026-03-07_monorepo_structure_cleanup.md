@@ -3,9 +3,9 @@ layout: page
 title: "Monorepo Structure Cleanup"
 slug: "monorepo_structure_cleanup"
 created_at: "2026-03-07 20:41:09"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69ace1bc-0b70-8333-98c8-58b55b078ddf"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Monorepo Structure Cleanup

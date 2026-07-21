@@ -5,7 +5,7 @@ slug: qi-ally-estate-planning-document-package
 summary: ""
 status: publish
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:19-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 5e728caabb47411284d4f623c40ebd35
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # QiAlly Estate Planning Document Package

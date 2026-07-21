@@ -10,9 +10,9 @@ summary: ""
 status: active
   - draft
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
-tags: []
+tags:
   - to-merge
 keywords: []
 aliases: []
@@ -29,6 +29,7 @@ merge_candidates:
   - "[[1.2_The Living Code]]"
   - "[[1.3_Mapped to Sacred Teachings]]"
   - "[[1.4_The Living QiDex™]]"
+type: note
 ---
 
 # EmpowerQNow™ Manifesto & Ecosystem Blueprint

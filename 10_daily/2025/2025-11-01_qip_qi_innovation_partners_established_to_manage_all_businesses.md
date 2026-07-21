@@ -5,7 +5,7 @@ slug: "qip_qi_innovation_partners_established_to_manage_all_businesses"
 summary: ""
 status: active
 created_at: "2025-11-01"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 author: ""
 owner: ""
 tags: []
@@ -20,6 +20,7 @@ canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2025-11-01
+type: note
 ---
 
 # QIP (Qi Innovation Partners) established to manage all businesses

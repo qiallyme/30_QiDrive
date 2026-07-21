@@ -3,9 +3,9 @@ layout: page
 title: "120V Dryer Options"
 slug: "120v_dryer_options"
 created_at: "2026-04-24 12:34:41"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69eba9a0-1bb0-83ea-89ce-5dc14b3e9b25"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # 120V Dryer Options

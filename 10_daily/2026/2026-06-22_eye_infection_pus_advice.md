@@ -3,9 +3,9 @@ layout: page
 title: "Eye Infection Pus Advice"
 slug: "eye_infection_pus_advice"
 created_at: "2026-06-22 00:44:41"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a38cbc8-4638-83ea-86cd-c3c98ad21ff6"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Eye Infection Pus Advice

@@ -3,9 +3,9 @@ layout: page
 title: "Spiritual resilience breakdown"
 slug: "spiritual_resilience_breakdown"
 created_at: "2025-11-20 16:27:50"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "691f956a-b0f4-8325-9f49-4ce0141272b7"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Spiritual resilience breakdown

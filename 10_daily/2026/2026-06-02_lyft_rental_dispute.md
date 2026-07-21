@@ -3,9 +3,9 @@ layout: page
 title: "Lyft Rental Dispute"
 slug: "lyft_rental_dispute"
 created_at: "2026-06-02 13:08:25"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a1f1bc3-a170-83ea-8600-3f6d4283d225"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Lyft Rental Dispute

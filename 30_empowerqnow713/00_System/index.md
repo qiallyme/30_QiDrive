@@ -7,7 +7,7 @@ module: qsaysit
 slug: docs
 visibility: public
 status: published
-tags: []
+tags:
   - documentation
   - index
 version: 1

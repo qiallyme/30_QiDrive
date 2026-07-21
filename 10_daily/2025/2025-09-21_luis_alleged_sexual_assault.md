@@ -3,7 +3,7 @@ layout: page
 title: "Luis - Alleged Sexual Assault"
 slug: "luis_alleged_sexual_assault"
 created_at: "2025-09-21"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: eea79d8e6e7d488da724134efbc56cba
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Luis - Alleged Sexual Assault

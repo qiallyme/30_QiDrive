@@ -5,7 +5,7 @@ slug: "adhd_ptsd_anxiety_depression_diagnoses"
 summary: ""
 status: active
 created_at: "2023-04-01"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 author: ""
 owner: ""
 tags: []
@@ -20,6 +20,7 @@ canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-04-01
+type: note
 ---
 
 # ADHD, PTSD, anxiety, depression diagnoses

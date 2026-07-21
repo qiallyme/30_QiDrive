@@ -1,0 +1,1 @@
+# QiMind™ (vector database, embeddings, semantic search, memory retrieval)

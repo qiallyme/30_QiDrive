@@ -3,9 +3,9 @@ layout: page
 title: "Low Minimum Investments: Dividend Options"
 slug: "low_minimum_investments_dividend_options"
 created_at: "2023-07-19 13:09:20"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "99cd22a7-b49a-4f40-981d-f760d3d7a926"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Low Minimum Investments: Dividend Options

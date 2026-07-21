@@ -3,9 +3,9 @@ layout: page
 title: "Indiana title transfer requirements"
 slug: "indiana_title_transfer_requirements"
 created_at: "2026-06-18 17:19:28"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a346ee7-ece0-83ea-8109-828ae3d30153"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Indiana title transfer requirements

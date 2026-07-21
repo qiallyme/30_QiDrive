@@ -3,9 +3,9 @@ layout: page
 title: "Ozempic Effects and Risks"
 slug: "ozempic_effects_and_risks"
 created_at: "2026-06-15 07:43:28"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2ff36d-8fa8-83ea-9b49-04857a2e972f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Ozempic Effects and Risks

@@ -3,9 +3,9 @@ layout: page
 title: "Caregiver App Sections"
 slug: "caregiver_app_sections"
 created_at: "2026-02-19 10:42:40"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69973d75-7794-8326-a9fb-b2e4813fe5ce"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Caregiver App Sections

@@ -3,9 +3,9 @@ layout: page
 title: "Jesus teachings on love"
 slug: "jesus_teachings_on_love"
 created_at: "2026-03-30 16:44:45"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69caee97-dc94-832f-a4b2-d5dd12f1047e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Jesus teachings on love

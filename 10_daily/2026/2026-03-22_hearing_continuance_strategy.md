@@ -3,9 +3,9 @@ layout: page
 title: "Hearing Continuance Strategy"
 slug: "hearing_continuance_strategy"
 created_at: "2026-03-22 11:11:56"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69c014cb-14e4-8325-9072-18772195f698"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Hearing Continuance Strategy

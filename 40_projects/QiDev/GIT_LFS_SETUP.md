@@ -3,8 +3,8 @@ layout: page
 title: Git LFS Setup Guide
 slug: git-lfs-setup-guide
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:20-04:00"
+tags:
   - projects
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: 47a09bf0ba5048ce8b70a8d6bb125a03
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Git LFS Setup Guide

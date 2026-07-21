@@ -3,9 +3,9 @@ layout: page
 title: "Random Chat with ADHD"
 slug: "random_chat_with_adhd"
 created_at: "2023-07-06 23:35:49"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "c6a933cb-5105-43a5-83ca-cb4fee305d68"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Random Chat with ADHD

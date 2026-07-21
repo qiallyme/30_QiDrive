@@ -3,8 +3,8 @@ layout: page
 title: J03 shame and where is she messages
 slug: j03-shame-and-where-is-she-messages
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: a111da43cefa49d6a831f917c3972720
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # J03 shame and where is she messages

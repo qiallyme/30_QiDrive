@@ -3,8 +3,8 @@ layout: page
 title: Event: Cody at hotel; disengaging from direct help
 slug: cody-at-hotel-disengaging-from-direct-help
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
   - caregiver-collapse-boundary
@@ -22,6 +22,7 @@ realm_label: ""
 uid: fc07191f23ca4caabd4dcfa8288e63c3
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Cody at hotel; disengaging from direct help

@@ -3,8 +3,8 @@ layout: page
 title: G.I.N.A_v2 Merge Analysis & Integration Plan
 slug: g-i-n-a-v2-merge-analysis-integration-plan
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:20-04:00"
+tags:
   - projects
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: 171043a5e076460496ec5c8cb56db90e
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # G.I.N.A_v2 Merge Analysis & Integration Plan

@@ -13,7 +13,7 @@ related:
   - 10_functional/40_overwhelm_protocols/overwhelm_protocol.md
   - 30_clinical/20_anxiety_panic/anxiety_panic_context.md
   - 70_trauma_recovery/00_safe_summary/trauma_safe_summary.md
-tags: []
+tags:
   - stress
   - body
   - shutdown
@@ -29,7 +29,7 @@ layout: page
 slug: stress-body-response
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -42,6 +42,7 @@ uid: 6784a57605444aa496b170dcba5454a2
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Stress Body Response

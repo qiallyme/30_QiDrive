@@ -3,8 +3,8 @@ layout: page
 title: Send Ready Packets
 slug: send-ready-packets
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 451aa983a8c246ad827258afb17bb615
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Send Ready Packets

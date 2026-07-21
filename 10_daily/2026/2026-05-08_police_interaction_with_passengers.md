@@ -3,9 +3,9 @@ layout: page
 title: "Police Interaction with Passengers"
 slug: "police_interaction_with_passengers"
 created_at: "2026-05-08 02:15:55"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fd8daa-8834-83ea-943e-3107b815dbe2"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Police Interaction with Passengers

@@ -3,9 +3,9 @@ layout: page
 title: "Maximizing OTR deductions"
 slug: "maximizing_otr_deductions"
 created_at: "2025-11-03 13:40:14"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6909051e-3c8c-832a-8e33-02c7e817a1cf"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Maximizing OTR deductions

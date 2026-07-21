@@ -3,8 +3,8 @@ layout: page
 title: Event: Decision: Google Sheet becomes timeline spine; Markdown/Markwhen generated downstream
 slug: decision-google-sheet-becomes-timeline-spine-markdown-markwhen-generated-downstream
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - record-admin
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 75ffb5b26c8b4db088c7696bb57c003a
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Decision: Google Sheet becomes timeline spine; Markdown/Markwhen generated downstream

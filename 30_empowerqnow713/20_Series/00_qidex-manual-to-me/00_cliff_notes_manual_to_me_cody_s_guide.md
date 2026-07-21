@@ -5,7 +5,7 @@ slug: 00-cliff-notes-manual-to-me-codys-guide
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 3caaf0e9914c4502806c7d128bdb5f05
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # 00 | CLIFF NOTES: Manual to Me - Cody's Guide

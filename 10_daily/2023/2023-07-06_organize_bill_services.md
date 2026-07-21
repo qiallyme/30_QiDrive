@@ -3,9 +3,9 @@ layout: page
 title: "Organize Bill Services."
 slug: "organize_bill_services"
 created_at: "2023-07-06 13:54:48"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "ebd9a79f-b17c-46c9-a7a1-a9bff9129992"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Organize Bill Services.

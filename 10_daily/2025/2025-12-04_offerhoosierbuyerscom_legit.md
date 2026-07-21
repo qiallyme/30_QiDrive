@@ -3,9 +3,9 @@ layout: page
 title: "Offer.hoosierbuyers.com legit?"
 slug: "offerhoosierbuyerscom_legit"
 created_at: "2025-12-04 17:21:13"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69321762-9a3c-832e-9e8a-75f0e4379580"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Offer.hoosierbuyers.com legit?

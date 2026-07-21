@@ -3,9 +3,9 @@ layout: page
 title: "Shutting down real estate offer"
 slug: "shutting_down_real_estate_offer"
 created_at: "2025-09-11 07:05:42"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c2ba95-d588-8330-b936-d4ef4083827d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Shutting down real estate offer

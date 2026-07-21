@@ -7,7 +7,7 @@ slug: transcript-and-notes-of-argument-with-luis
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -20,6 +20,7 @@ uid: 02cb691018b54c59bb8bdf4cb576df94
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Transcript and Notes of Argument with Luis

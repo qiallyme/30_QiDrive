@@ -3,7 +3,7 @@ layout: page
 title: "Utility Crisis Begins"
 slug: "utility_crisis_begins"
 created_at: "2024-01-01"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: ffeb30a23dfb40ce9a5191bb25e1d6c8
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Utility Crisis Begins

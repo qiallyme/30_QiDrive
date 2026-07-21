@@ -3,9 +3,9 @@ layout: page
 title: "Purpose reflection explanation"
 slug: "purpose_reflection_explanation"
 created_at: "2025-12-01 14:57:43"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "692e0140-c9dc-832e-8dd7-bcb51288a693"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Purpose reflection explanation

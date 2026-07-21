@@ -4,7 +4,7 @@ title: 10 4 Person of Color
 slug: 10_4_person_of_color
 status: publish
 updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+tags:
   - empowerqnow713
 source_type: manual
 realm: QiVault

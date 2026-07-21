@@ -4,8 +4,8 @@ title: Record Scope and Boundaries
 slug: record-scope-and-boundaries
 summary: Defines what belongs in the Lisa Care Record and what should remain internal.
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 0be2c9f1349848499934f5ccbc3e173f
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Record Scope and Boundaries

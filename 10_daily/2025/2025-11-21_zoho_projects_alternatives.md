@@ -3,9 +3,9 @@ layout: page
 title: "Zoho Projects alternatives"
 slug: "zoho_projects_alternatives"
 created_at: "2025-11-21 18:48:52"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69210850-4a8c-8333-bded-330eec6b0c38"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Zoho Projects alternatives

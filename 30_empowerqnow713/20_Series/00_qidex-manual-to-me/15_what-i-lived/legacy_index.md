@@ -13,7 +13,7 @@ related:
   - 20_personal/20_values/values.md
   - 40_history/00_timeline/life_timeline_overview.md
   - 00_surface/10_professional_bio/professional_profile.md
-tags: []
+tags:
   - legacy
   - purpose
   - meaning
@@ -26,7 +26,7 @@ layout: page
 slug: legacy-index
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -39,6 +39,7 @@ uid: 12e9f64ed3624042aa5752dc99e5d7ae
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Legacy Index

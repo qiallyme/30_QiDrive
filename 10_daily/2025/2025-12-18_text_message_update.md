@@ -3,9 +3,9 @@ layout: page
 title: "Text message update"
 slug: "text_message_update"
 created_at: "2025-12-18 18:33:32"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69449cf8-fd48-8330-b740-459cd34c2065"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Text message update

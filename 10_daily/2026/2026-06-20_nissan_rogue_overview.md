@@ -3,9 +3,9 @@ layout: page
 title: "Nissan Rogue Overview"
 slug: "nissan_rogue_overview"
 created_at: "2026-06-20 13:45:15"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a36dfb9-70c8-83ea-a2ea-58725fdda6ca"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Nissan Rogue Overview

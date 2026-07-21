@@ -3,8 +3,8 @@ layout: template
 title: Template.timeline
 slug: template-timeline
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - care-record
   - projects
   - lisa-care-record
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 0b470151a2774012aee075fa2110b4e5
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Template.timeline

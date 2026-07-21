@@ -3,8 +3,8 @@ layout: page
 title: Exhibit E00  -  Housing Transition Summary
 slug: exhibit-e00-housing-transition-summary
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: c3a1c9e9910e4a55ad85c2d0d1192468
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Exhibit E00  -  Housing Transition Summary

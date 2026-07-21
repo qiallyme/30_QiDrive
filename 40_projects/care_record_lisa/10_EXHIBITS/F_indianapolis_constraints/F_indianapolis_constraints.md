@@ -3,8 +3,8 @@ layout: section
 title: F Indianapolis Constraints
 slug: f-indianapolis-constraints
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 08a82680fd3f46b08fd7015515d44ab2
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # F Indianapolis Constraints

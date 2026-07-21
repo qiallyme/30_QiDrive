@@ -3,9 +3,9 @@ layout: page
 title: "Special Power of Attorney"
 slug: "special_power_of_attorney"
 created_at: "2023-07-28 16:14:59"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "9fbb95ae-6649-422b-93ba-ec4e3f16a15b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Special Power of Attorney

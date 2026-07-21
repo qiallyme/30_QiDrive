@@ -5,7 +5,7 @@ slug: smallpox-monkeypox-vaccine-2-of-2-216f84a0440280d09440df37b449aa3e
 summary: ""
 status: publish
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:19-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 0af24f4672094eb5b69bfd0759c84b23
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Smallpox/Monkeypox Vaccine # 2 of 2

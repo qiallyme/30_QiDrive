@@ -3,9 +3,9 @@ layout: page
 title: "Cancellation SOP & Agreement."
 slug: "cancellation_sop_agreement"
 created_at: "2023-08-03 16:31:07"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "79fe703c-b0a5-4b7e-8ed9-ba872b753d2b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Cancellation SOP & Agreement.

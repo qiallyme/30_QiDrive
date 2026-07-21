@@ -3,9 +3,9 @@ layout: page
 title: "Cinematic Lumara Script"
 slug: "cinematic_lumara_script"
 created_at: "2025-11-14 16:57:26"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6917b3ce-24d4-832d-9aa3-0a0f27478df9"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Cinematic Lumara Script

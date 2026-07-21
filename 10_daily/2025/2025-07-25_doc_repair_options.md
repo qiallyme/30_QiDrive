@@ -3,9 +3,9 @@ layout: page
 title: "Doc repair options"
 slug: "doc_repair_options"
 created_at: "2025-07-25 22:56:34"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "688451eb-d0f4-8331-a6bf-b90ca8caeb2b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Doc repair options

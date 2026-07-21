@@ -3,9 +3,9 @@ layout: page
 title: "Horizons Program Role"
 slug: "horizons_program_role"
 created_at: "2025-12-04 03:08:06"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69314f6e-f884-8326-b560-d12d7b9e3526"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Horizons Program Role

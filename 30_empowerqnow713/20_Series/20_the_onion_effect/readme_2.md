@@ -5,7 +5,7 @@ slug: readme-2
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: ead4b2f0922942deae34d607167e842e
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # The Onion Effect

@@ -3,9 +3,9 @@ layout: page
 title: "Chocolate choice conversation"
 slug: "chocolate_choice_conversation"
 created_at: "2026-01-18 08:47:48"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "696cf282-767c-8327-98e3-64e2cdc4bba6"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Chocolate choice conversation

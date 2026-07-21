@@ -3,9 +3,9 @@ layout: page
 title: "Shaving without batteries"
 slug: "shaving_without_batteries"
 created_at: "2025-11-22 06:28:24"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6921ac56-e900-832b-8864-b6ad212abc18"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Shaving without batteries

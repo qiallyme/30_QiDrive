@@ -3,9 +3,9 @@ layout: page
 title: "Tech terms explained"
 slug: "tech_terms_explained"
 created_at: "2025-08-21 12:49:58"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68a75bf3-3d34-8325-b61f-ec72e090c679"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tech terms explained

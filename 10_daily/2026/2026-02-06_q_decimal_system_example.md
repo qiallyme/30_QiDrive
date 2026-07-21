@@ -3,9 +3,9 @@ layout: page
 title: "Q-Decimal System Example"
 slug: "q_decimal_system_example"
 created_at: "2026-02-06 17:21:55"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69867787-e28c-8332-a0f1-f81ae6759d95"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Q-Decimal System Example

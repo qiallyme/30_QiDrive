@@ -3,8 +3,8 @@ layout: page
 title: Timeline - Escalation and Contradictions
 slug: timeline-escalation-and-contradictions
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 1118df611cf24508aef8f2dce6434de8
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Timeline - Escalation and Contradictions

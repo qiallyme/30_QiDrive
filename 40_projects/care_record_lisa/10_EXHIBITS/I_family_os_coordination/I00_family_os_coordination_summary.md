@@ -3,8 +3,8 @@ layout: page
 title: Exhibit I00  -  Family OS Coordination Summary
 slug: exhibit-i00-family-os-coordination-summary
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: d31c9a24636e4a6baa1909c469869ea0
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Exhibit I00  -  Family OS Coordination Summary

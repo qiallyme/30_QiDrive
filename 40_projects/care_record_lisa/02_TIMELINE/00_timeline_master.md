@@ -3,8 +3,8 @@ layout: page
 title: Timeline - Master
 slug: timeline-master
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: bf334c985df743de92f98f45dcdb3fd4
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Timeline - Master

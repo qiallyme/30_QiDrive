@@ -13,7 +13,7 @@ related:
   - 10_functional/00_manual_to_me/manual_to_me.md
   - 90_locked/00_my_eyes_only/intake_sensitive_material_review.md
   - 99_system/00_navigation/navigation_map.md
-tags: []
+tags:
   - migration
   - intake
   - report
@@ -37,7 +37,7 @@ layout: page
 slug: intake-migration-report
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -50,6 +50,7 @@ uid: 0fc9bfe9ce6c462c80a2e7d721cf43fa
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Intake Migration Report

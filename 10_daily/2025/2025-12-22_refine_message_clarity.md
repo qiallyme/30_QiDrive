@@ -3,9 +3,9 @@ layout: page
 title: "Refine message clarity"
 slug: "refine_message_clarity"
 created_at: "2025-12-22 15:56:54"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6949be87-d35c-8333-9afe-081dd4b39a01"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Refine message clarity

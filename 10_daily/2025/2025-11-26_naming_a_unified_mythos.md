@@ -3,9 +3,9 @@ layout: page
 title: "Naming a unified mythos"
 slug: "naming_a_unified_mythos"
 created_at: "2025-11-26 19:45:34"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6927ad3d-89a4-832d-8bb6-72ebd2e066c1"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Naming a unified mythos

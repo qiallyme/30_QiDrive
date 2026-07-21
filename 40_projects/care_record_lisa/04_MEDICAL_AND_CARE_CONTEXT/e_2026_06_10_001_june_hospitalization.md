@@ -3,8 +3,8 @@ layout: page
 title: Event: Lisa hospitalized June 10–12
 slug: lisa-hospitalized-june-10-12
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - medical-care
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 675971e4fdf545748982bd13aa7ba670
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Lisa hospitalized June 10–12

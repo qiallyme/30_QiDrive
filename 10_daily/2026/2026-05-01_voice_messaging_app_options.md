@@ -3,9 +3,9 @@ layout: page
 title: "Voice Messaging App Options"
 slug: "voice_messaging_app_options"
 created_at: "2026-05-01 11:00:10"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f4ce09-7c40-83ea-8a4a-3e336fbf9e61"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Voice Messaging App Options

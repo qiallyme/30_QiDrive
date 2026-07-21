@@ -4,31 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "qivault-tabs",
+        "id": "89ce21e3751b6063",
         "type": "tabs",
         "children": [
           {
-            "id": "home-tab",
+            "id": "676b7fa77d3aa6d6",
             "type": "leaf",
-            "state": {"type":"markdown","state":{"file":"00_home/00_home.md","mode":"preview","source":false},"icon":"lucide-home","title":"QiVault Home"}
-          },
-          {
-            "id": "projects-tab",
-            "type": "leaf",
-            "state": {"type":"markdown","state":{"file":"00_home/projects_dashboard.md","mode":"preview","source":false},"icon":"lucide-list-checks","title":"Projects"}
-          },
-          {
-            "id": "timeline-tab",
-            "type": "leaf",
-            "state": {"type":"markdown","state":{"file":"00_home/timeline_dashboard.md","mode":"preview","source":false},"icon":"lucide-clock-3","title":"Timeline"}
-          },
-          {
-            "id": "vault-timeline-tab",
-            "type": "leaf",
-            "state": {"type":"vault-timeline-view","state":{},"icon":"calendar-clock","title":"Vault Timeline"}
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_home/00_QiCode/title_17_qiapps/title_17_qiapps.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "title_17_qiapps"
+            }
           }
-        ],
-        "currentTab": 0
+        ]
       }
     ],
     "direction": "vertical"
@@ -41,9 +34,46 @@
         "id": "navigation-tabs",
         "type": "tabs",
         "children": [
-          {"id":"files-tab","type":"leaf","state":{"type":"file-explorer","state":{"sortOrder":"alphabetical","autoReveal":true},"icon":"lucide-folder-closed","title":"Files"}},
-          {"id":"search-tab","type":"leaf","state":{"type":"search","state":{"query":"","matchingCase":false,"explainSearch":false,"collapseAll":false,"extraContext":true,"sortOrder":"byModifiedTime"},"icon":"lucide-search","title":"Search"}},
-          {"id":"bookmarks-tab","type":"leaf","state":{"type":"bookmarks","state":{},"icon":"lucide-bookmark","title":"Bookmarks"}}
+          {
+            "id": "files-tab",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "search-tab",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "byModifiedTime"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "bookmarks-tab",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
         ]
       }
     ],
@@ -58,24 +88,175 @@
         "id": "context-tabs",
         "type": "tabs",
         "children": [
-          {"id":"outline-tab","type":"leaf","state":{"type":"outline","state":{"file":"00_home/00_home.md","followCursor":true,"showSearch":false,"searchQuery":""},"icon":"lucide-list","title":"Outline"}},
-          {"id":"backlinks-tab","type":"leaf","state":{"type":"backlink","state":{"file":"00_home/00_home.md","collapseAll":false,"extraContext":true,"sortOrder":"alphabetical","showSearch":false,"searchQuery":"","backlinkCollapsed":false,"unlinkedCollapsed":true},"icon":"links-coming-in","title":"Backlinks"}},
-          {"id":"tags-tab","type":"leaf","state":{"type":"tag","state":{"sortOrder":"frequency","useHierarchy":true,"showSearch":true,"searchQuery":""},"icon":"lucide-tags","title":"Tags"}}
-        ]
+          {
+            "id": "outline-tab",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00_home/00_home.md",
+                "followCursor": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 00_home"
+            }
+          },
+          {
+            "id": "backlinks-tab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00_home/00_home.md",
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "tags-tab",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "86035f2080fded93",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "1a2666b021893c61",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "6a05cef55126c5c3",
+            "type": "leaf",
+            "state": {
+              "type": "smart-env-status-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-env-status-view"
+            }
+          }
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
     "width": 350,
     "collapsed": true
   },
-  "left-ribbon": {"hiddenItems":{}},
-  "active": "home-tab",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "bases:Create new base": false,
+      "obsidian-kanban:Create new board": false,
+      "markwhen:Create new Markwhen file": false,
+      "omnisearch:Omnisearch": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "templater-obsidian:Templater": false,
+      "vault-timeline:Open Vault Timeline": false,
+      "webpage-html-export:Export as HTML": false,
+      "code-space:Open code space dashboard": false,
+      "smart-second-brain:Open S2B Chat": false,
+      "smart-lookup:Smart Lookup: Open lookup view": false,
+      "smart-connections-visualizer:Open smart connections visualizer": false,
+      "semantic-auto-linker:Semantic auto-linker": false,
+      "nexus-ai-chat-importer:Nexus AI Chat Importer - Import new file": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "676b7fa77d3aa6d6",
   "lastOpenFiles": [
-    "00_home/00_home.md",
-    "00_home/projects_dashboard.md",
-    "00_home/timeline_dashboard.md",
-    "00_home/inbox_dashboard.md",
-    "40_projects/jobs_apply_zai/_index.md",
-    "40_projects/jobs_apply_cody/_index.md"
+    "00_home/00_QiCode/title_17_qiapps/_index.md",
+    "00_home/00_QiCode/title_18_qisites/title_18_qisites.md",
+    "00_home/00_QiCode/title_18_qisites/_index.md",
+    "00_home/00_QiCode/title_11_qilabs_workspace/title_11_qilabs_workspace.md",
+    "00_home/00_QiCode/title_11_qilabs_workspace/_index.md",
+    "00_home/00_QiCode/title_10_qilabs/title_10_qilabs.md",
+    "00_home/00_QiCode/title_10_qilabs/_index.md",
+    "01_inbox/imports/_index.md",
+    "00_home/00_QiCode/title_18_qisites",
+    "00_home/00_QiCode/title_17_qiapps/title_17_qiapps.md",
+    "00_home/00_QiCode/title_17_qiapps",
+    "00_home/00_QiCode/title_16_qivault/_index.md",
+    "00_home/00_QiCode/title_16_qivault/title_16_qivault.md",
+    "00_home/00_QiCode/title_16_qivault",
+    "00_home/00_QiCode/title_15_qidrive/_index.md",
+    "00_home/00_QiCode/title_15_qidrive/title_15_qidrive.md",
+    "00_home/00_QiCode/title_15_qidrive",
+    "00_home/00_QiCode/title_14_qiworkers/_index.md",
+    "00_home/00_QiCode/title_14_qiworkers/title_14_qiworkers.md",
+    "00_home/00_QiCode/title_14_qiworkers",
+    "00_home/00_QiCode/title_13_qiserver/_index.md",
+    "00_home/00_QiCode/title_13_qiserver/title_13_qiserver.md",
+    "00_home/00_QiCode/title_13_qiserver",
+    "00_home/00_QiCode/title_12_qispark/_index.md",
+    "00_home/00_QiCode/title_12_qispark/title_12_qispark.md",
+    "00_home/00_QiCode/title_12_qispark",
+    "00_home/00_QiCode/title_11_qilabs_workspace",
+    "00_home/00_QiCode/title_10_qilabs",
+    "00_home/00_QiCode/sources/qilabs_legacy_50_qilabs.md",
+    "00_home/00_QiCode/reference/qilabs_title_migration_map.md",
+    "qilabs_full_tree.md",
+    "01_inbox/qicodex-legacy/QiCode/_index.md",
+    "01_inbox/qicodex-legacy/_index.md",
+    "01_inbox/Voice Entries/_index.md",
+    "01_inbox/_index.md",
+    "10_qispark/00_QiCode",
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000d9dc71f5810e3ffd648934f4-sanitized.png",
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000ca5871f681a2543c43b2de54-sanitized.png",
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000c9f071f894bd4d139fceb231-sanitized.jpeg",
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_0000000012c471fda6a547922ecc8a94-sanitized.jpeg",
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_0000000009b071fdb8fac27bc3218f8a-sanitized.jpg",
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000c0bc71f781d66297907bdaa2-sanitized.png",
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000c42871fd8175d5c7204385f5-sanitized.png",
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000b1a871fd91c6ed4338b3dc84-sanitized.jpeg",
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000aa84720cbafe1ace35f981ea-sanitized.png",
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000a54871f7b4f44d7f40a0bc9b-sanitized.png"
   ]
 }

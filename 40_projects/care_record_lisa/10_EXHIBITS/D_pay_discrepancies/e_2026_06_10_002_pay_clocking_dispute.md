@@ -3,8 +3,8 @@ layout: page
 title: Event: Comfort Keepers/Humana pay and clocking dispute escalates
 slug: comfort-keepers-humana-pay-and-clocking-dispute-escalates
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
   - system-failure-pay
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 6cb068cc859d43d7af3d624a6c418289
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Comfort Keepers/Humana pay and clocking dispute escalates

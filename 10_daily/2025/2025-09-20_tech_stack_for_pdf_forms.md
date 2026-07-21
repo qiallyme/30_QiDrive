@@ -3,9 +3,9 @@ layout: page
 title: "Tech stack for PDF forms"
 slug: "tech_stack_for_pdf_forms"
 created_at: "2025-09-20 07:45:33"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68cea1c5-2bf8-8331-bad7-2e475fbf1c88"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tech stack for PDF forms

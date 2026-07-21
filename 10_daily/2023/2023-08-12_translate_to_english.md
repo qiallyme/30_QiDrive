@@ -3,9 +3,9 @@ layout: page
 title: "Translate to English"
 slug: "translate_to_english"
 created_at: "2023-08-12 16:05:54"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "7479376e-2b0c-4245-96e4-da9233408074"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Translate to English

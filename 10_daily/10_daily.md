@@ -4,8 +4,8 @@ title: Daily
 slug: daily
 summary: Folder note for the active daily notes section.
 status: active
-updated_at: "2026-07-16T06:49:27-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:11-04:00"
+tags:
   - moc
   - daily
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: e5fc505b42ba4f2a92cfa82bff9b913a
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Daily

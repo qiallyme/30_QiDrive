@@ -4,6 +4,25 @@ type: index
 status: active
 generated_by: qilabs-housekeeping
 generated_at: "20260716-071124"
+layout: page
+slug: orphaned-pieces
+summary: ""
+created_at: "2026-07-16T07:30:57-04:00"
+updated_at: "2026-07-16T07:30:57-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: d7b69dec213b42918f23454ef34cd2dd
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+index_scope: ""
 ---
 
 # _orphaned_pieces
@@ -17,3 +36,4 @@ generated_at: "20260716-071124"
 - [[the_burden_of_the_signal_a_testimony_of_survival|the burden of the signal a testimony of survival]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

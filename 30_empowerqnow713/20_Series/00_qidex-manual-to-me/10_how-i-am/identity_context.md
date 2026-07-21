@@ -13,7 +13,7 @@ related:
   - 20_personal/00_personal_context/personal_context_summary.md
   - 30_clinical/00_clinical_summary/clinical_summary_starter.md
   - 90_locked/00_my_eyes_only/intake_sensitive_material_review.md
-tags: []
+tags:
   - identity
   - privacy
   - intersectionality
@@ -25,7 +25,7 @@ layout: page
 slug: identity-context
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -38,6 +38,7 @@ uid: 18dffee36c01441ebcacd6400ad91201
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Identity Context

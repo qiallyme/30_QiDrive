@@ -6,13 +6,13 @@ summary: What this looks like in day-to-day life when high-conflict conversation
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Clinical documentation of shutdown manifestation during high-conflict situations
-tags: []
+tags:
   - manifestation
   - ptsd
   - coping_strategy
   - shutdown
   - empowerqnow713
-keywords: []
+keywords:
   - shutdown
   - dissociation
   - conflict

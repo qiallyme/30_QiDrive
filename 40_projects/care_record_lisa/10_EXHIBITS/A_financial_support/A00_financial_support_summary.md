@@ -3,8 +3,8 @@ layout: page
 title: Exhibit A00 - Financial Support Summary
 slug: exhibit-a00-financial-support-summary
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 8d5b1a63e38c4ad4877a369ccc28886f
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Exhibit A00 - Financial Support Summary

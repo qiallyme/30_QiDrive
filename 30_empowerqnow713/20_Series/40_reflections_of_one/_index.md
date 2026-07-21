@@ -8,7 +8,7 @@ visibility: internal
 publish_target: none
 publish_url: /40 Reflections Of One
 created_at: "2026-07-08 03:55:46"
-updated_at: "2026-07-16T06:49:35-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: "40 Reflections Of One"
@@ -22,7 +22,7 @@ classification: business_internal
   - blog-post
 realm_label: ""
   - empowerqnow
-tags: []
+tags:
   - EmpowerQNow
 keywords: []
 aliases: []
@@ -31,6 +31,10 @@ uid: 599e6e5cf7ca4c83996a746d701407e4
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: index
+index_scope: ""
+generated_by: ""
+generated_at: ""
 ---
 
 # 40 Reflections Of One
@@ -49,3 +53,4 @@ template_key: master-template
 - [[burden_of_the_signal|burden of the signal]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

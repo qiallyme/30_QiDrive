@@ -3,9 +3,9 @@ layout: page
 title: "Nginx setup troubleshooting"
 slug: "nginx_setup_troubleshooting"
 created_at: "2025-07-23 12:10:45"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68811795-4620-800c-ab77-a5c088f3c4cb"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Nginx setup troubleshooting

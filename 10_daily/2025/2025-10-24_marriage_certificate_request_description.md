@@ -3,9 +3,9 @@ layout: page
 title: "Marriage certificate request description"
 slug: "marriage_certificate_request_description"
 created_at: "2025-10-24 08:50:02"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68fb8409-3560-832b-8cb5-34bbdd1c937d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Marriage certificate request description

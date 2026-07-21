@@ -3,9 +3,9 @@ layout: page
 title: "Blueprint Review and Updates"
 slug: "blueprint_review_and_updates"
 created_at: "2026-04-19 07:45:07"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69e4ce52-0e00-83ea-a154-bf9c9ff0d13e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Blueprint Review and Updates

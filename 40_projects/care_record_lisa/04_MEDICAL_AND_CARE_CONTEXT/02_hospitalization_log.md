@@ -3,8 +3,8 @@ layout: page
 title: Hospitalization Log
 slug: hospitalization-log
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 79fa668871854c6f98c836959986d415
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Hospitalization Log

@@ -3,8 +3,8 @@ layout: page
 title: Event: Lisa threatens police / says Cody is done
 slug: lisa-threatens-police-says-cody-is-done
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
   - communications-threats
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 1dea2ad127be4dc68ae14b9a201a8e89
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Lisa threatens police / says Cody is done

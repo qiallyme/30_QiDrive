@@ -3,9 +3,9 @@ layout: page
 title: "QiOS Namespace Usage"
 slug: "qios_namespace_usage"
 created_at: "2026-05-18 22:41:08"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a0bdbc9-5af8-83ea-8ef8-788da6b33c1c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # QiOS Namespace Usage

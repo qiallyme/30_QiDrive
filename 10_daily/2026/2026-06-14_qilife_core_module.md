@@ -3,9 +3,9 @@ layout: page
 title: "QiLife Core Module"
 slug: "qilife_core_module"
 created_at: "2026-06-14 09:14:19"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2eb739-d800-83ea-9886-3719483e454b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # QiLife Core Module

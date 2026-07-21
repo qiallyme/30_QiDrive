@@ -3,9 +3,9 @@ layout: page
 title: "Git reset commit push"
 slug: "git_reset_commit_push"
 created_at: "2025-11-19 14:12:03"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "691e2485-165c-8327-a02f-f2d9d346fae9"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Git reset commit push

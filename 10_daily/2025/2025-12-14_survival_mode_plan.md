@@ -3,9 +3,9 @@ layout: page
 title: "Survival mode plan"
 slug: "survival_mode_plan"
 created_at: "2025-12-14 13:02:22"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "693f09bc-f604-832b-90b1-9efda6dff9b0"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Survival mode plan

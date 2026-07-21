@@ -4,8 +4,8 @@ title: Lisa Care Record 2026
 slug: lisa-care-record-2026
 summary: Primary index for Lisa Care Record 2026.
 status: active
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - moc
   - projects
   - lisa-care-record
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 835eeac8c9394d35a7ed7d4416ce1ec7
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Lisa Care Record 2026

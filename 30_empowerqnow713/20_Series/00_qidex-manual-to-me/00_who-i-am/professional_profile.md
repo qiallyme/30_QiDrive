@@ -12,7 +12,7 @@ last_updated: 2026-05-24
 related:
   - 10_functional/20_working_style/working_style.md
   - 80_legacy_meaning/00_legacy_index/legacy_index.md
-tags: []
+tags:
   - public
   - professional
   - bio
@@ -24,7 +24,7 @@ layout: page
 slug: professional-profile
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -37,6 +37,7 @@ uid: 669259ccb6fd4e5a93f6a0660e25bc8f
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Professional Profile

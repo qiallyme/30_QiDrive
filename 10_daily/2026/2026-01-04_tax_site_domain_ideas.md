@@ -3,9 +3,9 @@ layout: page
 title: "Tax Site Domain Ideas"
 slug: "tax_site_domain_ideas"
 created_at: "2026-01-04 13:59:23"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "695ac698-5af8-832e-bac2-0d17d9948828"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tax Site Domain Ideas

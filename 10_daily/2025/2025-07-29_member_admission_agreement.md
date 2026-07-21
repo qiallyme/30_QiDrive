@@ -3,9 +3,9 @@ layout: page
 title: "Member admission agreement"
 slug: "member_admission_agreement"
 created_at: "2025-07-29 13:03:58"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68890d00-a158-8333-8a5a-6f18793b270b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Member admission agreement

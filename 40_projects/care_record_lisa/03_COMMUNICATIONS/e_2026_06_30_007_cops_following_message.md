@@ -3,8 +3,8 @@ layout: page
 title: Event: Lisa says cops are supposed to make contact / follow Cody around
 slug: lisa-says-cops-are-supposed-to-make-contact-follow-cody-around
 status: Screenshot in chat
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - communications-threats
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 199eeaa56dc94e6da5b773a16467dbd4
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Lisa says cops are supposed to make contact / follow Cody around

@@ -3,8 +3,8 @@ layout: page
 title: Event: Reporter identity/confidentiality concern
 slug: reporter-identity-confidentiality-concern
 status: Internal note
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - reports-statements
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 7ddbe284444a4a259a131644780f05bf
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Reporter identity/confidentiality concern

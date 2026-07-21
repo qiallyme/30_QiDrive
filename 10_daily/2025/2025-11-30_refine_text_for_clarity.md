@@ -3,9 +3,9 @@ layout: page
 title: "Refine text for clarity"
 slug: "refine_text_for_clarity"
 created_at: "2025-11-30 06:42:04"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "692c3b39-265c-8332-9be8-dd6ca12e8ce6"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Refine text for clarity

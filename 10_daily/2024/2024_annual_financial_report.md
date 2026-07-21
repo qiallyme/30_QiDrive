@@ -11,7 +11,7 @@ qi_decimal: 6.00.00-FINANCE
 qid: qc7c5aed039af
 status: active
 system: qios
-keywords: []
+keywords:
 - finance
 layout: page
 summary: ""

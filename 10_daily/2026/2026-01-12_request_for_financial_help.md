@@ -3,9 +3,9 @@ layout: page
 title: "Request for Financial Help"
 slug: "request_for_financial_help"
 created_at: "2026-01-12 13:13:44"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "696547e7-94fc-8327-afaa-d7b918fc19fd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Request for Financial Help

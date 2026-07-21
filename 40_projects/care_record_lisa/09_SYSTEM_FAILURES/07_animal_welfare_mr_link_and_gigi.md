@@ -5,7 +5,7 @@ slug: 07-animal-welfare-mr-link-and-gigi
 summary: ""
 status: publish
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 6827013ca03e44d1babec44315b8a4c7
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Animal Welfare Notes — Mr. Link and Gigi

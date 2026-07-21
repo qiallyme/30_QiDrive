@@ -3,9 +3,9 @@ layout: page
 title: "Estimate Notice: Fees & SRV"
 slug: "estimate_notice_fees_srv"
 created_at: "2023-07-14 17:24:24"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "3c9d7a21-f737-48e9-9ae7-473eebcb5110"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Estimate Notice: Fees & SRV

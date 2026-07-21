@@ -3,7 +3,7 @@ layout: page
 title: "COMPREHENSIVE RESPONSE PACKAGE CREATED"
 slug: "comprehensive_response_package_created"
 created_at: "2025-10-30"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
 tags: ["major change"]
 category: "major change"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: c64d67d574a44178b8d7953ce13a4fe2
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # COMPREHENSIVE RESPONSE PACKAGE CREATED

@@ -3,9 +3,9 @@ layout: page
 title: "Schema-Phases"
 slug: "schema_phases"
 created_at: "2026-02-13 00:24:19"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "698ec37b-f6b8-832a-a95c-0d37414e8954"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Schema-Phases

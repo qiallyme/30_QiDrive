@@ -3,9 +3,9 @@ layout: page
 title: "SMS and email draft"
 slug: "sms_and_email_draft"
 created_at: "2025-09-24 20:39:20"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68d49d2c-84b0-8329-88ff-ddacdf3666b4"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # SMS and email draft

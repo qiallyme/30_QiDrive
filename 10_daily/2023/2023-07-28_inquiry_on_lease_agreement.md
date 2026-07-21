@@ -3,9 +3,9 @@ layout: page
 title: "Inquiry on Lease Agreement"
 slug: "inquiry_on_lease_agreement"
 created_at: "2023-07-28 04:22:36"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "aaa3cb54-6d27-49db-8d49-1ddfbbb4b607"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Inquiry on Lease Agreement

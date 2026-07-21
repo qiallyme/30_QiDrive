@@ -3,9 +3,9 @@ layout: page
 title: "Qi Legal-Code Knowledge Base"
 slug: "qi_legal_code_knowledge_base"
 created_at: "2026-06-25 19:04:56"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a3dc210-f32c-83ea-b6ec-de8f7111ad0b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Qi Legal-Code Knowledge Base

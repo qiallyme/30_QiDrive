@@ -3,9 +3,9 @@ layout: page
 title: "Documenting FCRA Violations"
 slug: "documenting_fcra_violations"
 created_at: "2026-03-18 06:50:35"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69ba917d-c840-832b-b07e-bcf7d2218fd5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Documenting FCRA Violations

@@ -3,9 +3,9 @@ layout: page
 title: "Legal Form Compliance Template"
 slug: "legal_form_compliance_template"
 created_at: "2023-08-06 15:16:47"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "f884c2d2-38f5-4e0f-9160-563b9270a276"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Legal Form Compliance Template

@@ -3,7 +3,7 @@ layout: page
 title: "Utility Arrears Continue Growing"
 slug: "utility_arrears_continue_growing"
 created_at: "2025-01-03"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 166d733804a8427085a91aeabc6eb7c8
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Utility Arrears Continue Growing

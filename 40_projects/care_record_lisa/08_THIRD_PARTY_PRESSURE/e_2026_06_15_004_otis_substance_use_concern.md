@@ -3,8 +3,8 @@ layout: page
 title: Event: Otis substance-use concern period
 slug: otis-substance-use-concern-period
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - third-party-risk
@@ -22,6 +22,7 @@ realm_label: ""
 uid: ac8b27cce5d84b4497db3bca74437374
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Otis substance-use concern period

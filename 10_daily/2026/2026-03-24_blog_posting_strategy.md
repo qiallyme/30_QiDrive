@@ -3,9 +3,9 @@ layout: page
 title: "Blog Posting Strategy"
 slug: "blog_posting_strategy"
 created_at: "2026-03-24 18:09:59"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69c319c5-c400-8331-aacf-ff1fe4e93abb"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Blog Posting Strategy

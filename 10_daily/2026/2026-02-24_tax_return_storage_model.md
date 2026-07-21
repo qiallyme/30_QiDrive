@@ -3,9 +3,9 @@ layout: page
 title: "Tax Return Storage Model"
 slug: "tax_return_storage_model"
 created_at: "2026-02-24 16:44:42"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "699e29d8-d3a8-8325-85bc-67d75ef59265"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tax Return Storage Model

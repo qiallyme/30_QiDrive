@@ -3,8 +3,8 @@ layout: page
 title: Mechanism: Dissociation Under Threat
 slug: dissociation_under_threat
 status: publish
-updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:17-04:00"
+tags:
   - dissociation
   - trauma-response
   - nervious-system-collapse
@@ -26,6 +26,7 @@ realm_label: ""
 uid: 4b6c3d7f90db41b280f04865216299d9
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Mechanism Description

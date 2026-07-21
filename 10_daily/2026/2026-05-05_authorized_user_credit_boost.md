@@ -3,9 +3,9 @@ layout: page
 title: "Authorized User Credit Boost"
 slug: "authorized_user_credit_boost"
 created_at: "2026-05-05 18:12:30"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fa7909-e704-83ea-ad4b-7d7d9ca272b1"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Authorized User Credit Boost

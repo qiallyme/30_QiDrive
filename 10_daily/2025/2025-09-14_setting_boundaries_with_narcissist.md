@@ -3,9 +3,9 @@ layout: page
 title: "Setting boundaries with narcissist"
 slug: "setting_boundaries_with_narcissist"
 created_at: "2025-09-14 11:24:47"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c6ec4c-7214-8332-a7c3-90e5b145a89b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Setting boundaries with narcissist

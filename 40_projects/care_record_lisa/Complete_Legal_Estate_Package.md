@@ -8,7 +8,7 @@ slug: complete-legal-estate-package
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 owner: ""
 keywords: []
 aliases: []
@@ -20,6 +20,7 @@ uid: 0732b627e99540d189a6938cb263524a
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Complete Legal Estate Package

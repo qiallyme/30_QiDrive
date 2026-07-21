@@ -3,8 +3,8 @@ layout: section
 title: A Financial Support
 slug: a-financial-support
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 5fc2bf87f74d4af5995aebc2ca0774d3
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # A Financial Support

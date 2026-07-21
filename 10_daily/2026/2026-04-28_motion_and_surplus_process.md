@@ -3,9 +3,9 @@ layout: page
 title: "Motion and Surplus Process"
 slug: "motion_and_surplus_process"
 created_at: "2026-04-28 23:31:44"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f189ae-2e18-83ea-82ff-16f25df8b172"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Motion and Surplus Process

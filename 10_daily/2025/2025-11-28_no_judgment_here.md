@@ -3,9 +3,9 @@ layout: page
 title: "No judgment here"
 slug: "no_judgment_here"
 created_at: "2025-11-28 17:26:25"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "692a2f90-a114-8325-ac35-5a18733d4efd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # No judgment here

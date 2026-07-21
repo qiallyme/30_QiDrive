@@ -6,12 +6,12 @@ summary: Template for describing strategies to navigate clinical challenges
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting navigation strategies in clinical track
-tags: []
+tags:
   - template
   - strategy
   - clinical
   - empowerqnow713
-keywords: []
+keywords:
   - strategy
   - navigation
   - clinical

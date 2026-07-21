@@ -3,9 +3,9 @@ layout: page
 title: "Updated Printout Needed"
 slug: "updated_printout_needed"
 created_at: "2023-07-14 17:16:33"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "c7542853-82b3-496a-b587-13263c5fd7a4"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Updated Printout Needed

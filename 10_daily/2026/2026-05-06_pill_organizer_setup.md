@@ -3,9 +3,9 @@ layout: page
 title: "Pill Organizer Setup"
 slug: "pill_organizer_setup"
 created_at: "2026-05-06 15:40:44"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fba72d-870c-83ea-9b33-2b4ff73fcd43"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Pill Organizer Setup

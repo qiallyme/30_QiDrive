@@ -4,6 +4,25 @@ type: index
 status: active
 generated_by: qilabs-housekeeping
 generated_at: "20260716-071124"
+layout: page
+slug: 2020
+summary: ""
+created_at: "2026-07-16T07:30:57-04:00"
+updated_at: "2026-07-16T07:30:57-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 92fe10721c484fe2b4ffbef91a575c18
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+index_scope: ""
 ---
 
 # 2020
@@ -18,3 +37,4 @@ generated_at: "20260716-071124"
 - [[2020-06-01_zaitullah_combat_exposure|2020 06 01 zaitullah combat exposure]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

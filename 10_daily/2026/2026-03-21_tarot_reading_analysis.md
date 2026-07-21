@@ -3,9 +3,9 @@ layout: page
 title: "Tarot Reading Analysis"
 slug: "tarot_reading_analysis"
 created_at: "2026-03-21 14:21:22"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69beef93-3d88-8332-8c84-6c763491a329"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tarot Reading Analysis

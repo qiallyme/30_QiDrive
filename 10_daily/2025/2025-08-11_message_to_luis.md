@@ -3,9 +3,9 @@ layout: page
 title: "Message to Luis"
 slug: "message_to_luis"
 created_at: "2025-08-11 10:13:20"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "689a088f-9ae4-832c-9142-c69a67e93f38"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Message to Luis

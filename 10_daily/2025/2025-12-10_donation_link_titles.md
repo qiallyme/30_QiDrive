@@ -3,9 +3,9 @@ layout: page
 title: "Donation link titles"
 slug: "donation_link_titles"
 created_at: "2025-12-10 00:17:25"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6939105c-c1ec-832e-94d6-9addfd9c18bb"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Donation link titles

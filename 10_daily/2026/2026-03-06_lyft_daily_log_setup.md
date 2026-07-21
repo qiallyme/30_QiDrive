@@ -3,9 +3,9 @@ layout: page
 title: "Lyft Daily Log Setup"
 slug: "lyft_daily_log_setup"
 created_at: "2026-03-06 22:56:47"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69abaff5-041c-8325-bc6d-161dde7615eb"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Lyft Daily Log Setup

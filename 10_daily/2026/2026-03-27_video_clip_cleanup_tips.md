@@ -3,9 +3,9 @@ layout: page
 title: "Video Clip Cleanup Tips"
 slug: "video_clip_cleanup_tips"
 created_at: "2026-03-27 22:13:59"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69c74772-c0c4-8329-83ba-3c7e7474f721"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Video Clip Cleanup Tips

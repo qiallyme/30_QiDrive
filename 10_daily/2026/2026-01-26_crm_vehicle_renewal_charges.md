@@ -3,9 +3,9 @@ layout: page
 title: "CRM Vehicle Renewal Charges"
 slug: "crm_vehicle_renewal_charges"
 created_at: "2026-01-26 20:49:48"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "697827a1-bb60-8333-a24d-8152bd5bbebd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # CRM Vehicle Renewal Charges

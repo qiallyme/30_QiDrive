@@ -11,7 +11,7 @@ qi_decimal: 7.00.00-TECH
 qid: q0f85a4722a03
 status: publish
 system: qios
-keywords: []
+keywords:
 - tech
 layout: page
 summary: ""

@@ -3,9 +3,9 @@ layout: page
 title: "Symbolic Pattern Recognition"
 slug: "symbolic_pattern_recognition"
 created_at: "2025-12-26 02:48:29"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "694e4bcd-4d6c-8333-b0b7-a929e006d7f9"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Symbolic Pattern Recognition

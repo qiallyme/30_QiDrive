@@ -3,9 +3,9 @@ layout: page
 title: "Receipt scanning apps"
 slug: "receipt_scanning_apps"
 created_at: "2026-05-13 09:39:08"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a048d0b-b65c-83ea-aa00-2d7ee4b4cc98"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Receipt scanning apps

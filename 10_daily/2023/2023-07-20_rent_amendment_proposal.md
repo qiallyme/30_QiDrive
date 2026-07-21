@@ -3,9 +3,9 @@ layout: page
 title: "Rent Amendment Proposal."
 slug: "rent_amendment_proposal"
 created_at: "2023-07-20 03:41:09"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "083c3619-8282-495b-9665-602b3df0b249"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Rent Amendment Proposal.

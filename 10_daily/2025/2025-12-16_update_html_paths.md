@@ -3,9 +3,9 @@ layout: page
 title: "Update HTML paths"
 slug: "update_html_paths"
 created_at: "2025-12-16 04:48:11"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "694138ba-3560-8333-827b-d53a4f4ac66f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Update HTML paths

@@ -3,9 +3,9 @@ layout: page
 title: "Wheelchair Taxi Options Evansville"
 slug: "wheelchair_taxi_options_evansville"
 created_at: "2026-04-12 17:42:14"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69dc1fae-677c-8325-8417-e7f532684bbd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Wheelchair Taxi Options Evansville

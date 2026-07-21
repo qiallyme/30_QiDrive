@@ -3,9 +3,9 @@ layout: page
 title: "Home care aide tracking"
 slug: "home_care_aide_tracking"
 created_at: "2026-01-02 17:17:14"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "695851f9-aff8-8331-9696-e1800ac5d03e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Home care aide tracking

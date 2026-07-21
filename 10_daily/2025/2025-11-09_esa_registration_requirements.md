@@ -3,9 +3,9 @@ layout: page
 title: "ESA registration requirements"
 slug: "esa_registration_requirements"
 created_at: "2025-11-09 05:29:48"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69107b15-6cc4-832b-a418-aee687e220dd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # ESA registration requirements

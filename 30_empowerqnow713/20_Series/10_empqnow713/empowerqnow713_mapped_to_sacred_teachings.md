@@ -5,7 +5,7 @@ slug: empowerqnow713-mapped-to-sacred-teachings
 summary: ""
 status: active
 created_at: "2026-07-05T20:07:38-04:00"
-updated_at: "2026-07-16T06:49:35-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 07cf24d1fd3b457ba244bbf031e8c606
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 ### **🌀 I. The Illusion – “We suffer because we believe the illusion of our creation.”**

@@ -3,9 +3,9 @@ layout: page
 title: "Efforts and Failures Analysis"
 slug: "efforts_and_failures_analysis"
 created_at: "2026-05-05 08:34:01"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f9f1b1-e5d8-83ea-924c-8a7c3e882506"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Efforts and Failures Analysis

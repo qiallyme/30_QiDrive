@@ -3,8 +3,8 @@ layout: page
 title: Exhibit Index
 slug: exhibit-index
 status: active
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 188d48f7758a4c9ba30ceb0211fc27da
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Exhibit Index

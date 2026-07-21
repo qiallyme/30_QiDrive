@@ -3,9 +3,9 @@ layout: page
 title: "Exhibit Labeling Convention"
 slug: "exhibit_labeling_convention"
 created_at: "2026-04-16 03:38:37"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69e0a00b-4c5c-83ea-82e5-7b2cea1fe14c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Exhibit Labeling Convention

@@ -5,7 +5,7 @@ slug: readme-posting
 summary: ""
 status: publish
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 7d0137c5300f4e79a8a5c945029cbc16
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Posting Instructions — The Burden of the Signal

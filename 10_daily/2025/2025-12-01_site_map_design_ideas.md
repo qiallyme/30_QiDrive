@@ -3,9 +3,9 @@ layout: page
 title: "Site map design ideas"
 slug: "site_map_design_ideas"
 created_at: "2025-12-01 08:17:50"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "692da38b-9b40-8326-b10a-3e40a0c2e757"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Site map design ideas

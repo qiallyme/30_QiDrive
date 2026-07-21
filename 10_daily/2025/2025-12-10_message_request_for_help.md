@@ -3,9 +3,9 @@ layout: page
 title: "Message request for help"
 slug: "message_request_for_help"
 created_at: "2025-12-10 00:44:20"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69391657-0f2c-832c-9bdb-336e09d91679"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Message request for help

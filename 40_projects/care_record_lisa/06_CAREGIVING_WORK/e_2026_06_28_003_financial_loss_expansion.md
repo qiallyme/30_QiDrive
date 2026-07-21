@@ -3,8 +3,8 @@ layout: page
 title: Event: Financial loss / opportunity cost expansion requested
 slug: financial-loss-opportunity-cost-expansion-requested
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - financial-ledger
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 6567b664d3b745088bff18621c4c2d61
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Financial loss / opportunity cost expansion requested

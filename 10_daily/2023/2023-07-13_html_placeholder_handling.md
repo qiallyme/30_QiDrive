@@ -3,9 +3,9 @@ layout: page
 title: "HTML Placeholder Handling"
 slug: "html_placeholder_handling"
 created_at: "2023-07-13 00:05:38"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "2d1314e9-e950-416a-862c-09ae7171d4ef"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # HTML Placeholder Handling

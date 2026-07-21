@@ -3,9 +3,9 @@ layout: page
 title: "Excel sheet and HTML form"
 slug: "excel_sheet_and_html_form"
 created_at: "2025-09-24 03:10:40"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68d3a770-d220-8330-8f2b-92c330552d50"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Excel sheet and HTML form

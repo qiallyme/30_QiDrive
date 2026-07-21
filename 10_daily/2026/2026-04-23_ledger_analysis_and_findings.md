@@ -3,9 +3,9 @@ layout: page
 title: "Ledger Analysis and Findings"
 slug: "ledger_analysis_and_findings"
 created_at: "2026-04-23 03:41:31"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69e9db07-be54-83ea-ac42-0a1f4187005e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Ledger Analysis and Findings

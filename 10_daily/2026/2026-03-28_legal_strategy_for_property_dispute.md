@@ -3,9 +3,9 @@ layout: page
 title: "Legal Strategy for Property Dispute"
 slug: "legal_strategy_for_property_dispute"
 created_at: "2026-03-28 11:50:30"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69c806bf-f754-8333-a248-1b9aea74e601"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Legal Strategy for Property Dispute

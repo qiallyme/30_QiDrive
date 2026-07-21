@@ -12,7 +12,7 @@ layout: page
 summary: ""
 status: active
 created_at: "2026-02-24T10:25:37-05:00"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 keywords: []
 aliases: []
 context: ""
@@ -23,6 +23,7 @@ uid: 0b06882aefaf4a179ca234da0dcfd754
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 ---

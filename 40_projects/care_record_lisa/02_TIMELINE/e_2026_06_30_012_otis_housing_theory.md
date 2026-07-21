@@ -3,8 +3,8 @@ layout: page
 title: Event: Possible timing pattern: Otis housing need and Lisa’s tone shift
 slug: possible-timing-pattern-otis-housing-need-and-lisa-s-tone-shift
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - private-notes
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 8a4af592cbf14d5e8f0b46966840d3a5
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Possible timing pattern: Otis housing need and Lisa’s tone shift

@@ -3,8 +3,8 @@ layout: page
 title: Event: Lisa threatens police/charges over cat answer
 slug: lisa-threatens-police-charges-over-cat-answer
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - communications-threats
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 3213ade5958d42ce8a49aa79fe02973e
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Lisa threatens police/charges over cat answer

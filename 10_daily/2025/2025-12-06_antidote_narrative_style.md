@@ -3,9 +3,9 @@ layout: page
 title: "Antidote narrative style"
 slug: "antidote_narrative_style"
 created_at: "2025-12-06 16:52:44"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6934b366-3f4c-8333-8a73-e9dffe4e51ce"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Antidote narrative style

@@ -3,9 +3,9 @@ layout: page
 title: "QiSpark Navigation with Sheets"
 slug: "qispark_navigation_with_sheets"
 created_at: "2026-06-20 23:48:01"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a376ced-244c-83ea-bf3c-d763bba04514"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # QiSpark Navigation with Sheets

@@ -3,9 +3,9 @@ layout: page
 title: "Headband style advice"
 slug: "headband_style_advice"
 created_at: "2025-08-21 21:31:23"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68a7d64e-f754-8320-bc62-0b6a4a48805b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Headband style advice

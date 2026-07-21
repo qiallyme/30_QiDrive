@@ -3,9 +3,9 @@ layout: page
 title: "Branch · Court Strategy and Preparation"
 slug: "branch_court_strategy_and_preparation"
 created_at: "2026-03-13 12:21:17"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69b44783-f57c-8331-ba5d-1a6f37bf3811"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Branch · Court Strategy and Preparation

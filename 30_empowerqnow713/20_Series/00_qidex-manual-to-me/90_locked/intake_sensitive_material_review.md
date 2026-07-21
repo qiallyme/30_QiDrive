@@ -13,7 +13,7 @@ related:
   - 20_personal/30_identity_notes/identity_context.md
   - 30_clinical/00_clinical_summary/clinical_summary_starter.md
   - 99_system/40_exports/intake_migration_report.md
-tags: []
+tags:
   - locked
   - sensitive
   - intake
@@ -34,7 +34,7 @@ layout: page
 slug: intake-sensitive-material-review
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -47,6 +47,7 @@ uid: 4f778f4394864e1c9875a07d7fbc9728
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Intake Sensitive Material Review

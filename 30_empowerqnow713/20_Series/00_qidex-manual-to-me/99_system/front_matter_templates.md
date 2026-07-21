@@ -10,7 +10,7 @@ layout: page
 slug: front-matter-templates
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -24,6 +24,7 @@ uid: 9dca86a6424446fdbbadb93ae97c1c99
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Front Matter Templates
@@ -43,7 +44,7 @@ status: draft
 created: 2026-05-24
 last_updated: 2026-05-24
 related: []
-tags: []
+tags:
 ---
 ```
 
@@ -62,7 +63,7 @@ status: draft
 created: 2026-05-24
 last_updated: 2026-05-24
 related: []
-tags: []
+tags:
 ---
 ```
 
@@ -82,7 +83,7 @@ created: 2026-05-24
 last_updated: 2026-05-24
 warning: my_eyes_only
 related: []
-tags: []
+tags:
 ---
 ```
 
@@ -102,6 +103,6 @@ created: 2026-05-24
 last_updated: 2026-05-24
 rule: no_processing_without_explicit_case_by_case_permission
 related: []
-tags: []
+tags:
 ---
 ```

@@ -3,9 +3,9 @@ layout: page
 title: "Surplus Funds Hearing Issues"
 slug: "surplus_funds_hearing_issues"
 created_at: "2026-05-07 16:27:06"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fd03a9-14ec-83ea-a7c7-c94d64546c77"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Surplus Funds Hearing Issues

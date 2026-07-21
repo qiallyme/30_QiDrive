@@ -3,8 +3,8 @@ layout: page
 title: D03 missed punches and corrections
 slug: d03-missed-punches-and-corrections
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: e9220e2ac4344cb2a160f6a597ed16c6
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # D03 missed punches and corrections

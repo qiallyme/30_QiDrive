@@ -3,9 +3,9 @@ layout: page
 title: "Branch · Pill Organizer Setup"
 slug: "branch_pill_organizer_setup"
 created_at: "2026-05-08 09:35:38"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fdf493-b9f4-83ea-bd4d-518ff1d0960b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Branch · Pill Organizer Setup

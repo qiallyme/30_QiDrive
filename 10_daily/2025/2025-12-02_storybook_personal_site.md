@@ -3,9 +3,9 @@ layout: page
 title: "Storybook personal site"
 slug: "storybook_personal_site"
 created_at: "2025-12-02 00:42:20"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "692e8a4a-eba4-832b-9c85-294af3b3cd71"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Storybook personal site

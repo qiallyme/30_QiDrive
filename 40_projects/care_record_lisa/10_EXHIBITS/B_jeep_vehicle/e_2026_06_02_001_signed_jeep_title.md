@@ -3,8 +3,8 @@ layout: page
 title: Event: Signed Jeep title obtained from Lisa
 slug: signed-jeep-title-obtained-from-lisa
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - property-jeep
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 2d1b44362d3840c988981eb7341ee021
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Signed Jeep title obtained from Lisa

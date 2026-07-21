@@ -3,7 +3,7 @@ layout: page
 title: "Luis - Harassment During Client Visit"
 slug: "luis_harassment_during_client_visit"
 created_at: "2025-09-23"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 0b6bcc7f1d2944c6a3c3c87b381d4807
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Luis - Harassment During Client Visit

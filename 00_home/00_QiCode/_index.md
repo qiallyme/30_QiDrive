@@ -35,12 +35,26 @@ QiCode is the citeable personal life doctrine for truth, identity, inner work, o
 
 - [Title 9. QiSpark Technical Doctrine Bridge](title_09_qispark_bridge/title_09_qispark_bridge.md)
 
+## Developer / System Doctrine
+
+- [Title 10. QiLabs — Root Operating Environment](title_10_qilabs/title_10_qilabs.md)
+- [Title 11. QiLabs Workspace — Tools, Templates, and Housekeeping](title_11_qilabs_workspace/title_11_qilabs_workspace.md)
+- [Title 12. QiSpark — Docs, Landing, and Doctrine Layer](title_12_qispark/title_12_qispark.md)
+- [Title 13. QiServer — Runtime and Infrastructure](title_13_qiserver/title_13_qiserver.md)
+- [Title 14. QiWorkers — API Workers, Sync, and Automation](title_14_qiworkers/title_14_qiworkers.md)
+- [Title 15. QiDrive — File and Markdown Source of Truth](title_15_qidrive/title_15_qidrive.md)
+- [Title 16. QiVault — Markdown Vault and Knowledge Workspace](title_16_qivault/title_16_qivault.md)
+- [Title 17. QiApps — Apps, Projects, and UI Layers](title_17_qiapps/title_17_qiapps.md)
+- [Title 18. QiSites — Public and Static Site Output](title_18_qisites/title_18_qisites.md)
+
 ## Reference
 
 - [Core Overview](reference/core_overview.md)
 - [Citation Guide](reference/citation_guide.md)
 - [Personal Source: QiCode Life Protocol](sources/qicode_life_protocol.md)
 - [QiSpark Legacy Doctrine Sources](../10_QiSpark/90_legacy_doctrine/_index.md)
+- [Migration Map: QiLabs Titles 10–18](reference/qilabs_title_migration_map.md)
+- [Legacy Source: 50_QiLabs](sources/qilabs_legacy_50_qilabs.md)
 
 ## QiSpark Technical Doctrine
 

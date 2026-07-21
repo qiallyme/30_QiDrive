@@ -3,9 +3,9 @@ layout: page
 title: "Self-hosted AI Setup"
 slug: "self_hosted_ai_setup"
 created_at: "2026-05-26 19:42:47"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a163ddc-da00-83ea-a5e3-954ebcf9d233"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Self-hosted AI Setup

@@ -3,8 +3,8 @@ layout: page
 title: Event: Prior Jeep title context: vehicle titled to Lisa as gift/exempt transfer
 slug: prior-jeep-title-context-vehicle-titled-to-lisa-as-gift-exempt-transfer
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - property-jeep
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 0fe5a377ea4c4d4da02cb54538a72e43
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Prior Jeep title context: vehicle titled to Lisa as gift/exempt transfer

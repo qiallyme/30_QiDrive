@@ -3,8 +3,8 @@ layout: page
 title: Medical Context Summary
 slug: medical-context-summary
 status: active
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 665c0dd8303147a9989f597053b08958
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Medical Context Summary

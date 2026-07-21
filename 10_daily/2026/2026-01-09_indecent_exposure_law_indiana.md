@@ -3,9 +3,9 @@ layout: page
 title: "Indecent exposure law Indiana"
 slug: "indecent_exposure_law_indiana"
 created_at: "2026-01-09 01:24:33"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6960ad31-725c-832c-8bf5-10d9b0d41f94"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Indecent exposure law Indiana

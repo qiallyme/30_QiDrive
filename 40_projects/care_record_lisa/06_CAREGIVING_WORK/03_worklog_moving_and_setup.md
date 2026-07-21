@@ -3,8 +3,8 @@ layout: page
 title: Worklog - Moving and Setup
 slug: worklog-moving-and-setup
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 5f18528d4ab44434a052c9fed68694c9
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Worklog - Moving and Setup

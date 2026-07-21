@@ -3,9 +3,9 @@ layout: page
 title: "Video to Speech Pipeline"
 slug: "video_to_speech_pipeline"
 created_at: "2026-03-30 08:35:44"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69ca7bc9-2d90-8325-a749-897e38fb58bd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Video to Speech Pipeline

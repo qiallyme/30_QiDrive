@@ -13,7 +13,7 @@ related:
   - 10_functional/20_working_style/working_style.md
   - 30_clinical/00_clinical_summary/clinical_summary_starter.md
   - 30_clinical/20_anxiety_panic/anxiety_panic_context.md
-tags: []
+tags:
   - adhd
   - executive-function
   - time-blindness
@@ -28,7 +28,7 @@ layout: page
 slug: adhd-operating-notes
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -41,6 +41,7 @@ uid: 33743496b47a46f386cba7c599f961a7
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # ADHD Operating Notes

@@ -3,9 +3,9 @@ layout: page
 title: "Coin value perceptions"
 slug: "coin_value_perceptions"
 created_at: "2025-12-07 08:58:21"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6935957e-2ab0-832a-aac5-40f74397bfb4"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Coin value perceptions

@@ -5,7 +5,7 @@ slug: manifesto
 summary: ""
 status: publish
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: b5563117880d43598db3f291996d4f96
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 Got you. Here’s the full suite — clean, sharp, aligned with your mythos, and ready to deploy anywhere.

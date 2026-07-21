@@ -3,9 +3,9 @@ layout: page
 title: "Communicating Painful Truths"
 slug: "communicating_painful_truths"
 created_at: "2026-05-15 02:04:34"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a06c501-1f80-83ea-88be-b10b692ee85b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Communicating Painful Truths

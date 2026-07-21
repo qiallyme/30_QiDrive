@@ -9,7 +9,7 @@ visibility: internal
 publish_target: none
 publish_url: ""
 created_at: "2026-07-16"
-updated_at: "2026-07-16"
+updated_at: "2026-07-18T11:03:10-04:00"
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: Projects
@@ -25,10 +25,13 @@ tags: [dashboard, projects]
 keywords: [projects, priorities, next actions]
 aliases: []
 context: ""
-uid: ""
+uid: ee4504c142224062ba046ff89f71a934
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+index_scope: ""
+generated_by: ""
+generated_at: ""
 ---
 
 # Projects Dashboard

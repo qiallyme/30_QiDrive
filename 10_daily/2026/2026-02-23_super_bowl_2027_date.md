@@ -3,9 +3,9 @@ layout: page
 title: "Super Bowl 2027 Date"
 slug: "super_bowl_2027_date"
 created_at: "2026-02-23 01:10:19"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "699bfd5a-8d10-8329-af41-1115e0222c46"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Super Bowl 2027 Date

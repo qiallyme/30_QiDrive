@@ -3,9 +3,9 @@ layout: page
 title: "Chat conversation"
 slug: "chat_conversation"
 created_at: "2026-06-22 00:44:25"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a38cbb8-9ce4-83ea-9a47-51427fae649f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Chat conversation

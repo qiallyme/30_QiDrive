@@ -3,9 +3,9 @@ layout: page
 title: "Harassment and Exhaustion"
 slug: "harassment_and_exhaustion"
 created_at: "2026-01-12 19:42:05"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6965a2e5-3700-8328-915e-972d9f5a6f36"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Harassment and Exhaustion

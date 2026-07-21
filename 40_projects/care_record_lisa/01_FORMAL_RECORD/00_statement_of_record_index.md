@@ -3,8 +3,8 @@ layout: page
 title: Statement Of Record
 slug: statement-of-record
 status: active
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: cad90b4c4c80457198c5a868ba02cc23
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Statement Of Record

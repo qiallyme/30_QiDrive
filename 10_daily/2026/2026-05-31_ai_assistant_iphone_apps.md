@@ -3,9 +3,9 @@ layout: page
 title: "AI Assistant iPhone Apps"
 slug: "ai_assistant_iphone_apps"
 created_at: "2026-05-31 08:40:08"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a1c3a36-c790-83ea-923a-156e55b81b0f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # AI Assistant iPhone Apps

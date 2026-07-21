@@ -3,8 +3,8 @@ layout: page
 title: QiOne — Supabase-Only (No Docker) Setup
 slug: qione-supabase-only-no-docker-setup
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:20-04:00"
+tags:
   - projects
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: 85a0542cab9d437aa75a1147cea99a20
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # QiOne — Supabase-Only (No Docker) Setup

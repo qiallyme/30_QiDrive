@@ -3,9 +3,9 @@ layout: page
 title: "Translate & Extract Spanish Text"
 slug: "translate_extract_spanish_text"
 created_at: "2023-07-14 14:48:21"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "f3f615cd-baab-4f3a-aba5-d01084f9d35e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Translate & Extract Spanish Text

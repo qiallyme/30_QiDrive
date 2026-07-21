@@ -3,9 +3,9 @@ layout: page
 title: "Prepare next filings"
 slug: "prepare_next_filings"
 created_at: "2025-12-11 01:25:04"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "693a71ce-dff4-8333-a37e-39ac09ef3fd2"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Prepare next filings

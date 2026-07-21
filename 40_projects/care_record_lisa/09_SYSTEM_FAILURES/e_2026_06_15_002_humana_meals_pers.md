@@ -3,8 +3,8 @@ layout: page
 title: Event: Humana/PathWays letter: meals/PERS suspended due to hospitalization
 slug: humana-pathways-letter-meals-pers-suspended-due-to-hospitalization
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - system-failure-care-coordination
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 2749266f10a14149947438a4b5bb403f
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Humana/PathWays letter: meals/PERS suspended due to hospitalization

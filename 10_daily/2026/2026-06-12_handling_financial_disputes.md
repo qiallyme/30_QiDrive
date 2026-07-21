@@ -3,9 +3,9 @@ layout: page
 title: "Handling Financial Disputes"
 slug: "handling_financial_disputes"
 created_at: "2026-06-12 18:53:14"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2c9be9-cff8-83ea-bbd0-828dfc5a4dfd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Handling Financial Disputes

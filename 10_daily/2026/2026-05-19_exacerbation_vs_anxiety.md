@@ -3,9 +3,9 @@ layout: page
 title: "Exacerbation vs Anxiety"
 slug: "exacerbation_vs_anxiety"
 created_at: "2026-05-19 07:30:37"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a0c57eb-b158-83ea-9de1-83107cf12217"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Exacerbation vs Anxiety

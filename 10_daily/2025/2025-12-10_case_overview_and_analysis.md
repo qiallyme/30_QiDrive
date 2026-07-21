@@ -3,9 +3,9 @@ layout: page
 title: "Case overview and analysis"
 slug: "case_overview_and_analysis"
 created_at: "2025-12-10 12:16:13"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6939b8eb-eb78-8331-b2e3-185e32f4cc10"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Case overview and analysis

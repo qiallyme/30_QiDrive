@@ -6,12 +6,12 @@ summary: Template for describing how conditions manifest in behavior and experie
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting clinical manifestations in clinical track
-tags: []
+tags:
   - template
   - manifestation
   - clinical
   - empowerqnow713
-keywords: []
+keywords:
   - manifestation
   - clinical
   - behavior

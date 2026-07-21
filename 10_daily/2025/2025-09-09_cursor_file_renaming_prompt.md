@@ -3,9 +3,9 @@ layout: page
 title: "Cursor file renaming prompt"
 slug: "cursor_file_renaming_prompt"
 created_at: "2025-09-09 17:06:55"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c0a4de-df38-8332-bd67-0a91f83a7c43"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Cursor file renaming prompt

@@ -3,8 +3,8 @@ layout: page
 title: D02 hours worked vs paid
 slug: d02-hours-worked-vs-paid
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: bf966408b26945c891b479f14b5de09b
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # D02 hours worked vs paid

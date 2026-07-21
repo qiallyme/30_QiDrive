@@ -3,9 +3,9 @@ layout: page
 title: "User calling for attention"
 slug: "user_calling_for_attention"
 created_at: "2026-06-20 13:44:46"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a36df9d-be28-83ea-a239-76742543bc55"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # User calling for attention

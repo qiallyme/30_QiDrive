@@ -1,0 +1,768 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Cody Rice-Velasquez | Portfolio</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* For default-background callouts, render the border outline. */
+.callout.block-color-default_background {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+figure,
+aside,
+details {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding-inline: 0.125rem;
+	padding-block: 0.375rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+/*
+ * Render emoji icons using a ::before pseudo-element to keep the glyph
+ * out of the DOM textContent traversal. This avoids double-rendering icons
+ * in callouts and page titles.
+ * NOTE(slim/html-export-pseudo-icons): I can't tagref this because it will
+ * flag as a duplicate tag after codegen.
+ */
+.icon[data-emoji]::before {
+	content: attr(data-emoji);
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	margin-right: 0.4em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.tab {
+	margin: 1.25em 0;
+	padding-inline: 1rem;
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style></head><body><article id="1d9f84a0-4402-807a-84b2-d085f9678818" class="page sans" data-notion-page-icon="https://s3-us-west-2.amazonaws.com/public.notion-static.com/67c71735-24d6-4dcb-bbc0-f5cc48593ab3/94d60b86-a732-4d2c-b2dc-1ddd74c96dce.jfif"><header><img class="page-cover-image" src="Cody%20Rice-Velasquez%20Portfolio/resumelogo.png" style="object-position:center 26.8%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Cody%20Rice-Velasquez%20Portfolio/94d60b86-a732-4d2c-b2dc-1ddd74c96dce.jfif"/></div><h1 class="page-title" dir="auto">Cody Rice-Velasquez | Portfolio</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div id="22bf84a0-4402-80b2-94f0-cf50d9d2beca" class="column-list" data-notion-column-list="" dir="auto"><div id="22bf84a0-4402-80d9-b43e-ded03cbdf095" style="width:18.75%" class="column" data-notion-column-ratio="0.1875" dir="auto"><figure id="1bef84a0-4402-81be-bf74-d3770250e00e" class="image" style="text-align:left" data-notion-image="Cody%20Rice-Velasquez%20Portfolio/Cody_Cody_Rice-Velasquez.png" dir="ltr"><a href="Cody%20Rice-Velasquez%20Portfolio/Cody_Cody_Rice-Velasquez.png"><img style="width:344.296875px" src="Cody%20Rice-Velasquez%20Portfolio/Cody_Cody_Rice-Velasquez.png"/></a><figcaption><strong>              Status: </strong><mark class="highlight-teal" data-notion-highlight="teal"><strong>Open for work</strong></mark><strong> 🟢</strong></figcaption></figure><h3 id="1bef84a0-4402-8190-8c5d-f258d9e81e75" class="" dir="auto"><mark class="highlight-blue" data-notion-highlight="blue"><strong>+20 years of experience</strong></mark></h3><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-icon="📮" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="1bef84a0-4402-81fe-9d87-c1377b949410" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="📮"></span></div><div style="width:100%"><a href="mailto:rimuhrimu@protonmail.com">Contact me!</a> </div></aside><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="22bf84a0-4402-8093-9640-f433db6abc33" dir="ltr"><div style="width:100%"><h2 id="1bef84a0-4402-81f3-85ee-f0d70cdb0bfa" class="" dir="auto"><strong>Want to Hire me? </strong></h2><p id="22bf84a0-4402-8044-90c8-e44be0a8db43" class="" dir="auto"><strong>Contact me! </strong>💼</p><p id="1bef84a0-4402-81cc-8c8f-f2c14a947edc" class="" dir="auto">info@qially.me</p></div></aside><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="22bf84a0-4402-8016-9c07-ce5afee749ea" dir="ltr"><div style="width:100%"><h2 id="1bef84a0-4402-8198-8a02-d4c5a75568fb" class="" dir="auto">Social Media 💻</h2><p id="1bef84a0-4402-8192-8859-c05c59869e2f" class="" dir="auto"><a href="http://facebook.com/myname">Facebook</a></p><p id="1bef84a0-4402-81d3-a436-c7a6d3b2ec8a" class="" dir="auto"><a href="https://app.notion.com/p/054051339e0f45699113df9291498e89?pvs=21">Linkedin</a></p></div></aside><nav id="22bf84a0-4402-8076-89ff-c5d48db694e9" class="block-color-gray table_of_contents" data-notion-highlight="gray" data-notion-toc="" dir="ltr"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1bef84a0-4402-8190-8c5d-f258d9e81e75"><mark class="highlight-blue" data-notion-highlight="blue"><strong>+20 years of experience</strong></mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1bef84a0-4402-81f3-85ee-f0d70cdb0bfa"><strong>Want to Hire me? </strong></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1bef84a0-4402-8198-8a02-d4c5a75568fb">Social Media 💻</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1bef84a0-4402-8175-82da-c94ff5f233f8">Skills sets</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#fa1e47ae-e52f-47b2-842e-6a78a78a59c7">Top Skills</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#be62f943-da0b-4377-8c67-f6e6cc4a3a21">Systems &amp; Operations</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#9fac4c2f-e7e1-4058-a2d2-3fdad0d18a23">HR / Staffing / Compliance</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#39939179-f858-4eab-b0b2-1df30d6caf7f">Technical Tools</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1bef84a0-4402-814b-9680-e061dab8e980">Education</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#22bf84a0-4402-80c4-a25a-c34ea30a0569"><strong>Cody Rice-Velasquez</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#22bf84a0-4402-8047-a99c-c6e0a4c2d7d7">Systems Architect &amp; Operational Strategist | Founder of:</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#22bf84a0-4402-8094-bdae-c3b87a4a618a">QiAlly | Empower. Innovate. Grow.</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#22bf84a0-4402-8094-a367-d2693e213823">SOLE PROP. (9)</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#22bf84a0-4402-8029-9bd1-e262b279f716">Company</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#22bf84a0-4402-804c-a6be-eb1600ec022e">VENTURES &amp; PARTNERSHIPS (8)</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#22bf84a0-4402-808b-a8d0-f15f86a9b2cf">Terms</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1003e7ad-9b22-4cd8-a92c-0be1362ecfb3">Professional Profile</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#be9a06f7-537c-4630-bd81-b928d7b55f0f">Contact</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#c6e86e3b-c120-4a6f-bf7d-e22e1245cf0b">Summary</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#dcab5e90-aed7-404c-872b-b5f059811acd">Top Skills</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#4b009dff-98b1-43d4-9ed4-fa61e5a9fc18">Languages</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#7c309641-1268-48ef-a06a-73e0d46612e0">Certifications</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#695e2067-25e6-41bd-ac0c-b551254761b4">Experience</a></div><div class="table_of_contents-item table_of_contents-indent-3"><a class="table_of_contents-link" href="#87f1ff56-277e-438d-9eac-23362c438b3d">QiAlly — Founder</a></div><div class="table_of_contents-item table_of_contents-indent-3"><a class="table_of_contents-link" href="#a371d33b-4d34-411a-b325-333795871037">Quantum Innova Partners Inc — Co-Owner</a></div><div class="table_of_contents-item table_of_contents-indent-3"><a class="table_of_contents-link" href="#f6e7a520-18e6-47f0-8d74-5de0969599ef">QuantumHR — Partner</a></div><div class="table_of_contents-item table_of_contents-indent-3"><a class="table_of_contents-link" href="#e56672e5-44e4-46c4-afaa-02b33263a610">SRV1ne LLC — Virtual Business Consultant</a></div><div class="table_of_contents-item table_of_contents-indent-3"><a class="table_of_contents-link" href="#46571e7e-1f89-404e-af5a-c7600cdfa751">SRV Capital Holdings Inc — Founder</a></div><div class="table_of_contents-item table_of_contents-indent-3"><a class="table_of_contents-link" href="#f1eda0eb-d502-410f-8d9f-3ec7f694e1ab">CJ Rice &amp; Companies, LLC — Business Owner</a></div><div class="table_of_contents-item table_of_contents-indent-3"><a class="table_of_contents-link" href="#c8ac37b2-bb05-48a1-883a-7ead44167151">MS-IL Staffing &amp; Packaging — Operations Human Resources Manager / Senior Account Manager / HRIS / Trainer</a></div><div class="table_of_contents-item table_of_contents-indent-3"><a class="table_of_contents-link" href="#3d309444-8bb8-45ab-8a81-4eda01f70ec1">Waffle House — Unit Manager</a></div><div class="table_of_contents-item table_of_contents-indent-3"><a class="table_of_contents-link" href="#130b8962-892e-4f03-9cd4-0a7bca336493">IHOP — Acting General Manager / Assistant General Manager</a></div><div class="table_of_contents-item table_of_contents-indent-3"><a class="table_of_contents-link" href="#3440052a-4f50-4ae6-8454-67eb5e707197">Enkei America, Inc. — VDH Operator</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#15d1b3b4-b6ba-42a7-bf38-e01ea6420a13">Education</a></div></nav></div><div id="22bf84a0-4402-8087-9fb4-c42d9dafd516" style="width:81.25%" class="column" data-notion-column-ratio="0.8125" dir="auto"><blockquote id="22bf84a0-4402-8068-b7d8-fdd925ddc033" class="quote-large" dir="auto">“I’m Cody Rice-Velasquez—systems architect and operational strategist. I orchestrate chaos into clarity across HR infrastructure, digital strategy, immigration support, and business operations.”</blockquote><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🛠" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="22bf84a0-4402-80b7-969a-f778b3b8aa51" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🛠"></span></div><div style="width:100%"><h2 id="1bef84a0-4402-8175-82da-c94ff5f233f8" class="" dir="auto">Skills sets</h2><h3 id="fa1e47ae-e52f-47b2-842e-6a78a78a59c7" class="" dir="auto">Top Skills</h3><ul id="fbfd76e0-ad18-4773-bb5c-05fc7d8f124b" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Optimization</li></ul><ul id="72e31ec6-ffa5-4cf4-830c-7cc8d8802e35" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Digital Strategy</li></ul><ul id="9729663b-7da0-4f5c-bbf8-ce76a6df0ad1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Human Resources Information Technology (HRIT)</li></ul><h3 id="be62f943-da0b-4377-8c67-f6e6cc4a3a21" class="" dir="auto">Systems &amp; Operations</h3><ul id="79833663-650c-45ab-a0dd-b31e20833165" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Process optimization</li></ul><ul id="f6344744-f88d-48d5-954b-c41dc818a4e6" class="bulleted-list" dir="auto"><li style="list-style-type:disc">SOP design</li></ul><ul id="17ef0f2a-b1db-4920-b440-c444860cf1df" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Workflow automation</li></ul><ul id="f8b9cef9-42fc-4292-b918-21fc897a996d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Business operations</li></ul><ul id="00880a2a-3aab-47be-9fd6-2547eee766b1" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Client pipeline design</li></ul><ul id="ade24cf8-ee61-47a1-b2cf-9ff0817adf07" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Asynchronous service delivery</li></ul><h3 id="9fac4c2f-e7e1-4058-a2d2-3fdad0d18a23" class="" dir="auto">HR / Staffing / Compliance</h3><ul id="81e399ee-06f4-4c28-aa87-7cb38a8c72da" class="bulleted-list" dir="auto"><li style="list-style-type:disc">HRIS administration</li></ul><ul id="720d4992-0d76-4bc7-b48d-82985e41a9cb" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Recruiting and interviewing</li></ul><ul id="46bb54e8-7c64-44cd-8f61-1fb5bb0e08a5" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Employee relations</li></ul><ul id="ed191940-6cf3-4055-93ff-b64df1b81486" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Workers compensation support</li></ul><ul id="a12cec4d-53a3-40e7-a611-b47d6ae92e0d" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Training and development</li></ul><ul id="8e26accc-2591-4e25-aa57-4cc797099127" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Operational audits</li></ul><h3 id="39939179-f858-4eab-b0b2-1df30d6caf7f" class="" dir="auto">Technical Tools</h3><ul id="d409388e-0516-4247-a12a-60eb5b321e11" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Notion</li></ul><ul id="88253424-69c7-48cf-ba7f-fc16a5c829ee" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Zoho</li></ul><ul id="b19291b1-573c-4583-91d3-38e40b844bd5" class="bulleted-list" dir="auto"><li style="list-style-type:disc">GPT agents</li></ul><ul id="727c32d1-44fd-4651-8556-73504e2591a0" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Custom knowledge bases</li></ul><ul id="c7bfda7b-f1e6-4dc1-9e5a-3d10a79cf702" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Workflow software</li></ul><ul id="b7cafaa2-3eb1-4302-850d-c0176855d186" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Workforce / labor management systems</li></ul></div></aside><aside class="block-color-gray_background callout" data-notion-callout="" data-notion-callout-icon="🎓" data-notion-callout-background="gray_background" style="white-space:pre-wrap;display:flex" id="22bf84a0-4402-8073-ae9a-e2fbe2dde09c" dir="ltr"><div style="font-size:1.5em"><span class="icon" data-emoji="🎓"></span></div><div style="width:100%"><h2 id="1bef84a0-4402-814b-9680-e061dab8e980" class="" dir="auto">Education</h2><div id="22bf84a0-4402-8076-9a3c-e63cf76878a6" class="collection-content" dir="ltr"><h4 class="collection-title">Resume Education</h4><div class="collection-content-wrapper"><table class="collection-content"><colgroup><col style="width:58.333333333333336%"/><col style="width:41.666666666666664%"/></colgroup><thead><tr><th><span class="icon property-icon"><img src="https://app.notion.com/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://app.notion.com/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>Tags</th></tr></thead><tbody><tr id="3da8dff6-a4a9-41bc-91bf-a4421eb96356"><td class="cell-title"><a href="Cody%20Rice-Velasquez%20Portfolio/Resume%20Education/Western%20Governors%20University%20%E2%80%94%20BBA,%20Human%20Resource%203da8dff6a4a941bc91bfa4421eb96356.html" data-notion-page-id="3da8dff6-a4a9-41bc-91bf-a4421eb96356" data-notion-space-id="5553f92f-3770-4b48-ae2f-29b6ed4eaa3c">Western Governors University — BBA, Human Resources Management and Services</a></td><td class="cell-AyRn"></td></tr><tr id="da78955c-fcf4-471b-916c-79bda3bd5553"><td class="cell-title"><a href="Cody%20Rice-Velasquez%20Portfolio/Resume%20Education/Indiana%20University%E2%80%93Purdue%20University%20Indianapolis%20%20da78955cfcf4471b916c79bda3bd5553.html" data-notion-page-id="da78955c-fcf4-471b-916c-79bda3bd5553" data-notion-space-id="5553f92f-3770-4b48-ae2f-29b6ed4eaa3c">Indiana University–Purdue University Indianapolis — Business Administration and Management</a></td><td class="cell-AyRn"></td></tr><tr id="ea776fcc-d4d7-4700-80f2-a0112e126d8d"><td class="cell-title"><a href="Cody%20Rice-Velasquez%20Portfolio/Resume%20Education/Ivy%20Tech%20Community%20College%20%E2%80%94%20AAS%20Certificate,%20Netw%20ea776fccd4d7470080f2a0112e126d8d.html" data-notion-page-id="ea776fcc-d4d7-4700-80f2-a0112e126d8d" data-notion-space-id="5553f92f-3770-4b48-ae2f-29b6ed4eaa3c">Ivy Tech Community College — AAS / Certificate, Network &amp; Information Security</a></td><td class="cell-AyRn"></td></tr></tbody></table></div><br/><br/></div></div></aside><aside class="block-color-default callout" data-notion-callout="" data-notion-callout-background="default" style="white-space:pre-wrap;display:flex" id="22bf84a0-4402-808f-b9d6-d96d38481e75" dir="ltr"><div style="width:100%"><h1 id="22bf84a0-4402-80c4-a25a-c34ea30a0569" class="" dir="auto"><strong>Cody Rice-Velasquez</strong></h1><h2 id="22bf84a0-4402-8047-a99c-c6e0a4c2d7d7" class="" dir="auto">Systems Architect &amp; Operational Strategist | Founder of:</h2><div id="22bf84a0-4402-804c-ba41-c0c5d6aa8d5b" class="column-list" data-notion-column-list="" dir="auto"><div id="22bf84a0-4402-80ad-8adc-fb705c81173b" style="width:41.666666666666664%" class="column" data-notion-column-ratio="0.41666666666666663" dir="auto"><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="22bf84a0-4402-80c3-bc79-c71559e5a531" dir="ltr"><div style="width:100%"><h1 id="22bf84a0-4402-8094-bdae-c3b87a4a618a" class="" dir="auto">QiAlly | Empower. Innovate. Grow.</h1><p id="22bf84a0-4402-8047-b095-d2d5490a5290" class="" dir="auto"><strong>Location:</strong> Indianapolis, IN United States</p><p id="22bf84a0-4402-80b2-a35e-f01a59548d16" class="" dir="auto"><strong>Email:</strong> info@qially.me</p><p id="22bf84a0-4402-8075-951b-c4f4a7207f28" class="" dir="auto"><strong>Portfolio:</strong> <a href="http://qially.com">qially.</a>me</p><p id="22bf84a0-4402-8011-b6d7-c712ff9266e5" class="" dir="auto"><strong>Last Updated:</strong> <time datetime="2025-07-09">@July 9, 2025</time></p></div></aside><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="22bf84a0-4402-8042-ae00-e26c334d545b" dir="ltr"><div style="width:100%"><h3 id="22bf84a0-4402-8094-a367-d2693e213823" class="" dir="auto">SOLE PROP. (9)</h3><div id="22bf84a0-4402-80a3-be20-dd86018af3bb" class="column-list" data-notion-column-list="" dir="auto"><div id="22bf84a0-4402-809b-a650-d439fedd2e6b" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><p id="22bf84a0-4402-8087-aa3d-f3d58a40e958" class="" dir="auto">Angel Ayuda Sole Prop.</p><p id="22bf84a0-4402-80c9-a5e1-d54ef7628eea" class="" dir="auto">CJ Rice &amp; Companies, LLC </p><p id="22bf84a0-4402-8019-a14a-f199768d49a6" class="" dir="auto">SRVShop LLC</p><p id="22bf84a0-4402-8010-bf21-eef9e2950d34" class="" dir="auto">SRV1ne LLC</p><p id="22bf84a0-4402-8073-a5ab-cfc0e0b75e23" class="" dir="auto">QiAlly LLC</p></div><div id="22bf84a0-4402-8079-a989-dcfb7bbcf2cb" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><p id="22bf84a0-4402-8019-afa6-ec681443e86e" class="" dir="auto">Servicios Rice-Velasquez Tax &amp; Multiservice LLC </p><p id="22bf84a0-4402-8050-912e-eb7f64812873" class="" dir="auto">InnovaFlow Solutions LLC</p><p id="22bf84a0-4402-8062-b82b-cdf2fac276cd" class="" dir="auto">IIS Innova Tax Solutions LLC </p><p id="22bf84a0-4402-8039-a906-f6ae03b3c264" class="" dir="auto">EmpowerQNow</p></div></div></div></aside></div><div id="22bf84a0-4402-8089-9157-efe42c38d633" style="width:41.66666666666667%" class="column" data-notion-column-ratio="0.4166666666666667" dir="auto"><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="22bf84a0-4402-8083-85b4-f167de4d7aa5" dir="ltr"><div style="width:100%"><h1 id="22bf84a0-4402-8029-9bd1-e262b279f716" class="" dir="auto">Company</h1><ul id="22bf84a0-4402-801d-8517-e2981f701f05" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><a href="https://www.qially.me/">Home</a><ul id="22bf84a0-4402-80f3-b4a0-e28a06974433" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><a href="https://www.qially.me/contact">Contact Me</a></li></ul><ul id="22bf84a0-4402-80e9-ad5e-fff72de423bb" class="bulleted-list" dir="auto"><li style="list-style-type:circle"><a href="https://www.qially.me/about-me">About Me</a></li></ul></li></ul></div></aside><aside class="block-color-purple_background callout" data-notion-callout="" data-notion-callout-background="purple_background" style="white-space:pre-wrap;display:flex" id="22bf84a0-4402-80fc-870b-f1ea0f31d036" dir="ltr"><div style="width:100%"><h3 id="22bf84a0-4402-804c-a6be-eb1600ec022e" class="" dir="auto">VENTURES &amp; PARTNERSHIPS (8)</h3><div id="22bf84a0-4402-80a6-a877-c63537335a92" class="column-list" data-notion-column-list="" dir="auto"><div id="22bf84a0-4402-8036-b723-e0a13317990e" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><p id="22bf84a0-4402-80a9-a6a4-f3f39d853050" class="" dir="auto"><a href="http://SRVGroup.co">SRVGroup.co</a> </p><p id="22bf84a0-4402-8034-b5cc-f6b47eddbc91" class="" dir="auto">SRV Capital Holdings INC</p><p id="22bf84a0-4402-806e-8ec1-d8b15fbd1294" class="" dir="auto">SRV Tax &amp; Multiservice LLC</p><p id="22bf84a0-4402-80f8-87b8-f0ba2b67116e" class="" dir="auto">SRV Property Management LLC</p><p id="22bf84a0-4402-8067-a04c-de31b39f3655" class="" dir="auto">ArTreve LLC</p></div><div id="22bf84a0-4402-8006-84b5-fd7a2031e1cf" style="width:100%" class="column" data-notion-column-ratio="1" dir="auto"><p id="22bf84a0-4402-8065-8d87-f2b245a50456" class="" dir="auto">IISITax</p><p id="22bf84a0-4402-803f-b813-c6e3345b6545" class="" dir="auto">Quantum Innova People INC</p><p id="22bf84a0-4402-806b-81da-f466faf211fb" class="" dir="auto">QuantumHR LLP</p></div></div></div></aside></div><div id="22bf84a0-4402-803e-8a97-d6ff71c148c5" style="width:16.666666666666675%" class="column" data-notion-column-ratio="0.16666666666666674" dir="auto"><aside class="block-color-blue_background callout" data-notion-callout="" data-notion-callout-background="blue_background" style="white-space:pre-wrap;display:flex" id="22bf84a0-4402-8058-be97-cf09cc639ef3" dir="ltr"><div style="width:100%"><h1 id="22bf84a0-4402-808b-a8d0-f15f86a9b2cf" class="" dir="auto">Terms</h1><p id="22bf84a0-4402-8060-8add-d771e9847525" class="" dir="auto"><a href="https://www.qially.me/privacy-policy">Security &amp; Privacy</a></p><p id="22bf84a0-4402-80d5-8163-e44552818298" class="" dir="auto"><a href="https://www.qially.me/terms-of-use">Terms of Use</a></p><p id="22bf84a0-4402-80b6-8498-c16dc1e8bba7" class="" dir="auto"><a href="https://www.qially.me/services">Terms of Services</a></p></div></aside></div></div><p id="22bf84a0-4402-80a5-8cc3-c2a3a07e22ff" class="" dir="auto"><strong>Domains</strong>: <a href="http://EmpowerQNow.com">EmpowerQNow.com</a> | <a href="http://Qially.me">Qially.me</a> | <a href="http://QHRPeople.com">QHRPeople.com</a> | <a href="http://Innovahire.biz">Innovahire.biz</a> | <a href="http://Artreve.xyz">Artreve.xyz</a> | <a href="http://Qipeople.com">Qipeople.com</a> | ….</p><h2 id="1003e7ad-9b22-4cd8-a92c-0be1362ecfb3" class="" dir="auto">Professional Profile</h2><p id="2aff2514-19f9-4b1d-b7d8-c7951584ab27" class="" dir="auto"><strong>Cody Rice-Velasquez</strong></p><p id="23cea11f-7e8d-44f1-b071-f6873ce596bf" class="" dir="auto"><strong>Headline:</strong> Orchestrating chaos into clarity. Multiple disciplines. From complex HR infrastructure to individual immigration forms, I bridge the gap between corporate strategy and personal necessity.</p><p id="8416eec7-944c-4f41-8a53-fb79b3f2be0a" class="" dir="auto"><strong>Location:</strong> Indianapolis, Indiana, United States</p><h3 id="be9a06f7-537c-4630-bd81-b928d7b55f0f" class="" dir="auto">Contact</h3><ul id="db4bd2f7-7fb0-4f7b-bbb4-bf52b8ae869e" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Mobile:</strong> 3172054383</li></ul><ul id="04dd1fce-c089-4ce1-ab32-04e64ce18c1b" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Email:</strong> <a href="mailto:crice4485@gmail.com">crice4485@gmail.com</a></li></ul><ul id="64efc81a-d2f6-4165-a8a9-ccc85ace7d96" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/cody-ricevelasquez-qially">www.linkedin.com/in/cody-ricevelasquez-qially</a></li></ul><ul id="957bb5c2-d29a-416c-bbd1-10e9c5648f53" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Portfolio:</strong> <a href="http://portfolio.qially.com">portfolio.qially.com</a></li></ul><h3 id="c6e86e3b-c120-4a6f-bf7d-e22e1245cf0b" class="" dir="auto">Summary</h3><p id="e1fd99fe-b922-4345-8630-093e263d4d7d" class="" dir="auto">I rebuild what’s broken: systems, processes, and people who got knocked sideways by life. I specialize in taking chaos and turning it into something that actually works—whether that’s a business workflow, a client pipeline, or somebody’s entire operating rhythm.</p><p id="dc2e958b-4474-4a5a-8f14-2a556293c368" class="" dir="auto">I’m not here to impress anyone. I’m here to deliver clarity, structure, and results. I think in systems, move fast, and care deeply. That edge makes my work cut through.</p><p id="d09bb123-cd80-4aee-931f-e005f298c942" class="" dir="auto">If you need order, direction, and a partner who won’t crumble when things get messy… hi.</p><h3 id="dcab5e90-aed7-404c-872b-b5f059811acd" class="" dir="auto">Top Skills</h3><ul id="e108fa99-56b6-415a-9020-17091adc50e3" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Optimization</li></ul><ul id="91b621fd-60a8-4b76-aea2-84d475b9eb53" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Digital Strategy</li></ul><ul id="a686be6c-f1e3-4631-a1d6-518cc18feef9" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Human Resources Information Technology (HRIT)</li></ul><h3 id="4b009dff-98b1-43d4-9ed4-fa61e5a9fc18" class="" dir="auto">Languages</h3><ul id="929f77ca-bde2-4c15-b376-68864ced9055" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Spanish — Native or Bilingual</li></ul><ul id="bac3250d-cb16-421e-9844-1b91ca031eeb" class="bulleted-list" dir="auto"><li style="list-style-type:disc">English — Native or Bilingual</li></ul><ul id="1eca05a8-bbef-4edf-88ba-cbca5fa34421" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Portuguese — Limited Working</li></ul><ul id="cb997844-2590-4ef6-8f0a-2b1741f7a38e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">French — Elementary</li></ul><h3 id="7c309641-1268-48ef-a06a-73e0d46612e0" class="" dir="auto">Certifications</h3><ul id="88efb8cd-7450-4388-a83a-093123682651" class="bulleted-list" dir="auto"><li style="list-style-type:disc">QuickBooks Certification</li></ul><ul id="c981fbb2-0138-4f77-9422-fbb135e5e030" class="bulleted-list" dir="auto"><li style="list-style-type:disc">CompTIA Project+</li></ul><ul id="fd8c685e-3930-477a-af2c-23d404fe1d77" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Information Security</li></ul><ul id="14aba09c-70c2-471c-b834-c4e196b2a531" class="bulleted-list" dir="auto"><li style="list-style-type:disc">OSHA 10</li></ul><ul id="15fa815a-e202-4829-b0ca-8de4b6478bc8" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Dean’s List</li></ul><h3 id="695e2067-25e6-41bd-ac0c-b551254761b4" class="" dir="auto">Experience</h3><h4 id="87f1ff56-277e-438d-9eac-23362c438b3d" class="" dir="auto">QiAlly — Founder</h4><p id="f84dc939-10eb-4577-9b91-a4a3df0ffc29" class="" dir="auto"><strong>January 2025 – Present · United States</strong></p><p id="f440ed50-4fac-4cfe-861f-e09cdb8cdae6" class="" dir="auto">QiAlly is a forward-thinking business solutions firm built for the modern entrepreneur. We specialize in asynchronous client engagement, AI-powered systems, and streamlined service delivery across HR, taxes, accounting, immigration support, and business consulting.</p><p id="54461e89-4c0e-47b6-a985-f5fe34a4a39a" class="" dir="auto">As Founder, I:</p><ul id="792e7696-29a1-4ccb-9d6b-e01925add178" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Developed an asynchronous client portal that enhances transparency, minimizes delays, and eliminates the need for live meetings.</li></ul><ul id="88060ff7-1e60-4de7-9771-c242712da270" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Designed custom SOPs and workflow automations that help solopreneurs and small firms scale efficiently.</li></ul><ul id="a9466468-b673-4afa-b801-d321f0638841" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Integrated tools like Notion, Zoho, GPT agents, and custom knowledge bases to replace outdated back-office operations.</li></ul><ul id="4040e672-78dc-49b0-95fc-7ee9817afa0e" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Serve as both architect and strategist—bridging technical implementation with real-world business needs.</li></ul><ul id="9236ac4a-4895-4bf0-bf39-39c4fa1a3ff7" class="bulleted-list" dir="auto"><li style="list-style-type:disc">Empower clients to shift from reactive chaos to proactive, structured growth with clarity, autonomy, and accountability.</li></ul><blockquote id="5b635717-2f7d-4f3b-a34e-c339fbed4b01" class="" dir="auto">“We don’t just offer services—we design ecosystems for impact.”</blockquote><h4 id="a371d33b-4d34-411a-b325-333795871037" class="" dir="auto">Quantum Innova Partners Inc — Co-Owner</h4><p id="a5870877-3b7d-46da-84db-2a4b587f847a" class="" dir="auto"><strong>October 2024 – Present · Indianapolis, Indiana</strong></p><p id="8b784485-da99-4a4a-a58b-bf86b3538ff0" class="" dir="auto">Lead strategy, business development, financial oversight, operations management, technology integration, legal/compliance oversight, and training initiatives across QIP and its related business ecosystem.</p><h4 id="f6e7a520-18e6-47f0-8d74-5de0969599ef" class="" dir="auto">QuantumHR — Partner</h4><p id="cd5bb65e-8a1e-48e6-99f0-36a4a2023c57" class="" dir="auto"><strong>August 2024 – Present · Indianapolis, Indiana</strong></p><p id="e632da92-a20f-4544-9a66-b121d5e42105" class="" dir="auto">Partner supporting HR, operational structure, and business systems strategy.</p><h4 id="e56672e5-44e4-46c4-afaa-02b33263a610" class="" dir="auto">SRV1ne LLC — Virtual Business Consultant</h4><p id="292c1a12-6e6f-4103-b2c2-2a19fc13d83f" class="" dir="auto"><strong>May 2024 – April 2025 · Indianapolis, Indiana</strong></p><p id="b4285544-f0ab-4ff7-b947-3a292bb116c8" class="" dir="auto">Delivered asynchronous consulting services across business strategy, financial planning, audits/compliance, process optimization, and client education. Helped clients distill complex information into actionable strategies with data-driven decision-making and long-term partnership support.</p><h4 id="46571e7e-1f89-404e-af5a-c7600cdfa751" class="" dir="auto">SRV Capital Holdings Inc — Founder</h4><p id="d176083b-419c-4244-8a9a-802ea9c94067" class="" dir="auto"><strong>August 2023 – May 2024 · Indianapolis, Indiana</strong></p><p id="1b306455-b037-44d2-b914-8d9e4723cef4" class="" dir="auto">Founded and managed business operations and strategic direction.</p><h4 id="f1eda0eb-d502-410f-8d9f-3ec7f694e1ab" class="" dir="auto">CJ Rice &amp; Companies, LLC — Business Owner</h4><p id="1ee7cb3b-19f3-411d-bbcf-d8d51fee7ef4" class="" dir="auto"><strong>January 2019 – August 2023 · Indianapolis, Indiana Area</strong></p><p id="863307dd-e67b-43f7-9495-945a126752c9" class="" dir="auto">Provided Spanish-language access to translations, tax preparation, applications, news publication, and community support services for the Hispanic community.</p><h4 id="c8ac37b2-bb05-48a1-883a-7ead44167151" class="" dir="auto">MS-IL Staffing &amp; Packaging — Operations Human Resources Manager / Senior Account Manager / HRIS / Trainer</h4><p id="36bd64e5-61c2-4317-aea0-ced5a9de2c72" class="" dir="auto"><strong>October 2014 – August 2023 · Indianapolis, Indiana Area</strong></p><p id="c1d4d925-1d0b-4d0c-bdef-6cedd37fae1f" class="" dir="auto">Managed recruitment, interviewing, hiring, risk management, workers compensation, HRIS maintenance, policy/procedure creation, training and development, labor procurement, client operations, process improvement, SOP creation, internal training, and branch support.</p><h4 id="3d309444-8bb8-45ab-8a81-4eda01f70ec1" class="" dir="auto">Waffle House — Unit Manager</h4><p id="fbd3e7ab-bd48-4ee7-8b6a-3a677f113ea1" class="" dir="auto"><strong>September 2013 – October 2014 · Indianapolis, Indiana Area</strong></p><p id="78026b2a-14b6-4514-bbe9-6723b6a67183" class="" dir="auto">Managed restaurant operations, labor scheduling, inventory control, customer relations, and P&amp;L efficiency.</p><h4 id="130b8962-892e-4f03-9cd4-0a7bca336493" class="" dir="auto">IHOP — Acting General Manager / Assistant General Manager</h4><p id="e2c8d6e1-6454-4396-a209-9ace7da77363" class="" dir="auto"><strong>August 2010 – September 2013</strong></p><p id="1a202861-7ab7-4a8f-a309-dbae778f0b97" class="" dir="auto">Managed labor, inventory, customer relations, sanitation, hiring, training, scheduling, employee performance, and process documentation.</p><h4 id="3440052a-4f50-4ae6-8454-67eb5e707197" class="" dir="auto">Enkei America, Inc. — VDH Operator</h4><p id="32d45d2d-5e21-44c4-97c6-aee9cf158db2" class="" dir="auto"><strong>July 2008 – August 2010 · Columbus, Indiana</strong></p><p id="8f599f4c-6cba-496b-a9c4-825a8a45534b" class="" dir="auto">Oversaw machine processes, coordinated crew members, handled calibrations, reported production metrics, and supported process improvements.</p><h3 id="15d1b3b4-b6ba-42a7-bf38-e01ea6420a13" class="" dir="auto">Education</h3><ul id="da58b712-c87f-40fb-8334-9abdea44ba54" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Western Governors University</strong> — Bachelor of Business Administration, Human Resources Management and Services · 2015–2018</li></ul><ul id="0e4e5883-66eb-42d0-8dd2-77f2815a7fdb" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Indiana University–Purdue University Indianapolis</strong> — Business Administration and Management · 2013–2014</li></ul><ul id="ef6dac9b-b39e-4dc6-90e1-f56a6ec2e12f" class="bulleted-list" dir="auto"><li style="list-style-type:disc"><strong>Ivy Tech Community College</strong> — AAS / Certificate, Network &amp; Information Security · 2008–2013</li></ul><hr id="22bf84a0-4402-8040-8784-f10576a802b9" dir="auto"/><p id="22bf84a0-4402-809d-98aa-cfceb13f9f94" class="" dir="auto">© 2025 Cody Rice-Velasquez. All professional information presented is accurate as of publication date.</p></div></aside></div></div><p id="22bf84a0-4402-80d8-b38d-eab8e7a5bc91" class="" dir="auto">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

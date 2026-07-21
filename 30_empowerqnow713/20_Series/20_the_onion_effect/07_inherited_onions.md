@@ -4,7 +4,7 @@ title: Inherited Onions - The Things We Carry That Were Never Ours to Hold
 series: The Onion Effect
 episode: 7
 category: Personal Essay / Social Commentary
-keywords: []
+keywords:
   - generational trauma
   - inherited patterns
   - breaking cycles
@@ -20,7 +20,7 @@ layout: page
 slug: inherited-onions-the-things-we-carry-that-were-never-ours-to-hold
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -33,6 +33,14 @@ uid: d79b09f422d9468594b375a8bf059ac5
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: event
+event_type: ""
+people: []
+location: ""
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # The Onion Effect – Episode 7

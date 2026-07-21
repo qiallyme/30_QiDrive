@@ -3,9 +3,9 @@ layout: page
 title: "Daily Struggles Summary"
 slug: "daily_struggles_summary"
 created_at: "2026-04-29 18:53:24"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f299f3-9788-83ea-ad0c-490a4e24d6e5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Daily Struggles Summary

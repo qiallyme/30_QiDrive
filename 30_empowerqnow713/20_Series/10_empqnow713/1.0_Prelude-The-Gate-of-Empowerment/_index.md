@@ -4,6 +4,25 @@ type: index
 status: active
 generated_by: qilabs-housekeeping
 generated_at: "20260716-071124"
+layout: page
+slug: 1-0-prelude-the-gate-of-empowerment
+summary: ""
+created_at: "2026-07-16T07:30:57-04:00"
+updated_at: "2026-07-16T07:30:57-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 48a918e1aa0c4563923372862fc4b28b
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+index_scope: ""
 ---
 
 # 1.0_Prelude-The-Gate-of-Empowerment
@@ -18,3 +37,4 @@ generated_at: "20260716-071124"
 - [[1_4_the_living_qidex|1 4 the living qidex]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

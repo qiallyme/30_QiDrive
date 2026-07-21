@@ -3,8 +3,8 @@ layout: page
 title: Event: APS/welfare-check narrative drafted but not sent
 slug: aps-welfare-check-narrative-drafted-but-not-sent
 status: Draft not sent
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - reports-statements
@@ -22,6 +22,7 @@ realm_label: ""
 uid: c8633758031d47f6865108af5c51d40c
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: APS/welfare-check narrative drafted but not sent

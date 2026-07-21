@@ -3,9 +3,9 @@ layout: page
 title: "QuickBooks Frustrations and Alternatives"
 slug: "quickbooks_frustrations_and_alternatives"
 created_at: "2026-03-18 18:20:37"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69bb3344-6c00-832a-b24c-22282c6e3ed6"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # QuickBooks Frustrations and Alternatives

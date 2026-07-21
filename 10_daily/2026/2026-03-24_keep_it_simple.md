@@ -3,9 +3,9 @@ layout: page
 title: "Keep It Simple"
 slug: "keep_it_simple"
 created_at: "2026-03-24 09:56:37"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69c2a614-d5f0-8331-ac96-79c18e130f3c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Keep It Simple

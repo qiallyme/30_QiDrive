@@ -3,9 +3,9 @@ layout: page
 title: "Car accident clarification"
 slug: "car_accident_clarification"
 created_at: "2026-06-20 13:40:32"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a36de9f-cd64-83ea-afd2-54eca3ee7249"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Car accident clarification

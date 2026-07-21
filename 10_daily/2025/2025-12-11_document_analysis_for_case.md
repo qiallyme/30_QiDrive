@@ -3,9 +3,9 @@ layout: page
 title: "Document analysis for case"
 slug: "document_analysis_for_case"
 created_at: "2025-12-11 12:13:01"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "693b09aa-faf8-8329-8b5e-99a74efc3beb"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Document analysis for case

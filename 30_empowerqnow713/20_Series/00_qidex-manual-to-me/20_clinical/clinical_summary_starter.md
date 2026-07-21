@@ -13,7 +13,7 @@ related:
   - 30_clinical/10_adhd/adhd_operating_notes.md
   - 30_clinical/20_anxiety_panic/anxiety_panic_context.md
   - 30_clinical/30_stress_body_response/stress_body_response.md
-tags: []
+tags:
   - clinical
   - provider-context
   - summary
@@ -33,7 +33,7 @@ layout: page
 slug: clinical-summary-starter
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -46,6 +46,7 @@ uid: 041190368aeb4f62acefb0851397484d
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Clinical Summary Starter

@@ -3,9 +3,9 @@ layout: page
 title: "Numerology analysis"
 slug: "numerology_analysis"
 created_at: "2025-11-17 14:28:00"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "691b854e-3c44-832e-b358-0681e49e674e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Numerology analysis

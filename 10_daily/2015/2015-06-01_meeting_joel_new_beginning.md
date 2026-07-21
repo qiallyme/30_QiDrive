@@ -3,7 +3,7 @@ layout: page
 title: "Meeting Joel - New Beginning"
 slug: "meeting_joel_new_beginning"
 created_at: "2015-06-01"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["relationship"]
 category: "relationship"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: c5f76e98c7604f008b670b5758deba7d
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Meeting Joel - New Beginning

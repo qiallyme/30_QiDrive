@@ -3,9 +3,9 @@ layout: page
 title: "rosa confiramcion de vuelo"
 slug: "rosa_confiramcion_de_vuelo"
 created_at: "2025-12-29 19:18:58"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69532881-3b14-8331-b7a3-d6eaea7293ad"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # rosa confiramcion de vuelo

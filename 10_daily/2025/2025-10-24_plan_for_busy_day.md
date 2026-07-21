@@ -3,9 +3,9 @@ layout: page
 title: "Plan for busy day"
 slug: "plan_for_busy_day"
 created_at: "2025-10-24 11:14:08"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68fba5cb-ba64-8328-8980-3537c47caca0"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Plan for busy day

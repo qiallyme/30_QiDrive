@@ -4,8 +4,8 @@ title: AI Chats
 slug: ai-chats
 summary: Imported AI responses and chat-derived drafts awaiting review.
 status: active
-updated_at: "2026-07-16T06:49:25-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:10-04:00"
+tags:
   - moc
   - inbox
   - ai-chat
@@ -22,6 +22,7 @@ realm_label: ""
 uid: f24cdfbd430e415d8221badbb77e8508
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # AI Chats

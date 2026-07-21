@@ -3,9 +3,9 @@ layout: page
 title: "Recompensa en Servicios Rice-Velasquez"
 slug: "recompensa_en_servicios_rice_velasquez"
 created_at: "2023-07-27 19:28:21"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "df828fbd-824b-4e94-90f2-a0f6c1452c97"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Recompensa en Servicios Rice-Velasquez

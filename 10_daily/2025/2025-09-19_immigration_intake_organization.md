@@ -3,9 +3,9 @@ layout: page
 title: "Immigration intake organization"
 slug: "immigration_intake_organization"
 created_at: "2025-09-19 21:56:09"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68ce17ad-ec68-8323-b140-6fc3d4f77b0c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Immigration intake organization

@@ -3,9 +3,9 @@ layout: page
 title: "Confirmación de Continuación (Confirmation of Continuation)"
 slug: "confirmacion_de_continuacion_confirmation_of_continuation"
 created_at: "2023-08-03 15:10:18"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "5473d973-f04c-4a20-adea-b166640c0642"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Confirmación de Continuación (Confirmation of Continuation)

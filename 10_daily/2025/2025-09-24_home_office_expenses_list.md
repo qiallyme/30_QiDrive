@@ -3,9 +3,9 @@ layout: page
 title: "Home office expenses list"
 slug: "home_office_expenses_list"
 created_at: "2025-09-24 04:48:45"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68d3be69-26c8-832c-954d-c6d426ff26a0"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Home office expenses list

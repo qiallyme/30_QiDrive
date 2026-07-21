@@ -2,7 +2,7 @@
 date: 2026-05-09
 title: "S Elliott St Household Meeting Summary"
 category: "Family Operating System / Household Operations"
-keywords: []
+keywords:
   - groceries
   - caregiver planning
   - household budget
@@ -17,7 +17,7 @@ slug: s-elliott-st-household-meeting-summary
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 author: ""
 owner: ""
 tags: []
@@ -30,6 +30,14 @@ uid: bf396b8127a94937a8a232dea6eb20f0
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: event
+event_type: ""
+people: []
+location: ""
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # S Elliott St Household Meeting Summary

@@ -3,9 +3,9 @@ layout: page
 title: "Marketing Strategy for Books"
 slug: "marketing_strategy_for_books"
 created_at: "2026-01-22 17:10:58"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6972ae5c-bd34-832d-ba83-e183d3fd2d76"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Marketing Strategy for Books

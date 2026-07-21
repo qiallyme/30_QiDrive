@@ -3,9 +3,9 @@ layout: page
 title: "Cash Flow Breakdown"
 slug: "cash_flow_breakdown"
 created_at: "2026-05-02 02:04:11"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f5a1e6-70a4-83ea-92d3-2dbe99d20f52"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Cash Flow Breakdown

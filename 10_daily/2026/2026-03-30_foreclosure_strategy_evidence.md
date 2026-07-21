@@ -3,9 +3,9 @@ layout: page
 title: "Foreclosure Strategy Evidence"
 slug: "foreclosure_strategy_evidence"
 created_at: "2026-03-30 22:57:31"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69cb45d7-5ed0-8326-9d93-86c1d233674b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Foreclosure Strategy Evidence

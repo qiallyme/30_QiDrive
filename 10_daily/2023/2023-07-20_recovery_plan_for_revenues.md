@@ -3,9 +3,9 @@ layout: page
 title: "Recovery Plan for Revenues"
 slug: "recovery_plan_for_revenues"
 created_at: "2023-07-20 20:46:03"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "087add61-8fcd-4700-a909-5ff14f7c370d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Recovery Plan for Revenues

@@ -3,8 +3,8 @@ layout: page
 title: Timeline - Hospitalizations
 slug: timeline-hospitalizations
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 41a66591784f4d74ad900c6eb8bb7b91
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Timeline - Hospitalizations

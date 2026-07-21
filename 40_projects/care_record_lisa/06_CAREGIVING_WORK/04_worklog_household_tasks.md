@@ -3,8 +3,8 @@ layout: page
 title: Worklog - Household Tasks
 slug: worklog-household-tasks
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 8bea6b35c43f4c79b7f9bf2fb904060a
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Worklog - Household Tasks

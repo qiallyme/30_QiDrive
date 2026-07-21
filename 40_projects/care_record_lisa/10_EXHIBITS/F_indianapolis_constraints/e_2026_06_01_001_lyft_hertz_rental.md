@@ -3,8 +3,8 @@ layout: page
 title: Event: Lyft/Hertz rental begins under unstable transportation conditions
 slug: lyft-hertz-rental-begins-under-unstable-transportation-conditions
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
   - personal-constraint-income
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 191c0f87f0874ea79a0c78108cc9c6a9
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Lyft/Hertz rental begins under unstable transportation conditions

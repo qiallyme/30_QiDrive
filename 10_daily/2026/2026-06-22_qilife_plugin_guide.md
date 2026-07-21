@@ -3,9 +3,9 @@ layout: page
 title: "QiLife Plugin Guide"
 slug: "qilife_plugin_guide"
 created_at: "2026-06-22 23:30:24"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a3a0b9f-3ab0-83ea-aff6-e807b7280234"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # QiLife Plugin Guide

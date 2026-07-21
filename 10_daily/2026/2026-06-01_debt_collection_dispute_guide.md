@@ -3,9 +3,9 @@ layout: page
 title: "Debt Collection Dispute Guide"
 slug: "debt_collection_dispute_guide"
 created_at: "2026-06-01 05:09:18"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a1d5a49-1f1c-83ea-b3f2-1db78ee0fd93"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Debt Collection Dispute Guide

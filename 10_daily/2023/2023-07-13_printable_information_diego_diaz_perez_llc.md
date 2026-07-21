@@ -3,9 +3,9 @@ layout: page
 title: "Printable Information: Diego Diaz Perez LLC"
 slug: "printable_information_diego_diaz_perez_llc"
 created_at: "2023-07-13 06:20:56"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "656678f1-50f8-461c-b4e8-7d64ea762ef9"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Printable Information: Diego Diaz Perez LLC

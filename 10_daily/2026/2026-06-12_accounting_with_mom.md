@@ -3,9 +3,9 @@ layout: page
 title: "Accounting with Mom"
 slug: "accounting_with_mom"
 created_at: "2026-06-12 18:51:50"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2c9b95-6d54-83ea-ae28-c4f1391228c9"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Accounting with Mom

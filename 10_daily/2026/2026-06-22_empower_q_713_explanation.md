@@ -3,9 +3,9 @@ layout: page
 title: "Empower Q 713 Explanation"
 slug: "empower_q_713_explanation"
 created_at: "2026-06-22 22:25:38"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a39fcaa-ae20-83ea-8d5c-d48c323067f9"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Empower Q 713 Explanation

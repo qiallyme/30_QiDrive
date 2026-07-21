@@ -3,7 +3,7 @@ layout: page
 title: "Graduated from Ivy Tech"
 slug: "graduated-from-ivy-tech"
 created_at: "2013-01-01"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["education"]
 category: "education"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 3e71215fd6f84265afa85e469203144b
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Graduated from Ivy Tech

@@ -3,7 +3,7 @@ layout: page
 title: "Re-traumatization by Ex-Partner Ron Castellanos"
 slug: "re_traumatization_by_ex_partner_ron_castellanos"
 created_at: "2025-06-01"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 153034e12a0d4e4aa489dd0c86417664
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Re-traumatization by Ex-Partner Ron Castellanos

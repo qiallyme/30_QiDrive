@@ -4,8 +4,8 @@ title: Obsidian Plugin Setup Instructions
 slug: obsidian-plugin-setup-instructions
 summary: Suggested Obsidian plugins and settings for maintaining the Lisa Care Record.
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 326196eb70b1439db160f59b4f67395f
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Obsidian Plugin Setup Instructions

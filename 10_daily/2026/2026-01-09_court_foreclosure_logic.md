@@ -3,9 +3,9 @@ layout: page
 title: "Court Foreclosure Logic"
 slug: "court_foreclosure_logic"
 created_at: "2026-01-09 14:42:14"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "696167a5-34c4-832a-a444-3e59ff63a3d6"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Court Foreclosure Logic

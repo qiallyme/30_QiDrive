@@ -3,9 +3,9 @@ layout: page
 title: "Update table owners Supabase"
 slug: "update_table_owners_supabase"
 created_at: "2025-09-13 19:22:16"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c60a9b-881c-832b-9edb-0ef9e676f30f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Update table owners Supabase

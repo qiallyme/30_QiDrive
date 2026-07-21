@@ -3,9 +3,9 @@ layout: page
 title: "Stranded Prevention"
 slug: "stranded_prevention"
 created_at: "2026-06-19 12:42:47"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a357f95-e6ac-83ea-9ab4-1ddbdd782b6d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Stranded Prevention

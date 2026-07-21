@@ -3,9 +3,9 @@ layout: page
 title: "AES bill discussion recap"
 slug: "aes_bill_discussion_recap"
 created_at: "2025-12-07 18:43:17"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69361efc-b5d8-8326-afc7-b1dfce62a7c7"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # AES bill discussion recap

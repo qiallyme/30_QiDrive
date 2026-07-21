@@ -7,7 +7,7 @@ slug: codys-guide-building-bridges-mutual-understanding
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -20,6 +20,7 @@ uid: a98d9a42490d487da01a795905722169
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Cody's Guide: Building Bridges Mutual Understanding

@@ -3,9 +3,9 @@ layout: page
 title: "Pashto response for Zai"
 slug: "pashto_response_for_zai"
 created_at: "2025-09-10 07:43:53"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c17268-2950-8331-98ad-0b88a4334540"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Pashto response for Zai

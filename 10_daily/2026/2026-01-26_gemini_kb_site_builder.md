@@ -3,9 +3,9 @@ layout: page
 title: "Gemini KB Site Builder"
 slug: "gemini_kb_site_builder"
 created_at: "2026-01-26 23:09:50"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69784860-e03c-832e-9a92-2370c8c57c1b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Gemini KB Site Builder

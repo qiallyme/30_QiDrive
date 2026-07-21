@@ -3,9 +3,9 @@ layout: page
 title: "Factual comparison"
 slug: "factual_comparison"
 created_at: "2025-09-10 08:42:34"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c18047-dd48-8325-b08f-b2cdd5eead20"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Factual comparison

@@ -3,9 +3,9 @@ layout: page
 title: "Stress purchase vs strategy"
 slug: "stress_purchase_vs_strategy"
 created_at: "2026-06-19 11:25:18"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a356d6d-1214-83ea-a5c6-40d4d8a31c1d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Stress purchase vs strategy

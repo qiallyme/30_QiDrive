@@ -4,7 +4,7 @@ title: Rabbit Inc.
 slug: rabbit-inc
 status: active
 updated_at: "2026-07-16T06:49:27-04:00"
-tags: []
+tags:
   - Narcissism
   - cadence
 source_type: imported

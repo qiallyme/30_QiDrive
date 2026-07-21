@@ -3,9 +3,9 @@ layout: page
 title: "Lumara Concept Development"
 slug: "lumara_concept_development"
 created_at: "2026-05-04 04:44:44"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f86a67-33b0-83ea-8a1a-86a7b2e1d0cc"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Lumara Concept Development

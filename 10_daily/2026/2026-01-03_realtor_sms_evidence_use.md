@@ -3,9 +3,9 @@ layout: page
 title: "Realtor SMS Evidence Use"
 slug: "realtor_sms_evidence_use"
 created_at: "2026-01-03 20:43:25"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6959d3cb-9850-8332-9719-a49fd1798a88"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Realtor SMS Evidence Use

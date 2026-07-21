@@ -6,12 +6,12 @@ summary: Template for explaining neurobiological mechanisms and processes
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting clinical mechanisms in clinical track
-tags: []
+tags:
   - template
   - mechanism
   - clinical
   - empowerqnow713
-keywords: []
+keywords:
   - mechanism
   - clinical
   - neurobiology

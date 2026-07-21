@@ -3,9 +3,9 @@ layout: page
 title: "Cold-induced circulation issues"
 slug: "cold_induced_circulation_issues"
 created_at: "2025-12-15 10:56:53"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69403dd4-d004-8328-85d6-b3c1f36b23df"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Cold-induced circulation issues

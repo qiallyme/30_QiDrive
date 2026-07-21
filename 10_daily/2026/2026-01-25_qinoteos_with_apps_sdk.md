@@ -3,9 +3,9 @@ layout: page
 title: "QiNoteOS with Apps SDK"
 slug: "qinoteos_with_apps_sdk"
 created_at: "2026-01-25 00:59:53"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6975bf44-8ad0-8330-bb56-a92260685434"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # QiNoteOS with Apps SDK

@@ -3,8 +3,8 @@ layout: section
 title: — The Awakening Of Angela
 slug: the-awakening-of-angela
 status: publish
-updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:17-04:00"
+tags:
   - moc
   - empowerqnow713
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: ec5a6c66256c487ba5ccb0e7e3b06211
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # — The Awakening Of Angela

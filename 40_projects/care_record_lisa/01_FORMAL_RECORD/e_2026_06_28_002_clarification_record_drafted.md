@@ -3,8 +3,8 @@ layout: page
 title: Event: Clarification of record packet drafted
 slug: clarification-of-record-packet-drafted
 status: Draft exists
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - reports-statements
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 089efb1e99b14ab998a2d2466400eb33
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Clarification of record packet drafted

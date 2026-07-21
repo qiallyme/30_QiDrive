@@ -3,7 +3,7 @@ layout: page
 title: "Early Warnings of Business Collapse"
 slug: "early_warnings_of_business_collapse"
 created_at: "2022-01-01"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: e4643a2605674daf8da4ad4901e98192
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Early Warnings of Business Collapse

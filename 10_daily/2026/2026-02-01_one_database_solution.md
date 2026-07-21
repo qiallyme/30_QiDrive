@@ -3,9 +3,9 @@ layout: page
 title: "One Database Solution"
 slug: "one_database_solution"
 created_at: "2026-02-01 15:18:40"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "697fc30e-9f08-8331-b9c8-afeda08a8d43"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # One Database Solution

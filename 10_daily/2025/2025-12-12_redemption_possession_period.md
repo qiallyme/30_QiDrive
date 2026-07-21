@@ -3,9 +3,9 @@ layout: page
 title: "Redemption possession period"
 slug: "redemption_possession_period"
 created_at: "2025-12-12 22:47:02"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "693cefc4-6114-8330-8cc7-87f1208f6769"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Redemption possession period

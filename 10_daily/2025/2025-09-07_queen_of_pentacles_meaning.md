@@ -3,9 +3,9 @@ layout: page
 title: "Queen of Pentacles meaning"
 slug: "queen_of_pentacles_meaning"
 created_at: "2025-09-07 22:33:45"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68be4e98-f374-8329-a78a-5823c13b34dc"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Queen of Pentacles meaning

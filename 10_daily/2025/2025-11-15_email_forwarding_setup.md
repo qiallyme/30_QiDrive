@@ -3,9 +3,9 @@ layout: page
 title: "Email forwarding setup"
 slug: "email_forwarding_setup"
 created_at: "2025-11-15 08:00:06"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69188728-b3dc-8329-9038-7771a551a66c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Email forwarding setup

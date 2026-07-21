@@ -13,7 +13,7 @@ related:
   - 30_clinical/00_clinical_summary/clinical_summary_starter.md
   - 30_clinical/30_stress_body_response/stress_body_response.md
   - 90_locked/00_my_eyes_only/intake_sensitive_material_review.md
-tags: []
+tags:
   - trauma
   - recovery
   - safe-summary
@@ -26,7 +26,7 @@ layout: page
 slug: trauma-safe-summary
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -39,6 +39,7 @@ uid: e54d8dc7ed54419792a7a70b6e169a17
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Trauma Safe Summary

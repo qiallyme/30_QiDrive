@@ -3,8 +3,8 @@ layout: page
 title: Ledger - Master
 slug: ledger-master
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 02a79a4ace684e69849197a8c8380a44
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Ledger - Master

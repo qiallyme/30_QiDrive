@@ -6,16 +6,16 @@ summary: "A practical routing guide for deciding which QiSaysIt series a post be
 status: active
 visibility: internal
 created_at: "2026-07-02T01:47:00-05:00"
-updated_at: "2026-07-16T06:49:36-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 author: "Cody J. Rice-Velasquez"
 owner: ""
   - "Cody"
-tags: []
+tags:
   - qisaysit
   - content-system
   - series-map
   - publishing
-keywords: []
+keywords:
   - QiSaysIt
   - EmpowerQNow
   - Field Notes
@@ -23,7 +23,7 @@ keywords: []
   - Power Studies
   - The Onion Effect
   - content routing
-aliases: []
+aliases:
   - "QiSaysIt Routing Map"
 context: "Use this guide when deciding where a post belongs before publishing or filing it."
 sensitivity: internal
@@ -33,6 +33,7 @@ uid: "qisaysit-series-routing-map"
 canonical_ref: "qisaysit/series-routing-map"
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # QiSaysIt Series Routing Map

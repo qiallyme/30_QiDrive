@@ -3,9 +3,9 @@ layout: page
 title: "Title Suggestions for Memoir"
 slug: "title_suggestions_for_memoir"
 created_at: "2026-01-20 23:56:58"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69706aa7-2de0-832e-93ab-ec4b61af92f5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Title Suggestions for Memoir

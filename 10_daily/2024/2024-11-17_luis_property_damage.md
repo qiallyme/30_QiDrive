@@ -3,7 +3,7 @@ layout: page
 title: "Luis - Property Damage"
 slug: "luis_property_damage"
 created_at: "2024-11-17"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: eea2577c549342c3ae1d57fe9f4fb050
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Luis - Property Damage

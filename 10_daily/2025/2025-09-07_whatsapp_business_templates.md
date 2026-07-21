@@ -3,9 +3,9 @@ layout: page
 title: "WhatsApp business templates"
 slug: "whatsapp_business_templates"
 created_at: "2025-09-07 23:21:15"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68be59a5-6128-8327-9dc4-3ce1815d24bd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # WhatsApp business templates

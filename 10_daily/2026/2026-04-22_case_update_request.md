@@ -3,9 +3,9 @@ layout: page
 title: "Case Update Request"
 slug: "case_update_request"
 created_at: "2026-04-22 13:58:03"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69e91a2c-f114-83ea-bc1d-0d34d5f08d65"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Case Update Request

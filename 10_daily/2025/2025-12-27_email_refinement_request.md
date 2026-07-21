@@ -3,9 +3,9 @@ layout: page
 title: "Email Refinement Request"
 slug: "email_refinement_request"
 created_at: "2025-12-27 08:00:30"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "694fe66a-1ab0-8330-ae61-2e8b828e8b16"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Email Refinement Request

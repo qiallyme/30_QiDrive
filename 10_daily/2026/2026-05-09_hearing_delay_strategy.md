@@ -3,9 +3,9 @@ layout: page
 title: "Hearing Delay Strategy"
 slug: "hearing_delay_strategy"
 created_at: "2026-05-09 00:36:50"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fec7ef-ad4c-83ea-a021-efdb9dc943e5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Hearing Delay Strategy

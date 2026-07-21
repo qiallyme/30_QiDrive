@@ -3,9 +3,9 @@ layout: page
 title: "Nurse Review Handoff Update"
 slug: "nurse_review_handoff_update"
 created_at: "2026-05-07 15:24:52"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fcf4f1-db58-83ea-bb03-97804740bdb3"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Nurse Review Handoff Update

@@ -1,0 +1,82 @@
+﻿Section Task,Keywords,Section Name,Section Type,Template Status,Text
+01. Analysis \Analysis,Initial review and planning for the tax audit.,Audit Prep,,Published,01:30
+01.1 Cronograma \Timeline,Establishing the schedule and key dates for the audit process.,Audit Prep,,Published,02:30
+01.2 Aviso IRS? \IRS letter?,Determining if an IRS audit notification has been received.,Audit Prep,,Published,01:30
+02. Datos del Cliente \Client Information,Gathering essential details about the client for the audit.,Audit Prep,,Published,01:30
+02.1 Contacto \Contact,Specific contact information for the client.,Audit Prep,,Published,01:30
+03. Documentos Legales \Legal Documents,Collecting legal documents relevant to the business and tax situation.,Audit Prep,,Published,01:30
+03.1 Acuerdos \Operating,Gathering operating agreements or partnership agreements.,Audit Prep,,Published,01:30
+03.2 CP575 EIN IRS \IRS CP575 EIN,Obtaining the official IRS letter confirming the EIN.,Audit Prep,,Published,01:30
+03.3 Comunicaciones Estatales \State Correspondence,Collecting any communication from state tax authorities.,Audit Prep,,Published,01:30
+03.4 Licencias y permisos \Licenses & permits,Gathering relevant business licenses and permits.,Audit Prep,,Published,01:30
+03.5 Registros estatales anuales \Annual state filings,Obtaining annual reports or filings made with the state.,Audit Prep,,Published,01:30
+04. Ingresos \Income,Gathering documentation related to the business's income.,Audit Prep,,Published,01:30
+04.1 Inusual Ingresos \Unusual Income,Identifying and documenting any non-recurring or unusual income items.,Audit Prep,,Published,01:30
+"04.2 Facturas, Reportes POS \Invoices, POS Reports",Collecting invoices issued and reports from point-of-sale systems.,Audit Prep,,Published,01:30
+"04.3 Formas \Forms 1099-NEC, MISC, K, INT, DIV",Gathering all relevant income-reporting forms.,Audit Prep,,Published,01:30
+04.4 Conciliacian de ingresos \Income reconciliation,Reconciling reported income with bank deposits and other records.,Audit Prep,,Published,01:30
+04.5 Revisar discrepancias 1099 (si hay) \Review 1099 discrepancies (if any),Identifying and investigating any differences between client records and 1099s.,Audit Prep,,Published,01:30
+05. Gastos \Expenses,Gathering documentation related to the business's expenses.,Audit Prep,,Published,01:30
+05.1 Gastos Inusuales \Unusual Expenses,Identifying and documenting any non-recurring or unusual expense items.,Audit Prep,,Published,02:30
+05.2 Gastos Compartidos \Shared Expenses,Documenting expenses shared between business and personal use.,Audit Prep,,Published,01:30
+05.3 Pruebas de Pagos \Proof of payment,Collecting evidence that expenses were actually paid.,Audit Prep,,Published,01:30
+06. Nomina \Payroll,Gathering documentation related to employee payroll.,Audit Prep,,Published,01:30
+06.1 Talones de Pagos \Check Stubs,Collecting pay stubs for employees.,Audit Prep,,Published,01:30
+"06.2 Contratos y formas I-9, W-4 \Contracts, I-9s, W-4s",Gathering employment contracts and employee tax forms.,Audit Prep,,Published,01:30
+"06.3 Forma W-2, W-3, 941, 940 \forms",Collecting employer payroll tax forms.,Audit Prep,,Published,01:30
+06.4 Informes Nomina \Payroll Reports,Gathering reports from payroll processing services.,Audit Prep,,Published,01:30
+07. Contratistas y 1099s \Contractors and 1099s,Gathering documentation related to independent contractors.,Audit Prep,,Published,02:30
+07.1 Formas W-9 y Contratos \Contracts & Form W9s,Collecting W-9 forms and service agreements for contractors.,Audit Prep,,Published,01:30
+07.2 Resumen de pagos y 1099s emitidosSummarizing payments made to contractors and 1099s issued.,"1099 summary, contractor payments, information returns",Audit Prep,,Published,02:30
+08. Uso Vehiculo \Vehicle Use,Gathering documentation for business vehicle expenses.,Audit Prep,,Published,01:30
+08.1 Depreciacian de Vehiculo \Vehicle Depreciation,Calculating and documenting vehicle depreciation.,Audit Prep,,Published,01:30
+08.2 Gastos Reales de Auto \Actual Auto Expenses,"Documenting actual expenses like gas, and maintenance., insurance",Audit Prep,,Published,02:30
+08.3 Propiedad o Arrendamiento \Proof of Ownership/Lease,Providing documentation of vehicle ownership or lease agreement.,Audit Prep,,Published,01:30
+08.4 Kilometraje Detallado \Mileage log,Maintaining a detailed log of business vehicle mileage.,Audit Prep,,Published,01:30
+09. Oficina en Casa \Home Office,Gathering documentation for home office deductions.,Audit Prep,,Published,01:30
+09.1 Calculos de Oficina de Casa \Home Office Calculations,Performing calculations for the allowable home office deduction.,Audit Prep,,Published,01:30
+09.2 Declaración de Uso Exclusivo \Statement of exclusive use,Documenting that the home office space is used exclusively for business.,Audit Prep,,Published,02:30
+09.3 Fotos de Oficina de Casa \Home Office Photos,Providing visual evidence of the home office space.,Audit Prep,,Published,01:30
+09.4 Gastos de Utilidades \Utilities Expense,Documenting utility expenses for the home.,Audit Prep,,Published,01:30
+09.5 Medidas Hogar y Oficina \Home and Office Dimensions,Recording the square footage of the home and the office space.,Audit Prep,,Published,01:30
+10. Impuestos \Taxes,Gathering copies of the client's tax returns and related forms.,Audit Prep,,Published,01:30
+"10.1 Anexos \Schedules (A, B, C, E, F, SE)",Collecting specific tax schedules.,Audit Prep,,Published,01:30
+10.2 Declaraciones 1040 \1040 Tax Returns,Obtaining copies of the federal income tax returns.,Audit Prep,,Published,01:30
+10.3 Declaraciones Estatales y Locales \State and Local Returns,Gathering copies of state and local tax returns.,Audit Prep,,Published,01:30
+"10.4 Forma Adicionales (4562, 8829, etc.) \Forms Additional (4562, 8829, etc.)",Collecting other relevant tax forms.,Audit Prep,,Published,01:30
+10.5 Formas de Prarroga (4868/7004) \Extensions (4868/7004),Obtaining any filed tax extension forms.,Audit Prep,,Published,01:30
+11. Pagos Estimados \Estimated Payment,Gathering documentation for estimated tax payments.,Audit Prep,,Published,02:30
+11.1 Comprobantes EFTPS o IRS Direct PayCollecting proof of electronic or direct payments to the IRS.,"EFTPS receipts, IRS Direct Pay confirmation",Audit Prep,,Published,01:30
+11.2 Formas 1040-ES y Cheques CanceladosObtaining copies of estimated tax payment vouchers and canceled checks.,"Form 1040-ES, canceled checks, estimated tax vouchers",Audit Prep,,Published,01:30
+11.3 Resumen de Pagos y Fechas \Summary of Dates and Payments,Creating a summary of estimated tax payments made.,Audit Prep,,Published,01:30
+12. RevisionReviewing the gathered documents and initial analysis.,"analysis check, audit review, document review",Audit Prep,,,01:30
+12.1 Cronóloga Financiera \Financial Timeline,Creating a timeline of key financial events during the tax year(s).,Audit Prep,,,01:30
+12.2 Contexto de ingresos/gastosProviding context and explanations for income and expense patterns.,"business operations, expense context, income context, seasonality",Audit Prep,,,01:30
+13. NarrativaDeveloping explanations and justifications for certain items.,"audit narrative, explanations, justifications, supporting details",Audit Prep,,,02:30
+13.1 Cambios en declaraciones previasExplaining any amendments or changes to prior year tax returns.,"amended returns, prior year amendments, tax return changes",Audit Prep,,,01:30
+13.2 Notas de preparador fiscalIncluding any notes or explanations from the tax preparer.,"accountant notes, preparer notes, tax preparer comments",Audit Prep,,,02:30
+13.3 Inventario de Documentos \Document Inventory,Creating a list of all documents included in the audit package.,Audit Prep,,,01:30
+13.4 Resumen de Ingreso y Gastos \Summary of Income and Expense,Providing a summary overview of the reported income and expenses.,Audit Prep,,,02:30
+14. Ensamblaje de Paquete \Packet Assembly,Organizing and compiling all audit-related documents.,Audit Prep,,,02:30
+14.1 Organizacion del PaqueteStructuring and labeling the audit document package.,"file structure, labeling, packet organization",Audit Prep,,,02:30
+15. Revision con Cliente \Client Review,Reviewing the compiled audit package with the client.,Audit Prep,,,01:30
+16. Presentar el paquete \Packet Presentation,Formally presenting the audit package to the client.,Audit Prep,,,01:30
+17. Entrega \Submission,Submitting the audit documentation as required.,Audit Prep,,,01:30
+Approvals,"authorization, client approval, e-file authorization, sign-off, tax review",Tax Prep,,,01:30
+Client Approval,"acceptance, agreement, client approval, sign-off",Engagement,,,01:30
+Client Meetings,"client meeting, communication, discussion, progress update",Engagement,,,01:30
+Convert to Contact,"client acquisition, close deal, conversion, engagement, onboard",Lead,,,02:30
+Create/Send Deliverables,"deliverables, send files, submission, work product",Engagement,,,02:30
+Create/Send Invoice,"billing, fee, payment request, tax invoice",Tax Prep,,,01:30
+document collection,"document gathering, information request, records collection",Tax Prep,,,01:30
+Follow Up,"follow up, next steps, nurture, reminder, second contact",Lead,,,02:30
+Gather Documents,"client information, document collection, records, tax documents",Tax Prep,,,01:30
+Kick-off Meeting,"client introduction, initial meeting, kick-off, project start",Onboarding,,,01:30
+New Lead,"initial contact, inquiry, new lead, potential client, prospect",Lead,,,01:30
+Prepare Return,"calculations, return completion, tax form, tax return preparation",Tax Prep,,,01:30
+Prepare/Send Final Invoice,"billing, completion, final bill, final invoice, payment request",Onboarding,,,01:30
+Prepare/Send Initial Invoice,"billing, first bill, initial invoice, payment request",Onboarding,,,01:30
+Project planning,"project plan, resources, scope, strategy, timeline",Onboarding,,,02:30
+Send Engagement,"client agreement, engagement letter, scope of work, tax engagement",Tax Prep,,,02:30
+Send Marketing,"communication, email, initial contact, lead nurture, marketing, outreach",Lead,,,01:30
+Submit,"IRS, e-file, mail, state tax agency, submission, tax filing",Tax Prep,,,01:30

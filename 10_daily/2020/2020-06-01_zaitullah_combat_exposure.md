@@ -3,7 +3,7 @@ layout: page
 title: "Zaitullah - Combat Exposure"
 slug: "zaitullah_combat_exposure"
 created_at: "2020-06-01"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: df5af68f19cc40c581e59448325ae6e4
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Zaitullah - Combat Exposure

@@ -3,9 +3,9 @@ layout: page
 title: "Empowering Angela's Journey"
 slug: "empowering_angelas_journey"
 created_at: "2023-07-28 04:57:16"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "4c7ad7d7-9c86-4fd9-8607-ab7376c3bed3"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Empowering Angela's Journey

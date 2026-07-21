@@ -3,9 +3,9 @@ layout: page
 title: "Tesla Battery Issue"
 slug: "tesla_battery_issue"
 created_at: "2026-03-11 18:49:12"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69b1ff3e-7580-8326-ac6b-da32b4ad4790"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tesla Battery Issue

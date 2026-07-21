@@ -3,8 +3,8 @@ layout: template
 title: Mechanism Template
 slug: mechanism-template
 status: publish
-updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:16-04:00"
+tags:
   - empowerqnow713
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: bb1ce3fb7d454ab18e0870e598472f23
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Mechanism Template

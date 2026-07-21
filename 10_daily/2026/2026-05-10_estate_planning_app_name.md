@@ -3,9 +3,9 @@ layout: page
 title: "Estate Planning App Name"
 slug: "estate_planning_app_name"
 created_at: "2026-05-10 04:16:46"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a004cd7-05a8-83ea-8d71-d0f7d9209a8f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Estate Planning App Name

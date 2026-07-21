@@ -3,9 +3,9 @@ layout: page
 title: "Missed Message Reaction"
 slug: "missed_message_reaction"
 created_at: "2026-01-05 00:41:11"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "695b5d06-782c-8327-af18-2cf724d19f38"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Missed Message Reaction

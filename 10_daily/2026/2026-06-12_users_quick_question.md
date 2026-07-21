@@ -3,9 +3,9 @@ layout: page
 title: "User's quick question"
 slug: "users_quick_question"
 created_at: "2026-06-12 02:18:17"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2bb2b7-5840-83ea-8c7e-7dde07c08707"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # User's quick question

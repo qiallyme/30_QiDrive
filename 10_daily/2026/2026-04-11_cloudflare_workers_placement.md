@@ -3,9 +3,9 @@ layout: page
 title: "Cloudflare Workers Placement"
 slug: "cloudflare_workers_placement"
 created_at: "2026-04-11 22:33:02"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69db124e-1704-832a-ad88-64171e7e2d2f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Cloudflare Workers Placement

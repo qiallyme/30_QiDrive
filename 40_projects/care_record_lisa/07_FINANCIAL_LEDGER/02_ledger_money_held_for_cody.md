@@ -3,8 +3,8 @@ layout: page
 title: Ledger - Money Held For Cody
 slug: ledger-money-held-for-cody
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 261b9d6194944fa7a5914df0e8aba3b4
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Ledger - Money Held For Cody

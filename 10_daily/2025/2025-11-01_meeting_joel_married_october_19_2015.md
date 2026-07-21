@@ -5,7 +5,7 @@ slug: "meeting_joel_married_october_19_2015"
 summary: ""
 status: active
 created_at: "2025-11-01"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 author: ""
 owner: ""
 tags: []
@@ -20,6 +20,7 @@ canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2025-11-01
+type: note
 ---
 
 # Meeting Joel - married October 19, 2015

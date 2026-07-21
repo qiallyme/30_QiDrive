@@ -3,9 +3,9 @@ layout: page
 title: "Motion to Vacate Judgment"
 slug: "motion_to_vacate_judgment"
 created_at: "2026-04-04 20:31:16"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69d1bb62-2d40-8329-8039-61a068e50d4e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Motion to Vacate Judgment

@@ -3,9 +3,9 @@ layout: page
 title: "Lock Issues and Suspicious Behavior"
 slug: "lock_issues_and_suspicious_behavior"
 created_at: "2026-06-25 12:17:34"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a3d62ad-6b20-83ea-9611-89535a680c8a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Lock Issues and Suspicious Behavior

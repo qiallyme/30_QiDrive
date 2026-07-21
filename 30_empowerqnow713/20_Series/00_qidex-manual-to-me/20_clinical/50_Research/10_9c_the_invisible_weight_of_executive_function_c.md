@@ -4,9 +4,9 @@ title: 10 9c The Invisible Weight of Executive Function C
 slug: 10_9c_the_invisible_weight_of_executive_function_c
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+tags:
   - empowerqnow713
-keywords: []
+keywords:
   - intake
 source_type: manual
 realm: QiVault

@@ -3,8 +3,8 @@ layout: page
 title: Event: Caregiver collapse guiding addendum exists
 slug: caregiver-collapse-guiding-addendum-exists
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
   - caregiver-collapse-record
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 30d157a34f3244c18cb332311a008e6f
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Caregiver collapse guiding addendum exists

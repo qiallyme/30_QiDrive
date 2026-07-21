@@ -3,9 +3,9 @@ layout: page
 title: "Minimal book image"
 slug: "minimal_book_image"
 created_at: "2025-12-06 13:07:23"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69347ee7-d854-8329-97f5-f0c364571e4a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Minimal book image

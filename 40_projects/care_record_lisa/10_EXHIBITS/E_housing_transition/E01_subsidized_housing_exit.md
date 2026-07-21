@@ -3,8 +3,8 @@ layout: page
 title: E01 subsidized housing exit
 slug: e01-subsidized-housing-exit
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: e96ef8acf5964dc2995fcd7b395e44de
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # E01 subsidized housing exit

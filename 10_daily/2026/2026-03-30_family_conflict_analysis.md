@@ -3,9 +3,9 @@ layout: page
 title: "Family Conflict Analysis"
 slug: "family_conflict_analysis"
 created_at: "2026-03-30 00:25:35"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69ca0920-4898-8333-8b3a-c883c8d3da6c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Family Conflict Analysis

@@ -1,0 +1,757 @@
+﻿Section Task,Keywords,Section Name,Section Type,Task Description,Template Status,Text
+New Lead,"initial contact, inquiry, new lead, potential client, prospect",Lead,,"Para la sección ""Lead"", es fundamental realizar un seguimiento del contacto inicial con el nuevo cliente potencial. Esto implica recopilar información relevante sobre el interés del prospecto y determinar los pasos futuros para avanzar en el proceso de ventas.
+
+Tareas a realizar:
+1. Revisar la información de contacto del nuevo lead.
+2. Preparar un correo electrónico de seguimiento o llamada para obtener más detalles sobre sus necesidades.
+3. Documentar la interacción y cualquier información relevante obtenida.
+4. Asignar el lead a un miembro del equipo para un seguimiento continuo.",,01:30
+Follow Up,"follow up, next steps, nurture, reminder, second contact",Lead,,"Para la sección ""Lead"", es importante realizar un seguimiento con el cliente potencial para asegurar que se sientan valorados y para fomentar una relación más sólida. Esto implica recordarles sobre su interés y ofrecer asistencia adicional si es necesario.
+
+Acciones a realizar:
+1. Revisar la información del cliente potencial.
+2. Enviar un correo electrónico o mensaje de seguimiento.
+3. Preguntar si tienen alguna pregunta o necesitan más información.
+4. Programar una llamada si es necesario para discutir más a fondo.",,02:30
+Send Marketing,"communication, email, initial contact, lead nurture, marketing, outreach",Lead,,"Para la sección ""Lead"", el objetivo es establecer una comunicación inicial con los posibles clientes y nutrir la relación a través de correos electrónicos y otros métodos de marketing. Esto ayudará a convertir a los prospectos en clientes potenciales.
+
+Acciones a realizar:
+1. Investigar los leads potenciales.
+2. Redactar un correo electrónico de contacto inicial.
+3. Enviar correos electrónicos de seguimiento.
+4. Evaluar la respuesta de los leads y ajustar la estrategia de marketing según sea necesario.",,01:30
+Convert to Contact,"client acquisition, close deal, conversion, engagement, onboard",Lead,,"Para la tarea ""Convertir a Contacto"", el objetivo es transformar un lead en un contacto efectivo y comprometido. Esto implica establecer una relación sólida y asegurar que el cliente esté debidamente integrado en el proceso de adquisición.
+
+Acciones a realizar:
+1. Revisar la información del cliente potencial.
+2. Contactar al cliente para discutir su interés y necesidades.
+3. Proporcionar información adicional sobre los servicios ofrecidos.
+4. Confirmar el interés del cliente y obtener su consentimiento para continuar.
+5. Documentar la interacción y programar una reunión de seguimiento.",,02:30
+Create/Send Deliverables,"deliverables, send files, submission, work product",Engagement,,"Para la sección ""Entregables - Envío"", es importante asegurarse de que todos los entregables estén completos y se envíen a tiempo. Esto incluye la revisión final de los archivos y la confirmación de que cumplen con los requisitos del cliente.
+
+Acciones a realizar:
+1. Reunir todos los entregables necesarios.
+2. Revisar cada entregable para asegurarse de que cumple con los estándares.
+3. Preparar los archivos para el envío.
+4. Enviar los archivos al cliente y confirmar la recepción.",,02:30
+Client Meetings,"client meeting, communication, discussion, progress update",Engagement,,"## Descripción
+El objetivo de esta sección es facilitar una reunión con el cliente, donde se discutirá el progreso del proyecto y se abordarán las inquietudes del cliente. Es crucial mantener una comunicación clara y efectiva para asegurar que todas las partes estén alineadas y satisfechas con el avance.
+
+### Tareas a realizar:
+1. Preparar una agenda para la reunión.
+2. Reunir actualizaciones y puntos de discusión relevantes.
+3. Programar la reunión con el cliente.
+4. Enviar la agenda y los documentos necesarios al cliente antes de la reunión.
+
+---
+
+Language: English
+<markdown>
+## Description
+The goal of this section is to facilitate a meeting with the client, where project progress will be discussed, and client concerns will be addressed. It is crucial to maintain clear and effective communication to ensure that all parties are aligned and satisfied with the progress.
+
+### Action Items:
+1. Prepare an agenda for the meeting.
+2. Gather relevant updates and discussion points.
+3. Schedule the meeting with the client.
+4. Send the agenda and necessary documents to the client prior to the meeting.",,01:30
+Prepare/Send Final Invoice,"billing, completion, final bill, final invoice, payment request",Onboarding,,"Para la tarea ""Preparar/Enviar Factura Final"", primero queremos asegurarnos de que todos los servicios prestados estén correctamente documentados y que la factura refleje con precisión los costos finales. Esto incluye la revisión de los acuerdos de servicio y la confirmación de que no hay cargos adicionales que se deban incluir.
+
+Acciones a realizar:
+1. Revisar los servicios prestados y los acuerdos de servicio.
+2. Calcular el monto total a facturar.
+3. Preparar la factura final con todos los detalles necesarios.
+4. Enviar la factura final al cliente y hacer un seguimiento para confirmar la recepción.",,01:30
+Client Approval,"acceptance, agreement, client approval, sign-off",Engagement,,"Para la sección ""Compromiso"", primero queremos asegurarnos de que todas las expectativas se hayan discutido y acordado entre el cliente y el equipo. Esto incluye la definición de los entregables, los plazos y los estándares de calidad esperados.
+
+Tareas:
+1. Revisar el contrato y los requisitos del proyecto.
+2. Programar una reunión con el cliente para discutir y aclarar expectativas.
+3. Documentar los entregables acordados y los plazos.
+4. Obtener la firma del cliente para la aprobación final.",,01:30
+Project planning,"project plan, resources, scope, strategy, timeline",Onboarding,,"## Onboarding
+
+""El objetivo de la sección de Onboarding es garantizar que los nuevos clientes comprendan completamente el proceso del proyecto y se sientan cómodos con los recursos disponibles. Esto incluye la presentación del equipo, la explicación de las expectativas y la revisión de los plazos del proyecto.""
+
+### Tareas a realizar:
+1. Preparar una presentación del equipo para los nuevos clientes.
+2. Revisar el alcance del proyecto y los recursos disponibles con los clientes.
+3. Establecer expectativas claras sobre la comunicación y el progreso.
+4. Programar sesiones de preguntas y respuestas para abordar cualquier inquietud.",,02:30
+Kick-off Meeting,"client introduction, initial meeting, kick-off, project start",Onboarding,,"Para la tarea de Onboarding, queremos asegurarnos de que el cliente comprenda el proceso inicial del proyecto y se sienta bienvenido. Esto incluye presentar al equipo, discutir los objetivos del proyecto y abordar cualquier pregunta que el cliente pueda tener.
+
+Elementos de acción:
+1. Presentar al cliente al equipo del proyecto.
+2. Revisar los objetivos del proyecto y las expectativas.
+3. Proporcionar información sobre el proceso y los próximos pasos.
+4. Abordar cualquier duda o pregunta del cliente.",,01:30
+Prepare/Send Initial Invoice,"billing, first bill, initial invoice, payment request",Onboarding,,"Para la tarea ""Preparar/Enviar Factura Inicial"", primero se debe reunir toda la información necesaria para la factura, asegurándose de que todos los servicios prestados estén correctamente documentados. Esto incluye verificar las tarifas acordadas y la información del cliente.
+
+Elementos de acción:
+1. Reunir la información de los servicios prestados.
+2. Verificar las tarifas y detalles acordados con el cliente.
+3. Redactar la factura inicial.
+4. Revisar la factura para asegurar su precisión.
+5. Enviar la factura al cliente.",,01:30
+Send Engagement,"client agreement, engagement letter, scope of work, tax engagement",Tax Prep,,"Para la sección ""Preparación de Impuestos"", primero se desea revisar la documentación fiscal del cliente y asegurar que toda la información necesaria esté disponible para la presentación de impuestos. Esto incluye la recopilación de formularios W-2, 1099 y otros documentos relevantes.
+
+Lista de acciones:
+1. Recopilar todos los formularios fiscales relevantes.
+2. Revisar la documentación para verificar su integridad.
+3. Identificar cualquier documento faltante o información adicional necesaria.
+4. Preparar un resumen de los hallazgos y cualquier acción necesaria para completar la presentación de impuestos.",,02:30
+Prepare Return,"calculations, return completion, tax form, tax return preparation",Tax Prep,,"Para la sección ""Preparación de Impuestos"", es esencial reunir toda la documentación necesaria para completar correctamente la declaración de impuestos. Esto incluye la recopilación de ingresos, deducciones y otros formularios requeridos. Asegúrese de revisar cada formulario para garantizar que la información sea precisa y esté completa.
+
+Elementos de Acción:
+1. Reunir todos los documentos fiscales relevantes.
+2. Revisar los formularios de ingresos y deducciones.
+3. Completar el formulario de impuestos.
+4. Verificar la precisión de la información antes de la presentación.",,01:30
+document collection,"document gathering, information request, records collection",Tax Prep,,"## Preparación de Impuestos - Recolección de Documentos
+
+Primero, queremos reunir todos los documentos necesarios para la preparación de impuestos. Esto incluye formularios W-2, 1099, recibos de deducción y cualquier otro documento relevante que pueda afectar la declaración de impuestos.
+
+### Acciones:
+1. Solicitar a los clientes que envíen todos los documentos fiscales relevantes.
+2. Revisar los documentos recibidos para asegurarse de que estén completos.
+3. Organizar los documentos por tipo y año fiscal.
+4. Hacer un seguimiento con los clientes si faltan documentos importantes.
+
+---
+
+## Tax Prep - Document Collection
+
+First, we want to gather all necessary documents for tax preparation. This includes W-2 forms, 1099s, deduction receipts, and any other relevant documents that may impact the tax return.
+
+### Action Items:
+1. Request clients to submit all relevant tax documents.
+2. Review the received documents to ensure completeness.
+3. Organize the documents by type and tax year.
+4. Follow up with clients if any important documents are missing.",,01:30
+Gather Documents,"client information, document collection, records, tax documents",Tax Prep,,"Para la sección ""Preparación de Impuestos"", el objetivo es reunir todos los documentos necesarios para la preparación de impuestos del cliente. Esto incluye información clave del cliente y documentos fiscales que son esenciales para completar la declaración de impuestos de manera precisa y eficiente.
+
+Acciones a realizar:
+1. Recopilar la información del cliente.
+2. Obtener todos los documentos fiscales necesarios.
+3. Revisar la documentación para asegurarse de que esté completa.
+4. Organizar los documentos en un formato accesible para la preparación de impuestos.",,01:30
+Approvals,"authorization, client approval, e-file authorization, sign-off, tax review",Tax Prep,,"## Descripción
+Para la sección de ""Preparación de Impuestos"", es fundamental revisar toda la documentación fiscal del cliente para garantizar que se cumplan todos los requisitos legales y fiscales. Esto incluye la recopilación de formularios, la verificación de deducciones y la preparación de las declaraciones de impuestos.
+
+### Elementos de Acción:
+1. Reunir todos los documentos fiscales relevantes del cliente.
+2. Revisar los formularios y asegurarse de que estén completos y precisos.
+3. Verificar las deducciones fiscales disponibles para el cliente.
+4. Preparar la declaración de impuestos y asegurarse de que esté lista para la aprobación del cliente.",,01:30
+Submit,"IRS, e-file, mail, state tax agency, submission, tax filing",Tax Prep,,"Para la sección ""Preparación de Impuestos"", primero queremos asegurarnos de que todos los documentos necesarios estén listos para la presentación. Esto incluye la recopilación de formularios W-2, 1099 y cualquier otro documento relevante para la declaración de impuestos. Además, es importante verificar que toda la información sea precisa y esté actualizada.
+
+Elementos de acción:
+1. Reunir todos los formularios fiscales necesarios.
+2. Verificar la precisión de la información en los formularios.
+3. Completar la declaración de impuestos para su presentación.
+4. Decidir si se presentará electrónicamente o por correo.
+5. Enviar la declaración a la agencia estatal de impuestos correspondiente.",,01:30
+Create/Send Invoice,"billing, fee, payment request, tax invoice",Tax Prep,,"""Preparación de Impuestos - Facturación"" ""Primero, queremos revisar la documentación fiscal del cliente y asegurarnos de que todas las facturas y solicitudes de pago estén en orden. Esto incluye verificar que los impuestos correspondientes estén calculados correctamente y que el cliente reciba un aviso sobre el pago pendiente.
+
+Tareas:
+1. Recopilar todas las facturas relevantes
+2. Verificar los cálculos de impuestos en las facturas
+3. Enviar el aviso de pago al cliente
+4. Documentar cualquier discrepancia o problema encontrado""",,01:30
+01.2 Aviso IRS? \IRS letter?,Determining if an IRS audit notification has been received.,Audit Prep,,"Audit Prep - Preparación para Auditoría
+""Primero, se debe revisar la notificación del IRS para determinar su contenido y los pasos necesarios a seguir. Es fundamental asegurarse de que todos los documentos y registros estén en orden y listos para la revisión.""
+
+Acciones:
+1. Revisar la notificación del IRS recibida.
+2. Reunir todos los documentos relevantes (declaraciones de impuestos, recibos, etc.).
+3. Verificar que toda la información esté completa y correcta.
+4. Preparar respuestas a cualquier consulta que pueda surgir.
+5. Establecer un cronograma para abordar los temas mencionados en la notificación.",Published,01:30
+01.1 Cronograma \Timeline,Establishing the schedule and key dates for the audit process.,Audit Prep,,"Audit Prep - Preparación de Auditoría
+Primero, se debe preparar toda la documentación necesaria y asegurarse de que todos los registros financieros estén disponibles para la auditoría. Es importante organizar la información y verificar que esté completa y precisa antes de la auditoría.
+
+Acciones a realizar:
+1. Reunir todos los documentos financieros relevantes.
+2. Organizar los registros por tipo y año.
+3. Verificar que no falten documentos importantes.
+4. Asegurarse de que todos los registros sean precisos y estén actualizados.
+5. Preparar un resumen de los registros para el auditor.",Published,02:30
+02.1 Contacto \Contact,Specific contact information for the client.,Audit Prep,,"## Auditoría - Preparación
+
+""Primero, es importante reunir toda la documentación necesaria para la auditoría y garantizar que esté completa y actualizada. Esto incluye estados financieros, registros fiscales y cualquier otro documento relevante. También se deben identificar los posibles riesgos y áreas que podrían requerir una atención especial durante el proceso de auditoría.""
+
+### Tareas a Realizar:
+1. Reunir la documentación necesaria.
+2. Revisar los registros para asegurarse de que estén completos.
+3. Identificar los posibles riesgos o áreas problemáticas.
+4. Preparar un plan para abordar cualquier hallazgo durante la auditoría.",Published,01:30
+02. Datos del Cliente \Client Information,Gathering essential details about the client for the audit.,Audit Prep,,"""Preparación de la Auditoría - Datos del Cliente:
+Primero, es importante reunir detalles esenciales sobre el cliente para garantizar que la auditoría sea completa y precisa. Esto incluye información sobre la estructura del cliente, su situación financiera y cualquier otro dato relevante que pueda impactar el proceso de auditoría.
+
+Tareas a Realizar:
+1. Reunir información básica del cliente (nombre, dirección, tipo de negocio).
+2. Obtener registros financieros relevantes del cliente.
+3. Revisar la información recopilada para asegurar su precisión.
+4. Identificar cualquier área que requiera atención especial durante la auditoría.""",Published,01:30
+03. Documentos Legales \Legal Documents,Collecting legal documents relevant to the business and tax situation.,Audit Prep,,"Audit Prep - Documentación Legal
+""Primero, queremos recopilar todos los documentos legales relevantes para la situación del negocio y los impuestos. Esto incluye contratos, licencias, y cualquier otro documento que pueda ser necesario para garantizar el cumplimiento legal.""
+
+Tareas:
+1. Recopilar los documentos legales relevantes.
+2. Revisar los documentos para asegurar que están actualizados.
+3. Identificar cualquier documento faltante.
+4. Organizar los documentos en un formato accesible para la auditoría.",Published,01:30
+01. Analysis \Analysis,Initial review and planning for the tax audit.,Audit Prep,,"Audit Prep - Análisis
+""Primero queremos revisar los registros financieros e identificar áreas que no cumplen con las normativas y determinar los pasos necesarios para cumplir con estas.""
+
+Elementos de acción:
+1. Recuperar los registros relevantes
+2. Revisar los registros y buscar incumplimientos
+3. Documentar los incumplimientos
+4. Desarrollar o enumerar las acciones requeridas para cumplir con las normativas.",Published,01:30
+03.4 Licencias y permisos \Licenses & permits,Gathering relevant business licenses and permits.,Audit Prep,,"""Licencias y permisos - Preparación de auditoría""
+
+""Primero, es necesario recopilar y revisar todas las licencias y permisos comerciales relevantes para garantizar que estén en cumplimiento con las regulaciones locales y estatales. Esto incluye verificar la validez de las licencias y asegurarse de que se hayan obtenido todos los permisos necesarios para operar legalmente.""
+
+Acciones a realizar:
+1. Reunir todas las licencias y permisos relevantes.
+2. Verificar la validez de cada licencia y permiso.
+3. Identificar cualquier licencia o permiso que falte.
+4. Documentar el estado de cada licencia y permiso.
+5. Desarrollar un plan para obtener cualquier licencia o permiso faltante.",Published,01:30
+03.1 Acuerdos \Operating,Gathering operating agreements or partnership agreements.,Audit Prep,,"Acuerdos Operativos - Revisión
+
+Primero, es importante recopilar todos los acuerdos operativos o de asociación relevantes y asegurarnos de que estén actualizados y en cumplimiento con las normativas vigentes. Después, se deberán identificar las áreas que necesitan ser revisadas o ajustadas.
+
+Tareas a realizar:
+1. Recopilar todos los acuerdos operativos y de asociación pertinentes.
+2. Revisar los documentos para verificar su legalidad y cumplimiento.
+3. Documentar cualquier discrepancia o área de mejora.
+4. Desarrollar un plan de acción para resolver cualquier problema identificado.",Published,01:30
+03.5 Registros estatales anuales \Annual state filings,Obtaining annual reports or filings made with the state.,Audit Prep,,"Preparación de Auditoría - Registros Estatales Anuales
+Primero, queremos revisar los informes anuales o presentaciones realizadas ante el estado para garantizar que toda la información esté completa y cumpla con los requisitos legales. Es fundamental identificar cualquier discrepancia y asegurarse de que se tomen las medidas correctivas necesarias.
+
+Tareas:
+1. Obtener los informes anuales relevantes.
+2. Revisar los registros y buscar discrepancias.
+3. Documentar cualquier discrepancia encontrada.
+4. Desarrollar o enumerar acciones necesarias para corregir las discrepancias.",Published,01:30
+05.2 Gastos Compartidos \Shared Expenses,Documenting expenses shared between business and personal use.,Audit Prep,,"""05.2 Gastos Compartidos - Preparación de Auditoría""
+""Primero, se debe revisar los registros financieros relacionados con los gastos compartidos y asegurarse de que estén debidamente documentados. También es importante identificar cualquier área de discrepancia entre los gastos de negocios y personales.""
+
+Acciones a realizar:
+1. Recuperar los registros financieros relevantes.
+2. Revisar los registros y buscar discrepancias.
+3. Documentar las discrepancias encontradas.
+4. Desarrollar acciones necesarias para corregir cualquier problema identificado.""",Published,01:30
+05.3 Pruebas de Pagos \Proof of payment,Collecting evidence that expenses were actually paid.,Audit Prep,,"""Pruebas de Pagos - Preparación de Auditoría. Esta sección se centra en la recopilación de evidencia que demuestre que los gastos fueron efectivamente pagados. Es importante garantizar que todas las pruebas de pago estén bien documentadas y organizadas para la auditoría.""
+
+Tareas a realizar:
+1. Reunir todos los recibos y documentos de pago relevantes.
+2. Verificar que cada documento esté completo y correctamente firmado.
+3. Clasificar los documentos según su tipo y fecha.
+4. Preparar un resumen de los pagos realizados para facilitar la auditoría.",Published,01:30
+05.1 Gastos Inusuales \Unusual Expenses,Identifying and documenting any non-recurring or unusual expense items.,Audit Prep,,"""Preparación de Auditoría - Gastos Inusuales"" ""Primero, es fundamental revisar los registros financieros y documentar cualquier gasto no recurrente o inusual que pueda afectar la auditoría. Esto implica identificar y clasificar estos gastos para asegurar que estén correctamente reflejados en los estados financieros.
+Elementos de acción:
+1. Recuperar los registros financieros relevantes.
+2. Revisar los registros y buscar gastos inusuales.
+3. Documentar los gastos inusuales identificados.
+4. Clasificar y analizar el impacto de estos gastos en la auditoría.""",Published,02:30
+05. Gastos \Expenses,Gathering documentation related to the business's expenses.,Audit Prep,,"""Preparación de Auditoría - Gastos"" ""Primero, es necesario reunir toda la documentación relacionada con los gastos del negocio y asegurarse de que todo esté en orden para la auditoría. Esto incluye revisar recibos, facturas y cualquier otro documento que respalde los gastos reportados.""
+
+Elementos de acción:
+1. Recopilar toda la documentación de gastos.
+2. Revisar los recibos y facturas para asegurarse de que estén completos.
+3. Verificar que los gastos estén debidamente clasificados.
+4. Documentar cualquier discrepancia o falta de documentación.",Published,01:30
+"04.2 Facturas, Reportes POS \Invoices, POS Reports",Collecting invoices issued and reports from point-of-sale systems.,Audit Prep,,"Facturas, Reportes POS - Preparación de Auditoría
+Primero, se debe recopilar todas las facturas emitidas y los informes del sistema de punto de venta para asegurarse de que toda la información esté disponible para la auditoría. Esto incluye verificar la precisión de los datos y asegurarse de que se sigan todos los procedimientos adecuados para la emisión de facturas y la recolección de informes.
+Acciones:
+1. Recopilar todas las facturas emitidas.
+2. Obtener los informes del sistema de punto de venta.
+3. Verificar la precisión de la información recopilada.
+4. Asegurarse de que se sigan todos los procedimientos adecuados.
+Invoices, POS Reports - Audit Prep
+First, all issued invoices and reports from the point-of-sale system should be collected to ensure that all information is available for the audit. This includes verifying the accuracy of the data and ensuring that all proper procedures for invoicing and report collection are followed.
+Action Items:
+1. Collect all issued invoices.
+2. Retrieve reports from the point-of-sale system.
+3. Verify the accuracy of the collected information.
+4. Ensure that all proper procedures are followed.",Published,01:30
+04.5 Revisar discrepancias 1099 (si hay) \Review 1099 discrepancies (if any),Identifying and investigating any differences between client records and 1099s.,Audit Prep,,"""Revisión de discrepancias 1099""
+""Primero, se desea revisar los registros del cliente y comparar cualquier discrepancia con los formularios 1099 recibidos. Esto ayudará a identificar errores o inconsistencias que puedan requerir correcciones o aclaraciones.""
+
+Elementos de acción:
+1. Recopilar todos los formularios 1099 relevantes.
+2. Revisar los registros del cliente y compararlos con los formularios 1099.
+3. Documentar cualquier discrepancia encontrada.
+4. Comunicar las discrepancias a los clientes y discutir los pasos a seguir para resolverlas.",Published,01:30
+03.2 CP575 EIN IRS \IRS CP575 EIN,Obtaining the official IRS letter confirming the EIN.,Audit Prep,,"Audit Prep - Obtención del EIN
+
+""Primero, es importante asegurarse de que se cuente con la carta oficial del IRS que confirma el Número de Identificación del Empleador (EIN). Esto es crucial para cualquier preparación de auditoría y para cumplir con las obligaciones fiscales.""
+
+Acciones a realizar:
+1. Solicitar la carta oficial del IRS que confirma el EIN.
+2. Revisar la carta para asegurarse de que toda la información sea correcta.
+3. Archivar la carta en los registros de la empresa.
+4. Comunicar a las partes interesadas la obtención del EIN.
+
+---
+
+Language: English
+<markdown>
+Audit Prep - Obtaining the EIN
+
+""First, it is important to ensure that the official IRS letter confirming the Employer Identification Number (EIN) is obtained. This is crucial for any audit preparation and for meeting tax obligations.""
+
+Action Items:
+1. Request the official IRS letter confirming the EIN.
+2. Review the letter to ensure all information is correct.
+3. File the letter in the company records.
+4. Communicate the acquisition of the EIN to stakeholders.",Published,01:30
+04.1 Inusual Ingresos \Unusual Income,Identifying and documenting any non-recurring or unusual income items.,Audit Prep,,"""Preparación de Auditoría - Ingresos Inusuales"" ""Primero queremos revisar los registros financieros e identificar cualquier ingreso no recurrente o inusual. Esto nos permitirá tener claridad sobre la situación financiera y asegurarnos de que todos los ingresos sean correctamente documentados y reportados.""
+
+Elementos de acción:
+1. Recuperar los registros financieros relevantes.
+2. Revisar los registros en busca de ingresos inusuales o no recurrentes.
+3. Documentar cualquier ingreso identificado.
+4. Desarrollar un plan para la correcta inclusión de estos ingresos en los informes financieros.""",Published,01:30
+04.4 Conciliacian de ingresos \Income reconciliation,Reconciling reported income with bank deposits and other records.,Audit Prep,,"""Conciliación de ingresos - Preparación de auditoría: Primero, se debe revisar los ingresos reportados y compararlos con los depósitos bancarios y otros registros para asegurar que todo esté en orden y no haya discrepancias.
+Tareas a realizar:
+1. Recolectar los registros financieros relevantes.
+2. Comparar los ingresos reportados con los depósitos bancarios.
+3. Identificar cualquier discrepancia o error.
+4. Documentar las discrepancias encontradas.
+5. Desarrollar un plan de acción para corregir las discrepancias.""",Published,01:30
+03.3 Comunicaciones Estatales \State Correspondence,Collecting any communication from state tax authorities.,Audit Prep,,"Comunicaciones Estatales - Preparación de Auditoría
+""Primero, es importante recopilar todas las comunicaciones de las autoridades fiscales estatales y asegurarse de que estén organizadas. Esto facilitará la revisión durante el proceso de auditoría.""
+
+Acciones a Realizar:
+1. Recopilar todas las comunicaciones relevantes de las autoridades fiscales estatales.
+2. Organizar las comunicaciones por fecha y tipo.
+3. Revisar las comunicaciones para identificar cualquier área de preocupación.
+4. Documentar las comunicaciones y cualquier acción requerida en respuesta.",Published,01:30
+04. Ingresos \Income,Gathering documentation related to the business's income.,Audit Prep,,"Ingresos - Preparación de Auditoría
+""Primero queremos reunir la documentación relacionada con los ingresos del negocio y asegurarnos de que esté en orden para la auditoría.""Tareas:
+1. Reunir los registros de ingresos relevantes.
+2. Revisar los registros y verificar su precisión.
+3. Documentar cualquier discrepancia o problema.
+4. Preparar un informe con los hallazgos y recomendaciones.",Published,01:30
+"04.3 Formas \Forms 1099-NEC, MISC, K, INT, DIV",Gathering all relevant income-reporting forms.,Audit Prep,,"""Preparación de Auditoría - Formas 1099-NEC, MISC, K, INT, DIV. Primero, es necesario recopilar todos los formularios de ingresos relevantes para garantizar que la información presentada sea precisa y esté completa. Esto incluye verificar que todos los ingresos reportados estén debidamente documentados y que se cumplan los requisitos fiscales.
+
+Elementos de acción:
+1. Reunir todos los formularios 1099-NEC, MISC, K, INT y DIV relevantes.
+2. Revisar cada formulario para asegurar que la información sea precisa y esté completa.
+3. Comparar los ingresos reportados con los registros financieros.
+4. Documentar cualquier discrepancia y preparar un plan para solucionar los problemas identificados.""",Published,01:30
+08.1 Depreciacian de Vehiculo \Vehicle Depreciation,Calculating and documenting vehicle depreciation.,Audit Prep,,"""Preparación de Auditoría - Depreciación de Vehículos: En esta sección, se revisará el proceso de cálculo y documentación de la depreciación de vehículos. Es fundamental asegurarse de que se sigan las pautas adecuadas para mantener la precisión en los registros financieros.
+
+Acciones a realizar:
+1. Reunir los registros financieros relacionados con la depreciación de vehículos.
+2. Revisar los registros y verificar el cálculo de la depreciación.
+3. Documentar cualquier discrepancia o error en el cálculo.
+4. Desarrollar un plan para corregir cualquier error encontrado.""",Published,01:30
+"06.2 Contratos y formas I-9, W-4 \Contracts, I-9s, W-4s",Gathering employment contracts and employee tax forms.,Audit Prep,,"Contratos y formas I-9, W-4 - Preparación de Auditoría
+""Primero, es necesario reunir todos los contratos de empleo y formularios fiscales I-9 y W-4 de los empleados para garantizar que estén completos y sean precisos. Esto ayudará a identificar cualquier discrepancia que deba ser abordada antes de la auditoría.""
+
+Acciones:
+1. Recopilar todos los contratos de empleo.
+2. Recoger los formularios I-9 y W-4 de los empleados.
+3. Revisar los documentos en busca de errores o información faltante.
+4. Documentar cualquier discrepancia encontrada.
+5. Preparar un informe que detalle los hallazgos y las acciones necesarias.",Published,01:30
+06. Nomina \Payroll,Gathering documentation related to employee payroll.,Audit Prep,,"Nomina - Preparación de Auditoría
+""Primero, se desea revisar la documentación relacionada con la nómina de los empleados para asegurar que todos los registros están en orden y son precisos. Esto incluye verificar los salarios, horas trabajadas y deducciones para garantizar el cumplimiento de las normativas fiscales y laborales.""
+
+Acciones:
+1. Reunir toda la documentación relacionada con la nómina.
+2. Revisar los registros de salarios y horas trabajadas.
+3. Verificar las deducciones y asegurarse de que sean correctas.
+4. Documentar cualquier discrepancia o error encontrado.
+5. Desarrollar un plan para corregir las discrepancias y asegurar el cumplimiento.",Published,01:30
+07.1 Formas W-9 y Contratos \Contracts & Form W9s,Collecting W-9 forms and service agreements for contractors.,Audit Prep,,"Preparación de Auditoría - Formas W-9 y Contratos
+
+En esta sección, se busca recopilar y organizar las formas W-9 y los contratos de los contratistas para asegurar que toda la documentación esté en orden antes de la auditoría.
+
+Acciones a Realizar:
+1. Recopilar todas las formas W-9 de los contratistas.
+2. Revisar los contratos de servicio para asegurarse de que estén firmados y completos.
+3. Documentar cualquier forma W-9 o contrato faltante.
+4. Asegurarse de que toda la documentación cumpla con las normativas requeridas.",Published,01:30
+08. Uso Vehiculo \Vehicle Use,Gathering documentation for business vehicle expenses.,Audit Prep,,"Uso Vehículo - Preparación de Auditoría
+""El objetivo de esta sección es reunir la documentación necesaria para los gastos relacionados con vehículos de negocio, garantizando que todos los registros estén en orden y cumplan con las normativas fiscales.""
+
+Tareas a realizar:
+1. Recopilar recibos y documentos relacionados con los gastos del vehículo.
+2. Revisar la documentación para asegurarse de que esté completa.
+3. Clasificar los gastos por categorías.
+4. Preparar un informe que resuma los gastos del vehículo.",Published,01:30
+06.4 Informes Nomina \Payroll Reports,Gathering reports from payroll processing services.,Audit Prep,,"Informe de Nómina - Auditoría
+
+""Primero, es necesario revisar los informes de nómina y asegurarse de que todos los datos sean precisos y cumplan con las normativas vigentes. Esto incluirá la validación de salarios, retenciones y otros elementos relacionados con la nómina.""
+
+Acciones a realizar:
+1. Recopilar los informes de nómina relevantes.
+2. Revisar los datos en busca de errores o discrepancias.
+3. Documentar cualquier error encontrado.
+4. Proponer acciones correctivas para resolver las discrepancias.",Published,01:30
+08.2 Gastos Reales de Auto \Actual Auto Expenses,"Documenting actual expenses like gas, and maintenance., insurance",Audit Prep,,"""Preparación de Auditoría - Gastos Reales de Auto""
+""Primero, queremos revisar los gastos reales del auto y asegurarnos de que todos los gastos, como gasolina, mantenimiento e insurance, estén correctamente documentados y sean consistentes con los registros financieros.""
+
+Elementos de acción:
+1. Recopilar todos los recibos de gastos de auto.
+2. Revisar los registros de gastos y verificar su precisión.
+3. Documentar cualquier discrepancia en los gastos.
+4. Asegurarse de que todos los gastos estén clasificados correctamente para la auditoría.""
+
+---
+
+Language: English
+<markdown>
+""Audit Prep - Actual Auto Expenses""
+""First, we want to review the actual auto expenses and ensure that all costs, such as gas, maintenance, and insurance, are properly documented and consistent with the financial records.""
+
+Action Items:
+1. Gather all auto expense receipts.
+2. Review the expense records and verify their accuracy.
+3. Document any discrepancies in the expenses.
+4. Ensure that all expenses are correctly categorized for the audit.""",Published,02:30
+07.2 Resumen de pagos y 1099s emitidosSummarizing payments made to contractors and 1099s issued.,"1099 summary, contractor payments, information returns",Audit Prep,,"Resumen de pagos y emisión de 1099s: En esta sección, se busca revisar los pagos realizados a los contratistas y asegurarse de que todos los formularios 1099 estén correctamente emitidos. Es fundamental garantizar la precisión de la información para cumplir con las normativas fiscales.
+
+Acciones a realizar:
+1. Recopilar registros de pagos realizados a contratistas.
+2. Verificar la precisión de los formularios 1099 emitidos.
+3. Documentar cualquier discrepancia encontrada.
+4. Preparar un informe que resuma los pagos y 1099s emitidos.",Published,02:30
+"06.3 Forma W-2, W-3, 941, 940 \forms",Collecting employer payroll tax forms.,Audit Prep,,"## Preparación de Auditoría - Formularios de Impuestos
+
+""En esta sección, se deben recopilar y revisar los formularios de impuestos de nómina del empleador para garantizar que estén completos y precisos. Es esencial verificar que todos los formularios requeridos estén disponibles y que se hayan presentado a tiempo.""
+
+### Tareas:
+
+1. Recopilar todos los formularios W-2, W-3, 941 y 940.
+2. Revisar cada formulario para detectar errores o información faltante.
+3. Asegurarse de que todos los formularios se hayan presentado dentro de los plazos establecidos.
+4. Documentar cualquier discrepancia o problema encontrado durante la revisión.
+5. Preparar un informe sobre el estado de los formularios de impuestos para la auditoría.",Published,01:30
+06.1 Talones de Pagos \Check Stubs,Collecting pay stubs for employees.,Audit Prep,,"## Talones de Pagos - Preparación de Auditoría
+
+Primero, queremos recopilar todos los talones de pago de los empleados para asegurarnos de que estén completos y cumplan con las normativas. Esto ayudará a facilitar el proceso de auditoría y garantizar que todos los registros estén en orden.
+
+### Acciones a realizar:
+1. Recopilar todos los talones de pago de los empleados.
+2. Revisar los talones de pago para verificar su integridad.
+3. Documentar cualquier discrepancia o falta de cumplimiento.
+4. Asegurarse de que todos los talones de pago estén actualizados y disponibles para la auditoría.",Published,01:30
+07. Contratistas y 1099s \Contractors and 1099s,Gathering documentation related to independent contractors.,Audit Prep,,"""Preparación de Auditoría - Contratistas y 1099s"" ""Primero, es importante reunir toda la documentación relevante relacionada con los contratistas independientes. Esto incluye formularios 1099 y cualquier otro registro que demuestre los pagos realizados a estos contratistas.""
+
+Acciones:
+1. Recopilar todos los formularios 1099 emitidos.
+2. Revisar los registros de pagos a contratistas independientes.
+3. Verificar que la documentación esté completa y correcta.
+4. Preparar un resumen de los pagos realizados a cada contratista.",Published,02:30
+10. Impuestos \Taxes,Gathering copies of the client's tax returns and related forms.,Audit Prep,,"Preparación de Auditoría
+""Primero, queremos reunir copias de las declaraciones de impuestos del cliente y formularios relacionados para asegurarnos de que toda la documentación esté en orden para la auditoría. Esto incluye verificar la precisión y la integridad de la información presentada.""
+
+Acciones a realizar:
+1. Recopilar las declaraciones de impuestos del cliente y formularios relacionados.
+2. Revisar la documentación para asegurar su precisión.
+3. Identificar cualquier discrepancia o área que requiera atención.
+4. Preparar un resumen de la documentación para la auditoría.",Published,01:30
+09. Oficina en Casa \Home Office,Gathering documentation for home office deductions.,Audit Prep,,"""Preparación de Auditoría - Documentación para Deducciones de Oficina en Casa""
+""Primero, se debe reunir toda la documentación necesaria para las deducciones fiscales relacionadas con la oficina en casa. Esto incluye recibos, facturas y cualquier otro documento que respalde los gastos.""
+Elementos de Acción:
+1. Recopilar todos los recibos y facturas relacionados con la oficina en casa.
+2. Organizar la documentación por tipo de gasto.
+3. Verificar que se cumplan los requisitos fiscales para las deducciones.
+4. Crear un resumen de los gastos deducibles.",Published,01:30
+10.2 Declaraciones 1040 \1040 Tax Returns,Obtaining copies of the federal income tax returns.,Audit Prep,,"## Preparación de Auditoría - Declaraciones 1040
+
+Primero, es necesario revisar las declaraciones de impuestos federales 1040 y asegurarse de que toda la información esté completa y precisa. Esto incluye verificar ingresos, deducciones y créditos fiscales que se hayan reclamado.
+
+### Elementos de acción:
+1. Obtener copias de las declaraciones de impuestos 1040.
+2. Revisar la información presentada en las declaraciones.
+3. Identificar cualquier discrepancia o error.
+4. Documentar cualquier hallazgo que requiera corrección.
+5. Desarrollar un plan de acción para abordar cualquier problema identificado.
+
+---
+
+Language: English
+<markdown>
+## Audit Prep - 1040 Tax Returns
+
+First, it is necessary to review the federal income tax returns 1040 and ensure that all information is complete and accurate. This includes verifying income, deductions, and tax credits claimed.
+
+### Action Items:
+1. Obtain copies of the 1040 tax returns.
+2. Review the information reported on the returns.
+3. Identify any discrepancies or errors.
+4. Document any findings that require correction.
+5. Develop a plan of action to address any identified issues.",Published,01:30
+09.2 Declaración de Uso Exclusivo \Statement of exclusive use,Documenting that the home office space is used exclusively for business.,Audit Prep,,"""Preparación de Auditoría - Declaración de Uso Exclusivo""
+""Primero, queremos documentar que el espacio de la oficina en casa se utiliza exclusivamente para fines comerciales. Esto es importante para asegurar el cumplimiento con las regulaciones fiscales y para maximizar las deducciones disponibles.""
+
+Elementos de acción:
+1. Revisar la documentación relacionada con el uso del espacio de la oficina.
+2. Asegurarse de que el espacio cumple con los requisitos para su uso exclusivo como oficina.
+3. Documentar el uso exclusivo y los detalles relevantes.
+4. Preparar cualquier evidencia necesaria para respaldar la declaración.",Published,02:30
+08.4 Kilometraje Detallado \Mileage log,Maintaining a detailed log of business vehicle mileage.,Audit Prep,,"08.4 Kilometraje Detallado - Preparación para Auditoría
+""En esta sección, se busca mantener un registro detallado de los kilómetros recorridos en vehículos de negocio, lo cual es crucial para la auditoría y el cumplimiento normativo. Los registros precisos ayudan a garantizar que se cumplan las regulaciones fiscales y de gastos.""
+
+Acciones:
+1. Recopilar los registros de kilometraje de los vehículos.
+2. Verificar que los registros sean precisos y estén actualizados.
+3. Documentar cualquier discrepancia o error en los registros.
+4. Asegurarse de que todos los registros cumplan con las normas fiscales correspondientes.",Published,01:30
+08.3 Propiedad o Arrendamiento \Proof of Ownership/Lease,Providing documentation of vehicle ownership or lease agreement.,Audit Prep,,"Propiedad o Arrendamiento - Preparación de Auditoría
+""El objetivo de esta sección es asegurar que se cuente con la documentación adecuada que demuestre la propiedad o el arrendamiento del vehículo. Es fundamental preparar todos los documentos necesarios para la auditoría y garantizar que estén en orden.""
+
+Tareas:
+1. Recopilar los documentos de propiedad del vehículo o el contrato de arrendamiento.
+2. Revisar los documentos para verificar la validez y la integridad.
+3. Asegurarse de que toda la documentación esté firmada y fechada correctamente.
+4. Organizar los documentos en un formato fácil de revisar para la auditoría.",Published,01:30
+09.5 Medidas Hogar y Oficina \Home and Office Dimensions,Recording the square footage of the home and the office space.,Audit Prep,,"Medidas Hogar y Oficina - Auditoría de Preparación
+""Primero queremos registrar las dimensiones del hogar y del espacio de oficina para evaluar su uso eficiente y cumplimiento con las normas. Esto ayudará a identificar áreas que puedan necesitar mejoras o ajustes.""
+
+Acciones a realizar:
+1. Medir el área total de la vivienda.
+2. Medir el área total del espacio de oficina.
+3. Comparar las dimensiones con los estándares establecidos.
+4. Documentar cualquier discrepancia o área de mejora.",Published,01:30
+09.1 Calculos de Oficina de Casa \Home Office Calculations,Performing calculations for the allowable home office deduction.,Audit Prep,,"Preparación de Auditoría - Cálculos de Oficina en Casa
+""Primero, se deben realizar cálculos precisos para determinar la deducción permitida por la oficina en casa, asegurando que todos los gastos y áreas deducibles estén correctamente documentados.""
+
+Tareas:
+1. Reunir los registros financieros relacionados con la oficina en casa.
+2. Calcular los gastos deducibles, incluyendo servicios públicos, alquiler y suministros.
+3. Revisar las regulaciones fiscales para asegurarse de que se cumplen los criterios de deducción.
+4. Documentar todos los cálculos y deducciones para la auditoría.",Published,01:30
+"10.1 Anexos \Schedules (A, B, C, E, F, SE)",Collecting specific tax schedules.,Audit Prep,,"Audit Prep - Análisis de Anexos
+""Primero, queremos revisar los anexos específicos relacionados con la recolección de impuestos y asegurarnos de que estén completos y en cumplimiento con las normativas fiscales.""
+
+Acciones:
+1. Recopilar los anexos relevantes.
+2. Revisar los anexos y verificar su cumplimiento.
+3. Documentar cualquier área de incumplimiento.
+4. Desarrollar o enumerar las acciones necesarias para lograr el cumplimiento.",Published,01:30
+09.3 Fotos de Oficina de Casa \Home Office Photos,Providing visual evidence of the home office space.,Audit Prep,,"Auditoría - Preparación
+""Primero queremos revisar el espacio de la oficina en casa y asegurarnos de que todas las fotos estén bien organizadas y representen adecuadamente el entorno de trabajo. Esto ayudará a proporcionar evidencia visual clara para el auditor.""
+
+Tareas:
+1. Recopilar todas las fotos de la oficina en casa.
+2. Organizar las fotos en carpetas según las áreas (escritorio, sala de reuniones, etc.).
+3. Revisar las fotos para garantizar que sean representativas y de buena calidad.
+4. Documentar cualquier mejora necesaria en el espacio de trabajo.",Published,01:30
+09.4 Gastos de Utilidades \Utilities Expense,Documenting utility expenses for the home.,Audit Prep,,"Gastos de Utilidades - Preparación de Auditoría
+""Primero, es necesario revisar los registros financieros relacionados con los gastos de utilidades y asegurar que se estén documentando correctamente. Identificar cualquier área que requiera atención y asegurar que todos los gastos estén justificados y respaldados por recibos.""
+
+Acciones a Realizar:
+1. Recopilar todos los recibos y documentos de los gastos de utilidades.
+2. Revisar los documentos para verificar su precisión y validez.
+3. Documentar cualquier discrepancia o falta de respaldo.
+4. Desarrollar un plan de acción para corregir cualquier error o falta de documentación.",Published,01:30
+11.3 Resumen de Pagos y Fechas \Summary of Dates and Payments,Creating a summary of estimated tax payments made.,Audit Prep,,"Resumen de Auditoría - Preparación
+
+En esta sección, se desea recopilar toda la documentación financiera necesaria y asegurarse de que todos los pagos de impuestos estimados se hayan realizado correctamente. Es fundamental revisar los registros para garantizar que no haya discrepancias y que se cumplan todas las normativas fiscales.
+
+Tareas a realizar:
+1. Recopilar todos los registros financieros relevantes.
+2. Verificar los pagos de impuestos estimados realizados.
+3. Revisar los documentos para detectar posibles discrepancias.
+4. Documentar cualquier hallazgo y preparar un informe para la auditoría.",Published,01:30
+"10.4 Forma Adicionales (4562, 8829, etc.) \Forms Additional (4562, 8829, etc.)",Collecting other relevant tax forms.,Audit Prep,,"Preparación de Auditoría - Forma Adicionales
+""En esta sección, se revisarán y recopilarán otros formularios fiscales relevantes, como el 4562 y el 8829, para garantizar que se cumplan todos los requisitos fiscales y se optimicen las deducciones.""
+
+Acciones:
+1. Reunir los formularios fiscales adicionales relevantes.
+2. Revisar los formularios para verificar su validez y cumplimiento.
+3. Documentar cualquier discrepancia o falta de cumplimiento.
+4. Desarrollar un plan de acción para abordar las discrepancias identificadas.",Published,01:30
+11.2 Formas 1040-ES y Cheques CanceladosObtaining copies of estimated tax payment vouchers and canceled checks.,"Form 1040-ES, canceled checks, estimated tax vouchers",Audit Prep,,"En esta sección, nos enfocaremos en la preparación para la auditoría relacionada con la obtención de copias de los formularios de pago estimado de impuestos y cheques cancelados. Es crucial asegurarse de tener toda la documentación necesaria para poder responder a cualquier consulta durante el proceso de auditoría.
+
+Acciones a realizar:
+1. Solicitar copias de los formularios 1040-ES de los últimos años.
+2. Recopilar cheques cancelados relacionados con los pagos estimados de impuestos.
+3. Verificar que todos los documentos estén completos y en orden.
+4. Organizar la documentación de manera que sea fácilmente accesible durante la auditoría.",Published,01:30
+11.1 Comprobantes EFTPS o IRS Direct PayCollecting proof of electronic or direct payments to the IRS.,"EFTPS receipts, IRS Direct Pay confirmation",Audit Prep,,"Audit Prep - Comprobantes EFTPS o IRS Direct Pay
+""Primero, es importante reunir todos los comprobantes de los pagos electrónicos realizados al IRS a través de EFTPS o IRS Direct Pay. Esto ayudará a asegurar que todos los pagos se registren correctamente y se mantenga una documentación adecuada.""
+
+Acciones a realizar:
+1. Reunir todos los comprobantes de pago electrónicos.
+2. Verificar que los comprobantes correspondan a los pagos reportados.
+3. Documentar cualquier discrepancia en los registros.
+4. Asegurarse de que toda la documentación esté disponible para la auditoría.",Published,01:30
+11. Pagos Estimados \Estimated Payment,Gathering documentation for estimated tax payments.,Audit Prep,,"Pagos Estimados - Preparación de Auditoría
+""Primero se debe reunir la documentación necesaria para los pagos de impuestos estimados y asegurarse de que toda la información esté correcta y actualizada. Esto ayudará a evitar problemas con el IRS y garantizar que se realicen los pagos adecuados a tiempo.""
+
+Elementos de Acción:
+1. Recopilar todos los documentos relevantes relacionados con los pagos de impuestos estimados.
+2. Verificar que la información de los documentos esté completa y actualizada.
+3. Revisar y calcular las estimaciones de impuestos.
+4. Documentar cualquier discrepancia o problema encontrado.
+5. Preparar un cronograma de pagos para asegurar que se realicen a tiempo.",Published,02:30
+10.3 Declaraciones Estatales y Locales \State and Local Returns,Gathering copies of state and local tax returns.,Audit Prep,,"Declaraciones Estatales y Locales - Preparación de Auditoría
+""Primero, queremos recopilar las copias de las declaraciones de impuestos estatales y locales para garantizar que toda la información esté en orden antes de la auditoría. Esto incluye revisar las declaraciones para identificar cualquier discrepancia o problema potencial.""
+
+Acciones:
+1. Recopilar copias de las declaraciones de impuestos estatales y locales.
+2. Revisar las declaraciones en busca de discrepancias.
+3. Documentar cualquier problema encontrado.
+4. Preparar un resumen de las declaraciones para la auditoría.",Published,01:30
+10.5 Formas de Prarroga (4868/7004) \Extensions (4868/7004),Obtaining any filed tax extension forms.,Audit Prep,,"Preparación de Auditoría - Formas de Prorroga
+""En esta sección, es fundamental revisar y asegurarse de que se han presentado todas las formas de prórroga necesarias para evitar sanciones fiscales. Esto incluye la recopilación de formularios de extensión y la verificación de su estado de presentación.""
+
+Acciones a realizar:
+1. Obtener todas las formas de prórroga presentadas.
+2. Verificar el estado de cada forma de prórroga.
+3. Documentar cualquier forma de prórroga que falte o esté pendiente.
+4. Comunicar a los clientes cualquier acción necesaria relacionada con las formas de prórroga.
+
+---
+
+Language: English
+<markdown>
+Audit Prep - Extension Forms
+""In this section, it is essential to review and ensure that all necessary extension forms have been filed to avoid tax penalties. This includes gathering extension forms and verifying their submission status.""
+
+Action Items:
+1. Obtain all filed extension forms.
+2. Verify the status of each extension form.
+3. Document any missing or pending extension forms.
+4. Communicate any necessary actions to clients regarding the extension forms.",Published,01:30
+13. NarrativaDeveloping explanations and justifications for certain items.,"audit narrative, explanations, justifications, supporting details",Audit Prep,,"[Preparación de Auditoría - Narrativa] ""Primero, queremos desarrollar explicaciones y justificaciones para ciertos elementos que se presentarán durante la auditoría. Esto implica analizar los detalles y proporcionar un contexto claro que respalde nuestras conclusiones.""
+
+Elementos de acción:
+1. Revisar los elementos que necesitan explicaciones.
+2. Desarrollar justificaciones claras para cada elemento.
+3. Documentar las explicaciones y justificaciones de manera concisa.
+4. Asegurarse de que la narrativa esté alineada con los requisitos de la auditoría.",,02:30
+13.1 Cambios en declaraciones previasExplaining any amendments or changes to prior year tax returns.,"amended returns, prior year amendments, tax return changes",Audit Prep,,"# Preparación de Auditoría - Cambios en Declaraciones Previas
+
+En esta sección, se revisarán las enmiendas o cambios realizados en las declaraciones de impuestos del año anterior. Es fundamental asegurar que todas las modificaciones se documenten correctamente y se expliquen claramente para evitar discrepancias en futuras auditorías.
+
+Acciones a realizar:
+1. Recopilar las declaraciones de impuestos del año anterior.
+2. Revisar las enmiendas realizadas y su justificación.
+3. Documentar cualquier cambio en el formulario de impuestos.
+4. Preparar un resumen que explique cada cambio realizado.",,01:30
+13.3 Inventario de Documentos \Document Inventory,Creating a list of all documents included in the audit package.,Audit Prep,,"""Inventario de Documentos - Preparación de Auditoría"" ""Primero, queremos crear una lista completa de todos los documentos incluidos en el paquete de auditoría, asegurándonos de que estén organizados y sean accesibles para el equipo de auditoría.
+
+Elementos de Acción:
+1. Recopilar todos los documentos relevantes.
+2. Revisar cada documento para asegurarse de que esté completo.
+3. Organizar los documentos en categorías apropiadas.
+4. Crear una lista final de documentos para el paquete de auditoría.""",,01:30
+12.1 Cronóloga Financiera \Financial Timeline,Creating a timeline of key financial events during the tax year(s).,Audit Prep,,"Cronología Financiera - Preparación para Auditoría
+
+Primero, queremos crear una cronología de los eventos financieros clave durante el año fiscal. Esto ayudará a identificar las fechas importantes y los hitos que pueden influir en el proceso de auditoría.
+
+Acciones a realizar:
+1. Reunir los registros financieros relevantes.
+2. Identificar los eventos financieros clave y sus fechas.
+3. Documentar los hitos en la cronología.
+4. Revisar la cronología con el equipo para asegurarse de que no falte ningún evento importante.",,01:30
+16. Presentar el paquete \Packet Presentation,Formally presenting the audit package to the client.,Audit Prep,,"""Presentación del Paquete - Auditoría"" ""Primero se desea presentar formalmente el paquete de auditoría al cliente, asegurándose de que todos los documentos necesarios estén en orden y que se aborden todas las inquietudes del cliente.""
+
+Elementos de acción:
+1. Preparar todos los documentos de auditoría necesarios.
+2. Revisar el paquete para asegurarse de que esté completo.
+3. Coordinar una reunión con el cliente para la presentación.
+4. Presentar el paquete de auditoría y responder a cualquier pregunta del cliente.",,01:30
+13.2 Notas de preparador fiscalIncluding any notes or explanations from the tax preparer.,"accountant notes, preparer notes, tax preparer comments",Audit Prep,,"Sección: Preparación de Auditoría
+""Primero, se desea revisar los registros financieros y preparar la documentación necesaria para la auditoría. Esto incluye verificar la exactitud de los informes y asegurarse de que toda la información esté completa y en orden.""
+
+Elementos de acción:
+1. Recopilar los registros financieros relevantes.
+2. Revisar los informes para verificar su exactitud.
+3. Asegurarse de que toda la documentación necesaria esté presente.
+4. Identificar y documentar cualquier discrepancia.
+5. Preparar un informe con los hallazgos y las recomendaciones para la auditoría.",,02:30
+13.4 Resumen de Ingreso y Gastos \Summary of Income and Expense,Providing a summary overview of the reported income and expenses.,Audit Prep,,"Resumen de Ingreso y Gastos - Análisis
+""Primero, se desea revisar el resumen de ingresos y gastos reportados para identificar discrepancias y áreas de mejora en la gestión financiera.""
+
+Elementos de acción:
+1. Recopilar el resumen de ingresos y gastos reportados.
+2. Revisar los informes en busca de discrepancias o errores.
+3. Documentar cualquier discrepancia encontrada.
+4. Desarrollar un plan de acción para mejorar la gestión financiera.",,02:30
+14.1 Organizacion del PaqueteStructuring and labeling the audit document package.,"file structure, labeling, packet organization",Audit Prep,,"Organización del Paquete - Preparación de Auditoría
+""Primero, queremos estructurar y etiquetar el paquete de documentos de auditoría de manera clara y efectiva. Esto incluye la creación de una jerarquía de carpetas y la asignación de etiquetas adecuadas para facilitar el acceso a los documentos necesarios.""
+
+Tareas a realizar:
+1. Definir la estructura de carpetas para el paquete de auditoría.
+2. Etiquetar cada documento según su contenido y propósito.
+3. Organizar los documentos en la jerarquía de carpetas establecida.
+4. Revisar y verificar que todos los documentos estén correctamente etiquetados y organizados.",,02:30
+12. RevisionReviewing the gathered documents and initial analysis.,"analysis check, audit review, document review",Audit Prep,,"## Auditoría Prep - Análisis
+
+""Primero queremos revisar los documentos recopilados y analizar cualquier inconsistencia que pueda requerir atención. Esto incluirá una revisión exhaustiva y la identificación de áreas que necesitan ajustes.""
+
+### Elementos de acción:
+1. Recopilar todos los documentos relevantes.
+2. Revisar los documentos y buscar inconsistencias.
+3. Documentar cualquier inconsistencia encontrada.
+4. Desarrollar un plan de acción para abordar las inconsistencias.",,01:30
+12.2 Contexto de ingresos/gastosProviding context and explanations for income and expense patterns.,"business operations, expense context, income context, seasonality",Audit Prep,,"12.2 Contexto de ingresos/gastos - Preparación de auditoría
+En esta sección, se busca revisar los patrones de ingresos y gastos de la empresa, proporcionando un contexto que ayude a entender las variaciones y tendencias. Es importante identificar las áreas que requieran atención y evaluar cómo la estacionalidad afecta las finanzas.
+
+Acciones a realizar:
+1. Recopilar los registros financieros relevantes.
+2. Analizar los patrones de ingresos y gastos.
+3. Identificar las variaciones estacionales.
+4. Documentar cualquier hallazgo relevante.
+5. Proponer acciones para mejorar la gestión financiera.",,01:30
+15. Revision con Cliente \Client Review,Reviewing the compiled audit package with the client.,Audit Prep,,"Revisión con Cliente - Preparación de Auditoría
+""Primero, queremos revisar el paquete de auditoría compilado con el cliente para asegurarnos de que toda la información es precisa y está completa. Esto nos ayudará a identificar cualquier área que necesite atención antes de la auditoría final.""
+
+Elementos de Acción:
+1. Revisar el paquete de auditoría compilado.
+2. Identificar cualquier discrepancia o área que necesite aclaración.
+3. Documentar las observaciones realizadas durante la revisión.
+4. Programar una reunión de seguimiento con el cliente para discutir los hallazgos.
+
+---
+
+Language: English
+Client Review - Audit Prep
+""First, we want to review the compiled audit package with the client to ensure that all information is accurate and complete. This will help us identify any areas that need attention before the final audit.""
+
+Action Items:
+1. Review the compiled audit package.
+2. Identify any discrepancies or areas needing clarification.
+3. Document the observations made during the review.
+4. Schedule a follow-up meeting with the client to discuss findings.",,01:30
+14. Ensamblaje de Paquete \Packet Assembly,Organizing and compiling all audit-related documents.,Audit Prep,,"""Ensamblaje de Paquete - Preparación de Auditoría"" ""El objetivo de esta sección es organizar y compilar todos los documentos relacionados con la auditoría. Esto asegurará que toda la información necesaria esté disponible para una revisión eficiente y efectiva.
+
+Lista de Acciones:
+1. Recopilar todos los documentos auditables.
+2. Verificar la integridad de los documentos recopilados.
+3. Clasificar los documentos por tipo y relevancia.
+4. Asegurarse de que todos los documentos estén firmados y fechados adecuadamente.""
+
+""""",,02:30
+17. Entrega \Submission,Submitting the audit documentation as required.,Audit Prep,,"Preparación de Auditoría
+""Primero, queremos garantizar que toda la documentación necesaria esté lista y organizada para la auditoría. Esto incluye la recopilación de informes financieros y cualquier otro documento relevante que sea necesario para el proceso de auditoría.""
+
+Acciones:
+1. Recopilar la documentación necesaria para la auditoría.
+2. Organizar los informes financieros y otros documentos relevantes.
+3. Revisar la documentación para asegurar que esté completa.
+4. Preparar un resumen de los documentos para presentarlos durante la auditoría.
+
+---
+
+Audit Prep
+""First, we want to ensure that all necessary documentation is ready and organized for the audit. This includes gathering financial reports and any other relevant documents needed for the audit process.""
+
+Action Items:
+1. Gather the necessary documentation for the audit.
+2. Organize financial reports and other relevant documents.
+3. Review the documentation to ensure completeness.
+4. Prepare a summary of the documents to be presented during the audit.",,01:30

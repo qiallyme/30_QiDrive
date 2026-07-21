@@ -3,8 +3,8 @@ layout: template
 title: Template.ledger
 slug: template-ledger
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - care-record
   - projects
   - lisa-care-record
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 554d14a1f71a491b8a7b6d262390fd0d
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Template.ledger

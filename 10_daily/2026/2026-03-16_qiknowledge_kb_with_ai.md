@@ -3,9 +3,9 @@ layout: page
 title: "QiKnowledge- KB with AI"
 slug: "qiknowledge_kb_with_ai"
 created_at: "2026-03-16 09:28:27"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69b81369-2b84-8325-9463-1191309278d0"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # QiKnowledge- KB with AI

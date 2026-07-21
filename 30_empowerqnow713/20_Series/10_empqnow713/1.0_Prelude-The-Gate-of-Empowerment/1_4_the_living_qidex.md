@@ -3,10 +3,10 @@ layout: page
 title: EmpowerQNow — The Living QiDex™
 slug: empowerqnow-the-living-qidex
 status: publish
-updated_at: "2026-07-16T06:49:35-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 owner: ""
   - Cody
-tags: []
+tags:
   - empowerqnow713
 source_type: manual
 realm: QSaysIt
@@ -25,6 +25,7 @@ realm_label: ""
 uid: ce23c2eb92ad44369dca5a1873b7a3e2
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # 04_🧠 EmpowerQNow — The Living QiDex™

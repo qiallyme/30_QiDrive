@@ -3,9 +3,9 @@ layout: page
 title: "Tax backlog optimization"
 slug: "tax_backlog_optimization"
 created_at: "2025-11-09 09:56:11"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6910b986-3a4c-832a-927f-e753c1e56584"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tax backlog optimization

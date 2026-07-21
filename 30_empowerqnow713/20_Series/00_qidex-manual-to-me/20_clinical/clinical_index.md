@@ -11,7 +11,7 @@ layout: page
 slug: clinical-index
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -25,6 +25,7 @@ uid: ba1aec182882426192994d4eb165755c
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Clinical

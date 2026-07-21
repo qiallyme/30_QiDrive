@@ -3,9 +3,9 @@ layout: page
 title: "Error troubleshooting guide"
 slug: "error_troubleshooting_guide"
 created_at: "2025-09-26 17:50:20"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68d718ab-6b7c-832b-8806-4e96bf65abce"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Error troubleshooting guide

@@ -4,8 +4,8 @@ title: Personal
 slug: personal
 summary: Personal reference notes and health/beauty topics.
 status: active
-updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:16-04:00"
+tags:
   - moc
   - personal
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: c8134bff9709467e94134380de33809e
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Personal

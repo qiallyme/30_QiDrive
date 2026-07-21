@@ -3,8 +3,8 @@ layout: page
 title: Event: Master timeline source document exists
 slug: master-timeline-source-document-exists
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - record-admin
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 7038ccf84f3d4aecb34fb6039bb92dae
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Master timeline source document exists

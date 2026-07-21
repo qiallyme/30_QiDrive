@@ -3,9 +3,9 @@ layout: page
 title: "Email legitimacy check"
 slug: "email_legitimacy_check"
 created_at: "2025-11-15 07:39:44"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69188293-b780-8325-99f2-7f9b060decba"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Email legitimacy check

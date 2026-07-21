@@ -3,9 +3,9 @@ layout: page
 title: "Message Sent Error"
 slug: "message_sent_error"
 created_at: "2026-03-18 14:07:26"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69baf7d5-e954-8330-90fe-998a04083453"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Message Sent Error

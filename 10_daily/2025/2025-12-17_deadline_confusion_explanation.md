@@ -3,9 +3,9 @@ layout: page
 title: "Deadline confusion explanation"
 slug: "deadline_confusion_explanation"
 created_at: "2025-12-17 12:03:30"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6942f071-34d4-8330-84d2-601509a094d4"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Deadline confusion explanation

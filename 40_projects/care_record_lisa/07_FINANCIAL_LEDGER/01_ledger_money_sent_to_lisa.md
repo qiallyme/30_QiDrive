@@ -3,8 +3,8 @@ layout: page
 title: Ledger - Money Sent To Lisa
 slug: ledger-money-sent-to-lisa
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: e47169801e2d411eb9bfaa09971936c8
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Ledger - Money Sent To Lisa

@@ -3,9 +3,9 @@ layout: page
 title: "Business Messaging Platforms"
 slug: "business_messaging_platforms"
 created_at: "2026-03-18 00:47:41"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69ba3c5f-5420-8332-b536-3eb2d82ad11e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Business Messaging Platforms

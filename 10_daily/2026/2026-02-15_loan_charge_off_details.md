@@ -3,9 +3,9 @@ layout: page
 title: "Loan Charge-off Details"
 slug: "loan_charge_off_details"
 created_at: "2026-02-15 04:07:49"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69919ae7-4b48-8332-913a-d1503e2d8e74"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Loan Charge-off Details

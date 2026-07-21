@@ -3,9 +3,9 @@ layout: page
 title: "Branch · Tmux Codex Commands"
 slug: "branch_tmux_codex_commands"
 created_at: "2026-06-13 11:24:17"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2d842c-5b80-83ea-8ce4-78242848d0b4"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Branch · Tmux Codex Commands

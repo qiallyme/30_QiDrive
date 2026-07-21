@@ -3,8 +3,8 @@ layout: page
 title: Start Here with TaskNotes
 slug: start-here-with-tasknotes
 status: active
-updated_at: "2026-07-16T06:49:42-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:20-04:00"
+tags:
   - tasknotes
 source_type: imported
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: b7d7a7f705854f309e1a57fef721e917
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Start Here with TaskNotes

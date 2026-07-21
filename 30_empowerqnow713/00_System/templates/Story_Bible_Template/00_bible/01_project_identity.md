@@ -1,6 +1,6 @@
 ---
 title: Project Identity
-tags: []
+tags:
   - story-bible
   - project-identity
 layout: page
@@ -8,7 +8,7 @@ slug: project-identity
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -21,6 +21,7 @@ uid: f5433ef3ed884035aa19224ab5714b5f
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Project Identity

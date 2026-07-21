@@ -3,9 +3,9 @@ layout: page
 title: "Organizing Priorities and Systems"
 slug: "organizing_priorities_and_systems"
 created_at: "2026-05-30 08:43:49"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a1ae94a-eb54-83ea-a114-5d1c76c95a42"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Organizing Priorities and Systems

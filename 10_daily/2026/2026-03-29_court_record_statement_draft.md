@@ -3,9 +3,9 @@ layout: page
 title: "Court Record Statement Draft"
 slug: "court_record_statement_draft"
 created_at: "2026-03-29 22:52:18"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69c9f2fe-9020-8332-bf36-44802232321b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Court Record Statement Draft

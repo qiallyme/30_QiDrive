@@ -3,9 +3,9 @@ layout: page
 title: "Equity Surplus Accounting"
 slug: "equity_surplus_accounting"
 created_at: "2026-02-16 09:39:15"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69933a22-d440-832b-8f70-2859a57003d2"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Equity Surplus Accounting

@@ -3,9 +3,9 @@ layout: page
 title: "Clarification Request Breakdown"
 slug: "clarification_request_breakdown"
 created_at: "2026-06-19 09:49:45"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a355708-7c90-83ea-8157-0b88cc8c8bcc"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Clarification Request Breakdown

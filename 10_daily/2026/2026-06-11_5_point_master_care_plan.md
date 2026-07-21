@@ -3,9 +3,9 @@ layout: page
 title: "5-Point Master Care Plan"
 slug: "5_point_master_care_plan"
 created_at: "2026-06-11 23:02:23"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2b84cd-ec30-83ea-9bdf-d03dbf224af7"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # 5-Point Master Care Plan

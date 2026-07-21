@@ -3,9 +3,9 @@ layout: page
 title: "Dealing with narcissists"
 slug: "dealing_with_narcissists"
 created_at: "2025-09-07 02:05:45"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68bd2e6e-ccb8-832c-a3a2-38004e11cbe2"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Dealing with narcissists

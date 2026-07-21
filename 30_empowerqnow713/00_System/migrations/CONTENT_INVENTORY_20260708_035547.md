@@ -5,7 +5,7 @@ slug: content-inventory-20260708-035547
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 06e5daaefc714a6e9cc58f2b26d8ce00
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Content Inventory — 20260708_035547

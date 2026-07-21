@@ -4,9 +4,9 @@ title: 10 7 PTSD
 slug: 10_7_ptsd
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+tags:
   - empowerqnow713
-keywords: []
+keywords:
   - intake
 source_type: manual
 realm: QiVault

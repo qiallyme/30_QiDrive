@@ -4,7 +4,7 @@ title: 10 1 Transgender
 slug: 10_1_transgender
 status: publish
 updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+tags:
   - empowerqnow713
 source_type: manual
 realm: QiVault

@@ -5,7 +5,7 @@ slug: 08-when-i-struggle-overwhelm-shutdown-recovery
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: c702432c7491463e8d5f522759cad211
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # 08 | When I Struggle: Overwhelm, Shutdown, Recovery

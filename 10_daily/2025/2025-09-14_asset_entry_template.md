@@ -3,9 +3,9 @@ layout: page
 title: "Asset entry template"
 slug: "asset_entry_template"
 created_at: "2025-09-14 14:03:07"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c71156-ac04-8324-af2a-5d056e0bf335"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Asset entry template

@@ -3,9 +3,9 @@ layout: page
 title: "Best Gloves for Caregiving"
 slug: "best_gloves_for_caregiving"
 created_at: "2026-05-10 14:35:13"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a00dde5-1940-83ea-b0fa-c1cb2d22270b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Best Gloves for Caregiving

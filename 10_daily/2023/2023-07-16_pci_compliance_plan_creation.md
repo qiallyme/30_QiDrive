@@ -3,9 +3,9 @@ layout: page
 title: "PCI Compliance Plan Creation"
 slug: "pci_compliance_plan_creation"
 created_at: "2023-07-16 12:34:50"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "e191772e-1601-4c49-a923-7d7c94209914"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # PCI Compliance Plan Creation

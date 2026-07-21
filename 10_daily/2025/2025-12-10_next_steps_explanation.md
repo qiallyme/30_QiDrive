@@ -3,9 +3,9 @@ layout: page
 title: "Next steps explanation"
 slug: "next_steps_explanation"
 created_at: "2025-12-10 19:30:55"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "693a1ea8-cf88-832e-9674-c2ac5e140bea"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Next steps explanation

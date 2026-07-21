@@ -31,6 +31,11 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[imports|imports]]
+- [[Context_Map_2026-07-15T05-24-55-759Z|Context Map 2026 07 15T05 24 55 759Z]]
+- [[QiCode_Documentation_Cleaned|QiCode Documentation Cleaned]]
+- [[Why Is Everyone Else Crazy|Why Is Everyone Else Crazy]]
+- [[empowerqnow713_migration_summary|empowerqnow713 migration summary]]
+- [[sheets_audit_report|sheets audit report]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

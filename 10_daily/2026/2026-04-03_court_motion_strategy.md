@@ -3,9 +3,9 @@ layout: page
 title: "Court Motion Strategy"
 slug: "court_motion_strategy"
 created_at: "2026-04-03 22:38:44"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69d08750-ec8c-8332-ae27-26eb5bfc0b71"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Court Motion Strategy

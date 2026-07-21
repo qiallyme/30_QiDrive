@@ -8,7 +8,7 @@ layout: page
 slug: qially-com-blog-exposure-system-technical-spec
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 author: ""
 tags: []
 keywords: []
@@ -21,6 +21,7 @@ uid: ae9eb032ec1c4b3f988add45d6206d3e
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 ## 1. Goals & Constraints

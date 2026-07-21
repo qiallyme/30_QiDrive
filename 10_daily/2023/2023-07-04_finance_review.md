@@ -3,9 +3,9 @@ layout: page
 title: "Finance Review"
 slug: "finance_review"
 created_at: "2023-07-04 15:19:55"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "ad2ebfdb-9521-49cd-964a-05952b2c436f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Finance Review

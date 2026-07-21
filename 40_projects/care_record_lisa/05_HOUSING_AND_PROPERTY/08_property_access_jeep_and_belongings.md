@@ -5,7 +5,7 @@ slug: 08-property-access-jeep-and-belongings
 summary: ""
 status: publish
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 46055f8d74ca4ebaa84de810e12561a6
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Property, Access, Jeep, and Belongings

@@ -3,9 +3,9 @@ layout: page
 title: "Pawn shop phone value"
 slug: "pawn_shop_phone_value"
 created_at: "2025-09-15 03:43:16"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c7d15e-ebcc-8321-b64e-78c489c35504"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Pawn shop phone value

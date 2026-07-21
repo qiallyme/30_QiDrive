@@ -3,8 +3,8 @@ layout: section
 title: Medical And Care Context
 slug: medical-and-care-context
 status: active
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 0f39471cf030466f9b2417c6b1d6c7af
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Medical And Care Context

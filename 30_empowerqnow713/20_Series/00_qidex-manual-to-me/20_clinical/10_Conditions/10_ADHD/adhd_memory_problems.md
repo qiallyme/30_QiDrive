@@ -12,7 +12,7 @@ last_updated: 2026-05-24
 related:
   - 30_clinical/10_adhd/adhd_operating_notes.md
   - 30_clinical/00_clinical_summary/clinical_summary_starter.md
-tags: []
+tags:
   - adhd
   - memory
   - offloading
@@ -20,7 +20,7 @@ layout: page
 slug: adhd-memory-problems-stop-training-start-offloading
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -33,6 +33,7 @@ uid: ff99da1810c54361a7c7c33eb18d9212
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # ADHD Memory Problems? Stop Training, Start Offloading

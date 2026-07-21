@@ -6,7 +6,7 @@ slug: index
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,6 +19,10 @@ uid: 56031891e79e475f9914d83ce03f6015
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: index
+index_scope: ""
+generated_by: ""
+generated_at: ""
 ---
 
 ```folder-index-content
@@ -37,3 +41,4 @@ template_key: master-template
 - [[2025-11-19_qivault_building_bridges_understanding|2025 11 19 qivault building bridges understanding]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

@@ -3,9 +3,9 @@ layout: page
 title: "Generating passive income"
 slug: "generating_passive_income"
 created_at: "2025-12-14 08:58:53"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "693ed0a7-96dc-8328-9368-31c9d6a48f66"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Generating passive income

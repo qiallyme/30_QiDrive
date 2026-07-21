@@ -3,9 +3,9 @@ layout: page
 title: "iPhone 12 Transfer Issues"
 slug: "iphone_12_transfer_issues"
 created_at: "2026-06-22 17:09:27"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a39b27a-d7d0-83ea-8f8e-e5045750c494"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # iPhone 12 Transfer Issues

@@ -3,9 +3,9 @@ layout: page
 title: "Zoho project setup"
 slug: "zoho_project_setup"
 created_at: "2025-11-12 02:13:08"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69144188-447c-832b-9c8e-41db4a6a0e09"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Zoho project setup

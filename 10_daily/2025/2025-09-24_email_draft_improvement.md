@@ -3,9 +3,9 @@ layout: page
 title: "Email draft improvement"
 slug: "email_draft_improvement"
 created_at: "2025-09-24 19:33:19"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68d48dca-0668-832b-a206-ebfa5b8f6a16"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Email draft improvement

@@ -3,8 +3,8 @@ layout: page
 title: Event: Lisa hospital again / Cody regrouping at hotel
 slug: lisa-hospital-again-cody-regrouping-at-hotel
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
   - medical-care
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 987ed7feac744df6bd1a208bbb4fabb7
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Lisa hospital again / Cody regrouping at hotel

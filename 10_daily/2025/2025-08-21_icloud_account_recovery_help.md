@@ -3,9 +3,9 @@ layout: page
 title: "iCloud account recovery help"
 slug: "icloud_account_recovery_help"
 created_at: "2025-08-21 14:13:24"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68a76f8c-7cc4-8332-ba3d-bfa8c67b9775"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # iCloud account recovery help

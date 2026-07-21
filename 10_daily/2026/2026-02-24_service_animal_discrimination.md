@@ -3,9 +3,9 @@ layout: page
 title: "Service Animal Discrimination"
 slug: "service_animal_discrimination"
 created_at: "2026-02-24 11:21:24"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "699dddf1-bb20-8325-b2d0-eafe61c0ac3f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Service Animal Discrimination

@@ -3,8 +3,8 @@ layout: page
 title: Exhibit H00 - Hospital Medical Transitions Summary
 slug: exhibit-h00-hospital-medical-transitions-summary
 status: active
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 6094591dc67f4483ba2924323eb1d0b4
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Exhibit H00 - Hospital Medical Transitions Summary

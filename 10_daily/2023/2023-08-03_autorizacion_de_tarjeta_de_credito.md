@@ -3,9 +3,9 @@ layout: page
 title: "Autorización de Tarjeta de Crédito"
 slug: "autorizacion_de_tarjeta_de_credito"
 created_at: "2023-08-03 00:50:20"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "d9ad689b-47d7-4a4d-8d51-b801d14d55e5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Autorización de Tarjeta de Crédito

@@ -32,6 +32,7 @@ index_scope: ""
 ## Housekeeping Index
 
 - [[00_STEP_BY_STEP|00 STEP BY STEP]]
+- [[2026-07-01_qilabs_dev_board_triage_seed|2026 07 01 qilabs dev board triage seed]]
 - [[2_50_10_10_1_tandero|2 50 10 10 1 tandero]]
 - [[GIT_LFS_SETUP|GIT LFS SETUP]]
 - [[LOCAL_DEV|LOCAL DEV]]

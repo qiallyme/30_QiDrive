@@ -3,9 +3,9 @@ layout: page
 title: "Text Message Help"
 slug: "text_message_help"
 created_at: "2026-01-20 10:22:45"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "696fabd4-af18-832a-81ee-d2e9e85aeffa"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Text Message Help

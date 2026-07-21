@@ -3,9 +3,9 @@ layout: page
 title: "Script for Markwhen File"
 slug: "script_for_markwhen_file"
 created_at: "2026-02-15 19:27:42"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69927268-4fc4-832e-b307-30ad125be733"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Script for Markwhen File

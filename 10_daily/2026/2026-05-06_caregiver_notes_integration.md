@@ -3,9 +3,9 @@ layout: page
 title: "Caregiver Notes Integration"
 slug: "caregiver_notes_integration"
 created_at: "2026-05-06 23:52:17"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fc1a39-acb0-83ea-9b78-49161605a532"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Caregiver Notes Integration

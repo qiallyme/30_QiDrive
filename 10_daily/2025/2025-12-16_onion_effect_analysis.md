@@ -3,9 +3,9 @@ layout: page
 title: "Onion effect analysis"
 slug: "onion_effect_analysis"
 created_at: "2025-12-16 21:37:04"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6942255f-9440-8327-a817-2dbec85644bf"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Onion effect analysis

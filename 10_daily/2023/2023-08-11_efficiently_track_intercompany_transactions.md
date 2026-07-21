@@ -3,9 +3,9 @@ layout: page
 title: "Efficiently Track Intercompany Transactions"
 slug: "efficiently_track_intercompany_transactions"
 created_at: "2023-08-11 21:36:23"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "c761eb39-1374-4158-a1e1-e088d3204d3f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Efficiently Track Intercompany Transactions

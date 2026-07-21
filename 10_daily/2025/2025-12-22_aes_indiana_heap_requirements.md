@@ -3,9 +3,9 @@ layout: page
 title: "AES Indiana HEAP requirements"
 slug: "aes_indiana_heap_requirements"
 created_at: "2025-12-22 14:26:51"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6949a92e-9af4-8328-a355-b3f3e37b9c45"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # AES Indiana HEAP requirements

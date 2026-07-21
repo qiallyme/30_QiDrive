@@ -5,7 +5,7 @@ created: 2025-08-06
 type: extract
 orbit: 
 system: 
-tags: []
+tags:
   - extract
   - qinote
 layout: page

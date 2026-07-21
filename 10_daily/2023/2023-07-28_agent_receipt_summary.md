@@ -3,9 +3,9 @@ layout: page
 title: "Agent Receipt Summary"
 slug: "agent_receipt_summary"
 created_at: "2023-07-28 15:47:27"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "81bf24bf-f991-4176-908a-dca635eff4f7"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Agent Receipt Summary

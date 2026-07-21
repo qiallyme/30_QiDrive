@@ -3,9 +3,9 @@ layout: page
 title: "Theft Investigation Ongoing"
 slug: "theft_investigation_ongoing"
 created_at: "2023-07-30 15:01:32"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "169dc83b-e8d7-41ca-bfdc-84e7b79c6df3"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Theft Investigation Ongoing

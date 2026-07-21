@@ -3,7 +3,7 @@ layout: page
 title: "Luis - Highway and Hotel Incident"
 slug: "luis_highway_and_hotel_incident"
 created_at: "2024-10-07"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 7b8066e5f0f24f59a5f3d11311f6b8e5
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Luis - Highway and Hotel Incident

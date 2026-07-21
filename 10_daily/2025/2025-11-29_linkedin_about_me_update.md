@@ -3,9 +3,9 @@ layout: page
 title: "LinkedIn About Me update"
 slug: "linkedin_about_me_update"
 created_at: "2025-11-29 00:15:16"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "692a8f6f-5408-8328-8ed2-63a9be6dbff3"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # LinkedIn About Me update

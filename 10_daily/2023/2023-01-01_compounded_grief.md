@@ -3,7 +3,7 @@ layout: page
 title: "Compounded Grief"
 slug: "compounded_grief"
 created_at: "2023-01-01"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["crisis"]
 category: "crisis"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 8199b4e3c060487e9d5629fd3af0fb6f
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Compounded Grief

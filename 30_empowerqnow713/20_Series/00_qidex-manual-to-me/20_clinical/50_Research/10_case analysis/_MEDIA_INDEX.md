@@ -6,12 +6,12 @@ summary: Quick reference guide to audio, video, reports, and infographics in the
 status: active
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Index of all media files associated with the case analysis report
-tags: []
+tags:
   - meta
   - index
   - media
   - empowerqnow713
-keywords: []
+keywords:
   - media
   - index
   - case_analysis

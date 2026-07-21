@@ -3,9 +3,9 @@ layout: page
 title: "Fee Calculation Help"
 slug: "fee_calculation_help"
 created_at: "2026-01-31 07:46:28"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "697e07b2-bd50-8328-a223-942733aab1b5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Fee Calculation Help

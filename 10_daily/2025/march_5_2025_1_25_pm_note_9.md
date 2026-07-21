@@ -11,7 +11,7 @@ qi_decimal: 0.00.00-INTAKE
 qid: q95143d08a139
 status: active
 system: qios
-keywords: []
+keywords:
 - intake
 layout: page
 summary: ""

@@ -5,7 +5,7 @@ slug: the-burden-of-the-signal-a-testimony-of-survival
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 808217a9528b43fa85def91ad4fcce12
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # The Burden of the Signal A Testimony of Survival

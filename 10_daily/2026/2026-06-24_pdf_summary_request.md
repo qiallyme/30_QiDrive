@@ -3,9 +3,9 @@ layout: page
 title: "PDF Summary Request"
 slug: "pdf_summary_request"
 created_at: "2026-06-24 19:42:10"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a3c7961-2cd0-83ea-aa0e-e1ca1c1a10b4"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # PDF Summary Request

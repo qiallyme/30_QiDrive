@@ -3,9 +3,9 @@ layout: page
 title: "Job application app plan"
 slug: "job_application_app_plan"
 created_at: "2025-11-15 16:32:21"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6918ff20-60ac-8325-a6c8-7bf147417e72"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Job application app plan

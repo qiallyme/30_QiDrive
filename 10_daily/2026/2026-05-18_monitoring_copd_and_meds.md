@@ -3,9 +3,9 @@ layout: page
 title: "Monitoring COPD and Meds"
 slug: "monitoring_copd_and_meds"
 created_at: "2026-05-18 15:51:41"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a0b7ba4-6150-83ea-b85a-5520287ad364"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Monitoring COPD and Meds

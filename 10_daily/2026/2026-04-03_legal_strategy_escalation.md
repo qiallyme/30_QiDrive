@@ -3,9 +3,9 @@ layout: page
 title: "Legal Strategy Escalation"
 slug: "legal_strategy_escalation"
 created_at: "2026-04-03 15:04:07"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69d01d04-f8e0-832f-b9e1-601904ba166b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Legal Strategy Escalation

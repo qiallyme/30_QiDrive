@@ -3,9 +3,9 @@ layout: page
 title: "Firefly Transactions Architecture"
 slug: "firefly_transactions_architecture"
 created_at: "2026-06-14 15:10:39"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2f0aa9-96d0-83ea-be42-eea16992d4e4"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Firefly Transactions Architecture

@@ -3,9 +3,9 @@ layout: page
 title: "Updating Business with SRV Capital"
 slug: "updating_business_with_srv_capital"
 created_at: "2023-08-01 01:51:32"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "fb75e6b1-5a80-49b5-bf9d-5005596dcce0"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Updating Business with SRV Capital

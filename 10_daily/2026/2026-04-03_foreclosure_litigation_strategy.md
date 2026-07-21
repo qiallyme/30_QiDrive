@@ -3,9 +3,9 @@ layout: page
 title: "Foreclosure Litigation Strategy"
 slug: "foreclosure_litigation_strategy"
 created_at: "2026-04-03 14:56:10"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69d01b58-2550-8325-a3e7-a71c7be591f0"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Foreclosure Litigation Strategy

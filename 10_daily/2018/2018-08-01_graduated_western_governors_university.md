@@ -3,7 +3,7 @@ layout: page
 title: "Graduated Western Governors University"
 slug: "graduated-western-governors-university"
 created_at: "2018-08-01"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["education"]
 category: "education"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: d6dd5eb004224f45bc5bac4df5cf2458
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Graduated Western Governors University

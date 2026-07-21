@@ -3,9 +3,9 @@ layout: page
 title: "Court Case Summary"
 slug: "court_case_summary"
 created_at: "2026-05-22 23:24:06"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a112be0-2af0-83ea-bcac-8a5b92e4267a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Court Case Summary

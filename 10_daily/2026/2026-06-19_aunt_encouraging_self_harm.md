@@ -3,9 +3,9 @@ layout: page
 title: "Aunt Encouraging Self-Harm"
 slug: "aunt_encouraging_self_harm"
 created_at: "2026-06-19 19:55:35"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a35e4ff-9454-83ea-83fc-1a7fa72b8499"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Aunt Encouraging Self-Harm

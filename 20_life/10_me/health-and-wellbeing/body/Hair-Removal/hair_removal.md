@@ -3,9 +3,9 @@ layout: page
 title: _Hair Removal
 slug: -hair-removal
 status: active
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 owner: CRV
-tags: []
+tags:
   - personal
 source_type: manual
 realm: 2_QsKb
@@ -23,6 +23,7 @@ realm_label: ""
 uid: d02cf4a5c34247b3b6d57902272fef78
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # _Hair Removal

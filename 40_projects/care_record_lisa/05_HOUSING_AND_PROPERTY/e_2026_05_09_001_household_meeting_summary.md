@@ -3,8 +3,8 @@ layout: page
 title: Event: S. Elliott household meeting summary source
 slug: s-elliott-household-meeting-summary-source
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - housing-property
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 40e69a4dc5254980b0119efbc941a9ba
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: S. Elliott household meeting summary source

@@ -6,7 +6,7 @@ summary: Interview transcript with Dr. Martha Beck discussing anxiety reduction 
 status: active
 updated_at: "2026-07-16T06:49:35-04:00"
 owner: q
-tags: []
+tags:
   - realm-kb
   - interview
   - psychology
@@ -20,7 +20,7 @@ tags: []
   - martha-beck
   - diary-of-a-ceo
   - empowerqnow713
-keywords: []
+keywords:
   - intake
 source_type: manual
 realm: knowledge

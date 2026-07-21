@@ -3,9 +3,9 @@ layout: page
 title: "Family Wall Update"
 slug: "family_wall_update"
 created_at: "2026-05-02 15:27:43"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f65e2f-26f8-83ea-9a84-0d080826fa96"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Family Wall Update

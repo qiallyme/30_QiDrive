@@ -5,7 +5,7 @@ slug: readme
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 83c838c4a9a2411db087f7997d03303e
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Story Bible Template Pack

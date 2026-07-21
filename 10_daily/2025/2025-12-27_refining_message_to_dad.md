@@ -3,9 +3,9 @@ layout: page
 title: "Refining Message to Dad"
 slug: "refining_message_to_dad"
 created_at: "2025-12-27 18:49:53"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69507e9c-4798-8328-9810-811d0a4c3918"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Refining Message to Dad

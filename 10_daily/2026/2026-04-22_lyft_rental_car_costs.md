@@ -3,9 +3,9 @@ layout: page
 title: "Lyft Rental Car Costs"
 slug: "lyft_rental_car_costs"
 created_at: "2026-04-22 18:08:45"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69e954f1-2210-83ea-9b9f-d1529367340a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Lyft Rental Car Costs

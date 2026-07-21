@@ -4,7 +4,7 @@ title: 06 How I Operate Routines & Energy Management
 slug: 06_how_i_operate_routines_energy_management
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+tags:
   - empowerqnow713
 source_type: manual
 realm: QiVault

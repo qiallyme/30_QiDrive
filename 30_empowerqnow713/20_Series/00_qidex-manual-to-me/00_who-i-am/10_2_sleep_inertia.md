@@ -4,9 +4,9 @@ title: 10 2 Sleep inertia
 slug: 10_2_sleep_inertia
 status: publish
 updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+tags:
   - empowerqnow713
-keywords: []
+keywords:
   - intake
 source_type: manual
 realm: QiVault

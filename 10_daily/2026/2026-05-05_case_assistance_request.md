@@ -3,9 +3,9 @@ layout: page
 title: "Case Assistance Request"
 slug: "case_assistance_request"
 created_at: "2026-05-05 18:12:23"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fa78f1-ee10-83ea-ae1d-34e9cecd0e7c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Case Assistance Request

@@ -4,7 +4,7 @@ title: Family Rules - When the People Who Raised You Still Don't See You
 series: The Onion Effect
 episode: 6
 category: Personal Essay / Social Commentary
-keywords: []
+keywords:
   - family dynamics
   - generational patterns
   - identity
@@ -20,7 +20,7 @@ layout: page
 slug: family-rules-when-the-people-who-raised-you-still-dont-see-you
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -33,6 +33,14 @@ uid: dcdafbda8fc542df9945fc61fb93bd89
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: event
+event_type: ""
+people: []
+location: ""
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # The Onion Effect – Episode 6

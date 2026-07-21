@@ -3,8 +3,8 @@ layout: page
 title: Event: Current folder tree shows duplication across overview/timeline/communications/exhibits
 slug: current-folder-tree-shows-duplication-across-overview-timeline-communications-exhibits
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - record-admin
@@ -22,6 +22,7 @@ realm_label: ""
 uid: b079b65cbc314ceebae2bc826bbd4348
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Current folder tree shows duplication across overview/timeline/communications/exhibits

@@ -3,9 +3,9 @@ layout: page
 title: "XML to SQL Table."
 slug: "xml_to_sql_table"
 created_at: "2023-07-28 05:44:28"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "db0aadfe-5eec-447d-9990-d37281b469be"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # XML to SQL Table.

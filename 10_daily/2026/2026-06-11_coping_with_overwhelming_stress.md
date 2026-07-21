@@ -3,9 +3,9 @@ layout: page
 title: "Coping with Overwhelming Stress"
 slug: "coping_with_overwhelming_stress"
 created_at: "2026-06-11 20:46:50"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2b64f9-6078-83ea-88cf-d083e4e6f1c1"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Coping with Overwhelming Stress

@@ -5,7 +5,7 @@ slug: 04-role-resignation-and-care-context
 summary: ""
 status: publish
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 62f69bcf20784f569486fca319bf6c59
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Role and Resignation Context

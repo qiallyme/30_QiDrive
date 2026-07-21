@@ -3,9 +3,9 @@ layout: page
 title: "All is Now, awakened..."
 slug: "all_is_now_awakened"
 created_at: "2025-12-29 16:10:03"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6952fc1a-9d88-832d-9906-8110e95fc4d9"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # All is Now, awakened...

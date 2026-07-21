@@ -4,8 +4,8 @@ title: Voice Notes
 slug: voice-notes
 summary: Imported voice-note entries awaiting review and normalization.
 status: active
-updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:16-04:00"
+tags:
   - moc
   - daily
   - voice-notes
@@ -22,6 +22,7 @@ realm_label: ""
 uid: dde458f91257437f86783cd9a6b2287d
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Voice Notes

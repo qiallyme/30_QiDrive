@@ -3,9 +3,9 @@ layout: page
 title: "Finger cut triage advice"
 slug: "finger_cut_triage_advice"
 created_at: "2025-12-01 13:25:28"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "692deb8b-63ac-8328-826c-8b948a4c7903"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Finger cut triage advice

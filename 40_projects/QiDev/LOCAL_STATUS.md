@@ -3,8 +3,8 @@ layout: page
 title: Local Status & Control API
 slug: local-status-control-api
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:20-04:00"
+tags:
   - projects
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: b95de4b3a6fe40be9c81222aaad6fc7d
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Local Status & Control API

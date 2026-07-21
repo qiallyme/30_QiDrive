@@ -3,8 +3,8 @@ layout: section
 title: Exports
 slug: exports
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: d52326dc79ba4c20b0c462fd3b92b06d
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Exports

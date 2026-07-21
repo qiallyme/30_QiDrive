@@ -3,9 +3,9 @@ layout: page
 title: "Rude Behavior and Boundaries"
 slug: "rude_behavior_and_boundaries"
 created_at: "2026-01-24 18:10:07"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69755f2e-1cb0-832f-a182-113507e06453"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Rude Behavior and Boundaries

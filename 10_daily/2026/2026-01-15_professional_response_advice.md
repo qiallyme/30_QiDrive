@@ -3,9 +3,9 @@ layout: page
 title: "Professional Response Advice"
 slug: "professional_response_advice"
 created_at: "2026-01-15 19:14:11"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6969906c-cc9c-8333-bab3-a9fd29f338ac"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Professional Response Advice

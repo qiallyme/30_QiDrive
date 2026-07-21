@@ -4,7 +4,7 @@ title: Luis Antonio Palacios De La Rosa
 slug: luis-antonio-palacios-de-la-rosa
 status: active
 updated_at: "2026-07-16T06:49:27-04:00"
-tags: []
+tags:
   - cadence
 source_type: imported
 name: Luis Antonio Palacios De La Rosa

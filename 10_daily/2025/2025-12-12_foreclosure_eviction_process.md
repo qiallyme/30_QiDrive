@@ -3,9 +3,9 @@ layout: page
 title: "Foreclosure eviction process"
 slug: "foreclosure_eviction_process"
 created_at: "2025-12-12 12:42:12"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "693c61da-d878-8332-bfb6-aa28109ceb8c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Foreclosure eviction process

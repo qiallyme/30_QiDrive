@@ -3,9 +3,9 @@ layout: page
 title: "Estate Planning Assistance"
 slug: "estate_planning_assistance"
 created_at: "2026-02-14 18:20:27"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6991110e-a70c-832a-bd22-bdc24bb72d7a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Estate Planning Assistance

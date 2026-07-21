@@ -3,9 +3,9 @@ layout: page
 title: "Emotional Imbalance Pattern"
 slug: "emotional_imbalance_pattern"
 created_at: "2026-02-17 22:21:20"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69953e29-5920-8333-8013-bc34deaaab2c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Emotional Imbalance Pattern

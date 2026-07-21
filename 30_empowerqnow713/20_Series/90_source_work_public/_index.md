@@ -8,7 +8,7 @@ visibility: internal
 publish_target: none
 publish_url: /90 Source Work Public
 created_at: "2026-07-08 03:55:46"
-updated_at: "2026-07-16T06:49:36-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: "90 Source Work Public"
@@ -22,7 +22,7 @@ classification: business_internal
   - blog-post
 realm_label: ""
   - empowerqnow
-tags: []
+tags:
   - EmpowerQNow
 keywords: []
 aliases: []
@@ -31,6 +31,10 @@ uid: 3d157778ae574baf9a9cfaa2eeff8999
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: index
+index_scope: ""
+generated_by: ""
+generated_at: ""
 ---
 
 # 90 Source Work Public
@@ -49,3 +53,4 @@ template_key: master-template
 - [[index_2|index 2]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

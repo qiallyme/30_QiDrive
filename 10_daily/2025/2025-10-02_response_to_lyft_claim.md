@@ -3,9 +3,9 @@ layout: page
 title: "Response to Lyft claim"
 slug: "response_to_lyft_claim"
 created_at: "2025-10-02 22:15:08"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68df3f11-7944-832d-9cc9-70a98e157744"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Response to Lyft claim

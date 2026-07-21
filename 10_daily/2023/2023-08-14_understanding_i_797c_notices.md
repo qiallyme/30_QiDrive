@@ -3,9 +3,9 @@ layout: page
 title: "Understanding I-797C Notices"
 slug: "understanding_i_797c_notices"
 created_at: "2023-08-14 18:07:07"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "a65cb2d9-c49d-41a7-834d-eb7f8618a599"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Understanding I-797C Notices

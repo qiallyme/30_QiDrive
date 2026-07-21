@@ -3,8 +3,8 @@ layout: page
 title: locks access utilities
 slug: locks-access-utilities
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: f3329651589a4e71b676d7e17735bcd6
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # locks access utilities

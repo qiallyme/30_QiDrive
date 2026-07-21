@@ -3,7 +3,7 @@ layout: page
 title: "Luis - First Traffic Offenses"
 slug: "luis_first_traffic_offenses"
 created_at: "2018-03-17"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["legal"]
 category: "legal"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 8188cc6012f045da8fb332e99c31fdbe
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Luis - First Traffic Offenses

@@ -3,9 +3,9 @@ layout: page
 title: "File Merging and Updates"
 slug: "file_merging_and_updates"
 created_at: "2026-02-02 21:44:47"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69816f22-c200-8330-b455-32349546fa78"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # File Merging and Updates

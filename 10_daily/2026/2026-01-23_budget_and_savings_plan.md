@@ -3,9 +3,9 @@ layout: page
 title: "Budget and savings plan"
 slug: "budget_and_savings_plan"
 created_at: "2026-01-23 08:56:40"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69738bc6-b14c-8327-9912-9b0ed781c5db"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Budget and savings plan

@@ -3,9 +3,9 @@ layout: page
 title: "Bank Delay Financial Harm"
 slug: "bank_delay_financial_harm"
 created_at: "2026-06-01 16:58:29"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a1e0083-ec24-83ea-820a-02d95a782d2a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Bank Delay Financial Harm

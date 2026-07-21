@@ -3,9 +3,9 @@ layout: page
 title: "Expanded CSV example"
 slug: "expanded_csv_example"
 created_at: "2025-11-15 09:06:00"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "691896d5-b78c-8327-b269-e97e53ba49e2"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Expanded CSV example

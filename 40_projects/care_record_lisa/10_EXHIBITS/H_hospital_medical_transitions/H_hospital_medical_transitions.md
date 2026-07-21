@@ -3,8 +3,8 @@ layout: section
 title: H Hospital Medical Transitions
 slug: h-hospital-medical-transitions
 status: active
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: cae55522ac044c62b9575203822bbc03
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # H Hospital Medical Transitions

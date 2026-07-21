@@ -3,9 +3,9 @@ layout: page
 title: "Zillow Listing for 1409"
 slug: "zillow_listing_for_1409"
 created_at: "2026-02-09 11:21:41"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "698a179b-5440-8326-907a-ccdd37d6c309"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Zillow Listing for 1409

@@ -3,9 +3,9 @@ layout: page
 title: "Aerosol vs Liquid Sealant"
 slug: "aerosol_vs_liquid_sealant"
 created_at: "2026-02-17 23:45:32"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "699551f1-2f90-832e-9b8c-539b0964dd4c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Aerosol vs Liquid Sealant

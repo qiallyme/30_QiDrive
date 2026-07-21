@@ -3,9 +3,9 @@ layout: page
 title: "ITIN process and issues"
 slug: "itin_process_and_issues"
 created_at: "2026-01-01 22:39:54"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69574bc8-7868-832e-8cff-1f0f34080c9d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # ITIN process and issues

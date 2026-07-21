@@ -3,8 +3,8 @@ layout: page
 title: See Gerald he is ill
 slug: see-gerald-he-is-ill
 status: publish
-updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:17-04:00"
+tags:
   - empowerqnow713
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: cb25d3995595454a990b060d14762345
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # See Gerald he is ill

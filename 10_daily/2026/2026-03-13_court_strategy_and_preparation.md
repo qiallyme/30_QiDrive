@@ -3,9 +3,9 @@ layout: page
 title: "Court Strategy and Preparation"
 slug: "court_strategy_and_preparation"
 created_at: "2026-03-13 11:42:50"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69b43e5d-fe54-8329-a4cc-ac468ab5ef7d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Court Strategy and Preparation

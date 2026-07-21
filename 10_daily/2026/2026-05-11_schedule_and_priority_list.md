@@ -3,9 +3,9 @@ layout: page
 title: "Schedule and Priority List"
 slug: "schedule_and_priority_list"
 created_at: "2026-05-11 13:28:52"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a021fe3-cd24-83ea-bdc2-f890141ceb9d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Schedule and Priority List

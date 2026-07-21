@@ -3,9 +3,9 @@ layout: page
 title: "Ipratropium Bromide Nasal Spray"
 slug: "ipratropium_bromide_nasal_spray"
 created_at: "2026-04-11 11:15:36"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69da7399-f7d4-832a-815f-b66f25fc0312"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Ipratropium Bromide Nasal Spray

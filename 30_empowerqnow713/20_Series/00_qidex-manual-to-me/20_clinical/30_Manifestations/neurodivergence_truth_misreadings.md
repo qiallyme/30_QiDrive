@@ -6,13 +6,13 @@ summary: Documents how honest communication is misinterpreted as deceptive due t
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Clinical documentation of how neurodivergent communication traits are misinterpreted as deception
-tags: []
+tags:
   - manifestation
   - clinical
   - neurodivergence
   - communication
   - empowerqnow713
-keywords: []
+keywords:
   - ADHD
   - anxiety
   - othello_error

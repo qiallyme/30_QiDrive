@@ -6,12 +6,12 @@ summary: Template for summarizing research studies and their relevance
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting research summaries in clinical track
-tags: []
+tags:
   - template
   - research
   - clinical
   - empowerqnow713
-keywords: []
+keywords:
   - research
   - clinical
   - study

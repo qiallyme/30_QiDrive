@@ -3,9 +3,9 @@ layout: page
 title: "Dramamine Usage Instructions"
 slug: "dramamine_usage_instructions"
 created_at: "2026-05-11 20:52:22"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a0287d4-fc90-83ea-aa3c-7807a8cd5d0b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Dramamine Usage Instructions

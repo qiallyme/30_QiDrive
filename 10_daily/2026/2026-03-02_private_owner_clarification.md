@@ -3,9 +3,9 @@ layout: page
 title: "Private owner clarification"
 slug: "private_owner_clarification"
 created_at: "2026-03-02 13:39:56"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69a5e78b-51ac-8329-9078-b58c35b357ee"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Private owner clarification

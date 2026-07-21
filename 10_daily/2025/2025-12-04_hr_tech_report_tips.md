@@ -3,9 +3,9 @@ layout: page
 title: "HR tech report tips"
 slug: "hr_tech_report_tips"
 created_at: "2025-12-04 12:52:57"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6931d888-3b84-8332-867c-cbc131a6cf5a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # HR tech report tips

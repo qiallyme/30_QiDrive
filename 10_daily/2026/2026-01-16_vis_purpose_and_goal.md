@@ -3,9 +3,9 @@ layout: page
 title: "VIS Purpose and Goal"
 slug: "vis_purpose_and_goal"
 created_at: "2026-01-16 08:24:23"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "696a49fb-06ac-8329-bba8-1bdc62a0197b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # VIS Purpose and Goal

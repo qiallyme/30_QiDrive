@@ -3,9 +3,9 @@ layout: page
 title: "Irreparable harm analysis"
 slug: "irreparable_harm_analysis"
 created_at: "2025-12-13 09:51:57"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "693d8b9c-d6a0-832b-b0a4-5772e9b58ee1"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Irreparable harm analysis

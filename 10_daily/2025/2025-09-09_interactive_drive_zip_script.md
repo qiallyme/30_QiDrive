@@ -3,9 +3,9 @@ layout: page
 title: "Interactive drive zip script"
 slug: "interactive_drive_zip_script"
 created_at: "2025-09-09 20:26:43"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c0d381-e0b0-832d-bed3-6d333841b784"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Interactive drive zip script

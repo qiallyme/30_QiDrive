@@ -3,9 +3,9 @@ layout: page
 title: "Personal Ops Ledger D1"
 slug: "personal_ops_ledger_d1"
 created_at: "2026-02-19 11:33:56"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6997495e-6a38-832d-8f4c-808ec935fb72"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Personal Ops Ledger D1

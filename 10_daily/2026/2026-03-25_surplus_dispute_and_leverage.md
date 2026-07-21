@@ -3,9 +3,9 @@ layout: page
 title: "Surplus Dispute and Leverage"
 slug: "surplus_dispute_and_leverage"
 created_at: "2026-03-25 04:33:35"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69c3abeb-6f18-8328-94bd-bade39be1fd7"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Surplus Dispute and Leverage

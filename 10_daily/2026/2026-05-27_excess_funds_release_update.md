@@ -3,9 +3,9 @@ layout: page
 title: "Excess Funds Release Update"
 slug: "excess_funds_release_update"
 created_at: "2026-05-27 05:25:46"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a16c6a9-e538-83ea-b4f3-e55dc643bca2"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Excess Funds Release Update

@@ -3,9 +3,9 @@ layout: page
 title: "Ezekiel 17 significance"
 slug: "ezekiel_17_significance"
 created_at: "2025-12-18 17:28:34"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69448e0e-e238-832b-9b92-2aca4a506af3"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Ezekiel 17 significance

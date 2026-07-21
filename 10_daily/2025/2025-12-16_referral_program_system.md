@@ -3,9 +3,9 @@ layout: page
 title: "Referral program system"
 slug: "referral_program_system"
 created_at: "2025-12-16 13:51:34"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6941b81a-5d48-8327-933d-5323ab8db509"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Referral program system

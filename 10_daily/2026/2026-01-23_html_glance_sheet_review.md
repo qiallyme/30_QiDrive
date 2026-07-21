@@ -3,9 +3,9 @@ layout: page
 title: "HTML Glance Sheet Review"
 slug: "html_glance_sheet_review"
 created_at: "2026-01-23 09:23:19"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69739267-5fec-832b-858e-e4d0fc88bb2c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # HTML Glance Sheet Review

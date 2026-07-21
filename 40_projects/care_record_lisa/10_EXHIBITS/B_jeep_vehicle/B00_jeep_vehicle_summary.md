@@ -3,8 +3,8 @@ layout: page
 title: Exhibit B00 - Jeep Vehicle Summary
 slug: exhibit-b00-jeep-vehicle-summary
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: ec68a5b195d74ec3b46b80306ebaa1ad
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Exhibit B00 - Jeep Vehicle Summary

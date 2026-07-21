@@ -3,9 +3,9 @@ layout: page
 title: "System Validation Checklist"
 slug: "system_validation_checklist"
 created_at: "2026-02-27 02:46:18"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69a159d9-5118-8326-9b7d-f0a33fecd8b0"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # System Validation Checklist

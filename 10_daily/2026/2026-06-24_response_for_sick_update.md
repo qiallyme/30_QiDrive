@@ -3,9 +3,9 @@ layout: page
 title: "Response for Sick Update"
 slug: "response_for_sick_update"
 created_at: "2026-06-24 19:48:27"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a3c7ad9-3f20-83ea-a965-bd0364eb11f1"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Response for Sick Update

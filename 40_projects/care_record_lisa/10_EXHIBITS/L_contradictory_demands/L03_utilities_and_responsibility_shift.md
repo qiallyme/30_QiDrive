@@ -3,8 +3,8 @@ layout: page
 title: L03 utilities and responsibility shift
 slug: l03-utilities-and-responsibility-shift
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 6fd45ded3910497792135bbc0dd68e57
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # L03 utilities and responsibility shift

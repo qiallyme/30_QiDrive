@@ -3,9 +3,9 @@ layout: page
 title: "Sticker design request"
 slug: "sticker_design_request"
 created_at: "2025-09-30 01:06:42"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68db733c-ef00-8330-b422-cc9fe66299a4"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Sticker design request

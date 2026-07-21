@@ -1,0 +1,5 @@
+{
+  "show-checkboxes": true,
+  "new-note-template": "_qiconfig/templates/master_template.md",
+  "new-note-folder": "01_inbox"
+}

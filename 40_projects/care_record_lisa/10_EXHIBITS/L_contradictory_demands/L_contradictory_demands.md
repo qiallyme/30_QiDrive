@@ -3,8 +3,8 @@ layout: section
 title: L Contradictory Demands
 slug: l-contradictory-demands
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 5a30c8bda8e64e17ab40a0ae7ed6b79f
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # L Contradictory Demands

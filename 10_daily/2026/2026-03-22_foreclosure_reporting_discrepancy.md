@@ -3,9 +3,9 @@ layout: page
 title: "Foreclosure Reporting Discrepancy"
 slug: "foreclosure_reporting_discrepancy"
 created_at: "2026-03-22 13:46:52"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69c0391b-4170-8332-9b6c-2dbb38d222cd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Foreclosure Reporting Discrepancy

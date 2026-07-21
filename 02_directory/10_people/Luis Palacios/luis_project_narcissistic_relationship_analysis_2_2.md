@@ -3,7 +3,7 @@ title: Luis Project – Narcissistic Relationship Analysis
 project_id: 713.04.02-LUIS
 type: Personal Psychology / Mirror Integration
 author: Cody J. Rice-Velasquez
-tags: []
+tags:
   - EmpowerQNow
   - Narcissism
   - Boundaries

@@ -3,9 +3,9 @@ layout: page
 title: "Dad's Ego Defense"
 slug: "dads_ego_defense"
 created_at: "2026-03-28 11:13:19"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69c7fe0c-926c-8331-9212-56194385c030"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Dad's Ego Defense

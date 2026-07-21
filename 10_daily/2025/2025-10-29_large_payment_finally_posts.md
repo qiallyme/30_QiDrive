@@ -3,7 +3,7 @@ layout: page
 title: "Large Payment Finally Posts"
 slug: "large_payment_finally_posts"
 created_at: "2025-10-29"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 2a6f8fd4273e4c41b65531b6fc559a48
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Large Payment Finally Posts

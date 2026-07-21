@@ -3,9 +3,9 @@ layout: page
 title: "Message Waiting"
 slug: "message_waiting"
 created_at: "2026-04-04 13:17:06"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69d1555b-a4b8-832a-8c97-7e5bcdb7b18f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Message Waiting

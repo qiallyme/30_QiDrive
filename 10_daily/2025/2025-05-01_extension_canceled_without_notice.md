@@ -3,7 +3,7 @@ layout: page
 title: "EXTENSION CANCELED WITHOUT NOTICE"
 slug: "extension_canceled_without_notice"
 created_at: "2025-05-01"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: e292cafaaf1e4234be8d68c449bc42ac
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # EXTENSION CANCELED WITHOUT NOTICE

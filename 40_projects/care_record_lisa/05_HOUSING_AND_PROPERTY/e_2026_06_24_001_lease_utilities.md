@@ -3,8 +3,8 @@ layout: page
 title: Event: Lease/utilities/right-to-stay uncertainty
 slug: lease-utilities-right-to-stay-uncertainty
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - housing-property
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 036bdac6c56e4ce9b1427807b18cfb0e
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Lease/utilities/right-to-stay uncertainty

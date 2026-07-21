@@ -3,8 +3,8 @@ layout: page
 title: Event: Caregiving tracking begins
 slug: caregiving-tracking-begins
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - caregiving-work
@@ -22,6 +22,7 @@ realm_label: ""
 uid: ca88bf0ee3ea4c91b580aaeb8dab6f73
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Caregiving tracking begins

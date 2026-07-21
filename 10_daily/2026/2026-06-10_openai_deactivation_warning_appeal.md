@@ -3,9 +3,9 @@ layout: page
 title: "OpenAI Deactivation Warning Appeal"
 slug: "openai_deactivation_warning_appeal"
 created_at: "2026-06-10 12:24:40"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a299db0-ee5c-83ea-9b94-6976e11afe4a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # OpenAI Deactivation Warning Appeal

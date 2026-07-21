@@ -6,11 +6,11 @@ summary: Template for recording trauma with impact and clinical connections
 status: draft
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting trauma events in lived experience track
-tags: []
+tags:
   - template
   - trauma
   - empowerqnow713
-keywords: []
+keywords:
   - trauma
   - lived_experience
   - timeline

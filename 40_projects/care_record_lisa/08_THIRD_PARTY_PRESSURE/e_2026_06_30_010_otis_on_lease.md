@@ -3,8 +3,8 @@ layout: page
 title: Event: Lisa states Otis is allowed there / on the lease
 slug: lisa-states-otis-is-allowed-there-on-the-lease
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - third-party-access
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 096223430f844efbb830b086e3bcfb21
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Lisa states Otis is allowed there / on the lease

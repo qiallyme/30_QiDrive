@@ -4,7 +4,7 @@ title: I Didn't Go Because I Knew There'd Be Onions - Social Avoidance and the Q
 series: The Onion Effect
 episode: 2
 category: Personal Essay / Social Commentary
-keywords: []
+keywords:
   - social avoidance
   - exclusion
   - social anxiety
@@ -20,7 +20,7 @@ layout: page
 slug: i-didnt-go-because-i-knew-thered-be-onions-social-avoidance-and-the-quiet-opt-out
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -33,6 +33,14 @@ uid: 1c1494d4593f42e7939b0ea7f5d7c5eb
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: event
+event_type: ""
+people: []
+location: ""
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # The Onion Effect – Episode 2

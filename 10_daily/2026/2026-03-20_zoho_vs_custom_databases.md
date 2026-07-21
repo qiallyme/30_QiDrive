@@ -3,9 +3,9 @@ layout: page
 title: "Zoho vs Custom Databases"
 slug: "zoho_vs_custom_databases"
 created_at: "2026-03-20 23:44:17"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69be221f-a5a8-832d-adb5-fd6d48e14ccd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Zoho vs Custom Databases

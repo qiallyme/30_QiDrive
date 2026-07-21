@@ -3,9 +3,9 @@ layout: page
 title: "Incomplete User Input"
 slug: "incomplete_user_input"
 created_at: "2026-05-10 23:54:06"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a0160ed-4014-83ea-bc4e-3e25c1b8811c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Incomplete User Input

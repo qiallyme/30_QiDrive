@@ -3,8 +3,8 @@ layout: page
 title: Event: APS/FSSA reporting lane reviewed
 slug: aps-fssa-reporting-lane-reviewed
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - reports-statements
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 010aaea0112e4ec092e3fda55b48cb77
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: APS/FSSA reporting lane reviewed

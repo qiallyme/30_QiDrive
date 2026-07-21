@@ -3,9 +3,9 @@ layout: page
 title: "Pattern Sensitivity Explained"
 slug: "pattern_sensitivity_explained"
 created_at: "2026-06-12 01:25:05"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2ba640-54e8-83ea-904a-75ec4842136e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Pattern Sensitivity Explained

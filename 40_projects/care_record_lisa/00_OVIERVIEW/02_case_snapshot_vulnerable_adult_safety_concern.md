@@ -5,7 +5,7 @@ slug: 02-case-snapshot-vulnerable-adult-safety-concern
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 562008a3ddde433c8fcbef367e840e1f
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Case Snapshot — Vulnerable Adult Safety Concern

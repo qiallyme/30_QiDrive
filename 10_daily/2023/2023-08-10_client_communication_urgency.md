@@ -3,9 +3,9 @@ layout: page
 title: "Client Communication Urgency"
 slug: "client_communication_urgency"
 created_at: "2023-08-10 19:26:00"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "0e9bffe5-7834-4939-9c68-c0dc4bafbf56"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Client Communication Urgency

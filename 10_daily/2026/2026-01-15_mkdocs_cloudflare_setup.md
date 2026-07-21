@@ -3,9 +3,9 @@ layout: page
 title: "MkDocs Cloudflare Setup"
 slug: "mkdocs_cloudflare_setup"
 created_at: "2026-01-15 00:16:52"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6968862b-798c-8325-811e-d5b03aab32c9"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # MkDocs Cloudflare Setup

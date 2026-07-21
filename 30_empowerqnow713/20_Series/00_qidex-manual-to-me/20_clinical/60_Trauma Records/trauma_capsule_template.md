@@ -6,12 +6,12 @@ summary: Template for creating trauma capsules with full folder structure
 status: draft
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for creating trauma capsules in lived experience track
-tags: []
+tags:
   - template
   - trauma
   - capsule
   - empowerqnow713
-keywords: []
+keywords:
   - trauma
   - lived_experience
   - capsule

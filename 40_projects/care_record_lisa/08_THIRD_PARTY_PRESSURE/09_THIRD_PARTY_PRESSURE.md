@@ -3,8 +3,8 @@ layout: section
 title: Third Party Pressure
 slug: third-party-pressure
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: e8680a525b564335b25c681a7b01f535
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Third Party Pressure

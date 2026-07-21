@@ -5,7 +5,7 @@ slug: unclaimed-property
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: b6da275cc92d467781c03e9b48ddef8a
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 |Claim ID|Status|

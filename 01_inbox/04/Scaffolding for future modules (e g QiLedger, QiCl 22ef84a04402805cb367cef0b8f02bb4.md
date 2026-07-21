@@ -1,0 +1,1 @@
+# Scaffolding for future modules (e.g. QiLedger, QiClient, QiBuilder)

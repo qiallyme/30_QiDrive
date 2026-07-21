@@ -3,7 +3,7 @@ layout: page
 title: "Luis - Felony Residential Entry"
 slug: "luis_felony_residential_entry"
 created_at: "2019-01-23"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["legal"]
 category: "legal"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 5a7a324e0ba34cb19687c80c054bfb3d
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Luis - Felony Residential Entry

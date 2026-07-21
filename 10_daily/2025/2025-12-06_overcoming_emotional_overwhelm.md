@@ -3,9 +3,9 @@ layout: page
 title: "Overcoming emotional overwhelm"
 slug: "overcoming_emotional_overwhelm"
 created_at: "2025-12-06 02:00:08"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6933e286-1474-8333-9a87-e55d7670aaaf"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Overcoming emotional overwhelm

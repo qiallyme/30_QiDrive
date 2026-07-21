@@ -8,7 +8,7 @@ layout: page
 slug: 90-outputs
 summary: ""
 created_at: "2026-07-01T23:17:15-05:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:20-04:00"
 author: ""
 owner: ""
 tags: []
@@ -31,12 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[2026-07-01_qilabs_dev_board_triage_seed|2026 07 01 qilabs dev board triage seed]]
-- [[50_outputs|50 outputs]]
-- [[cleanup_2026_06_28|cleanup 2026 06 28]]
-- [[cleanup_2026_06_29_frontmatter|cleanup 2026 06 29 frontmatter]]
-- [[cleanup_2026_06_29_qicode|cleanup 2026 06 29 qicode]]
-- [[cleanup_2026_06_30_qicode_root|cleanup 2026 06 30 qicode root]]
+- [[90_outputs|90 outputs]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
 

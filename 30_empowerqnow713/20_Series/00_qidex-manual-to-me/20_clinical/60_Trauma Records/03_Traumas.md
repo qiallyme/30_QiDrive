@@ -5,9 +5,9 @@ slug: 03-traumas
 status: active
 updated_at: "2026-07-16T06:49:35-04:00"
 owner: CRV
-tags: []
+tags:
   - empowerqnow713
-keywords: []
+keywords:
   - ideas
 source_type: manual
 realm: 2_QsKb

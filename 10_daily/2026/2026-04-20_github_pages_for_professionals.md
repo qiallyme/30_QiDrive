@@ -3,9 +3,9 @@ layout: page
 title: "GitHub Pages for Professionals"
 slug: "github_pages_for_professionals"
 created_at: "2026-04-20 11:00:22"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69e64d64-6950-83ea-9c05-1ae1b59c5d0f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # GitHub Pages for Professionals

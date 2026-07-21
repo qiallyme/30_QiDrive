@@ -3,9 +3,9 @@ layout: page
 title: "Powerful face exfoliators"
 slug: "powerful_face_exfoliators"
 created_at: "2025-08-20 19:11:33"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68a66420-39dc-8327-b40e-933cbcfe725d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Powerful face exfoliators

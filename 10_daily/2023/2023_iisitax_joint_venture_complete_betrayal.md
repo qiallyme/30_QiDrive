@@ -4,7 +4,7 @@ title: "IISITAX Joint Venture - Complete Betrayal"
 category: career
 life_stage: early-30s
 critical: true
-tags: []
+tags:
   - financial
   - iisitax
   - critical-event
@@ -18,7 +18,7 @@ layout: page
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 author: ""
 keywords: []
 aliases: []
@@ -30,6 +30,14 @@ uid: 679576e0bd3240848c26c07792b3a5bf
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: event
+event_type: ""
+people: []
+location: ""
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # IISITAX Joint Venture - Complete Betrayal

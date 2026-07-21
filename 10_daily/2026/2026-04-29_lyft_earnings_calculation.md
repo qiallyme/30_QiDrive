@@ -3,9 +3,9 @@ layout: page
 title: "Lyft Earnings Calculation"
 slug: "lyft_earnings_calculation"
 created_at: "2026-04-29 17:55:58"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f28c7d-ec84-83ea-8476-213e8747ef4a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Lyft Earnings Calculation

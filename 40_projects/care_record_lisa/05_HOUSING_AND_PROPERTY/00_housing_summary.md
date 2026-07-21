@@ -3,8 +3,8 @@ layout: page
 title: Housing Summary
 slug: housing-summary
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 70dcc1c009724cae99e5c691feae2d27
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Housing Summary

@@ -3,9 +3,9 @@ layout: page
 title: "Storing Emails in Supabase"
 slug: "storing_emails_in_supabase"
 created_at: "2026-03-22 04:07:14"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69bfb141-035c-8326-97e1-9dfe5498e5af"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Storing Emails in Supabase

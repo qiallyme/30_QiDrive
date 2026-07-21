@@ -3,9 +3,9 @@ layout: page
 title: "Exhibit in motion supplement"
 slug: "exhibit_in_motion_supplement"
 created_at: "2025-12-20 14:02:36"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "694700db-5658-8326-ae9c-da8723115b7f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Exhibit in motion supplement

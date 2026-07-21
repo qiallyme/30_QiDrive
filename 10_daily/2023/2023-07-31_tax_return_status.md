@@ -3,9 +3,9 @@ layout: page
 title: "Tax Return Status"
 slug: "tax_return_status"
 created_at: "2023-07-31 16:04:02"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "8aadc06a-1dbc-449b-a7ca-e24017b2b795"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tax Return Status

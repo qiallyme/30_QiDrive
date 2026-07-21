@@ -3,9 +3,9 @@ layout: page
 title: "IDE CSV Quarantine Prompt"
 slug: "ide_csv_quarantine_prompt"
 created_at: "2026-06-13 10:33:22"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2d783c-2f00-83ea-90e3-e79e342d8b15"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # IDE CSV Quarantine Prompt

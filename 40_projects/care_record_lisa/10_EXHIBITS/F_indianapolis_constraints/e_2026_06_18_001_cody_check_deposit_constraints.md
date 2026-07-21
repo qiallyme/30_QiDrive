@@ -3,8 +3,8 @@ layout: page
 title: Event: Cody receives $7,521.37 check / deposit constraints
 slug: cody-receives-7-521-37-check-deposit-constraints
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
   - financial-personal-constraint
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 46c29c5946f94d7da0ae5ef367bf2f3d
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Cody receives $7,521.37 check / deposit constraints

@@ -3,9 +3,9 @@ layout: page
 title: "Business Registration Assistance"
 slug: "business_registration_assistance"
 created_at: "2023-07-31 17:20:17"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "5cad1d48-739c-4f00-a3d3-063914d06161"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Business Registration Assistance

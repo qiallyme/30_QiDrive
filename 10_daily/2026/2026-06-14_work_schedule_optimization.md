@@ -3,9 +3,9 @@ layout: page
 title: "Work Schedule Optimization"
 slug: "work_schedule_optimization"
 created_at: "2026-06-14 10:29:50"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2ec8eb-0054-83ea-befa-691895e9c60c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Work Schedule Optimization

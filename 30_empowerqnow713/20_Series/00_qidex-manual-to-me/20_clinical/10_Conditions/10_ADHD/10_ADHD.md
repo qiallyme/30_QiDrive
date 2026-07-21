@@ -3,8 +3,8 @@ layout: section
 title: ADHD
 slug: adhd
 status: publish
-updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:17-04:00"
+tags:
   - moc
   - empowerqnow713
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 6fb90db18a9e446e99f6dbe34faeb4e2
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # ADHD

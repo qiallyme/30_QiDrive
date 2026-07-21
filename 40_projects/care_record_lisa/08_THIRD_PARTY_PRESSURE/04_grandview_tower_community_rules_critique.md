@@ -3,8 +3,8 @@ layout: page
 title: Critique of "Attachment #3 – Community Rules"
 slug: critique-of-attachment-3-community-rules
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: d49b3a5b26394f9592fabbec7e4c2b5b
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Critique of "Attachment #3 – Community Rules"

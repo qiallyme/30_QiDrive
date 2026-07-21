@@ -3,9 +3,9 @@ layout: page
 title: "Approaching Someone Safely"
 slug: "approaching_someone_safely"
 created_at: "2026-05-13 09:03:50"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a0484c5-0ba8-83ea-83fe-53e8075d9964"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Approaching Someone Safely

@@ -3,9 +3,9 @@ layout: page
 title: "BP Medication Monitoring"
 slug: "bp_medication_monitoring"
 created_at: "2026-04-21 12:35:12"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69e7b54f-2258-83ea-8097-531481935ec9"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # BP Medication Monitoring

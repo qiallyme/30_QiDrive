@@ -3,9 +3,9 @@ layout: page
 title: "Interactive personal documentation"
 slug: "interactive_personal_documentation"
 created_at: "2025-12-13 08:52:38"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "693d7db5-9f60-8331-80b9-737fbbb4b7bc"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Interactive personal documentation

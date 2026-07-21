@@ -11,7 +11,7 @@ qi_decimal: 7.00.00-TECH
 qid: qfde9f4325d45
 status: active
 system: qios
-keywords: []
+keywords:
 - tech
 layout: page
 summary: ""

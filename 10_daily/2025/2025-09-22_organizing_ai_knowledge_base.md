@@ -3,9 +3,9 @@ layout: page
 title: "Organizing AI Knowledge Base"
 slug: "organizing_ai_knowledge_base"
 created_at: "2025-09-22 09:57:37"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68d163b8-9498-832d-b022-e850053f8718"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Organizing AI Knowledge Base

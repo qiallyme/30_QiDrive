@@ -9,7 +9,7 @@ visibility: internal
 publish_target: none
 publish_url: ""
 created_at: "2026-07-16"
-updated_at: "2026-07-16"
+updated_at: "2026-07-18T11:03:10-04:00"
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: Timeline
@@ -25,10 +25,13 @@ tags: [dashboard, timeline]
 keywords: [timeline, events, chronology]
 aliases: []
 context: ""
-uid: ""
+uid: 24029bd4b2004b61ba0bdd6c56ecddf8
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+index_scope: ""
+generated_by: ""
+generated_at: ""
 ---
 
 # Timeline Dashboard
@@ -41,7 +44,7 @@ template_key: master-template
 ```dataview
 TABLE WITHOUT ID date AS Date, file.link AS Event, event_type AS Type, people AS People, significance AS Significance
 FROM "10_daily"
-WHERE type = "event" AND timeline_include = true AND canonical = true
+WHERE type = "event"
 SORT date DESC
 LIMIT 40
 ```

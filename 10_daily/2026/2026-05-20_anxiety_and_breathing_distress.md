@@ -3,9 +3,9 @@ layout: page
 title: "Anxiety and Breathing Distress"
 slug: "anxiety_and_breathing_distress"
 created_at: "2026-05-20 13:05:08"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a0df7d0-42e4-83ea-bff3-1f64bd6862c7"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Anxiety and Breathing Distress

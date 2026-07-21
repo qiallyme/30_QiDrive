@@ -3,9 +3,9 @@ layout: page
 title: "Household Living Agreement"
 slug: "household_living_agreement"
 created_at: "2026-03-28 14:29:31"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69c82c09-1524-8330-9c2b-c4d5b91c7bec"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Household Living Agreement

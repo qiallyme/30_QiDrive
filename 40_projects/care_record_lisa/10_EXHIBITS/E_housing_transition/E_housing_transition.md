@@ -3,8 +3,8 @@ layout: section
 title: E Housing Transition
 slug: e-housing-transition
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 8c0edf44f2b54745a87be4e60188f367
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # E Housing Transition

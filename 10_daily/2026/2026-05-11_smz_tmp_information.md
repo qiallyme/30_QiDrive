@@ -3,9 +3,9 @@ layout: page
 title: "SMZ-TMP Information"
 slug: "smz_tmp_information"
 created_at: "2026-05-11 22:58:34"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a02a556-1a04-83ea-8df1-4ab3a6235210"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # SMZ-TMP Information

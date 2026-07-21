@@ -3,9 +3,9 @@ layout: page
 title: "Surplus Claim and Priority"
 slug: "surplus_claim_and_priority"
 created_at: "2026-03-03 12:33:56"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69a7295a-d650-8333-a6d3-21a9bad7a905"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Surplus Claim and Priority

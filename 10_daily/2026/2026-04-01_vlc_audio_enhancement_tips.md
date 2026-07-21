@@ -3,9 +3,9 @@ layout: page
 title: "VLC Audio Enhancement Tips"
 slug: "vlc_audio_enhancement_tips"
 created_at: "2026-04-01 23:32:50"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69cdf139-b85c-8329-8b1b-d5a67323a842"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # VLC Audio Enhancement Tips

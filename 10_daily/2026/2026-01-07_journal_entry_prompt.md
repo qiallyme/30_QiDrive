@@ -3,9 +3,9 @@ layout: page
 title: "Journal Entry Prompt"
 slug: "journal_entry_prompt"
 created_at: "2026-01-07 15:56:12"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "695ed67c-7c84-832e-abd8-abbb478f5f95"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Journal Entry Prompt

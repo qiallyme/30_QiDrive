@@ -3,9 +3,9 @@ layout: page
 title: "Camera protocol advice"
 slug: "camera_protocol_advice"
 created_at: "2025-12-17 10:13:10"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6942d694-a4f8-8333-a6eb-1220be75d693"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Camera protocol advice

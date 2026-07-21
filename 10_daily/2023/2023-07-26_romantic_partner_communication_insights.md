@@ -3,9 +3,9 @@ layout: page
 title: "Romantic Partner Communication Insights."
 slug: "romantic_partner_communication_insights"
 created_at: "2023-07-26 17:15:09"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "ae84fd53-0407-49ff-9721-cde4c4bf1581"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Romantic Partner Communication Insights.

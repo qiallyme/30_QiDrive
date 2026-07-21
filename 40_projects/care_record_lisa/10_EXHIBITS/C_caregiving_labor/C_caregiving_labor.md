@@ -3,8 +3,8 @@ layout: section
 title: C Caregiving Labor
 slug: c-caregiving-labor
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 61071185a4db4e74a11776b0c208757c
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # C Caregiving Labor

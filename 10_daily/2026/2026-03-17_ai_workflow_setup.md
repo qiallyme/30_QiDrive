@@ -3,9 +3,9 @@ layout: page
 title: "AI Workflow Setup"
 slug: "ai_workflow_setup"
 created_at: "2026-03-17 00:27:50"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69b8e60f-fd1c-8329-8734-044228d54470"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # AI Workflow Setup

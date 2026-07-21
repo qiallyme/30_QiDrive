@@ -3,9 +3,9 @@ layout: page
 title: "Poder de Representación Multiple."
 slug: "poder_de_representacion_multiple"
 created_at: "2023-07-30 17:19:45"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "ef749c6c-8d13-446d-98d8-aae48407f086"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Poder de Representación Multiple.

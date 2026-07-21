@@ -3,9 +3,9 @@ layout: page
 title: "QiEvidence - Legal Docs Organization"
 slug: "qievidence_legal_docs_organization"
 created_at: "2026-03-12 02:20:17"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69b2690a-7af0-8327-8ba6-62f9c46628b7"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # QiEvidence - Legal Docs Organization

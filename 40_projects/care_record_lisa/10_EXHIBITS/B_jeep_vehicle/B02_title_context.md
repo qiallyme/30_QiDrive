@@ -3,8 +3,8 @@ layout: page
 title: B02 title context
 slug: b02-title-context
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 4e6d1e5a0f1e4232936ff65721d7a30d
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # B02 title context

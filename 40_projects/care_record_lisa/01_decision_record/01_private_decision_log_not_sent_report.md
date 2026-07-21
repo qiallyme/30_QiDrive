@@ -5,7 +5,7 @@ slug: 01-private-decision-log-not-sent-report
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: f39f242c47a94273bd6c0b57ac115cb8
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # Private Decision Log — Report Not Sent

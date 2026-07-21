@@ -3,8 +3,8 @@ layout: page
 title: Event: BMV Jeep title transfer completed
 slug: bmv-jeep-title-transfer-completed
 status: Needs BMV docs
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - property-jeep
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 118ba408c2844f94bfda47b221b7884f
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: BMV Jeep title transfer completed

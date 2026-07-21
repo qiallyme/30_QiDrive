@@ -3,9 +3,9 @@ layout: page
 title: "Payment Dispute, Professionalism Requested"
 slug: "payment_dispute_professionalism_requested"
 created_at: "2023-07-20 10:01:30"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "f4cf227d-a195-4c4a-8d86-a91219fd0274"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Payment Dispute, Professionalism Requested

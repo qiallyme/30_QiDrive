@@ -3,8 +3,8 @@ layout: page
 title: Event: Cody replies: saw/fed Mr. Link before being forced out
 slug: cody-replies-saw-fed-mr-link-before-being-forced-out
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - communications
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 00e6471fb7194c5e9a2a1341437310a2
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Cody replies: saw/fed Mr. Link before being forced out

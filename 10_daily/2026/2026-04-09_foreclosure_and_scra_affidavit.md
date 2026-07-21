@@ -3,9 +3,9 @@ layout: page
 title: "Foreclosure and SCRA Affidavit"
 slug: "foreclosure_and_scra_affidavit"
 created_at: "2026-04-09 23:45:43"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69d8805c-c7a8-8328-9a9f-e19f80e2dd48"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Foreclosure and SCRA Affidavit

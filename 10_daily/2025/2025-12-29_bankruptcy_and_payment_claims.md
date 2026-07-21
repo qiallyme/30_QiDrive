@@ -3,9 +3,9 @@ layout: page
 title: "Bankruptcy and payment claims"
 slug: "bankruptcy_and_payment_claims"
 created_at: "2025-12-29 18:36:44"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69531e13-eb08-832e-be90-967d661b3807"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Bankruptcy and payment claims

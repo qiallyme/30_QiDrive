@@ -3,10 +3,10 @@ layout: page
 title: Neurodivergence, Anxiety, and Misinterpreted Truthfulness
 slug: neurodivergence_truth_misreadings
 status: publish
-updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:17-04:00"
+tags:
   - empowerqnow713
-keywords: []
+keywords:
   - ADHD
   - anxiety
   - othello_error
@@ -30,6 +30,14 @@ realm_label: ""
 uid: 1070ddc4887949f3bff6252b478e5503
 canonical_ref: ""
 template_key: master-template
+type: event
+event_type: ""
+people: []
+location: ""
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Neurodivergence, Anxiety, and Misinterpreted Truthfulness

@@ -3,9 +3,9 @@ layout: page
 title: "Evitar apagados automáticos"
 slug: "evitar_apagados_automaticos"
 created_at: "2025-08-13 09:29:01"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "689ca129-fc2c-8331-9458-441e14d787ca"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Evitar apagados automáticos

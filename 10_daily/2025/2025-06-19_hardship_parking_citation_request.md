@@ -3,9 +3,9 @@ layout: page
 title: "Hardship Parking Citation Request"
 slug: "hardship_parking_citation_request"
 created_at: "2025-06-19 21:17:00"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6854c49c-b644-800c-a133-d6053574fa8e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Hardship Parking Citation Request

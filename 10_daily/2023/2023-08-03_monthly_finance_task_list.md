@@ -3,9 +3,9 @@ layout: page
 title: "Monthly Finance Task List"
 slug: "monthly_finance_task_list"
 created_at: "2023-08-03 17:36:49"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "de731d51-3720-4ad0-9f24-bf057598f601"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Monthly Finance Task List

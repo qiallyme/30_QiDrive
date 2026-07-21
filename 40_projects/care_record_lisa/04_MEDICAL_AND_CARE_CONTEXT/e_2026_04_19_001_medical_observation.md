@@ -3,8 +3,8 @@ layout: page
 title: Event: Observation / medical instability event before later hospitalization
 slug: observation-medical-instability-event-before-later-hospitalization
 status: Verify/source needed
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - medical-care
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 66ef84270a194ea3911e745cbb1fe035
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Observation / medical instability event before later hospitalization

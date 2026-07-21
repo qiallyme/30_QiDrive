@@ -3,9 +3,9 @@ layout: page
 title: "Nervous system reset program"
 slug: "nervous_system_reset_program"
 created_at: "2025-11-27 15:33:58"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6928c3c5-39e4-832c-afd5-8f9926c6e5f4"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Nervous system reset program

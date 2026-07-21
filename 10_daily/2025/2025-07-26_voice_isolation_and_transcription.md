@@ -3,9 +3,9 @@ layout: page
 title: "Voice isolation and transcription"
 slug: "voice_isolation_and_transcription"
 created_at: "2025-07-26 17:46:00"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68855a91-b58c-8321-99c9-02d579c31c67"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Voice isolation and transcription

@@ -3,9 +3,9 @@ layout: page
 title: "App Testing Workflow"
 slug: "app_testing_workflow"
 created_at: "2026-05-17 03:17:34"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a09798c-db90-83ea-86ac-21faea4ba744"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # App Testing Workflow

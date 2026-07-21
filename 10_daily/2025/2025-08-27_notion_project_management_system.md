@@ -3,9 +3,9 @@ layout: page
 title: "Notion project management system"
 slug: "notion_project_management_system"
 created_at: "2025-08-27 03:51:33"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68aec714-3b6c-8326-8b01-46902618ca60"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Notion project management system

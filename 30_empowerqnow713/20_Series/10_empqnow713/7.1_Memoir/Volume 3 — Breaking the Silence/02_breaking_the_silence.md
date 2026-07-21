@@ -3,8 +3,8 @@ layout: section
 title: — Breaking The Silence
 slug: breaking-the-silence
 status: publish
-updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:17-04:00"
+tags:
   - moc
   - empowerqnow713
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 6cb1da468f7d4ef1971212d2915088f9
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # — Breaking The Silence

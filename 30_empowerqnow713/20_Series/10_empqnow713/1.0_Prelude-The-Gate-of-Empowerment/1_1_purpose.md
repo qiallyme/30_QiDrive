@@ -5,7 +5,7 @@ slug: 1-1-purpose
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: 269eb408135d444b8732c2c6cfb97f9e
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 We are not waiting. We are launching. We are EmpowerQ Now.

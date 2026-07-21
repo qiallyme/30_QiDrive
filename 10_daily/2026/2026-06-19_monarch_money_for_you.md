@@ -3,9 +3,9 @@ layout: page
 title: "Monarch Money for You"
 slug: "monarch_money_for_you"
 created_at: "2026-06-19 17:15:49"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a35bf93-efdc-83ea-8118-cf1a290d65fc"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Monarch Money for You

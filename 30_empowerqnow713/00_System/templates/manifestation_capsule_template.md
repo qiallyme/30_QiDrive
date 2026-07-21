@@ -6,13 +6,13 @@ summary: Template for creating clinical manifestation capsules with full folder 
 status: publish
 updated_at: "2026-07-16T06:49:34-04:00"
 context: Template for creating manifestation capsules in clinical track
-tags: []
+tags:
   - template
   - manifestation
   - clinical
   - capsule
   - empowerqnow713
-keywords: []
+keywords:
   - manifestation
   - clinical
   - capsule

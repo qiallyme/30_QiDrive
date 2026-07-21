@@ -3,9 +3,9 @@ layout: page
 title: "Self-hosted mobile docs"
 slug: "self_hosted_mobile_docs"
 created_at: "2025-12-26 19:14:38"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "694f32e6-0a08-8332-bc88-10ea9720aed2"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Self-hosted mobile docs

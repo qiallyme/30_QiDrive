@@ -3,9 +3,9 @@ layout: page
 title: "Payment frustration journal"
 slug: "payment_frustration_journal"
 created_at: "2025-11-21 21:51:52"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69213338-10f4-832d-acd5-c747f542f377"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Payment frustration journal

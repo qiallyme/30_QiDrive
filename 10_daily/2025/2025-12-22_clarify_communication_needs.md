@@ -3,9 +3,9 @@ layout: page
 title: "Clarify communication needs"
 slug: "clarify_communication_needs"
 created_at: "2025-12-22 17:07:50"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6949cf23-d9b4-832d-a8e9-d3a2d9d47b80"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Clarify communication needs

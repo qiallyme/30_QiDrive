@@ -3,9 +3,9 @@ layout: page
 title: "Task details for client"
 slug: "task_details_for_client"
 created_at: "2025-10-03 03:20:37"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68df8738-3dac-8328-b17c-33d1187e46f1"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Task details for client

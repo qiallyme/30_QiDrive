@@ -3,9 +3,9 @@ layout: page
 title: "App logo ideas"
 slug: "app_logo_ideas"
 created_at: "2025-11-12 23:45:45"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69157089-15a4-8325-b457-4561b46b08ae"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # App logo ideas

@@ -3,9 +3,9 @@ layout: page
 title: PART VI – Collapse Continues (2024–Present)
 slug: part-vi-collapse-continues-2024present
 status: active
-updated_at: "2026-07-16T06:49:35-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 owner: CRV
-tags: []
+tags:
   - empowerqnow713
 source_type: manual
 realm: 2_QsKb
@@ -23,6 +23,7 @@ realm_label: ""
 uid: c5bee47b49f54f04bd7c50167e7803f0
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # PART VI – Collapse Continues (2024–Present)

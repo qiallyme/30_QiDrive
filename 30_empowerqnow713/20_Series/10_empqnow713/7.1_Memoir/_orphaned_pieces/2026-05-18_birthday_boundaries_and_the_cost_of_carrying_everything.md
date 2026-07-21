@@ -4,7 +4,7 @@ title: Birthday, Boundaries, and the Cost of Carrying Everything
 slug: birthday-boundaries-and-the-cost-of-carrying-everything
 status: captured
 updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+tags:
   - birthday
   - boundaries
   - relationship-strain

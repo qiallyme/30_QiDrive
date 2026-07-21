@@ -3,9 +3,9 @@ layout: page
 title: "Caregiving Overload Support"
 slug: "caregiving_overload_support"
 created_at: "2026-05-29 20:12:53"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a1a3994-7840-83ea-b9dc-03cb1a1fc643"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Caregiving Overload Support

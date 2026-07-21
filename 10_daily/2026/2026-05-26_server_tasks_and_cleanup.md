@@ -3,9 +3,9 @@ layout: page
 title: "Server Tasks and Cleanup"
 slug: "server_tasks_and_cleanup"
 created_at: "2026-05-26 16:54:55"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a161696-c134-83ea-96fa-0fc917b4c29e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Server Tasks and Cleanup

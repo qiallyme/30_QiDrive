@@ -3,9 +3,9 @@ layout: page
 title: "Task Ledger Recommendation"
 slug: "task_ledger_recommendation"
 created_at: "2026-04-03 01:34:36"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69cf5f5c-1ef4-8332-a531-8f0ba3a47943"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Task Ledger Recommendation

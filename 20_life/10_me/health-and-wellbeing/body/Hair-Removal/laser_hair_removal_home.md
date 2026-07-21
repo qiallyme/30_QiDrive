@@ -3,9 +3,9 @@ layout: page
 title: IPL Hair Reduction: Maximizing Facial Results (Mustache, Neck, Sideburns)
 slug: ipl-hair-reduction-maximizing-facial-results-mustache-neck-sideburns
 status: active
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 owner: CRV
-tags: []
+tags:
   - personal
 source_type: manual
 realm: 2_QsKb
@@ -23,6 +23,7 @@ realm_label: ""
 uid: f142ba17e00c4b9d8bf770051457a265
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 I would be happy to provide the best techniques for treating the facial area and ways to supplement your IPL routine for maximum results! This document pulls together the essential application details and supportive practices for your focused goal.

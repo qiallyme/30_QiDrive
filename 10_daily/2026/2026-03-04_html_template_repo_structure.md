@@ -3,9 +3,9 @@ layout: page
 title: "HTML Template Repo Structure"
 slug: "html_template_repo_structure"
 created_at: "2026-03-04 11:15:05"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69a86887-8090-832e-8d1a-081f29b048fa"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # HTML Template Repo Structure

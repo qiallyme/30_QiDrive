@@ -3,9 +3,9 @@ layout: page
 title: "Track Expenses for Work"
 slug: "track_expenses_for_work"
 created_at: "2023-08-05 17:31:36"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "ff2fa384-6837-446d-af8c-ac0de5563c98"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Track Expenses for Work

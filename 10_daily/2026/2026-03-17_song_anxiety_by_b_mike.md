@@ -3,9 +3,9 @@ layout: page
 title: "Song Anxiety by B-Mike"
 slug: "song_anxiety_by_b_mike"
 created_at: "2026-03-17 15:03:05"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69b9b363-a2ac-832f-99a4-87e984499c23"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Song Anxiety by B-Mike

@@ -3,9 +3,9 @@ layout: page
 title: "Notion to Postgres Pipeline"
 slug: "notion_to_postgres_pipeline"
 created_at: "2026-03-21 20:20:19"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69bf43d1-dcec-8331-b4cd-3adc8e764b47"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Notion to Postgres Pipeline

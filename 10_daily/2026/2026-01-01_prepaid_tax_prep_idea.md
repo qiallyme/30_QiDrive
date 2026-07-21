@@ -3,9 +3,9 @@ layout: page
 title: "Prepaid Tax Prep Idea"
 slug: "prepaid_tax_prep_idea"
 created_at: "2026-01-01 21:22:16"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "695739e7-8ad0-832b-aced-ae0a07259bbd"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Prepaid Tax Prep Idea

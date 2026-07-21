@@ -6,23 +6,23 @@ summary: "Canonical visual language for QSaysIt across image AI, video AI, thumb
 status: active
 visibility: internal
 created_at: "2026-07-02T02:20:00-05:00"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 author: "Cody J. Rice-Velasquez"
 owner: ""
   - "Cody"
-tags: []
+tags:
   - qsaysit
   - style-guide
   - visual-identity
   - image-ai
   - video-ai
-keywords: []
+keywords:
   - QSaysIt
   - visual style
   - prompt guide
   - branding
   - creative direction
-aliases: []
+aliases:
   - "QSaysIt aesthetic guide"
 context: "Use this guide when generating hero images, thumbnails, short-form visuals, or video concepts for QSaysIt."
 sensitivity: internal
@@ -32,6 +32,7 @@ uid: "qsaysit-visual-style-guide"
 canonical_ref: "qisaysit/style/visual-style-guide"
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # QSaysIt Visual Style Guide

@@ -3,9 +3,9 @@ layout: page
 title: "Acronym-based structure options"
 slug: "acronym_based_structure_options"
 created_at: "2025-08-27 03:50:17"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68aec6c9-6150-8320-ab2b-d21a941a8197"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Acronym-based structure options

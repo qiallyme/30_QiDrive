@@ -3,9 +3,9 @@ layout: page
 title: "Lyft Rental Program Terms"
 slug: "lyft_rental_program_terms"
 created_at: "2026-06-15 04:30:19"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2fc629-a0f4-83ea-b1e8-8f574829eeb5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Lyft Rental Program Terms

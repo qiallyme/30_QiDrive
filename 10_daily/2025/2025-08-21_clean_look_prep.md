@@ -3,9 +3,9 @@ layout: page
 title: "Clean look prep"
 slug: "clean_look_prep"
 created_at: "2025-08-21 19:32:37"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68a7baa5-38bc-8320-9a9e-ac8a54431c1d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Clean look prep

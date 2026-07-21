@@ -3,9 +3,9 @@ layout: page
 title: "Defining Today's Purpose"
 slug: "defining_todays_purpose"
 created_at: "2026-06-08 15:09:42"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a272185-d05c-83ea-848e-f151a1c4a0f4"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Defining Today's Purpose

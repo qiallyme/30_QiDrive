@@ -3,9 +3,9 @@ layout: page
 title: "Modeling Potential Entities"
 slug: "modeling_potential_entities"
 created_at: "2026-06-04 15:10:20"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a21dbaa-a1f8-83ea-bfa0-e491d4be08fa"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Modeling Potential Entities

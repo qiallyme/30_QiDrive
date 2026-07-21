@@ -3,10 +3,10 @@ layout: page
 title: S Elliott St Household Meeting Summary
 slug: s-elliott-st-household-meeting-summary
 status: active
-updated_at: "2026-07-16T06:49:27-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:11-04:00"
+tags:
   - cadence
-keywords: []
+keywords:
   - groceries
   - caregiver planning
   - household budget
@@ -31,6 +31,14 @@ realm_label: ""
 uid: 061a6172b93146cb8422cbd2307412a6
 canonical_ref: ""
 template_key: master-template
+type: event
+event_type: ""
+people: []
+location: ""
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # S Elliott St Household Meeting Summary

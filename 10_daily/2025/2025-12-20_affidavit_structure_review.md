@@ -3,9 +3,9 @@ layout: page
 title: "Affidavit structure review"
 slug: "affidavit_structure_review"
 created_at: "2025-12-20 14:16:55"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69470430-40c8-8333-9f1c-b5d2bd9b75bc"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Affidavit structure review

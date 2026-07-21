@@ -3,9 +3,9 @@ layout: page
 title: "Double Entry Accounting Schema"
 slug: "double_entry_accounting_schema"
 created_at: "2026-06-21 03:56:37"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a37a714-6a8c-83ea-b9b7-903ab253bafb"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Double Entry Accounting Schema

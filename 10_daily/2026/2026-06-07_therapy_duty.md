@@ -3,9 +3,9 @@ layout: page
 title: "Therapy Duty"
 slug: "therapy_duty"
 created_at: "2026-06-07 19:46:55"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a2610fe-afc8-83ea-a320-55daae0ffded"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Therapy Duty

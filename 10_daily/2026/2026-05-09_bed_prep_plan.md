@@ -3,9 +3,9 @@ layout: page
 title: "Bed Prep Plan"
 slug: "bed_prep_plan"
 created_at: "2026-05-09 21:58:53"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fff458-8268-83ea-b033-aaec52491d78"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Bed Prep Plan

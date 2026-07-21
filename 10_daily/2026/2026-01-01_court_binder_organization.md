@@ -3,9 +3,9 @@ layout: page
 title: "Court Binder Organization"
 slug: "court_binder_organization"
 created_at: "2026-01-01 09:49:42"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69569770-93c0-8331-bc4d-9296bbc23c08"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Court Binder Organization

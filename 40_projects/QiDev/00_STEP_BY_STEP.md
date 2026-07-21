@@ -3,8 +3,8 @@ layout: page
 title: QiOne RAG — One Zip Setup (Step-by-Step)
 slug: qione-rag-one-zip-setup-step-by-step
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:20-04:00"
+tags:
   - projects
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: 6af3a59decf440e08fffbf38f6d2434f
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # QiOne RAG — One Zip Setup (Step-by-Step)

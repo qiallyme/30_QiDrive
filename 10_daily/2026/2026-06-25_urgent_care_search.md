@@ -3,9 +3,9 @@ layout: page
 title: "Urgent Care Search"
 slug: "urgent_care_search"
 created_at: "2026-06-25 07:53:14"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a3d24b8-f6b4-83ea-b4ca-2755b3fffd19"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Urgent Care Search

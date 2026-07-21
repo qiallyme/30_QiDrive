@@ -3,9 +3,9 @@ layout: page
 title: "Homelessness Update and Legal Battle"
 slug: "homelessness_update_and_legal_battle"
 created_at: "2026-04-10 12:31:28"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69d931f5-f688-8329-93ef-dce6f2d4788f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Homelessness Update and Legal Battle

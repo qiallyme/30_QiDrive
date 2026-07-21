@@ -3,9 +3,9 @@ layout: page
 title: "Buy Here Pay Here"
 slug: "buy_here_pay_here"
 created_at: "2026-06-20 08:19:52"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a369376-e79c-83ea-8f0f-b42d006a0d66"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Buy Here Pay Here

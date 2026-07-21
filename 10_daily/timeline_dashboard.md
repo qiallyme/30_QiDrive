@@ -9,7 +9,7 @@ visibility: internal
 publish_target: none
 publish_url: ""
 created_at: "2026-07-16"
-updated_at: "2026-07-16"
+updated_at: "2026-07-18T11:03:11-04:00"
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: Timeline
@@ -29,10 +29,13 @@ uid: 0f0df2244e3a4f1aa128f9c5ddb93377
 canonical_ref: "[[00_home/timeline_dashboard]]"
 source_type: manual
 template_key: master-template
+index_scope: ""
+generated_by: ""
+generated_at: ""
 ---
 
 # Timeline Dashboard
 
 The canonical timeline command center is [[../00_home/timeline_dashboard|Timeline Dashboard]].
 
-Use [[_index|10 Daily]] to browse records by folder and year.
+Use [[10_daily/_index|10 Daily]] to browse records by folder and year.

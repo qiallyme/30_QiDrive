@@ -3,9 +3,9 @@ layout: page
 title: "Emergency Caretaker Packet"
 slug: "emergency_caretaker_packet"
 created_at: "2026-01-26 10:20:09"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6977942e-5200-832c-94f7-678fdead2466"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Emergency Caretaker Packet

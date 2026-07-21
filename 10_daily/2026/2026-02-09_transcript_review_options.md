@@ -3,9 +3,9 @@ layout: page
 title: "Transcript Review Options"
 slug: "transcript_review_options"
 created_at: "2026-02-09 17:03:08"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "698a67a6-6794-832d-9091-ce9b78b7fbf7"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Transcript Review Options

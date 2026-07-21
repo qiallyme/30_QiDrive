@@ -3,9 +3,9 @@ layout: page
 title: "3D code graph generation"
 slug: "3d_code_graph_generation"
 created_at: "2025-09-17 01:14:19"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68ca51a9-2928-8322-8811-2b46b08a3c5e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # 3D code graph generation

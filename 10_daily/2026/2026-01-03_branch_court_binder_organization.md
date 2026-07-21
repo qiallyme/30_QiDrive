@@ -3,9 +3,9 @@ layout: page
 title: "Branch · Court Binder Organization"
 slug: "branch_court_binder_organization"
 created_at: "2026-01-03 18:59:47"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6959bb81-7d54-8332-ac44-60dceee9721c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Branch · Court Binder Organization

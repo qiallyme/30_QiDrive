@@ -3,9 +3,9 @@ layout: page
 title: "Elohim and Inshallah Meaning"
 slug: "elohim_and_inshallah_meaning"
 created_at: "2026-01-09 14:08:57"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69616059-2b7c-8326-aad0-e1190d069bc5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Elohim and Inshallah Meaning

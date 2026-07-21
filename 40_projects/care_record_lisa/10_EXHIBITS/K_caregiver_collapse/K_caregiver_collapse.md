@@ -3,8 +3,8 @@ layout: section
 title: K Caregiver Collapse
 slug: k-caregiver-collapse
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 6de5574df1464948b49e67a8eb7f4a91
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # K Caregiver Collapse

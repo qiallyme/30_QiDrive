@@ -3,8 +3,8 @@ layout: template
 title: Template.exhibit
 slug: template-exhibit
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - care-record
   - projects
   - lisa-care-record
@@ -22,6 +22,7 @@ realm_label: ""
 uid: df208c8f03ff4100918e42724181ff5b
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Template.exhibit

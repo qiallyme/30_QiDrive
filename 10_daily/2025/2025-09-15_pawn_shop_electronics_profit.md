@@ -3,9 +3,9 @@ layout: page
 title: "Pawn shop electronics profit"
 slug: "pawn_shop_electronics_profit"
 created_at: "2025-09-15 04:15:13"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c7d8ed-3c3c-8327-ac24-dc2a804e521c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Pawn shop electronics profit

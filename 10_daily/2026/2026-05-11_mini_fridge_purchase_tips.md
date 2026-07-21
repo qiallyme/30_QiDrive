@@ -3,9 +3,9 @@ layout: page
 title: "Mini Fridge Purchase Tips"
 slug: "mini_fridge_purchase_tips"
 created_at: "2026-05-11 15:39:28"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a023e7b-d030-83ea-80c2-95c5060f6ec8"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Mini Fridge Purchase Tips

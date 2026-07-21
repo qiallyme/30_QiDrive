@@ -3,9 +3,9 @@ layout: page
 title: "Case Strategy Overview"
 slug: "case_strategy_overview"
 created_at: "2026-02-17 02:35:27"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6994283a-3a7c-8332-81a7-0697033bcaaa"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Case Strategy Overview

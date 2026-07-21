@@ -3,9 +3,9 @@ layout: page
 title: "Weekend Health and Care"
 slug: "weekend_health_and_care"
 created_at: "2026-05-06 23:10:26"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fc10b1-8a8c-83ea-8f75-e1183c75f282"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Weekend Health and Care

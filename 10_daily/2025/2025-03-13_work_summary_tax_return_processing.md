@@ -5,8 +5,8 @@ slug: work-summary-tax-return-processing-2025-03-13
 summary: Imported daily/work note.
 status: active
 created_at: "2025-03-13"
-updated_at: "2026-07-16T06:49:28-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:11-04:00"
+tags:
   - daily
   - imported
 source_type: imported
@@ -22,6 +22,7 @@ uid: 7342dc3ef9a040d1b310a08358187c89
 canonical_ref: ""
 template_key: master-template
 date: 2025-03-13
+type: note
 ---
 
 # Work Summary - Tax Return Processing - 2025-03-13

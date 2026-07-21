@@ -3,9 +3,9 @@ layout: page
 title: "Insights Through Conversation"
 slug: "insights_through_conversation"
 created_at: "2023-08-01 11:18:00"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "4b8c8e30-3247-4c83-a387-5216e02c879f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Insights Through Conversation

@@ -3,8 +3,8 @@ layout: page
 title: D01 comfort keepers pay
 slug: d01-comfort-keepers-pay
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 5eff59935b8f4139b8aca1ed8d6c8fd0
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # D01 comfort keepers pay

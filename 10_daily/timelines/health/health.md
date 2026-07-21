@@ -3,8 +3,8 @@ layout: section
 title: Health
 slug: health
 status: active
-updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:16-04:00"
+tags:
   - moc
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: 3d1ee761c6884bb385d1ed278a5a9b3d
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Health

@@ -3,9 +3,9 @@ layout: page
 title: "Exempt Code 11 Explanation"
 slug: "exempt_code_11_explanation"
 created_at: "2026-06-20 08:54:58"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a369bb1-25e8-83ea-a25c-d9475ff77f9a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Exempt Code 11 Explanation

@@ -3,9 +3,9 @@ layout: page
 title: "Wi-Fi Optimization Tips"
 slug: "wi_fi_optimization_tips"
 created_at: "2026-03-01 15:21:03"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69a4adbe-95a8-8327-9295-63b53617a15e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Wi-Fi Optimization Tips

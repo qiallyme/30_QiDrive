@@ -3,8 +3,8 @@ layout: page
 title: Event: Traffic ticket issued / later due-date planning
 slug: traffic-ticket-issued-later-due-date-planning
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
   - personal-constraint
@@ -22,6 +22,7 @@ realm_label: ""
 uid: 0be31196fc424b75b28d4675ad34963d
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Traffic ticket issued / later due-date planning

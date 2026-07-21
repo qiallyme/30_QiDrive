@@ -3,9 +3,9 @@ layout: page
 title: "Vibe check tarot spread"
 slug: "vibe_check_tarot_spread"
 created_at: "2025-09-07 05:07:03"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68bd593a-590c-8331-8ced-f5bea401c17a"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Vibe check tarot spread

@@ -3,9 +3,9 @@ layout: page
 title: "La Fuente Cargo Contract"
 slug: "la_fuente_cargo_contract"
 created_at: "2023-07-31 15:08:03"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "392a426f-c223-4dcd-99df-a4249ebf3dd0"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # La Fuente Cargo Contract

@@ -3,9 +3,9 @@ layout: page
 title: "Dispute Uber charge"
 slug: "dispute_uber_charge"
 created_at: "2026-03-04 01:52:29"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69a7e4a2-7908-8326-beb6-2ecafa173589"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Dispute Uber charge

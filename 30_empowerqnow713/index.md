@@ -4,8 +4,8 @@ title: The Burden of the Signal - A Testimony of Survival
 slug: the-burden-of-the-signal
 summary: EmpowerQNow, Q Manual to Me, posts, books, and related clinical/reflection material.
 status: publish
-updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:16-04:00"
+tags:
   - moc
   - empowerqnow713
 source_type: manual
@@ -22,6 +22,10 @@ realm_label: ""
 uid: 2d4d974572114ae9b72310e3d0c1a484
 canonical_ref: ""
 template_key: master-template
+type: index
+index_scope: ""
+generated_by: ""
+generated_at: ""
 ---
 
 # EmpowerQNow713

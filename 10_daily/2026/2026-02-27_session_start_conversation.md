@@ -3,9 +3,9 @@ layout: page
 title: "Session start conversation"
 slug: "session_start_conversation"
 created_at: "2026-02-27 14:57:33"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69a2052d-4e0c-8333-a73b-9f056d1e4e6e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Session start conversation

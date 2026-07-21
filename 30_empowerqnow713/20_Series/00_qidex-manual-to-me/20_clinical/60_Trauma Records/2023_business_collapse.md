@@ -6,14 +6,14 @@ summary: Business partnership exploitation leading to complete business collapse
 status: active
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Trauma record documenting the business betrayal and collapse that triggered the vulnerability cascade
-tags: []
+tags:
   - trauma
   - financial
   - professional
   - relational
   - betrayal
   - empowerqnow713
-keywords: []
+keywords:
   - business_collapse
   - betrayal
   - financial_trauma

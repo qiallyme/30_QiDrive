@@ -3,9 +3,9 @@ layout: page
 title: "Client-ready summary creation"
 slug: "client_ready_summary_creation"
 created_at: "2025-08-10 22:51:57"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "689968da-63d0-832b-b8b5-031f169a0e86"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Client-ready summary creation

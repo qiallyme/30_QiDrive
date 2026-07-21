@@ -3,9 +3,9 @@ layout: page
 title: "Rent Payment Confusion"
 slug: "rent_payment_confusion"
 created_at: "2026-05-03 09:50:27"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f76074-7b28-83ea-8eed-352f40d0c528"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Rent Payment Confusion

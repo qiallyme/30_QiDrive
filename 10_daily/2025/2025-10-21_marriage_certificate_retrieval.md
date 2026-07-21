@@ -3,9 +3,9 @@ layout: page
 title: "Marriage certificate retrieval"
 slug: "marriage_certificate_retrieval"
 created_at: "2025-10-21 02:47:35"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68f73a91-ac7c-8324-b35b-a601990a73be"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Marriage certificate retrieval

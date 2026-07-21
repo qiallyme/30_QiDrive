@@ -3,9 +3,9 @@ layout: page
 title: "Unlock PDF Folder Files"
 slug: "unlock_pdf_folder_files"
 created_at: "2026-03-22 08:33:26"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69bfef9a-fea0-8333-bdaa-2973323d0dbe"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Unlock PDF Folder Files

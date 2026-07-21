@@ -3,9 +3,9 @@ layout: page
 title: "Overloaded and Spiraling"
 slug: "overloaded_and_spiraling"
 created_at: "2026-05-01 14:18:48"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f4fc96-8c44-83ea-a0f6-b04dbbc87401"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Overloaded and Spiraling

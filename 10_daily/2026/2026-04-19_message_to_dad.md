@@ -3,9 +3,9 @@ layout: page
 title: "Message to Dad"
 slug: "message_to_dad"
 created_at: "2026-04-19 19:34:01"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69e5745a-a25c-83ea-8d2d-d576b79c4fa0"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Message to Dad

@@ -3,9 +3,9 @@ layout: page
 title: "Casual conversation exchange"
 slug: "casual_conversation_exchange"
 created_at: "2025-09-13 21:31:10"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c628ed-8bf4-8330-b492-848cb238200f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Casual conversation exchange

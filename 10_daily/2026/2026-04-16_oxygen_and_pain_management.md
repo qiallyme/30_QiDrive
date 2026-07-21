@@ -3,9 +3,9 @@ layout: page
 title: "Oxygen and Pain Management"
 slug: "oxygen_and_pain_management"
 created_at: "2026-04-16 19:46:10"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69e182d1-8aa4-83ea-97bc-5eb2c65c9d6f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Oxygen and Pain Management

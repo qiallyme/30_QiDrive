@@ -3,7 +3,7 @@ layout: page
 title: "Loss of Assets and Housing Instability"
 slug: "loss_of_assets_and_housing_instability"
 created_at: "2023-01-01"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 6c6167dd08534773929c66f536977dae
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Loss of Assets and Housing Instability

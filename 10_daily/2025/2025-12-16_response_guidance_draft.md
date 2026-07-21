@@ -3,9 +3,9 @@ layout: page
 title: "Response guidance draft"
 slug: "response_guidance_draft"
 created_at: "2025-12-16 23:32:58"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69423f7a-26cc-8327-8238-7b938c59477c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Response guidance draft

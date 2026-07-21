@@ -3,9 +3,9 @@ layout: page
 title: "NotebookLM Seed Document"
 slug: "notebooklm_seed_document"
 created_at: "2026-02-17 16:03:22"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6994e595-4f88-832f-9487-0ac070d1e4c9"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # NotebookLM Seed Document

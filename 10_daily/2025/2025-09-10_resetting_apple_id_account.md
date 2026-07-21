@@ -3,9 +3,9 @@ layout: page
 title: "Resetting Apple ID Account"
 slug: "resetting_apple_id_account"
 created_at: "2025-09-10 03:09:51"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c13248-3cd0-8330-95af-f08c74deb822"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Resetting Apple ID Account

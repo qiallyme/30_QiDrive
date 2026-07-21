@@ -3,9 +3,9 @@ layout: page
 title: "Tarot Spread Interpretation"
 slug: "tarot_spread_interpretation"
 created_at: "2026-02-20 00:34:49"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69980052-fa90-832e-8e14-0bb32a60bbcc"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tarot Spread Interpretation

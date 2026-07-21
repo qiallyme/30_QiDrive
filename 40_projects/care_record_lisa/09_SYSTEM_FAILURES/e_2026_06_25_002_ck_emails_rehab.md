@@ -3,8 +3,8 @@ layout: page
 title: Event: Comfort Keepers emails and rehab logistics
 slug: comfort-keepers-emails-and-rehab-logistics
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
   - system-failure-care-coordination
@@ -22,6 +22,7 @@ realm_label: ""
 uid: db77fd9bed094098ba5ea7d7eb6b860c
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Comfort Keepers emails and rehab logistics

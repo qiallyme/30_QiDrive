@@ -3,9 +3,9 @@ layout: page
 title: "Laws broken by harasser"
 slug: "laws_broken_by_harasser"
 created_at: "2025-09-25 03:56:06"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68d50364-f008-8324-a63e-5e5624bf9373"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Laws broken by harasser

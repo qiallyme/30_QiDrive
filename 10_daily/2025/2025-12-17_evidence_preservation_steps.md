@@ -3,9 +3,9 @@ layout: page
 title: "Evidence preservation steps"
 slug: "evidence_preservation_steps"
 created_at: "2025-12-17 10:44:53"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6942dde1-ea54-832b-aff7-c36ce7275f3f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Evidence preservation steps

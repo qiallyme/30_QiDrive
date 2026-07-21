@@ -3,9 +3,9 @@ layout: page
 title: "SRV Marketing Assistance"
 slug: "srv_marketing_assistance"
 created_at: "2023-07-24 13:13:20"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "b9fa54a9-c16c-4582-aa0d-2a4c1114a86e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # SRV Marketing Assistance

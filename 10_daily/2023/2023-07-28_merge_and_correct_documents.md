@@ -3,9 +3,9 @@ layout: page
 title: "Merge and Correct Documents."
 slug: "merge_and_correct_documents"
 created_at: "2023-07-28 16:11:46"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "022500d5-4058-424e-b29f-a5a9b9a207eb"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Merge and Correct Documents.

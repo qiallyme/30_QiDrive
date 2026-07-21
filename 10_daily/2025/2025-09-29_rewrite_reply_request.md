@@ -3,9 +3,9 @@ layout: page
 title: "Rewrite reply request"
 slug: "rewrite_reply_request"
 created_at: "2025-09-29 01:18:21"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68da247f-36c4-832b-a1f2-ecc8dc2c4797"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Rewrite reply request

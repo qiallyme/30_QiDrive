@@ -3,9 +3,9 @@ layout: page
 title: "Remote Codex Workflow Setup"
 slug: "remote_codex_workflow_setup"
 created_at: "2026-05-22 12:45:59"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a10963a-d0dc-83ea-a841-7880af4f6a38"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Remote Codex Workflow Setup

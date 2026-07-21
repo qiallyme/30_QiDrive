@@ -3,8 +3,8 @@ layout: page
 title: 1. Core Issue Map
 slug: 1-core-issue-map
 status: publish
-updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:17-04:00"
+tags:
   - empowerqnow713
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: 81eed9a789964fb7a58cfddeacf13a70
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 ## Master Timeline Summary — Cody’s Situation Through **June 27, 2026**

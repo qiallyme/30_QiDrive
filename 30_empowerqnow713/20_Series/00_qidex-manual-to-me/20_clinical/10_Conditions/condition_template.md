@@ -6,12 +6,12 @@ summary: Template for describing clinical conditions with diagnostic criteria an
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting clinical conditions in clinical track
-tags: []
+tags:
   - template
   - condition
   - clinical
   - empowerqnow713
-keywords: []
+keywords:
   - condition
   - clinical
   - diagnosis

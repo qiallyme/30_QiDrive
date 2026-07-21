@@ -3,9 +3,9 @@ layout: page
 title: "Web search for realty info"
 slug: "web_search_for_realty_info"
 created_at: "2025-11-09 12:35:27"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6910dedf-1180-832e-a429-20d665f27140"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Web search for realty info

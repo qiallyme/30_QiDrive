@@ -3,9 +3,9 @@ layout: page
 title: "Infrared Camera Detection"
 slug: "infrared_camera_detection"
 created_at: "2026-02-27 20:07:11"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69a24db8-43e0-8327-87c6-e0bc51c5eab5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Infrared Camera Detection

@@ -3,9 +3,9 @@ layout: page
 title: "Más información sobre CTA."
 slug: "mas_informacion_sobre_cta"
 created_at: "2023-07-20 10:28:17"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "9f309352-bf2e-462b-8955-19ff2e70020b"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Más información sobre CTA.

@@ -3,9 +3,9 @@ layout: page
 title: "Poder Especial de Representación"
 slug: "poder_especial_de_representacion"
 created_at: "2023-07-30 16:08:10"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "c26bed8f-e004-4dec-b7ce-e40fb163f584"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Poder Especial de Representación

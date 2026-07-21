@@ -3,9 +3,9 @@ layout: page
 title: "Using Directus 101"
 slug: "using_directus_101"
 created_at: "2026-06-18 17:29:18"
-updated_at: "2026-07-16T06:49:33-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a347138-e0f4-83ea-99b7-4108a7df1d15"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Using Directus 101

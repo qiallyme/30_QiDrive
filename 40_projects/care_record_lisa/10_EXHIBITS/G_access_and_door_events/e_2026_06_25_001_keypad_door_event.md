@@ -3,8 +3,8 @@ layout: page
 title: Event: Keypad/code/security communications; owner’s brother banging while Cody sick/asleep
 slug: keypad-code-security-communications-owner-s-brother-banging-while-cody-sick-asleep
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
   - housing-property
@@ -22,6 +22,7 @@ realm_label: ""
 uid: e0f9e98c1ef54dddb5719330e731f153
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Keypad/code/security communications; owner’s brother banging while Cody sick/asleep

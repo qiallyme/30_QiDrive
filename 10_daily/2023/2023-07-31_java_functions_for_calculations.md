@@ -3,9 +3,9 @@ layout: page
 title: "Java Functions for Calculations"
 slug: "java_functions_for_calculations"
 created_at: "2023-07-31 23:02:40"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "a9218dcc-9409-411e-b968-9550235772de"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Java Functions for Calculations

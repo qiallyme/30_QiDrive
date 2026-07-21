@@ -3,9 +3,9 @@ layout: page
 title: "Draft response assistance"
 slug: "draft_response_assistance"
 created_at: "2025-09-23 12:44:47"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68d2dc85-26d4-8328-bc10-a11eaa2fa900"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Draft response assistance

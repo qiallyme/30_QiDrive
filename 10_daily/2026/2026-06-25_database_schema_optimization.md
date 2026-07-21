@@ -3,9 +3,9 @@ layout: page
 title: "Database Schema Optimization"
 slug: "database_schema_optimization"
 created_at: "2026-06-25 22:10:24"
-updated_at: "2026-07-16T06:49:34-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a3ded9a-6c3c-83ea-8866-c6f6b68784aa"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Database Schema Optimization

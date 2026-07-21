@@ -3,9 +3,9 @@ layout: page
 title: "NocoDB vs Notion"
 slug: "nocodb_vs_notion"
 created_at: "2026-04-16 20:50:25"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69e191b6-bc08-83ea-bbc9-e1761f893ab2"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # NocoDB vs Notion

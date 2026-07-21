@@ -3,9 +3,9 @@ layout: page
 title: "Markdown for LinkedIn Profile"
 slug: "markdown_for_linkedin_profile"
 created_at: "2025-11-09 10:35:50"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6910c2cc-0e70-8327-879e-01f1cc9eb061"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Markdown for LinkedIn Profile

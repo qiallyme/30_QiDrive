@@ -3,9 +3,9 @@ layout: page
 title: "Tax Reminder Message"
 slug: "tax_reminder_message"
 created_at: "2026-02-17 12:37:46"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6994b55e-45a8-8331-a4b7-02b6dfb80971"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tax Reminder Message

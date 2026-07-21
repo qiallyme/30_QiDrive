@@ -5,7 +5,7 @@ slug: 1-3-mapped-to-sacred-teachings
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: a22ea5d93c474b74a6385337700ce4da
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 ### **🌀 I. The Illusion – “We suffer because we believe the illusion of our creation.”**

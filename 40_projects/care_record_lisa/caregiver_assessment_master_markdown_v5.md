@@ -8,7 +8,7 @@ layout: page
 slug: caregiver-assessment-evidence-summary-financial-clarification-opportunity-loss-caregiver-fatigue-emergency-risk-and-role-transition
 summary: ""
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:18-04:00"
 owner: ""
 tags: []
 keywords: []
@@ -21,6 +21,7 @@ uid: 3dd0270358cf48abb56dd321674bab56
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 > **Editor note:** This Markdown version is the cleaner master copy. It preserves the separate sections while making the document easier to edit, paste into Canva/Docs, or convert to PDF.

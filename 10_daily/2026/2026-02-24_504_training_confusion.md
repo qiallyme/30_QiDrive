@@ -3,9 +3,9 @@ layout: page
 title: "504 Training Confusion"
 slug: "504_training_confusion"
 created_at: "2026-02-24 23:58:59"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "699e8f8b-5cc4-8331-8e0a-98aa8f5adfa2"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # 504 Training Confusion

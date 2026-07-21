@@ -3,8 +3,8 @@ layout: page
 title: Worklog - Cancelled Jobs
 slug: worklog-cancelled-jobs
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 17cb5277e7874475a3837a2f65649ddd
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Worklog - Cancelled Jobs

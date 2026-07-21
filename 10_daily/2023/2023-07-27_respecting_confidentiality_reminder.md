@@ -3,9 +3,9 @@ layout: page
 title: "Respecting Confidentiality Reminder"
 slug: "respecting_confidentiality_reminder"
 created_at: "2023-07-27 11:33:58"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "7a143bf3-4c54-436d-9f80-3e5c64b9fb34"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Respecting Confidentiality Reminder

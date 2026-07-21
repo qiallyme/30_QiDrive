@@ -3,9 +3,9 @@ layout: page
 title: "Eviction Notice and Legal Process"
 slug: "eviction_notice_and_legal_process"
 created_at: "2026-04-06 05:39:07"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69d38d44-998c-8326-812a-7a6496dcf02c"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Eviction Notice and Legal Process

@@ -3,9 +3,9 @@ layout: page
 title: "Tesla Battery Charger Advice"
 slug: "tesla_battery_charger_advice"
 created_at: "2026-03-11 11:39:55"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69b19aa4-5574-8325-b255-5803baad5b00"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tesla Battery Charger Advice

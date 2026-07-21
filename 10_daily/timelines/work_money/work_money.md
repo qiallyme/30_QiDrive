@@ -3,8 +3,8 @@ layout: section
 title: Work Money
 slug: work-money
 status: active
-updated_at: "2026-07-16T06:49:34-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:16-04:00"
+tags:
   - moc
 source_type: manual
 summary: ""
@@ -20,6 +20,7 @@ realm_label: ""
 uid: fd331fd860a742128dc4c432c8fb14ab
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Work Money

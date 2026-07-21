@@ -3,8 +3,8 @@ layout: page
 title: Communications Index
 slug: communications-index
 status: active
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 965e281f3427498b9ee633afda5b2f6e
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Communications Index

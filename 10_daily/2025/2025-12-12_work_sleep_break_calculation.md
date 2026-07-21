@@ -3,9 +3,9 @@ layout: page
 title: "Work sleep break calculation"
 slug: "work_sleep_break_calculation"
 created_at: "2025-12-12 14:08:24"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "693c75f0-ef04-832f-aa8a-1692690ad75d"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Work sleep break calculation

@@ -3,9 +3,9 @@ layout: page
 title: "Open-source alternatives for QiVault"
 slug: "open_source_alternatives_for_qivault"
 created_at: "2026-02-24 03:03:11"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "699d694e-8aa8-832f-a8f2-84d799d94a40"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Open-source alternatives for QiVault

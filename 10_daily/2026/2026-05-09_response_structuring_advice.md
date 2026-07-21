@@ -3,9 +3,9 @@ layout: page
 title: "Response Structuring Advice"
 slug: "response_structuring_advice"
 created_at: "2026-05-09 14:44:49"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69ff8e8f-bed0-83ea-8f5c-0d51017bf8e5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Response Structuring Advice

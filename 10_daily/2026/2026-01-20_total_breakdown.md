@@ -3,9 +3,9 @@ layout: page
 title: "Total Breakdown"
 slug: "total_breakdown"
 created_at: "2026-01-20 09:35:52"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "696fa0cd-f65c-8329-8db4-6175a5f49620"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Total Breakdown

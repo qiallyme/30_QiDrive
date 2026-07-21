@@ -3,9 +3,9 @@ layout: page
 title: "Tarot Card Interpretation"
 slug: "tarot_card_interpretation"
 created_at: "2026-02-18 17:35:43"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69964ca0-8184-8333-ba99-cf8a8ffeebcb"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Tarot Card Interpretation

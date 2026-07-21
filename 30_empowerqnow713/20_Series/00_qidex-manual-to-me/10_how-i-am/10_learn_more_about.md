@@ -11,7 +11,7 @@ qi_decimal: 0.00.00-INTAKE
 qid: qa5081600ed74
 status: publish
 system: qios
-keywords: []
+keywords:
 - intake
 layout: page
 summary: ""

@@ -3,8 +3,8 @@ layout: page
 title: Medical Docs
 slug: medical-docs
 status: active
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 21a0dfed22714166b06f7e934d3b2d98
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Medical Docs

@@ -5,8 +5,8 @@ slug: work-summary-2025-03-06
 summary: Imported daily/work note.
 status: active
 created_at: "2025-03-06"
-updated_at: "2026-07-16T06:49:28-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:11-04:00"
+tags:
   - daily
   - imported
 source_type: imported
@@ -22,6 +22,7 @@ uid: 4c6d43b0093a4a90aca4bcbcb72d9247
 canonical_ref: ""
 template_key: master-template
 date: 2025-03-06
+type: note
 ---
 
 # Work Summary - 2025-03-06

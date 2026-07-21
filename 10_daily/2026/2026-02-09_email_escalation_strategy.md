@@ -3,9 +3,9 @@ layout: page
 title: "Email Escalation Strategy"
 slug: "email_escalation_strategy"
 created_at: "2026-02-09 11:46:00"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "698a1d53-f030-8331-be3a-c25991b67138"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Email Escalation Strategy

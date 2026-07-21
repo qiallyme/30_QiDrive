@@ -3,9 +3,9 @@ layout: page
 title: "Vitals and Fall Risk"
 slug: "vitals_and_fall_risk"
 created_at: "2026-04-28 21:57:55"
-updated_at: "2026-07-16T06:49:31-04:00"
+updated_at: "2026-07-18T11:03:14-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69f173a1-4588-83ea-a2a8-1c07ddcae30f"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Vitals and Fall Risk

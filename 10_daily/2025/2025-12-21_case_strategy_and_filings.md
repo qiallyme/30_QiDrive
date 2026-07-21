@@ -3,9 +3,9 @@ layout: page
 title: "Case strategy and filings"
 slug: "case_strategy_and_filings"
 created_at: "2025-12-21 10:33:14"
-updated_at: "2026-07-16T06:49:29-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69482149-8154-8327-86e2-9cda6d96355e"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Case strategy and filings

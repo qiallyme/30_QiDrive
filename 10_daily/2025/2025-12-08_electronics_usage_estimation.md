@@ -3,9 +3,9 @@ layout: page
 title: "Electronics usage estimation"
 slug: "electronics_usage_estimation"
 created_at: "2025-12-08 05:19:03"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6936b425-572c-8327-8df5-8866bee206fa"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Electronics usage estimation

@@ -5,7 +5,7 @@ slug: 10-10-correspondence-anxiety
 summary: ""
 status: active
 created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-18T11:03:17-04:00"
 author: ""
 owner: ""
 tags: []
@@ -19,6 +19,7 @@ uid: c1281505f7d94618bba81b863ce10580
 canonical_ref: ""
 source_type: manual
 template_key: master-template
+type: note
 ---
 
 # 10.10 Correspondence Anxiety

@@ -3,8 +3,8 @@ layout: section
 title: Housing And Property
 slug: housing-and-property
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: b5f9ad343f4248dd9d544d803f46d9e2
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Housing And Property

@@ -3,9 +3,9 @@ layout: page
 title: "Trust and Control Issues"
 slug: "trust_and_control_issues"
 created_at: "2026-06-07 12:16:49"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:16-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6a25a77f-fa64-83ea-8451-ed8c27c030a5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Trust and Control Issues

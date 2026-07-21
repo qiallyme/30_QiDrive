@@ -3,7 +3,7 @@ layout: page
 title: "Zaitullah Arrives Indianapolis - Became Primary Support"
 slug: "zaitullah_arrives_indianapolis_became_primary_support"
 created_at: "2021-08-31"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["relationship"]
 category: "relationship"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: 24d399265047455eb5c114602c1b1d8d
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Zaitullah Arrives Indianapolis - Became Primary Support

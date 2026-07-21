@@ -3,9 +3,9 @@ layout: page
 title: "Job search struggles highlighted"
 slug: "job_search_struggles_highlighted"
 created_at: "2025-10-24 22:52:37"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68fc4981-5e20-8326-8ace-02c3f39379ee"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Job search struggles highlighted

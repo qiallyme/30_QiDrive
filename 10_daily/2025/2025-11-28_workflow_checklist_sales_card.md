@@ -3,9 +3,9 @@ layout: page
 title: "Workflow checklist sales card"
 slug: "workflow_checklist_sales_card"
 created_at: "2025-11-28 14:55:48"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "692a0c14-03ac-832a-b375-9110e2f798f5"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Workflow checklist sales card

@@ -3,9 +3,9 @@ layout: page
 title: "Oxygen Concentrator Power Usage"
 slug: "oxygen_concentrator_power_usage"
 created_at: "2026-02-24 11:42:06"
-updated_at: "2026-07-16T06:49:30-04:00"
+updated_at: "2026-07-18T11:03:13-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "699de2e9-ffd8-832b-9e40-862637480bd1"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Oxygen Concentrator Power Usage

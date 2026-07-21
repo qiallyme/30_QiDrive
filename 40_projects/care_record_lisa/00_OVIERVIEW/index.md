@@ -4,8 +4,8 @@ title: Lisa Care Record 2026
 slug: lisa-care-record-2026-start
 summary: Quick-start index for the Lisa Care Record project.
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - moc
   - projects
   - lisa-care-record
@@ -22,6 +22,10 @@ realm_label: ""
 uid: 54e1ac2d473a45ecb7cb9614dcf510e1
 canonical_ref: ""
 template_key: master-template
+type: index
+index_scope: ""
+generated_by: ""
+generated_at: ""
 ---
 
 # Lisa Care Record 2026

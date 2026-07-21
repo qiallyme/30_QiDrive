@@ -3,8 +3,8 @@ layout: page
 title: Exhibit C00 - Caregiving Labor Summary
 slug: exhibit-c00-caregiving-labor-summary
 status: publish
-updated_at: "2026-07-16T06:49:36-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:18-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: d1a3a060da494abf85420cb5ed3caf59
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Exhibit C00 - Caregiving Labor Summary

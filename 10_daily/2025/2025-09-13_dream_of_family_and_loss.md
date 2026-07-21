@@ -3,9 +3,9 @@ layout: page
 title: "Dream of family and loss"
 slug: "dream_of_family_and_loss"
 created_at: "2025-09-13 03:34:54"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "68c52cae-4e9c-832d-a1c3-f829dd3d7023"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Dream of family and loss

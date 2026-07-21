@@ -3,9 +3,9 @@ layout: page
 title: "Greeting with no response"
 slug: "greeting_with_no_response"
 created_at: "2026-05-08 16:50:15"
-updated_at: "2026-07-16T06:49:32-04:00"
+updated_at: "2026-07-18T11:03:15-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "69fe5a96-b708-83ea-94a8-85a0c75177f8"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Greeting with no response

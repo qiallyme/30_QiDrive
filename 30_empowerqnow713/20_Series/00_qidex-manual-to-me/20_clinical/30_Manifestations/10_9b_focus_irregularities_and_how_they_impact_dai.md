@@ -4,9 +4,9 @@ title: 10 9b Focus Irregularities and How They Impact Dai
 slug: 10_9b_focus_irregularities_and_how_they_impact_dai
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
-tags: []
+tags:
   - empowerqnow713
-keywords: []
+keywords:
   - intake
 source_type: manual
 realm: QiVault

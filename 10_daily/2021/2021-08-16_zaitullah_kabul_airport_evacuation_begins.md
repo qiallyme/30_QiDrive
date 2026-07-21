@@ -3,7 +3,7 @@ layout: page
 title: "Zaitullah - Kabul Airport Evacuation Begins"
 slug: "zaitullah_kabul_airport_evacuation_begins"
 created_at: "2021-08-16"
-updated_at: "2026-07-16T06:49:27-04:00"
+updated_at: "2026-07-18T11:03:11-04:00"
 status: active
 tags: ["crisis"]
 category: "crisis"
@@ -26,6 +26,13 @@ classification: business_internal
 realm_label: ""
 uid: f83eee028ac2457899c26b75c31d0374
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Zaitullah - Kabul Airport Evacuation Begins

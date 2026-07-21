@@ -3,9 +3,9 @@ layout: page
 title: "Dispute escalation letter"
 slug: "dispute_escalation_letter"
 created_at: "2025-12-06 22:06:51"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6934fd5a-48e8-832c-88ab-aea445608b14"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Dispute escalation letter

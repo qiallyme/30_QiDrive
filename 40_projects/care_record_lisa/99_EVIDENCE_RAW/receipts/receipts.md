@@ -3,8 +3,8 @@ layout: page
 title: Receipts
 slug: receipts
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
 source_type: manual
@@ -21,6 +21,7 @@ realm_label: ""
 uid: 7cac2bba24dd49ad85143d70833d36b5
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Receipts

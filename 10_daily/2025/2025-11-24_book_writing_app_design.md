@@ -3,9 +3,9 @@ layout: page
 title: "Book writing app design"
 slug: "book_writing_app_design"
 created_at: "2025-11-24 15:11:39"
-updated_at: "2026-07-16T06:49:28-04:00"
+updated_at: "2026-07-18T11:03:12-04:00"
 status: active
-tags: []
+tags:
   - chat-log
 category: "chat-log"
 location: ""
@@ -27,6 +27,13 @@ classification: business_internal
 realm_label: "empowerqnow"
 uid: "6924c922-f12c-832d-b130-98c786e07821"
 canonical_ref: ""
+type: event
+event_type: ""
+people: []
+significance: normal
+canonical: false
+timeline_include: false
+timeline_status: unreviewed
 ---
 
 # Book writing app design

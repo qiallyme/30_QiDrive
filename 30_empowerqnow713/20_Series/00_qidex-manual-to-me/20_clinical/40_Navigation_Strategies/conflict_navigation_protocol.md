@@ -6,13 +6,13 @@ summary: What this strategy is designed to support - navigating conflicts withou
 status: publish
 updated_at: "2026-07-16T06:49:35-04:00"
 context: Navigation strategy for managing high-conflict situations
-tags: []
+tags:
   - strategy
   - communication
   - conflict
   - protocol
   - empowerqnow713
-keywords: []
+keywords:
   - conflict
   - navigation
   - protocol

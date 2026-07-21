@@ -3,8 +3,8 @@ layout: page
 title: Event: Lisa asks whether Cody saw Mr. Link before leaving
 slug: lisa-asks-whether-cody-saw-mr-link-before-leaving
 status: publish
-updated_at: "2026-07-16T06:49:37-04:00"
-tags: []
+updated_at: "2026-07-18T11:03:19-04:00"
+tags:
   - projects
   - lisa-care-record
   - communications
@@ -22,6 +22,7 @@ realm_label: ""
 uid: ee6758a1143a4793a98eb11d7e3e07f1
 canonical_ref: ""
 template_key: master-template
+type: note
 ---
 
 # Event: Lisa asks whether Cody saw Mr. Link before leaving
