@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 8. Cycles, Closure, and Legacy
 slug: qicode-title-08-cycles-closure-and-legacy

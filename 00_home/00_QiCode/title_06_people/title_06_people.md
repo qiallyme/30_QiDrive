@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 6. People, Relations, and Exchange
 slug: qicode-title-06-people-relations-and-exchange

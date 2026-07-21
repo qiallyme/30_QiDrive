@@ -28,13 +28,13 @@ source_type: manual
 
 ## Articles
 
-- [[article_01_workspace-purpose|Article 1. Workspace Purpose]]
+- [[article_01_workspace_purpose|Article 1. Workspace Purpose]]
 - [[article_02_templates|Article 2. Templates]]
 - [[article_03_housekeeping|Article 3. Housekeeping]]
-- [[article_04_config-and-manifests|Article 4. Config and Manifests]]
-- [[article_05_codex-and-agent-instructions|Article 5. Codex and Agent Instructions]]
-- [[article_06_logs-reports-and-plans|Article 6. Logs, Reports, and Plans]]
-- [[article_07_qinotion-project-workspace|Article 7. QiNotion Project Workspace]]
+- [[article_04_config_and_manifests|Article 4. Config and Manifests]]
+- [[article_05_codex_and_agent_instructions|Article 5. Codex and Agent Instructions]]
+- [[article_06_logs_reports_and_plans|Article 6. Logs, Reports, and Plans]]
+- [[article_07_qinotion_project_workspace|Article 7. QiNotion Project Workspace]]
 
 ## Cross References
 

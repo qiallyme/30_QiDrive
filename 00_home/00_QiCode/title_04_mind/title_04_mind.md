@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 4. Mind and Will
 slug: qicode-title-04-mind-and-will

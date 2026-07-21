@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 18. QiSites
 slug: qicode-title-18-qisites
@@ -28,13 +28,13 @@ source_type: manual
 
 ## Articles
 
-- [[article_01_qisites-purpose|Article 1. QiSites Purpose]]
+- [[article_01_qisites_purpose|Article 1. QiSites Purpose]]
 - [[article_02_deployment|Article 2. Deployment]]
-- [[article_03_privacy-and-sensitivity|Article 3. Privacy and Sensitivity]]
-- [[article_04_site-inventory|Article 4. Site Inventory]]
+- [[article_03_privacy_and_sensitivity|Article 3. Privacy and Sensitivity]]
+- [[article_04_site_inventory|Article 4. Site Inventory]]
 - [[article_05_empowerqnow|Article 5. EmpowerQNow]]
-- [[article_06_build-artifacts|Article 6. Build Artifacts]]
-- [[article_07_custom-domains|Article 7. Custom Domains]]
+- [[article_06_build_artifacts|Article 6. Build Artifacts]]
+- [[article_07_custom_domains|Article 7. Custom Domains]]
 
 ## Cross References
 

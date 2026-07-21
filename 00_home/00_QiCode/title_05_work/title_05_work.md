@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 5. Work, Creation, and Stewardship
 slug: qicode-title-05-work-creation-and-stewardship

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Article 3. EmpowerQNow
 slug: qicode-title-01-article-03-empowerqnow

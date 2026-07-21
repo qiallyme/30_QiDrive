@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 1. My Truth and Source
 slug: qicode-title-01-my-truth-and-source
@@ -26,8 +26,8 @@ source_type: manual
 
 ## Articles
 
-- [[article_01_my-truth|Article 1. My Truth]]
-- [[article_02_law-of-one|Article 2. Law of One]]
+- [[article_01_my_truth|Article 1. My Truth]]
+- [[article_02_law_of_one|Article 2. Law of One]]
 - [[article_03_empowerqnow|Article 3. EmpowerQNow]]
 
 ## Cross References

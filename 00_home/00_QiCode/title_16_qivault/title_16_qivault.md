@@ -28,13 +28,13 @@ source_type: manual
 
 ## Articles
 
-- [[article_01_vault-purpose|Article 1. Vault Purpose]]
-- [[article_02_markdown-rules|Article 2. Markdown Rules]]
+- [[article_01_vault_purpose|Article 1. Vault Purpose]]
+- [[article_02_markdown_rules|Article 2. Markdown Rules]]
 - [[article_03_indexes|Article 3. Indexes]]
-- [[article_04_links-and-backlinks|Article 4. Links and Backlinks]]
+- [[article_04_links_and_backlinks|Article 4. Links and Backlinks]]
 - [[article_05_frontmatter|Article 5. Frontmatter]]
-- [[article_06_knowledge-boundaries|Article 6. Knowledge Boundaries]]
-- [[article_07_sync-and-archive|Article 7. Sync and Archive]]
+- [[article_06_knowledge_boundaries|Article 6. Knowledge Boundaries]]
+- [[article_07_sync_and_archive|Article 7. Sync and Archive]]
 
 ## Cross References
 

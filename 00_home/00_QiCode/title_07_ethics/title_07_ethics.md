@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 7. Ethics, Responsibility, and Disclosure
 slug: qicode-title-07-ethics-responsibility-and-disclosure

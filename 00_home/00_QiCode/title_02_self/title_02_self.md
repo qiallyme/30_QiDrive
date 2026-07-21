@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 2. Inner World and Self
 slug: qicode-title-02-inner-world-and-self
@@ -26,9 +26,9 @@ source_type: manual
 
 ## Articles
 
-- [[article_01_self-recognition|Article 1. Self-Recognition]]
-- [[article_02_inner-care|Article 2. Inner Care]]
-- [[article_03_sacred-interior|Article 3. Sacred Interior]]
+- [[article_01_self_recognition|Article 1. Self_Recognition]]
+- [[article_02_inner_care|Article 2. Inner Care]]
+- [[article_03_sacred_interior|Article 3. Sacred Interior]]
 
 ## Cross References
 

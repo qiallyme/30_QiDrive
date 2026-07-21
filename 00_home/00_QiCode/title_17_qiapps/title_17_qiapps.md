@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 17. QiApps
 slug: qicode-title-17-qiapps
@@ -28,13 +28,13 @@ source_type: manual
 
 ## Articles
 
-- [[article_01_qiapps-purpose|Article 1. QiApps Purpose]]
-- [[article_02_app-project-rules|Article 2. App Project Rules]]
+- [[article_01_qiapps_purpose|Article 1. QiApps Purpose]]
+- [[article_02_app_project_rules|Article 2. App Project Rules]]
 - [[article_03_qilife|Article 3. QiLife]]
-- [[article_04_qifinance-firefly|Article 4. QiFinance (Firefly)]]
+- [[article_04_qifinance_firefly|Article 4. QiFinance (Firefly)]]
 - [[article_05_carelite|Article 5. CareLite]]
 - [[article_06_experiments|Article 6. Experiments]]
-- [[article_07_app-lifecycle|Article 7. App Lifecycle]]
+- [[article_07_app_lifecycle|Article 7. App Lifecycle]]
 
 ## Cross References
 

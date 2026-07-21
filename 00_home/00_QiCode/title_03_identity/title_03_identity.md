@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 3. Identity and Integrity
 slug: qicode-title-03-identity-and-integrity
