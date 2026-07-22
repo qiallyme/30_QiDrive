@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cody Rice Velasquez - Executive Resume</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #0284c7;
+            --text: #334155;
+            --light-bg: #f8fafc;
+            --border: #e2e8f0;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--text);
+            background-color: #f1f5f9;
+            line-height: 1.5;
+            font-size: 14px;
+            padding: 40px 20px;
+        }
+
+        .resume-card {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 50px 60px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 12px;
+            font-size: 12.5px;
+            font-weight: 500;
+            color: #64748b;
+        }
+
+        .contact-bar a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 4px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            background: var(--light-bg);
+            padding: 12px 16px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            font-size: 13px;
+        }
+
+        .job {
+            margin-bottom: 18px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .job-title {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .company {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .date {
+            font-size: 12.5px;
+            font-weight: 600;
+            color: #64748b;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .edu-title {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .edu-school {
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .resume-card {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            @page {
+                margin: 1.5cm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-card">
+    <header>
+        <h1>Cody Rice Velasquez</h1>
+        <div class="subtitle">Systems Architect & Business Operations Executive</div>
+        <div class="contact-bar">
+            <span>📍 Indianapolis, IN</span>
+            <span>📞 (317) 205-4383</span>
+            <span>✉️ cody@qially.com</span>
+            <span>🔗 <a href="https://linkedin.com/in/cody-rice-velasquez-qially/" target="_blank">LinkedIn</a></span>
+            <span>🌐 <a href="https://portfolio.qially.com/" target="_blank">Portfolio</a></span>
+        </div>
+    </header>
+
+    <div class="section-title">Executive Summary</div>
+    <p>Versatile, systems-first operations and technology leader with <strong>18+ years of experience</strong> spanning HR management, business operations, regulatory compliance, full-stack software engineering, and AI workflow architecture. Proven track record of transforming complex operational bottlenecks into streamlined, automated, and audit-ready business systems. Specialized in bridging the gap between C-suite strategy, human resources compliance, and modern technology. Led operational overhauls that eliminated 100% of IT downtime, achieved <strong>$1M–$2M+ in workers' compensation savings</strong>, and doubled business revenues year-over-year. Fluent in English and Spanish.</p>
+
+    <div class="section-title">Core Competencies</div>
+    <div class="skills-grid">
+        <div><strong>Operations & Strategy:</strong> Lean Six Sigma, SOP Libraries, SWOT/PESTLE, Budgeting, Crisis Management</div>
+        <div><strong>HR & Compliance:</strong> HRIS Systems (ADP, Zoho, TempWorks), Employee Lifecycle, I-9/E-Verify Audits, Workers' Comp</div>
+        <div><strong>Software & Engineering:</strong> Full-Stack (React, TypeScript, Python, SQL, Astro), Supabase, Cloudflare, REST APIs</div>
+        <div><strong>AI & Automation:</strong> Zoho One Ecosystem, Zapier, RAG/AI Integration (Voice/Vision), Document Generation</div>
+    </div>
+
+    <div class="section-title">Professional Experience</div>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="job-title">Founder & Executive Strategist</span> — <span class="company">QiAlly LLC</span></div>
+            <div class="date">Jan 2025 – Present</div>
+        </div>
+        <ul>
+            <li>Architected the QiAlly multi-tenant SaaS platform unifying client portals, administrative controls, APIs, billing, and public web applications.</li>
+            <li>Integrated AI modules (RAG, voice, vision) for document intelligence, legal workflows, and automated client intake.</li>
+            <li>Designed Cloudflare-first serverless architecture with Supabase PostgreSQL database for high availability and data isolation.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="job-title">Co-Owner & Executive Director</span> — <span class="company">Quantum Innova Partners Inc</span></div>
+            <div class="date">Oct 2024 – Present</div>
+        </div>
+        <ul>
+            <li>Provide strategic vision and governance across QIP and subsidiary operations using SWOT, PESTLE, and Porter's Five Forces frameworks.</li>
+            <li>Oversee financial budgeting, cash flow forecasting, and technology integration using Zoho One and custom AI analytics.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="job-title">Partner</span> — <span class="company">QuantumHR LLP</span></div>
+            <div class="date">Aug 2024 – Present</div>
+        </div>
+        <ul>
+            <li>Lead specialized HR consulting engagements focusing on HR compliance, employee record audits, and regulatory risk reduction.</li>
+            <li>Architect custom Zoho-based HRIS workflows and automated I-9/E-Verify auditing tools for mid-market business clients.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="job-title">Virtual Business Consultant & CEO</span> — <span class="company">SRV1ne LLC (SRV1)</span></div>
+            <div class="date">May 2024 – Present</div>
+        </div>
+        <ul>
+            <li>Deliver asynchronous business strategy, process optimization, and financial planning services to a global client base.</li>
+            <li>Achieved 100% YoY revenue growth by reinvesting profits into technology automation and talent expansion.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="job-title">Operations HR Manager & Senior Account Manager</span> — <span class="company">MS-IL Staffing & Packaging</span></div>
+            <div class="date">Sep 2012 – Aug 2023</div>
+        </div>
+        <ul>
+            <li>Progressed through roles overseeing workforce operations of up to 500+ employees.</li>
+            <li>Spearheaded company-wide workers' compensation and safety reform, generating <strong>$1M–$2M+ in total cost savings</strong>.</li>
+            <li>Designed and maintained HRIS platforms (WorkForce 2.0, TempWorks), SOP libraries, and internal training programs.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="job-title">Business Owner</span> — <span class="company">CJ Rice & Companies, LLC</span></div>
+            <div class="date">Jan 2019 – Aug 2023</div>
+        </div>
+        <ul>
+            <li>Operated a multi-service organization bridging language and information barriers for the Hispanic community in Indiana.</li>
+            <li>Provided bi-lingual tax preparation, document translation, business application filing, and public news dissemination in Spanish.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="job-title">General Manager & Unit Manager</span> — <span class="company">IHOP / Waffle House</span></div>
+            <div class="date">Aug 2010 – Oct 2014</div>
+        </div>
+        <ul>
+            <li>Managed restaurant operations, inventory par levels, and staffing, consistently delivering 2–3% annual profit growth.</li>
+            <li>Built custom Excel automation templates for labor scheduling and inventory control.</li>
+        </ul>
+    </div>
+
+    <div class="section-title">Education</div>
+
+    <div class="edu-item">
+        <div>
+            <div class="edu-title">Bachelor of Business Administration (BBA) – HR Management & Services</div>
+            <div class="edu-school">Western Governors University (WGU)</div>
+        </div>
+        <div class="date">2015 – 2018</div>
+    </div>
+
+    <div class="edu-item">
+        <div>
+            <div class="edu-title">Business Administration & Management (General Studies)</div>
+            <div class="edu-school">Indiana University–Purdue University Indianapolis (IUPUI)</div>
+        </div>
+        <div class="date">2013 – 2014</div>
+    </div>
+
+    <div class="edu-item">
+        <div>
+            <div class="edu-title">Associate of Applied Science (AAS) – Information Security</div>
+            <div class="edu-school">Ivy Tech Community College (Certificates in Network & Info Security)</div>
+        </div>
+        <div class="date">2008 – 2013</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -56,7 +56,7 @@ Use this name for each application folder: `YYYY-MM-DD_company_role`.
 - [ ] Apply to SavvyMoney
 - [ ] Apply to Ōura
 - [ ] Apply to KoBold Metals only if Workday depth can be demonstrated honestly
-- [ ] Confirm education institutions and dates
+- [x] Confirm education institutions and dates
 - [ ] Export a clean PDF résumé after final fact check
 
 Research checked: 2026-07-16. Openings can close without notice; verify the company page immediately before applying.
