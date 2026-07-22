@@ -1,0 +1,1329 @@
+Delivered-To: crice4485@gmail.com
+Received: by 2002:a05:6214:5713:b0:8db:e762:4bd3 with SMTP id qn19csp342380qvb;
+        Tue, 14 Jul 2026 03:51:05 -0700 (PDT)
+X-Received: by 2002:a17:903:2f8a:b0:2cc:fe03:dc75 with SMTP id d9443c01a7336-2ce9f052d15mr123081415ad.27.1784026265618;
+        Tue, 14 Jul 2026 03:51:05 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1784026265; cv=none;
+        d=google.com; s=arc-20260327;
+        b=WLXKviIbeblb+Xcpbyn/p2thAo9N6VxH93m3n34wpW5Y9J1DGgFZFZanhxQAoKw/cV
+         MY4OgEMC2QhDNK7ucczZSdvLFtf6Fsj7MFhxzuR5z4wgKfgylY/j9rVKtw9SA1HrLMwu
+         zaQfuAKDn0WApdc9atEeYmaLpvvka9v6XbvPLrxb5Srvi24v2dGI4a9DgIKG9LjMdgNs
+         CZTB7NpeShLwRU5VgbHhu2REn5KRV1Vhw4n4NQtHk5gb/sb9orA2OR0AMG87CovD+qNk
+         EKAEuTqIIZI4DptN4w48Zat+WLB+PAaBnDycjNaUN0h83XrJEwYdI5K4TRJORRewPjex
+         AlDQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=content-transfer-encoding:message-id:to:from:subject:mime-version
+         :date:sender:dkim-signature:dkim-signature;
+        bh=yyhNei/CcqHw7sn9eT7dc7xGW70jiarAzSdZkAYpDus=;
+        fh=NTbmbZukplYm3Ogh6XdTElFL10YUVxJH/OeDWq4sHNQ=;
+        b=kdmf7qWxTk5M/tbHsEQozQfgzRuo5G8mjDbZU8Zzi3GjFINARPF2PMZnmFqMJwEETF
+         H0mrPzEbz2Wtbu6CPI6rLw5bSJ9GfmPVnN6pavo2z59ngPd8DgnkMa52Der9XnPcK4j/
+         DchqFioOy7xssy4nyXZ3zwhsNFEpQCKCUv+z/KctuZs/GWJezdNDKDRdPkIWiOQCqeEx
+         Nh+Ru9HeeMiFp+dtS4aMspIFSsy1WWgQQwzquU/9KbRvL9Yn7hMHl6WzTDIBXvioV2qY
+         aMgqu7x+ceieJHOndnKbjNURILVX7IDliJngj+pAOnM4e9Sie13bpDXewM9u91gdKjca
+         OcHA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@lyftmail.com header.s=mg header.b=k6zGYvQJ;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=aeRm7ilJ;
+       spf=pass (google.com: domain of bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com designates 161.38.201.117 as permitted sender) smtp.mailfrom="bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=lyftmail.com
+Return-Path: <bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com>
+Received: from v5117.v5075e2e3.usw1.send.mailgun.net (v5117.v5075e2e3.usw1.send.mailgun.net. [161.38.201.117])
+        by mx.google.com with UTF8SMTPS id d9443c01a7336-2ccc9bff02esi320492955ad.49.2026.07.14.03.51.05
+        for <crice4485@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 14 Jul 2026 03:51:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com designates 161.38.201.117 as permitted sender) client-ip=161.38.201.117;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@lyftmail.com header.s=mg header.b=k6zGYvQJ;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=aeRm7ilJ;
+       spf=pass (google.com: domain of bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com designates 161.38.201.117 as permitted sender) smtp.mailfrom="bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=lyftmail.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=lyftmail.com; q=dns/txt; s=mg; t=1784026264; x=1784033464;
+ h=Content-Transfer-Encoding: Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=yyhNei/CcqHw7sn9eT7dc7xGW70jiarAzSdZkAYpDus=;
+ b=k6zGYvQJAf68pSJmw3dk1C6KdBchO1PuuIljkcuOrD2oL1HjZcYCFUgekdqdV/vMGwZxXUISkz4KSPe1rg+QB0ksIWcHFwlZtvZFN5azKak27/xylUlBY6v7VLJo93xTTvBFJQ5V0+JEzzTob4B405J8pcyaniKisBI1hOGiUUo=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1784026264; x=1784033464;
+ h=Content-Transfer-Encoding: Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=yyhNei/CcqHw7sn9eT7dc7xGW70jiarAzSdZkAYpDus=;
+ b=aeRm7ilJ8kiivx3P56nbx20X2nl6myWM0JdoL+SvwQDrO/UX9zsWTiotSTN9GivEHeM7VqeKyGq9w9AxHiwQCwPiAI/vFFGijpPSWEfaHE7JOL7Ny6ZRTmfYMork3mO3lr9a9RqxtWApDcC6mz7QluGjBZZ7DbUocL7lD4Ln6Zo=
+X-Mailgun-Sid: WyJlOTFiMyIsImNyaWNlNDQ4NUBnbWFpbC5jb20iLCJhOWQxZSJd
+X-Feedback-Id: no-reply@lyftmail.com:rental_surcharge_receipt:5266f7d75a7618418e1e4cef:mailgun
+Received: by 5d6bea1368133439596490a8dba8b2fda7a69502237fad5b17e5d619b245307d with HTTP
+ id 6a561498b5393f939aac5931; Tue, 14 Jul 2026 10:51:04 GMT
+X-Mailgun-Sending-Ip: 161.38.201.117
+Sender: no-reply@lyftmail.com
+Date: Tue, 14 Jul 2026 10:51:04 +0000
+Mime-Version: 1.0
+Subject: Please update your payment method today
+From: Lyft <no-reply@lyftmail.com>
+To: crice4485@gmail.com
+X-Mailgun-Tag: rental_surcharge_receipt
+X-Mailgun-Variables: {"lyft_message_id": "b2aed164-a706-453e-91e8-dfa20d65a437"}
+Message-Id: <20260714105104.66876ae8db0d54c9@lyftmail.com>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!-- Automatically generated by make_email v1.4.1. Do not edit this file. -=
+->
+<span style=3D"display:none;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</span>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta charset=3D"utf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta name=3D"apple-mobile-web-app-capable" content=3D"yes">
+    <meta content=3D"yes" name=3D"apple-touch-fullscreen">
+    <meta name=3D"apple-mobile-web-app-status-bar-style" content=3D"black">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+    <meta name=3D"format-detection" content=3D"date">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta name=3D"x-apple-disable-message-reformatting" />
+    <title>Lyft</title>
+    <style type=3D"text/css">
+    /* ******************* Lyft EDS - Version: 2026.03.19 *****************=
+**** */
+
+/* =3D=3D=3D=3D=3D Fonts (screen-only to avoid Outlook embedding issues) =
+=3D=3D=3D=3D=3D */
+@media screen {
+    @font-face {
+        font-family: 'RebelSansText-Regular';
+        src: url('https://cdn.lyft.net/growth/evergreen/fonts/RebelSansText=
+-Regular.woff2') format('woff2');
+        font-display: swap;
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'RebelSansText-Medium';
+        src: url('https://cdn.lyft.net/growth/evergreen/fonts/RebelSansText=
+-Medium.woff2') format('woff2');
+        font-display: swap;
+        font-weight: 500;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'RebelSansText-Semibold';
+        src: url('https://cdn.lyft.net/growth/evergreen/fonts/RebelSansText=
+-Semibold.woff2') format('woff2');
+        font-display: swap;
+        font-weight: 600;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'RebelSansDisplay-Semibold';
+        src: url('https://cdn.lyft.net/growth/evergreen/fonts/RebelSansDisp=
+lay-Semibold.woff2') format('woff2');
+        font-display: swap;
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+
+/* =3D=3D=3D=3D=3D Foundation & Resets =3D=3D=3D=3D=3D */
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* Outlook desktop link padding reset */
+#outlook a { padding: 0; }
+
+/* Primary email container (600px centered, no horizontal padding).
+   All layout/typography is scoped under this to avoid overriding preview-t=
+ool UI. */
+=2Ewrapto600px {
+    background-color: #FFFFFF; /* Light mode surface */
+    font-family: 'RebelSansText-Regular', Helvetica, Arial, sans-serif;
+    width: 100%;
+    max-width: 599px;
+    margin: 0 auto;
+}
+=2Ewrapto600px p,
+=2Ewrapto600px h1,
+=2Ewrapto600px h2,
+=2Ewrapto600px h3,
+=2Ewrapto600px h4,
+=2Ewrapto600px h5,
+=2Ewrapto600px h6 {
+    margin: 0;
+}
+=2Ewrapto600px a {
+    color: inherit;
+    text-decoration: underline;
+    word-break: break-word;
+}
+=2Ewrapto600px .aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+=2Ewrapto600px img {
+    -ms-interpolation-mode: bicubic;
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    max-width: 100%;
+    display: block;
+}
+=2Ewrapto600px a img { border: 0; }
+=2Ewrapto600px table {
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+=2Ewrapto600px td { mso-line-height-rule: exactly; }
+
+/* Link detectors (scoped so preview tool UI is untouched) */
+u + #body .wrapto600px a {
+    color: inherit;
+    text-decoration: underline;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+=2Ewrapto600px a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: underline !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+=2Ewrapto600px a[href^=3D"tel"],
+=2Ewrapto600px a[href^=3D"sms"] {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Outlook desktop auto-linked text (email/URL detection) */
+=2Ewrapto600px span.MsoHyperlink,
+=2Ewrapto600px span.MsoHyperlinkFollowed {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+=2Ewrapto600px a[href^=3D"mailto"] {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Outlook.com/Hotmail */
+=2EExternalClass, .ReadMsgBody { width: 100%; }
+
+/* Hidden preheader container - Robust "Zeroing" */
+=2Epreheader {=20
+    display: none !important;=20
+    font-size: 1px !important;=20
+    line-height: 1px !important;=20
+    max-height: 0 !important;=20
+    max-width: 0 !important;=20
+    opacity: 0 !important;=20
+    overflow: hidden !important;=20
+    mso-hide: all;=20
+    visibility: hidden !important;=20
+    color: transparent !important;
+}
+
+/* =3D=3D=3D=3D=3D Layout =3D=3D=3D=3D=3D */
+=2Ewrapto600px .stack { display: block; width: 100% !important; }
+=2Ewrapto600px .stack-mobile { display:=
+ block !important; width: 100% !import=
+ant; }
+=2Ewrapto600px .text-left { text-align: left !important; }
+=2Ewrapto600px .text-center { text-align: center !important; }
+=2Ewrapto600px .text-right { text-align: right !important; }
+=2Ewrapto600px .fluid { width: 100% !im=
+portant; height: auto !important; disp=
+lay: block !important; }
+=2Ewrapto600px .image-full {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    border: 0 !important;
+}
+=2Ewrapto600px .image-icon {
+    display: block !important;
+    width: 45px !important;
+    max-width: 45px !important;
+    height: auto !important;
+    border: 0 !important;
+}
+
+/* =3D=3D=3D=3D=3D Typography (Figma tokens) =3D=3D=3D=3D=3D */
+/* Display */
+=2Ewrapto600px .display-l  { font-famil=
+y: 'RebelSansDisplay-Semibold', Helvet=
+ica, Arial, sans-serif; font-weight: 600; font-size: 48px; line-height: 49p=
+x; }
+=2Ewrapto600px .display-w2 { font-famil=
+y: 'RebelSansDisplay-Semibold', Helvet=
+ica, Arial, sans-serif; font-weight: 600; font-size: 36px; line-height: 45p=
+x; }
+
+/* Headline (Semibold Max) */
+=2Ewrapto600px .headline-w2 { font-fami=
+ly: 'RebelSansText-Semibold', Helvetic=
+a, Arial, sans-serif; font-weight: 600; font-size: 24px; line-height: 30px;=
+ }
+=2Ewrapto600px .headline-w3 { font-fami=
+ly: 'RebelSansText-Semibold', Helvetic=
+a, Arial, sans-serif; font-weight: 600; font-size: 20px; line-height: 26px;=
+ }
+
+/* Title (Medium Max) */
+=2Ewrapto600px .title-w2 { font-family:=
+ 'RebelSansText-Medium', Helvetica, Ar=
+ial, sans-serif; font-weight: 500; font-size: 15px; line-height: 21px; }
+=2Ewrapto600px .title-w3 { font-family:=
+ 'RebelSansText-Medium', Helvetica, Ar=
+ial, sans-serif; font-weight: 500; font-size: 13px; line-height: 18px; }
+
+/* Subtitle (Regular) */
+=2Ewrapto600px .subtitle-w2 { font-fami=
+ly: 'RebelSansText-Regular', Helvetica=
+, Arial, sans-serif; font-weight: 400; font-size: 15px; line-height: 21px; =
+}
+=2Ewrapto600px .subtitle-w3 { font-fami=
+ly: 'RebelSansText-Regular', Helvetica=
+, Arial, sans-serif; font-weight: 400; font-size: 13px; line-height: 18px; =
+}
+
+/* Body (Regular) */
+=2Ewrapto600px .body-w2 { font-family:=20=
+'RebelSansText-Regular', Helvetica, Ar=
+ial, sans-serif; font-weight: 400; font-size: 15px; line-height: 21px; }
+=2Ewrapto600px .body-w3 { font-family:=20=
+'RebelSansText-Regular', Helvetica, Ar=
+ial, sans-serif; font-weight: 400; font-size: 13px; line-height: 18px; }
+
+/* Weight helpers */
+=2Ewrapto600px .font-regular { font-fam=
+ily: 'RebelSansText-Regular', Helvetic=
+a, Arial, sans-serif !important; font-weight: 400 !important; }
+=2Ewrapto600px .font-medium { font-fami=
+ly: 'RebelSansText-Medium', Helvetica,=
+ Arial, sans-serif !important; font-weight: 500 !important; }
+=2Ewrapto600px .font-semibold { font-fa=
+mily: 'RebelSansText-Semibold', Helvet=
+ica, Arial, sans-serif !important; font-weight: 600 !important; }
+
+/* =3D=3D=3D=3D=3D Colors (limited to module-used palette) =3D=3D=3D=3D=3D =
+*/
+/* Text */
+=2Ewrapto600px .text-purple { color: #820076 !important; }
+=2Ewrapto600px .text-medium-pink { color: #CF0090 !important; }
+=2Ewrapto600px .text-black-cherry { color: #1D0C17 !important; }
+=2Ewrapto600px .text-off-white { color: #F1F0EC !important; }
+=2Ewrapto600px .text-white { color: #FFFFFF !important; }
+=2Ewrapto600px .text-black { color: #000000 !important; }
+=2Ewrapto600px .text-gray-700 { color: #31222A !important; }
+=2Ewrapto600px .text-gray-600 { color: #594E53 !important; }
+=2Ewrapto600px .text-gray-500 { color: #746A6E !important; }
+=2Ewrapto600px .text-gray-400 { color: #91888B !important; }
+=2Ewrapto600px .text-gray-300 { color: #B9B2B4 !important; }
+=2Ewrapto600px .text-gray-200 { color: #CFCBCC !important; }
+=2Ewrapto600px .text-gray-100 { color: #E7E5E5 !important; }
+
+/* Background */
+=2Ewrapto600px .bg-purple { background-color: #820076 !important; }
+=2Ewrapto600px .bg-medium-pink { background-color: #CF0090 !important; }
+=2Ewrapto600px .bg-black-cherry { background-color: #1D0C17 !important; }
+=2Ewrapto600px .bg-off-white { background-color: #F1F0EC !important; }
+=2Ewrapto600px .bg-white { background-color: #FFFFFF !important; }
+=2Ewrapto600px .bg-black { background-color: #000000 !important; }
+=2Ewrapto600px .bg-gray-700 { background-color: #31222A !important; }
+=2Ewrapto600px .bg-gray-600 { background-color: #594E53 !important; }
+=2Ewrapto600px .bg-gray-500 { background-color: #746A6E !important; }
+=2Ewrapto600px .bg-gray-400 { background-color: #91888B !important; }
+=2Ewrapto600px .bg-gray-300 { background-color: #B9B2B4 !important; }
+=2Ewrapto600px .bg-gray-200 { background-color: #CFCBCC !important; }
+=2Ewrapto600px .bg-gray-100 { background-color: #E7E5E5 !important; }
+
+/* =3D=3D=3D=3D=3D Spacing Utilities =3D=3D=3D=3D=3D */
+=2Ewrapto600px .m-0 { margin: 0 !important; }
+=2Ewrapto600px .pt-0 { padding-top: 0 !important; }
+=2Ewrapto600px .pb-0 { padding-bottom: 0 !important; }
+=2Ewrapto600px .pt-2 { padding-top: 2px !important; }
+=2Ewrapto600px .pb-2 { padding-bottom: 2px !important; }
+=2Ewrapto600px .pt-4 { padding-top: 4px !important; }
+=2Ewrapto600px .pb-4 { padding-bottom: 4px !important; }
+=2Ewrapto600px .pt-8 { padding-top: 8px !important; }
+=2Ewrapto600px .pb-8 { padding-bottom: 8px !important; }
+=2Ewrapto600px .pt-16 { padding-top: 16px !important; }
+=2Ewrapto600px .pb-16 { padding-bottom: 16px !important; }
+=2Ewrapto600px .pt-24 { padding-top: 24px !important; }
+=2Ewrapto600px .pb-24 { padding-bottom: 24px !important; }
+=2Ewrapto600px .pt-32 { padding-top: 32px !important; }
+=2Ewrapto600px .pb-32 { padding-bottom: 32px !important; }
+=2Ewrapto600px .pt-48 { padding-top: 48px !important; }
+=2Ewrapto600px .pb-48 { padding-bottom: 48px !important; }
+=2Ewrapto600px .pt-64 { padding-top: 64px !important; }
+=2Ewrapto600px .pb-64 { padding-bottom: 64px !important; }
+=2Ewrapto600px .pl-2 { padding-left: 2px !important; }
+=2Ewrapto600px .pr-2 { padding-right: 2px !important; }
+=2Ewrapto600px .pl-4 { padding-left: 4px !important; }
+=2Ewrapto600px .pr-4 { padding-right: 4px !important; }
+=2Ewrapto600px .pl-8 { padding-left: 8px !important; }
+=2Ewrapto600px .pr-8 { padding-right: 8px !important; }
+=2Ewrapto600px .pl-16 { padding-left: 16px !important; }
+=2Ewrapto600px .pr-16 { padding-right: 16px !important; }
+=2Ewrapto600px .pl-24 { padding-left: 24px !important; }
+=2Ewrapto600px .pr-24 { padding-right: 24px !important; }
+=2Ewrapto600px .pl-32 { padding-left: 32px !important; }
+=2Ewrapto600px .pr-32 { padding-right: 32px !important; }
+=2Ewrapto600px .pl-48 { padding-left: 48px !important; }
+=2Ewrapto600px .pr-48 { padding-right: 48px !important; }
+=2Ewrapto600px .pl-64 { padding-left: 64px !important; }
+=2Ewrapto600px .pr-64 { padding-right: 64px !important; }
+=2Ewrapto600px .px-2 { padding-left: 2p=
+x !important; padding-right: 2px !impo=
+rtant; }
+=2Ewrapto600px .px-4 { padding-left: 4p=
+x !important; padding-right: 4px !impo=
+rtant; }
+=2Ewrapto600px .px-8 { padding-left: 8p=
+x !important; padding-right: 8px !impo=
+rtant; }
+=2Ewrapto600px .px-16 { padding-left: 1=
+6px !important; padding-right: 16px !i=
+mportant; }
+=2Ewrapto600px .px-24 { padding-left: 2=
+4px !important; padding-right: 24px !i=
+mportant; }
+=2Ewrapto600px .px-32 { padding-left: 3=
+2px !important; padding-right: 32px !i=
+mportant; }
+=2Ewrapto600px .px-48 { padding-left: 4=
+8px !important; padding-right: 48px !i=
+mportant; }
+=2Ewrapto600px .px-64 { padding-left: 6=
+4px !important; padding-right: 64px !i=
+mportant; }
+=2Ewrapto600px .py-2 { padding-top: 2px=
+ !important; padding-bottom: 2px !impo=
+rtant; }
+=2Ewrapto600px .py-4 { padding-top: 4px=
+ !important; padding-bottom: 4px !impo=
+rtant; }
+=2Ewrapto600px .py-8 { padding-top: 8px=
+ !important; padding-bottom: 8px !impo=
+rtant; }
+=2Ewrapto600px .py-16 { padding-top: 16=
+px !important; padding-bottom: 16px !i=
+mportant; }
+=2Ewrapto600px .py-24 { padding-top: 24=
+px !important; padding-bottom: 24px !i=
+mportant; }
+=2Ewrapto600px .py-32 { padding-top: 32=
+px !important; padding-bottom: 32px !i=
+mportant; }
+=2Ewrapto600px .py-48 { padding-top: 48=
+px !important; padding-bottom: 48px !i=
+mportant; }
+=2Ewrapto600px .py-64 { padding-top: 64=
+px !important; padding-bottom: 64px !i=
+mportant; }
+
+/* =3D=3D=3D=3D=3D Lyft logo =3D=3D=3D=3D=3D */
+=2Ewrapto600px .lyft-logo {
+    height: 40px !important;
+    max-height: 40px !important;
+    width: auto !important;
+}
+
+/* =3D=3D=3D=3D=3D Partner / subsidiary logo =3D=3D=3D=3D=3D */
+=2Ewrapto600px .partner-logo {
+    height: 40px !important;
+    max-height: 40px !important;
+    max-width: 600px !important;
+    width: auto !important;
+}
+
+/* =3D=3D=3D=3D=3D Divider =3D=3D=3D=3D=3D */
+=2Ewrapto600px .divider { height: 1px !=
+important; line-height: 1px !important=
+; background-color: #CFCBCC !important; margin: 16px 0 !important; }
+
+/* =3D=3D=3D=3D=3D Buttons & Links =3D=3D=3D=3D=3D */
+=2Ewrapto600px .btn,
+=2Ewrapto600px .btn-primary,
+=2Ewrapto600px .btn-outline,
+=2Ewrapto600px .btn-white {
+    display: inline-block;
+    padding: 16px 48px !important;
+    border-radius: 100px !important;
+    text-decoration: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    font-family: 'RebelSansText-Medium', Helvetica, Arial, sans-serif !impo=
+rtant;
+    font-size: 17px !important;
+    line-height: 100% !important;
+}
+=2Ewrapto600px .btn-primary {
+    background-color: #820076 !important;
+    background-image: none !important;
+    color: #F1F0EC !important;
+    -webkit-text-fill-color: #F1F0EC !important;
+}
+=2Ewrapto600px .btn-outline {
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 1px solid #1D0C17 !important;
+    color: #1D0C17 !important;
+    -webkit-text-fill-color: #1D0C17 !important;
+}
+=2Ewrapto600px .btn-white {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: #1D0C17 !important;
+    -webkit-text-fill-color: #1D0C17 !important;
+    border: none !important;
+}
+
+/* Body and inline CTA links */
+=2Ewrapto600px .link-inline-cta { color=
+: #1D0C17 !important; font-weight: 600=
+ !important; text-decoration: underline !important; }
+/* Same treatment as link-inline-cta; use for callout / emphasis links (e.g=
+=2E safety, tinted modules) */
+=2Ewrapto600px .link-callout-cta { colo=
+r: #AC2A9E !important; font-family: 'R=
+ebelSansText-Semibold', Helvetica, Arial, sans-serif !important; font-weigh=
+t: 600 !important; text-decoration: underline !important; }
+
+/* =3D=3D=3D=3D=3D Accessibility =3D=3D=3D=3D=3D */
+=2Ewrapto600px .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}
+
+/* =3D=3D=3D=3D=3D Dark Mode (brand-controlled) =3D=3D=3D=3D=3D */
+@media (prefers-color-scheme: dark) {
+    .wrapto600px {
+        background-color: #100F0F !important;
+        color: #EFEDEE !important;
+    }
+    .wrapto600px .bg-off-white { background-color: #2B2825 !important; }
+    .wrapto600px .text-off-white { color: #EFEDEE !important; }
+    .wrapto600px .text-black-cherry { color: #EFEDEE !important; }
+    .wrapto600px .border-black-cherry { border-color: #EFEDEE !important; }
+    .wrapto600px .text-purple { color: #F0A0FF !important; }
+    .wrapto600px .bg-purple { background-color: #F0A0FF !important; }
+    .wrapto600px .btn-primary {
+        background-color: #F0A0FF !important;
+        background-image: linear-gradient(#F0A0FF, #F0A0FF) !important;
+        color: #1D0C17 !important;=20
+        -webkit-text-fill-color: #1D0C17 !important;
+    }
+    .wrapto600px .btn-white {
+        background-color: #EFEDEE !important;
+        background-image: linear-gradient(#EFEDEE, #EFEDEE) !important;
+        color: #1D0C17 !important;
+        -webkit-text-fill-color: #1D0C17 !important;
+        border: none !important;
+    }
+    .wrapto600px .btn-outline {
+        background-color: transparent !important;
+        background-image: none !important;
+        border: 1px solid #EFEDEE !important;
+        color: #EFEDEE !important;
+        -webkit-text-fill-color: #EFEDEE !important;
+    }
+    .wrapto600px .link-inline-cta { color: #EFEDEE !important; }
+    .wrapto600px .link-callout-cta { color: #E792F6 !important; }
+    .wrapto600px .divider { background-color: #2A2326 !important; }
+    /* Manual Escape Hatches: Use these to force specific rendering in Dark=
+ Mode */
+    .wrapto600px .dm-force-light-text { color: #EFEDEE !important; }
+    .wrapto600px .dm-force-dark-text  { color: #1D0C17 !important; }
+    .wrapto600px .dm-force-white-bg   { background-color: #EFEDEE !importan=
+t; }
+    .wrapto600px .dm-force-dark-bg    { background-color: #100F0F !importan=
+t; }
+    /* Optional helpers (use sparingly) */
+    .wrapto600px .dm-invert { filter: invert(1) hue-rotate(180deg); }
+    .wrapto600px .dm-keep { filter: none; }
+}
+
+/* Outlook.com (OGS) Dark Mode */
+[data-ogsc] .wrapto600px, [data-ogsb] .wrapto600px { background-color: #100=
+F0F !important; color: #EFEDEE !important; }
+[data-ogsc] .wrapto600px .bg-off-white, [data-ogsb] .wrapto600px .bg-off-wh=
+ite { background-color: #2B2825 !important; }
+[data-ogsc] .wrapto600px .text-black-cherry, [data-ogsb] .wrapto600px .text=
+-black-cherry { color: #EFEDEE !important; }
+[data-ogsc] .wrapto600px .border-black-cherry, [data-ogsb] .wrapto600px .bo=
+rder-black-cherry { border-color: #EFEDEE !important; }
+[data-ogsc] .wrapto600px .text-purple, [data-ogsb] .wrapto600px .text-purpl=
+e { color: #F0A0FF !important; }
+[data-ogsc] .wrapto600px .bg-purple, [data-ogsb] .wrapto600px .bg-purple { =
+background-color: #F0A0FF !important; }
+[data-ogsc] .wrapto600px .btn-primary, [data-ogsb] .wrapto600px .btn-primar=
+y {
+    background-color: #F0A0FF !important;
+    background-image: linear-gradient(#F0A0FF, #F0A0FF) !important;
+    color: #1D0C17 !important; /* Black Cherry */
+    -webkit-text-fill-color: #1D0C17 !important;
+}
+[data-ogsc] .wrapto600px .btn-white, [data-ogsb] .wrapto600px .btn-white {
+    background-color: #EFEDEE !important;
+    background-image: linear-gradient(#EFEDEE, #EFEDEE) !important;
+    color: #1D0C17 !important;
+    -webkit-text-fill-color: #1D0C17 !important;
+    border: none !important;
+}
+[data-ogsc] .wrapto600px .btn-outline, [data-ogsb] .wrapto600px .btn-outlin=
+e {
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: #EFEDEE !important;
+    color: #EFEDEE !important;
+    -webkit-text-fill-color: #EFEDEE !important;
+}
+[data-ogsc] .wrapto600px .link-inline-cta, [data-ogsb] .wrapto600px .link-i=
+nline-cta { color: #EFEDEE !important; }
+[data-ogsc] .wrapto600px .link-callout-cta, [data-ogsb] .wrapto600px .link-=
+callout-cta { color: #E792F6 !important; }
+[data-ogsc] .wrapto600px a:not(.btn):not(.btn-primary):not(.btn-outline):no=
+t(.btn-white):not(.link-inline-cta):not(.link-callout-cta),
+[data-ogsb] .wrapto600px a:not(.btn):not(.btn-primary):not(.btn-outline):no=
+t(.btn-white):not(.link-inline-cta):not(.link-callout-cta) { color: inherit=
+ !important; }
+
+/* =3D=3D=3D=3D=3D Layout & Visibility =3D=3D=3D=3D=3D */
+/* Default state (Desktop / Clients with no Media Query support) */
+=2Ewrapto600px .hide-mobile { display: block !important; }
+=2Ewrapto600px .hide-desktop { display: none !important; mso-hide: all; }
+
+/* Default Padding for Content Tables (Outlook Safe) */
+=2Ewrapto600px td.wrap-lr-pad,
+=2Ewrapto600px table.wrap-lr-pad,
+=2Ewrap-lr-pad > tr > td,
+=2Ewrap-lr-pad > tbody > tr > td {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+/* Mobile View (Max Width 599px) */
+@media screen and (max-width: 599px) {
+    .wrapto600px .hide-mobile { display: none !important; }
+    .wrapto600px .hide-desktop { display: block !important; }
+}
+
+/* Desktop View (Min Width 600px) */
+@media screen and (min-width: 600px) {
+    .wrapto600px { width: 600px !important; }
+    .wrapto600px .hide-desktop { display: none !important; }
+    .wrapto600px .hide-mobile { display: block !important; }
+
+    /* Typography (desktop overrides) */
+    .wrapto600px .display-l  { font-size: 60px !important; line-height: 62p=
+x !important; }
+    .wrapto600px .display-w2 { font-size: 48px !important; line-height: 49p=
+x !important; }
+
+    .wrapto600px .headline-w2 { font-size: 26px !important; line-height: 32=
+px !important; }
+    .wrapto600px .headline-w3 { font-size: 22px !important; line-height: 28=
+px !important; }
+
+    .wrapto600px .title-w2 { font-size: 16px !important; line-height: 22px =
+!important; }
+    .wrapto600px .title-w3 { font-size: 14px !important; line-height: 20px =
+!important; }
+
+    .wrapto600px .subtitle-w2 { font-size: 16px !important; line-height: 22=
+px !important; }
+    .wrapto600px .subtitle-w3 { font-size: 14px !important; line-height: 20=
+px !important; }
+
+    .wrapto600px .body-w2 { font-size: 16px !important; line-height: 22px !=
+important; }
+    .wrapto600px .body-w3 { font-size: 14px !important; line-height: 20px !=
+important; }
+
+    /* Spacing scale mapping: desktop =3D mobile step +1 (caps at 48/64) */
+    .wrapto600px .pt-2 { padding-top: 4px !important; }
+    .wrapto600px .pb-2 { padding-bottom: 4px !important; }
+    .wrapto600px .pt-4 { padding-top: 8px !important; }
+    .wrapto600px .pb-4 { padding-bottom: 8px !important; }
+    .wrapto600px .pt-8 { padding-top: 16px !important; }
+    .wrapto600px .pb-8 { padding-bottom: 16px !important; }
+    .wrapto600px .pt-16 { padding-top: 24px !important; }
+    .wrapto600px .pb-16 { padding-bottom: 24px !important; }
+    .wrapto600px .pt-24 { padding-top: 32px !important; }
+    .wrapto600px .pb-24 { padding-bottom: 32px !important; }
+    .wrapto600px .pt-32 { padding-top: 40px !important; }
+    .wrapto600px .pb-32 { padding-bottom: 40px !important; }
+
+    .wrapto600px .pl-2 { padding-left: 4px !important; }
+    .wrapto600px .pr-2 { padding-right: 4px !important; }
+    .wrapto600px .pl-4 { padding-left: 8px !important; }
+    .wrapto600px .pr-4 { padding-right: 8px !important; }
+    .wrapto600px .pl-8 { padding-left: 16px !important; }
+    .wrapto600px .pr-8 { padding-right: 16px !important; }
+    .wrapto600px .pl-16 { padding-left: 24px !important; }
+    .wrapto600px .pr-16 { padding-right: 24px !important; }
+    .wrapto600px .pl-24 { padding-left: 32px !important; }
+    .wrapto600px .pr-24 { padding-right: 32px !important; }
+    .wrapto600px .pl-32 { padding-left: 40px !important; }
+    .wrapto600px .pr-32 { padding-right: 40px !important; }
+
+    .wrapto600px .px-2 { padding-left: 4px !important; padding-right: 4px !=
+important; }
+    .wrapto600px .px-4 { padding-left: 8px !important; padding-right: 8px !=
+important; }
+    .wrapto600px .px-8 { padding-left: 16px !important; padding-right: 16px=
+ !important; }
+    .wrapto600px .px-16 { padding-left: 24px !important; padding-right: 24p=
+x !important; }
+    .wrapto600px .px-24 { padding-left: 32px !important; padding-right: 32p=
+x !important; }
+    .wrapto600px .px-32 { padding-left: 40px !important; padding-right: 40p=
+x !important; }
+
+    .wrapto600px .py-2 { padding-top: 4px !important; padding-bottom: 4px !=
+important; }
+    .wrapto600px .py-4 { padding-top: 8px !important; padding-bottom: 8px !=
+important; }
+    .wrapto600px .py-8 { padding-top: 16px !important; padding-bottom: 16px=
+ !important; }
+    .wrapto600px .py-16 { padding-top: 24px !important; padding-bottom: 24p=
+x !important; }
+    .wrapto600px .py-24 { padding-top: 32px !important; padding-bottom: 32p=
+x !important; }
+    .wrapto600px .py-32 { padding-top: 40px !important; padding-bottom: 40p=
+x !important; }
+
+    /* Default Padding for Content Tables (Outlook Safe) */
+    .wrapto600px td.wrap-lr-pad,
+    .wrapto600px table.wrap-lr-pad,
+    .wrap-lr-pad > tr > td,
+    .wrap-lr-pad > tbody > tr > td {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    /* Lyft logo */
+    .wrapto600px .lyft-logo {
+        height: 48px !important;
+        max-height: 48px !important;
+        width: auto !important;
+    }
+
+    /* Partner / subsidiary logo */
+    .wrapto600px .partner-logo {
+        height: 48px !important;
+        max-height: 48px !important;
+        max-width: 600px !important;
+        width: auto !important;
+    }
+}
+    </style>
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+     </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+</head>
+
+<body id=3D"body" leftmargin=3D"0" topmargin=3D"0" rightmargin=3D"0" width=
+=3D"100%">
+    <!-- Begin Preheader -->
+    <div style=3D"display: none; font-size: 1px; color: #EDEDF0; line-heigh=
+t: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden">
+A payment is due by end of day
+
+    <!-- Insert &zwnj;&nbsp; hack after hidden preview text -->&#847; &zwnj=
+; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#8=
+47; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &=
+nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847;=
+ &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbs=
+p; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &z=
+wnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; =
+&#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj=
+; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#8=
+47; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &=
+nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847;=
+ &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbs=
+p; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &z=
+wnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; =
+&#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj=
+; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#8=
+47; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &=
+nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847;=
+ &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbs=
+p; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &z=
+wnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; =
+&#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj=
+; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#8=
+47; &zwnj; &nbsp;=20
+    </div>
+    <div style=3D"display: none; max-height: 0px; overflow: hidden">
+        &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#84=
+7; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &n=
+bsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; =
+&zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp=
+; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zw=
+nj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &=
+#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj;=
+ &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#84=
+7; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &n=
+bsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; =
+&zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp=
+; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zw=
+nj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &=
+#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj;=
+ &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#84=
+7; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &n=
+bsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; =
+&zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp=
+; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zw=
+nj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &=
+#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj;=
+ &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#84=
+7; &zwnj; &nbsp; &#847; &zwnj; &nbsp;=20
+    </div>
+    <!-- End Preheader -->
+    <!--  Content -->
+    <!--[if (gte mso 9)|(IE)]><table role=3D"presentation" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" width=3D"599" align=3D"center"><tr><td ali=
+gn=3D"center"><![endif]-->
+    <table role=3D"presentation" class=3D"wrapto600px" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" width=3D"100%" align=3D"center" style=3D"max-w=
+idth: 599px">
+        <tr>
+            <td width=3D"100%" align=3D"center">
+                                <!-- partner or subsidiary logo with white =
+background image -->
+   =20
+                <table role=3D"presentation" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"width: 100%;">
+                    <tr>
+                        <td height=3D"82" background=3D"https://cdn.lyft.ne=
+t/growth/evergreen/Logos/2026/background_images/email_logo_background_image=
+_grey.png" style=3D"background-image: url('https://cdn.lyft.net/growth/ever=
+green/Logos/2026/background_images/email_logo_background_image_grey.png'); =
+background-repeat: no-repeat; background-position: top center; background-s=
+ize: 599px 260px; padding:0; margin:0; mso-padding-alt:0 0 0 0; max-width: =
+599px;">
+                            <!--[if gte mso 9]>
+                            <v:rect xmlns:v=3D"urn:schemas-microsoft-com:vm=
+l" fill=3D"true" stroke=3D"false" style=3D"width:599px;height:82px; max-wid=
+th: 599px;">
+                                <v:fill type=3D"frame" src=3D"https://cdn.l=
+yft.net/growth/evergreen/Logos/2026/background_images/email_logo_background=
+_image_grey.png" />
+                                <v:textbox inset=3D"0,0,0,0">
+                            <![endif]-->
+               =20
+                            <table class=3D"wrap-lr-pad" role=3D"presentati=
+on" align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"width: 100%">
+               =20
+                                <!-- Logo -->
+                                <tr>
+                                    <td class=3D"pt-16 pb-16 px-16 text-lef=
+t" align=3D"left" style=3D"padding-top: 16px; padding-bottom: 16px; padding=
+-left: 16px; padding-right: 16px; text-align: left;">
+                                        <a href=3D"https://email.lyftmail.c=
+om/c/eJw8jTtuhTAQAE9jdzytzfpXuEjDNdDiXcASJE_GCcrtI5p0I81Iw5kSG9GSTYgI1luPes=
+8GkkvBJVrFBTKjB1gishRwIwOQrtmC9RAMGnAG8OV9DJ4k8gLssCSFcPyu_aR6vMrXqY-89_6-1=
+Pih7KTsdN_36wkeqeykH55PuS7aZK6cF0vCxuNAAfyAbpQhGYkDr2SBvSMcg265tFoEMTqFsP3P=
+em7y2emYr-9WdmqbzE2K1HfXP9n-BQAA___RH0lg" title=3D"Lyft" target=3D"_blank">=
+<img src=3D"https://s3.amazonaws.com/growth.lyft.com/img/evergreen/lyft-ema=
+il-design/logos/express-drive-color-2x.png" alt=3D"Lyft Express Drive" bord=
+er=3D"0" height=3D"35"
+                  style=3D"display: block; max-width: 270px; border: 0; hei=
+ght: auto; line-height: 100%; -ms-interpolation-mode: bicubic;" /></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if gte mso 9]>
+                                </v:textbox>
+                            </v:rect>
+                            <![endif]-->
+                        </td>
+                    </tr>
+                </table>
+                <table class=3D"wrapto600px" align=3D"center" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%">
+                    <tr>
+                        <td height=3D"30" style=3D"font-size: 30px; line-he=
+ight: 30px; -mso-line-height: 30px">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class=3D"text-black-cherry" style=3D"-webkit-fo=
+nt-smoothing: antialiased; font-family: 'RebelSansText-Semibold', Helvetica=
+, Arial, sans-serif; font-size: 16px; font-weight: bold; color: #1D0C17; fo=
+nt-weight: 600; line-height: 16px; padding-left: 4%; padding-right: 4%; tex=
+t-align: left">
+                           =20
+UPDATE YOUR ACCOUNT
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height=3D"5" style=3D"font-size: 5px; line-heig=
+ht: 5px; -mso-line-height: 5px">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style=3D"-webkit-font-smoothing: antialiased; f=
+ont-family: 'RebelSansDisplay-Semibold', Helvetica, Arial, sans-serif; font=
+-size: 50px; color: #000000; font-weight: 600; line-height: 56px; padding-l=
+eft: 4%; padding-right: 4%; text-align: left" class=3D"text-black-cherry">
+                           =20
+Rental payment failed
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height=3D"10" style=3D"font-size: 10px; line-he=
+ight: 10px; -mso-line-height: 10px">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class=3D"text-black-cherry" style=3D"-webkit-fo=
+nt-smoothing: antialiased; font-family: 'RebelSansText-Regular', Helvetica,=
+ Arial, sans-serif; font-size: 16px; color: #1D0C17; line-height: 22px; pad=
+ding-left: 4%; padding-right: 4%; text-align: left">
+                           =20
+
+Cody, we tried to charge $294.26 to your card for your July 6 outstanding r=
+ental costs.=20
+<br><br>
+The charge was unsuccessful, so please update your payment method today to =
+keep renting. This balance will be reflected in your Weekly Breakdown while=
+ you continue renting until you repay the charge.
+
+
+                        </td>
+                    </tr>
+                </table>
+<table class=3D"wrapto600px" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"width: 100%">
+    <tr>
+        <td height=3D"30" style=3D"font-size: 30px; line-height: 30px; -mso=
+-line-height: 30px"></td>
+    </tr>
+    <tr>
+        <td style=3D"padding:0px 4%">
+           <table style=3D"width: 100%" width=3D"100%" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+    <tr>
+        <td style=3D"border-top: solid #000000 1px" class=3D"border-black-c=
+herry"></td>
+    </tr>
+    <tr>
+        <td align=3D"left" class=3D"mobilebody text-black-cherry" valign=3D=
+"top" style=3D"font-family: 'RebelSansText-Semibold', Helvetica, Arial, san=
+s-serif; font-size: 20px; color: #1D0C17; font-weight: 800; line-height: 20=
+px; text-align: left; vertical-align: top; padding-top: 30px">
+        Rental Week
+      </td>
+   </tr>
+    <tr>
+        <td height=3D"10" style=3D"font-size: 10px; line-height: 10px; -mso=
+-line-height: 10px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align=3D"left" class=3D"mobilebody text-black-cherry" valign=3D"t=
+op" style=3D"font-family: 'RebelSansText-Regular', Helvetica, Arial, sans-s=
+erif; font-size: 16px; color: #1D0C17; line-height: 22px; text-align: left;=
+ vertical-align: top; padding-bottom: 30px">
+        July 6
+      </td>
+   </tr>
+    <tr>
+        <td  style=3D"border-top: solid #000000 1px" class=3D"border-black-=
+cherry"></td>
+    </tr>
+    <tr>
+        <td align=3D"left" class=3D"mobilebody text-black-cherry" valign=3D=
+"top" style=3D"font-family: 'RebelSansText-Semibold', Helvetica, Arial, san=
+s-serif; font-size: 20px; color: #1D0C17; font-weight: 800; line-height: 20=
+px; text-align: left; vertical-align: top; padding-top: 30px">
+        Line Item
+      </td>
+   </tr>
+    <tr>
+        <td height=3D"10" style=3D"font-size: 10px; line-height: 10px; -mso=
+-line-height: 10px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align=3D"left" class=3D"mobilebody text-black-cherry" valign=3D"t=
+op" style=3D"font-family: 'RebelSansText-Regular', Helvetica, Arial, sans-s=
+erif; font-size: 16px; color: #1D0C17; line-height: 22px; text-align: left;=
+ vertical-align: top; padding-bottom: 30px">
+        Weekly rental costs
+      </td>
+   </tr>
+    <tr>
+        <td  style=3D"border-top: solid #000000 1px" class=3D"border-black-=
+cherry"></td>
+    </tr>
+    <tr>
+        <td align=3D"left" class=3D"mobilebody text-black-cherry" valign=3D=
+"top" style=3D"font-family: 'RebelSansText-Semibold', Helvetica, Arial, san=
+s-serif; font-size: 20px; color: #1D0C17; font-weight: 800; line-height: 20=
+px; text-align: left; vertical-align: top; padding-top: 30px">
+        Overdue Amount
+      </td>
+   </tr>
+    <tr>
+        <td height=3D"10" style=3D"font-size: 10px; line-height: 10px; -mso=
+-line-height: 10px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align=3D"left" class=3D"mobilebody text-black-cherry" valign=3D"t=
+op" style=3D"font-family: 'RebelSansText-Regular', Helvetica, Arial, sans-s=
+erif; font-size: 16px; color: #1D0C17; line-height: 22px; text-align: left;=
+ vertical-align: top; padding-bottom: 30px">
+        $294.26
+      </td>
+   </tr>
+    <tr>
+        <td style=3D"border-top: solid #000000 1px" class=3D"border-black-c=
+herry"></td>
+    </tr>
+    <tr>
+        <td align=3D"left" class=3D"mobilebody text-black-cherry" valign=3D=
+"top" style=3D"font-family: 'RebelSansText-Semibold', Helvetica, Arial, san=
+s-serif; font-size: 20px; color: #1D0C17; font-weight: 800; line-height: 20=
+px; text-align: left; vertical-align: top; padding-top: 30px">
+        Payment Deadline=20
+      </td>
+   </tr>
+    <tr>
+        <td height=3D"10" style=3D"font-size: 10px; line-height: 10px; -mso=
+-line-height: 10px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td align=3D"left" class=3D"mobilebody text-black-cherry" valign=3D"t=
+op" style=3D"font-family: 'RebelSansText-Regular', Helvetica, Arial, sans-s=
+erif; font-size: 16px; color: #1D0C17; line-height: 22px; text-align: left;=
+ vertical-align: top">
+        End of day
+      </td>
+   </tr>
+</table>
+</td>
+</tr>
+</table>
+<table class=3D"wrapto600px" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"width: 100%">
+                    <tr>
+                        <td height=3D"50" style=3D"font-size: 50px; line-he=
+ight: 50px; -mso-line-height: 50px">&nbsp;</td>
+                    </tr>
+                                        <tr>
+                        <td align=3D"center" class=3D"text-center">
+                            <!--[if mso]>
+                            <v:roundrect xmlns:v=3D"urn:schemas-microsoft-c=
+om:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" href=3D"https://e=
+mail.lyftmail.com/c/eJyMzj1u6zAQBODTkJ0Mcrn8K1gYeBDw2lxAWJNLm4jsGBQTJbcP1CR=
+t6plvMCVRLJolJ-0DKnDgUN4SxBjAVA_GQLVcCDW5apyJIasKVrYECpzyGrWyWuHJueAdcSgXVS=
+zmKFCtX3Xcqa2n_HaXa7qN8dyEOQuYBcz7vp-OwhEKmPPa8quAudDn9Ph_fiFh5jtvG115aUWYf=
+xcgLtrhRF65Ca3hKWoOU6kEqjhLaLw8Bpdflv6Eesq9ZUYMVqC6_jweqfNj0Lps7z3fqF956Zy5=
+PYf8SPAdAAD__4WKXbY" style=3D"height: 56px; v-text-anchor: middle; width: 3=
+20px;" arcsize=3D"250%" fillcolor=3D"#820076">
+                                <w:anchorlock/>
+                                <center style=3D"color: #fffffe; font-famil=
+y: 'RebelSansText-Medium', Helvetica, Arial, sans-serif; font-size: 17px; f=
+ont-weight: 500; line-height: 22px; mso-line-height-rule: exactly;">
+Update payment method
+</center>
+                            </v:roundrect>
+                            <![endif]-->
+                            <a href=3D"https://email.lyftmail.com/c/eJyMzj1=
+u6zAQBODTkJ0Mcrn8K1gYeBDw2lxAWJNLm4jsGBQTJbcP1CRt6plvMCVRLJolJ-0DKnDgUN4SxB=
+jAVA_GQLVcCDW5apyJIasKVrYECpzyGrWyWuHJueAdcSgXVSzmKFCtX3Xcqa2n_HaXa7qN8dyEO=
+QuYBcz7vp-OwhEKmPPa8quAudDn9Ph_fiFh5jtvG115aUWYfxcgLtrhRF65Ca3hKWoOU6kEqjhL=
+aLw8Bpdflv6Eesq9ZUYMVqC6_jweqfNj0Lps7z3fqF956Zy5PYf8SPAdAAD__4WKXbY"
+                                class=3D"btn-primary"
+                                style=3D"background-color: #820076; border-=
+radius: 100px; color: #fffffe; display: inline-block; font-family: 'RebelSa=
+nsText-Medium', Helvetica, Arial, sans-serif; font-size: 17px; font-weight:=
+ 500; line-height: 100%; text-align: center; text-decoration: none; padding=
+: 16px 48px; -webkit-text-size-adjust: none; -webkit-text-fill-color: #ffff=
+fe; mso-hide: all;">
+                               =20
+Update payment method
+
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height=3D"50" style=3D"font-size: 50px; line-he=
+ight: 50px; -mso-line-height: 50px">&nbsp;</td>
+                    </tr>
+</table>
+<table style=3D"width: 100%" class=3D"wrapto600px" align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+    <tr>
+        <td height=3D"30" style=3D"font-size: 30px; line-height: 30px; -mso=
+-line-height: 30px">=C2=A0</td>
+    </tr>
+    <tr>
+        <td style=3D"padding:0px 4%">
+           <table style=3D"width: 100%" width=3D"100%" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+                                                 <tr>
+                                <td class=3D"text-black-cherry" align=3D"le=
+ft" valign=3D"top" style=3D"font-family: 'RebelSansText-Semibold', Helvetic=
+a, Arial, sans-serif; font-size: 30px; color: #1D0C17; line-height: 30px; t=
+ext-align: left; vertical-align: top; font-weight: 800">
+                                    Why am I being charged?
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height=3D"10" style=3D"font-size: 10px;=
+ line-height: 10px; -mso-line-height: 10px">=C2=A0</td>
+                            </tr>
+<tr>
+                                <td height=3D"10" style=3D"font-size: 10px;=
+ line-height: 10px; -mso-line-height: 10px">=C2=A0</td>
+                            </tr>
+                <tr>
+                                <td align=3D"left" class=3D"mobilebody text=
+-black-cherry" valign=3D"top" style=3D"font-family: 'RebelSansText-Regular'=
+, Helvetica, Arial, sans-serif; font-size: 16px; color: #1D0C17; line-heigh=
+t: 22px; text-align: left; vertical-align: top">
+                                                <ul style=3D"margin-top: 0;=
+ padding: 0 25px; ">
+<li style=3D"padding-bottom: 20px;">
+Lyft's billing week begins on Monday. Your earnings first go toward your to=
+tal outstanding balance - including weekly rental costs, other rental costs=
+ (tolls, damages, etc.), or any previous failed charges.
+</li>
+<li>If you don't earn enough to cover these items, you may see multiple cha=
+rges on your default card each Tuesday to cover what's left.
+</li>
+
+            </ul>
+                                </td>
+               </tr>
+           </table>
+       </td>
+   </tr>
+</table>
+<table style=3D"width: 100%" class=3D"wrapto600px" align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+    <tr>
+        <td height=3D"30" style=3D"font-size: 30px; line-height: 30px; -mso=
+-line-height: 30px">=C2=A0</td>
+    </tr>
+    <tr>
+        <td style=3D"padding:0px 4%">
+           <table style=3D"width: 100%" width=3D"100%" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+                                                 <tr>
+                                <td class=3D"text-black-cherry" align=3D"le=
+ft" valign=3D"top" style=3D"font-family: 'RebelSansText-Semibold', Helvetic=
+a, Arial, sans-serif; font-size: 30px; color: #1D0C17; line-height: 30px; t=
+ext-align: left; vertical-align: top; font-weight: 800">
+                                    What happens next?
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height=3D"10" style=3D"font-size: 10px;=
+ line-height: 10px; -mso-line-height: 10px">=C2=A0</td>
+                            </tr>
+                <tr>
+                                <td align=3D"left" class=3D"mobilebody text=
+-black-cherry" valign=3D"top" style=3D"font-family: 'RebelSansText-Regular'=
+, Helvetica, Arial, sans-serif; font-size: 16px; color: #1D0C17; line-heigh=
+t: 22px; text-align: left; vertical-align: top">
+                                                <ul style=3D"margin-top: 0;=
+ padding: 0 25px; ">
+<li style=3D"padding-bottom: 20px;">
+Update your payment details by the end of day so you can pay the overdue am=
+ount and keep your account active.</li>
+<li  style=3D"padding-bottom: 20px;">The outstanding balance from this char=
+ge will be added to your Weekly Breakdown. If it is not paid in full, you'l=
+l need to earn more than this balance and your current week's rental costs =
+before you can cash out any earnings.
+<li  style=3D"padding-bottom: 20px;">Unless you have disabled backup paymen=
+ts in your settings, you authorize us to retry failed charges with any othe=
+r payment methods you have on the Lyft platform after 24 hours. </li>
+<li>If we are unable to charge any of your payment methods on file, we will=
+ charge any amount owed for your rental on the card provided for the rental=
+ deposit.</li>
+
+
+            </ul>
+                                </td>
+               </tr>
+           </table>
+       </td>
+   </tr>
+</table>
+                <table style=3D"width: 100%" class=3D"wrapto600px" align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                    <tr>
+                        <td height=3D"80" style=3D"font-size: 80px; line-he=
+ight: 80px; -mso-line-height: 80px">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align=3D"center" style=3D"padding:0px" width=3D=
+"100%">
+                            <!--=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3DFOOTER=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D-->
+                            <!-- Automatically generated by make_email v1.4=
+=2E1. Do not edit this file. -->
+
+<table class=3D"email-global-footer" role=3D"presentation" align=3D"left" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 100%; text-=
+align: left;" width=3D"100%">
+    <tbody><tr>
+        <td align=3D"left" style=3D"padding: 0; text-align: left;">
+            <table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"width: 100%; text-align: left;">
+                <tbody><tr>
+                    <td align=3D"left" valign=3D"middle" style=3D"padding: =
+0 4% 0 0"></td>
+                    <td class=3D"email-global-footer__rule" style=3D"border=
+-top: 1px solid #CFCBCC" width=3D"92%" align=3D"left" valign=3D"middle"></t=
+d>
+                    <td align=3D"left" valign=3D"middle" style=3D"padding: =
+0 4% 0 0"></td>
+                </tr>
+            </tbody></table>
+            <table class=3D"mobileView" align=3D"left" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"width:100% !important; text-align: le=
+ft;">
+                <tbody><tr>
+                    <td align=3D"left" style=3D"text-align: left;">
+                        <table class=3D"mobileView" align=3D"left" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"width: 1=
+00%; text-align: left;">
+                            <tbody><tr>
+                                <td class=3D"email-footer-copy" width=3D"10=
+0%" align=3D"left" style=3D"color: #776D74; font-family: 'RebelSansText-Reg=
+ular', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; fo=
+nt-weight: normal; padding: 10px 0px 0px 4%; text-align: left !important; v=
+ertical-align: middle;" valign=3D"middle">
+                                   =20
+                                    <a class=3D"footerLinks" target=3D"_bla=
+nk" href=3D"https://email.lyftmail.com/c/eJw8zU1qxDAMxfHTxLsMskaW7YUX3cw1gk=
+ZWPiBpg-MWevuSTZc_3oN_LZKrN2fFx0SAjExuLQRC_M5JWT1nw5o1GCJG0Rm9n91WEJAhevIQP=
+NCDOUUWS_UNNZDmgWD_nfsh2_7Qr8PtZe39vIbnx4CvAV-r7efjftzrbXW3psOuSxabtlreKFY9=
+0ygReKTwtDF7S2OdBaFyEHpG14q2TY0ohYFg-e_10uyzyz5d301XaYtNzdS2s7ufgn8BAAD__w2=
+YStg" style=3D"color: #776D74;font-family: 'RebelSansText-Regular', Helveti=
+ca, Arial, sans-serif;font-size: 12px;line-height: 18px;font-weight: normal=
+;text-decoration: none"><span class=3D"contact">Contact</span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=3D"email-footer-copy" valign=3D"m=
+iddle" align=3D"left" style=3D"color: #776D74; font-family: 'RebelSansText-=
+Regular', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px;=
+ font-weight: normal; padding: 10px 0px 0px 4%; text-align: left !important=
+; text-decoration: none; vertical-align: middle;">
+                                    <span class=3D"appleLinks" style=3D"col=
+or: #776D74; font-family: 'RebelSansText-Regular', Helvetica, Arial, sans-s=
+erif; font-size: 12px; line-height: 18px;">548 Market St., P.O. Box 68514, =
+San Francisco, CA 94104 </span><br> =C2=A9 2026 Lyft, Inc.<br>CPUC ID No. T=
+CP0032513 - P
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width=3D"auto" style=3D"display: block;" height=3D"=
+40">&nbsp;</td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+                            <!--=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3DEND FOOTER=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D-->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<img width=3D"1" height=3D"1" alt=3D"" src=3D"https://email.lyftmail.com/o/=
+eJw8zDFuxCAQBdDTLJ1XAx5mTMFZrAG-vUh2EmEnUm4fpdnyNa9lS83DIXtdmIIEYffKksyXjZW=
+L1g2aMFuRBHihqBbgeg4UhNSzp-iJnyKLimFphVrkmh5Mx-92n9aPZ_083T_WE9dlO9becgmG5o=
+UnU5KJ44wpeSxT2yxQk2g8qxu5jl7BvMQH0_7O7jzwcduxXt-jvmzsWAcq-tftfnL4CwAA____D=
+kAG"></body>
+
+</html>=20

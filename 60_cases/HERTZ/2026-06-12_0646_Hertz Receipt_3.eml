@@ -1,0 +1,2024 @@
+Delivered-To: crice4485@gmail.com
+Received: by 2002:a5d:408f:0:b0:460:6b75:b256 with SMTP id o15csp562011wrp;
+        Fri, 12 Jun 2026 07:47:27 -0700 (PDT)
+X-Received: by 2002:a05:690e:b88:b0:660:8fc2:cbd0 with SMTP id 956f58d0204a3-662782c7800mr2419101d50.31.1781275647415;
+        Fri, 12 Jun 2026 07:47:27 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1781275647; cv=none;
+        d=google.com; s=arc-20240605;
+        b=X3HTXOxCTP1hQRHyAYa0juRNgAVB34WrcJUvB8n2VxEcyPK4a4Xg3wR0J/KiCVgZgO
+         LsMsIHlrUELO3jhRCCpAFsKoHXIYCWJWNEHhHlk/3iaXvDOE5iN9kzR2bDcJXAdk2oNL
+         2B9ed6ZzGj8ElpGqKbROjxz6+y2pPPo6JrnsgfEw0N0dvZs+V1zt77HJo10hOe+AtPmV
+         YFO4ITVMIfH3YFkcgQkOl/aTJ1jHLO0MiBysDnOmzkHLa8CNLUxPKcYJeg/EZpwWefEz
+         rsbiBViYy2yseljOzSTl4gQIGxIpzjUNtX525oRmNzGlCrDwXlWlr3vJM+XZCPG5OsPv
+         UDpA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:subject:to:reply-to:from:date:message-id
+         :dkim-signature:dkim-filter;
+        bh=D13KVq/rRKJ+IfjtwGuDcXniJdncES5PhMp1pDgRGTs=;
+        fh=BENPBlrQWliizvb6F3Fdgbc9sIWKg8f036o+xjMZyjY=;
+        b=dFSkRCdWjCCmlFQN+4xnfLv2OfpuE2l7zc1XxjY+7A04SeS0oo+hjlXZM457SHgarZ
+         py8WjxiFaUrJucpjypx8r3k2VN9TA2Rnd+jSqJy0iuYH0L1UNz2LNn/IkvZkkhKrI+mU
+         orKFnFGQE+sIA3TNCumQgWIlHOQI9CeUkwty5gzePpKS4jydn5tyPHt/DkbrHowcP2Rz
+         dz6JbQGd9ETyEb5dT2HJdEX9xAOLj9LosngjIBM0+g4u4OUjlQvlFBIROaXjiyZUKfoj
+         k2o6W7/Nb6mwsRc9ShMjgH+JGYw8En+G0kxS2/NEBsX70vPqvzSRV3cIYlrfZvPE7i+r
+         OZ2A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@rentals.hertz.com header.s=mail header.b=DPzJvnnO;
+       spf=pass (google.com: domain of hertznoreply@rentals.hertz.com designates 128.136.200.81 as permitted sender) smtp.mailfrom=HertzNoReply@rentals.hertz.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=hertz.com
+Return-Path: <HertzNoReply@rentals.hertz.com>
+Received: from hertzera.bormc.com (hertzera.bormc.com. [128.136.200.81])
+        by mx.google.com with ESMTPS id 956f58d0204a3-66274cf1affsi2222023d50.61.2026.06.12.07.47.27
+        for <crice4485@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 12 Jun 2026 07:47:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of hertznoreply@rentals.hertz.com designates 128.136.200.81 as permitted sender) client-ip=128.136.200.81;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@rentals.hertz.com header.s=mail header.b=DPzJvnnO;
+       spf=pass (google.com: domain of hertznoreply@rentals.hertz.com designates 128.136.200.81 as permitted sender) smtp.mailfrom=HertzNoReply@rentals.hertz.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=hertz.com
+Received: from hertzera-queue.bormc.com (localhost [127.0.0.1])
+	by hertzera.bormc.com (8.14.7/8.14.7) with ESMTP id 65CElHpl011569
+	for <crice4485@gmail.com>; Fri, 12 Jun 2026 10:47:27 -0400
+DKIM-Filter: OpenDKIM Filter v2.11.0 hertzera.bormc.com 65CElHpl011569
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rentals.hertz.com;
+	s=mail; t=1781275647;
+	bh=D13KVq/rRKJ+IfjtwGuDcXniJdncES5PhMp1pDgRGTs=;
+	h=Date:From:Reply-To:To:Subject:From;
+	b=DPzJvnnOmgHandsI0kwAGZDF6Jk4XPXdoMsqUPKmFbeCHYUEXUAMSdoLs11kpi8s7
+	 eVnuQwE2/ris0gyujLyLyfXnJNG1+pWWMdCyri5FuCpB6FFNLnl9Vqq4E5hwbrhblN
+	 VY2F4LzlQaDN2TlvdFeNtN/NzFytlaRzMI9hQhKI=
+Received: by hertzera.bormc.com for <crice4485@gmail.com>; Fri, 12 Jun 2026 14:46:55 GMT
+Message-ID: <20260612104649-1.6.3t.7fd6h.0.xp0cptwpad@hertzera.bormc.com>
+Date: Fri, 12 Jun 2026 14:46:55 GMT
+From: "Hertz" <HertzNoReply@rentals.hertz.com>
+Reply-To: "NoReply" <HertzNoReply@rentals.hertz.com>
+To: <crice4485@gmail.com>
+Subject: Hertz Receipt
+X-Mailer: BORMC Mailer
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="-==AGNITASOUTER164240059B29000089=="
+
+This is a multi-part message in MIME format.
+
+---==AGNITASOUTER164240059B29000089==
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you for renting with Hertz. This is your requested email receipt.
+Please enable images to view this email properly.
+---==AGNITASOUTER164240059B29000089==
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://ww=
+w.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-micro=
+soft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:vml">
+	<head>
+		<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+		<title>Hertz Rental Car Receipt</title>
+		<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type=
+" />
+		<meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible" />
+		<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0 " name=3D"vi=
+ewport" />
+		<meta content=3D"telephone=3Dno" name=3D"format-detection" />
+		<style type=3D"text/css">
+@font-face {
+    font-family: 'Ride';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ride'), local('Ride'), url('https://images.hertz.com/font=
+/font/Ride/Ride.woff') format('woff');
+}
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+img {
+    border: 0 !important;
+    outline: none !important;
+}
+p {
+    Margin: 0px !important;
+    Padding: 0px !important;
+}
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0px;
+    mso-table-rspace: 0px;
+}
+td, a, span {
+    border-collapse: collapse;
+    mso-line-height-rule: exactly;
+}
+=2Ea {
+    font-family: 'Ride', Arial, sans-serif;
+    color: #58595b;
+    text-decoration: none !important;
+}
+=2EExternalClass * {
+    line-height: 100%;
+}
+=2Eem_defaultlink a {
+    color: inherit;
+    text-decoration: none;
+}
+=2Eem_g_img + div {
+    display: none;
+}
+=2E632_114 {
+    width: 265px !important;
+    display: block !important;
+}
+=2E632_162 {
+    width: 265px !important;
+    display: block !important;
+}
+=2Econtent_row {
+    width: 560px !important;
+}
+=2Econtent_row img {
+    height: auto !important;
+    max-width: 560px !important;
+}
+=2Econtent_row_inner {
+    width: 520px !important;
+}
+=2Elds_time_row .at {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*by CGN Values*/
+
+=2Elds_style_1 {
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #464646;
+}
+=2Elds_style_2 {
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #464646;
+}
+=2Elds_style_3 {
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #464646;
+}
+=2Elds_style_4 {
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #464646;
+}
+=2Elds_style_7 {
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #464646;
+}
+=2Elds_section_title {
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #464646;
+}
+=2Elds_merged_cells .lds_first_cell {
+    padding-right: 10px;
+}
+/* Barcode */
+=2Elds_barcode {
+    width: 330px;
+    height: 60px;
+    display: block;
+}
+=2Elds_draw_line {
+    width: 100%;
+    height: 2px;
+    background: #000000;
+}
+=2Elds_unit_ms {
+    color: #464646;
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: right;
+    min-width: 65px;
+}
+=2Elds_unit_m {
+    color: #464646;
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: right;
+    min-width: 50px;
+}
+=2Elds_rate_cal {
+    color: #464646;
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: right;
+    min-width: 65px;
+}
+=2Elds_at_dollar {
+    color: #464646;
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: right;
+    min-width: 18px;
+}
+=2Elds_taxable_dollar {
+    color: #464646;
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: right;
+    min-width: 25px;
+}
+=2Elds_description {
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: normal;
+    color: #464646;
+}
+=2Elds_phone_number {
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #464646;
+}
+=2Elds_phone_number a {
+    color: #FFCC00;
+    text-decoration: none;
+}
+=2Elds_web_link {
+    font-family: 'Ride', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #464646;
+}
+=2Elds_web_link a {
+    color: #FFCC00;
+    text-decoration: none;
+}
+=2Ebrand_ze .lds_draw_line {
+    background: #FFCC00;
+}
+=2Ebrand_ze .lds_phone_number a {
+    color: #FFCC00;
+}
+=2Ebrand_ze .lds_web_link a {
+    color: #FFCC00;
+}
+=2Ebrand_zr .lds_draw_line {
+    background: #E41C39;
+}
+=2Ebrand_zr .lds_phone_number a {
+    color: #E41C39;
+}
+=2Ebrand_zr .lds_web_link a {
+    color: #E41C39;
+}
+=2Ebrand_zt .lds_draw_line {
+    background: #005EB8;
+}
+=2Ebrand_zt .lds_phone_number a {
+    color: #005EB8;
+}
+=2Ebrand_zt .lds_web_link a {
+    color: #005EB8;
+}
+
+@media only screen and (min-width:481px) and (max-width:599px) {
+=2Eem_main_table {
+    width: 100% !important;
+}
+=2Eem_wrapper {
+    width: 100% !important;
+}
+=2Eem_hide {
+    display: none !important;
+}
+=2Eem_full_img {
+    width: 100% !important;
+    height: auto !important;
+}
+=2Eem_full_img img {
+    width: 100% !important;
+    height: auto !important;
+}
+=2Eem_center {
+    text-align: center !important;
+}
+=2Eem_side10 {
+    width: 10px !important;
+}
+=2Eem_aside15 {
+    padding: 0px 15px !important;
+}
+=2Eem_h20 {
+    height: 20px !important;
+    font-size: 1px!important;
+    line-height: 1px!important;
+}
+=2Eem_h5 {
+    height: 5px !important;
+    font-size: 0px !important;
+    line-height: 0px !important;
+}
+}
+
+@media only screen and (min-width:360px) and (max-width:480px) {
+=2Eem_main_table {
+    width: 100% !important;
+}
+=2Eem_wrapper {
+    width: 100% !important;
+}
+=2Eem_hide {
+    display: none !important;
+}
+=2Eem_full_img {
+    width: 100% !important;
+    height: auto !important;
+}
+=2Eem_full_img img {
+    width: 100% !important;
+    height: auto !important;
+}
+=2Eem_center {
+    text-align: center !important;
+}
+=2Eem_side10 {
+    width: 10px !important;
+}
+=2Eem_aside15 {
+    padding: 0px 15px !important;
+}
+=2Eem_h20 {
+    height: 20px !important;
+    font-size: 1px!important;
+    line-height: 1px!important;
+}
+u + .em_body .em_full_wrap {
+    width: 100% !important;
+    width: 100vw !important;
+}
+=2Eem_h5 {
+    height: 5px !important;
+    font-size: 0px !important;
+    line-height: 0px !important;
+}
+table[class=3D"wrapper_table"] .content_row {
+    width: 95% !important;
+}
+table[class=3D"wrapper_table"] .content_row img {
+    max-width: 300px !important;
+    height: auto !important;
+}
+table[class=3D"wrapper_table"] .content_row_inner {
+    width: 280px !important;
+}
+}		</style>
+	</head>
+	<body class=3D"em_body" style=3D"margin:0px auto; padding:0px;"><img src=
+=3D"https://hertzera.bormc.com/g.html?uid=3D6.3t.7fd6h.0.loi26b135h" alt=3D=
+"" border=3D"0" height=3D"1" width=3D"1">
+		<div class=3D"preheader" style=3D"display:none; visibility:hidden; heig=
+ht:0px; font-size:0px; line-height:0px;">
+			Thank you for renting with Hertz. This is your requested rental car re=
+ceipt.</div>
+		<!-- =3D=3D Header Section =3D=3D -->
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_ful=
+l_wrap" width=3D"100%">
+			<tbody>
+				<tr>
+					<td align=3D"center" valign=3D"top">
+						<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"em_main_table" style=3D"width:632px; table-layout:fixed;" wi=
+dth=3D"632">
+							<tbody>
+								<tr>
+									<td class=3D"em_side10" style=3D"width:20px;" width=3D"20">
+									</td>
+									<td align=3D"center" valign=3D"top">
+										<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" class=3D"em_wrapper" style=3D"width:592px;" width=3D"592">
+											<tbody>
+												<tr>
+													<td height=3D"10" style=3D"height:10px; font-size:0px; line-=
+height:0px;">
+														<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://www.=
+transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;" wi=
+dth=3D"1" /></td>
+												</tr>
+												<tr>
+													<td align=3D"center" valign=3D"top">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"em_wrapper" dir=3D"rtl" style=3D"width:592px;" wid=
+th=3D"592">
+															<tbody>
+																<tr>
+																	<td valign=3D"top">
+																		<table align=3D"right" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" class=3D"em_wrapper" dir=3D"ltr" style=3D"width:200px;" =
+width=3D"200">
+																			<tbody>
+																				<tr>
+																					<td align=3D"right" class=3D"em_center em_defaultlin=
+k" style=3D"font-family:'Ride', Arial, sans-serif; font-size:11px; line-h=
+eight:18px; color:#58595b;" valign=3D"top">
+																						<a href=3D"https://hertz.ltschat.com/agreements/202=
+6/582293714/f77c02197a2ba809dac84eb92c1198f1?utm_source=3Dera&utm_medium=3D=
+email&utm_campaign=3DZE-POSTRETURN&utm_customparam=3D100181f70fa4f7104648=
+04806122026" style=3D"text-decoration:none; color:#58595b; display:block;=
+ line-height:31px;">VIEW ONLINE</a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<table align=3D"left" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" class=3D"em_wrapper" dir=3D"ltr" style=3D"width:250px;" w=
+idth=3D"250">
+																			<tbody>
+																				<tr>
+																					<td align=3D"left" class=3D"em_center em_defaultlink=
+" style=3D"font-family:'Ride', Arial, sans-serif; font-size:11px; line-he=
+ight:18px; color:#58595b;" valign=3D"top">
+																						Here&#39;s Your Hertz Rental Car Receipt.</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td class=3D"em_h20" height=3D"32" style=3D"height:32px;">
+													</td>
+												</tr>
+												<tr>
+													<td align=3D"center" valign=3D"top">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%">
+															<tbody>
+																<tr>
+																	<td align=3D"center" style=3D"width:136px;" valign=3D"to=
+p" width=3D"136">
+																		<a href=3D"https://hertzera.bormc.com/r.html?uid=3D6.3t=
+=2E7fd6h.3ks.jodyxcf5pk" style=3D"text-decoration:none;"><img alt=3D"Hert=
+z =C2=AE" border=3D"0" height=3D"48" src=3D"https://image.emails.hertz.co=
+m/lib/fe8e1372736d057876/m/1/3ee36829-f455-412f-aee6-affb0b7048ba.png" st=
+yle=3D"display:block; max-width:136px; font-family:Arial, sans-serif; fon=
+t-size:15px; line-height:18px; color:#000000; font-weight:bold;" width=3D=
+"136" /></a></td>
+																	<td class=3D"em_hide" style=3D"width:183px;" width=3D"18=
+3">
+																	</td>
+																	<td align=3D"right" class=3D"em_hide em_defaultlink" sty=
+le=3D"font-family:'Ride', Arial, sans-serif; font-size:14px; line-height:=
+18px; color:#58595b;" valign=3D"middle">
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height=3D"18" style=3D"height:18px; font-size:0px; line-=
+height:0px;">
+														<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://www.=
+transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;" wi=
+dth=3D"1" /></td>
+												</tr>
+												<tr>
+													<td align=3D"center" class=3D"&gt;Your Rental Agreement" sty=
+le=3D"font-family:'Ride', Arial, sans-serif; font-size:24px; line-height:=
+26px; color:#58595b;" valign=3D"middle">
+														We&rsquo;re here to get you there.</td>
+												</tr>
+												<tr>
+													<td height=3D"18" style=3D"height:18px; font-size:0px; line-=
+height:0px;">
+														<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://www.=
+transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;" wi=
+dth=3D"1" /></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+									<td class=3D"em_side10" style=3D"width:20px;" width=3D"20">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- =3D=3D //Header Section =3D=3D --><!-- =3D=3D Body Section =3D=3D =
+-->
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_ful=
+l_wrap" width=3D"100%">
+			<tbody>
+				<tr>
+					<td align=3D"center" valign=3D"top">
+						<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"em_main_table" style=3D"width:632px; table-layout:fixed;" wi=
+dth=3D"632">
+							<!-- Banner section -->
+							<tbody>
+								<tr>
+									<td align=3D"center" valign=3D"top">
+										<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" class=3D"em_wrapper" style=3D"width:600px;" width=3D"600">
+											<tbody>
+												<tr>
+													<td align=3D"center" valign=3D"top">
+														<img alt=3D"We're here to get you there." border=3D"0" clas=
+s=3D"em_full_img" height=3D"200" src=3D"https://image.emails.hertz.com/li=
+b/fe8b13727063027b76/m/2/440063cf-75fb-4d1a-839b-b03a58456854.jpg" style=3D=
+"display:block; max-width:600px;" width=3D"600" /></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- //Banner section --><!-- Cta section -->
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_ful=
+l_wrap" width=3D"100%">
+			<tbody>
+				<tr>
+					<td align=3D"center" valign=3D"top">
+						<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"em_main_table" style=3D"width:632px; table-layout:fixed;" wi=
+dth=3D"632">
+							<!-- Title section -->
+							<tbody>
+								<tr>
+									<td class=3D"em_side10" style=3D"width:20px;" width=3D"20">
+									</td>
+									<td align=3D"center" valign=3D"top">
+										<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%">
+											<tbody>
+												<tr>
+													<td class=3D"em_h5" height=3D"18" style=3D"height:18px; font=
+-size:0px; line-height:0px;">
+														<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://www.=
+transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;" wi=
+dth=3D"1" /></td>
+												</tr>
+												<tr>
+													<td align=3D"center" style=3D"font-family:'Ride', Arial, san=
+s-serif; font-size:24px; line-height:26px; color:#58595b;" valign=3D"midd=
+le">
+														Your Receipt</td>
+												</tr>
+												<tr>
+													<td height=3D"17" style=3D"height:17px; font-size:0px; line-=
+height:0px;">
+														<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://www.=
+transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;" wi=
+dth=3D"1" /></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+									<td class=3D"em_side10" style=3D"width:20px;" width=3D"20">
+									</td>
+								</tr>
+								<!-- //Cta section -->
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--VIEW RENTAL RECORD-->
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_ful=
+l_wrap" width=3D"100%">
+			<tbody>
+				<tr>
+					<td align=3D"center" valign=3D"top">
+						<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"em_main_table" style=3D"width:632px; table-layout:fixed;" wi=
+dth=3D"632">
+							<!-- Title section -->
+							<tbody>
+								<!-- Content section -->
+								<tr>
+									<td class=3D"em_side10" style=3D"width:20px;" width=3D"20">
+									</td>
+									<td align=3D"center" valign=3D"top">
+										<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0">
+											<tbody>
+												<tr>
+													<td align=3D"center" valign=3D"top">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"em_wrapper">
+															<tbody>
+																<tr>
+																	<td align=3D"center" bgcolor=3D"#ffd100" class=3D"em_def=
+aultlink" height=3D"31" style=3D" background-color: #ffd100; padding:0px =
+44px; height:31px; border-radius:5px; font-family:'Ride', Arial, sans-ser=
+if; font-size:15px; color:#000000; border: none; text-align: center; text=
+-decoration: none; display: inline-block;" valign=3D"middle">
+																		<a href=3D"https://hertz.ltschat.com/agreements/2026/58=
+2293714/f77c02197a2ba809dac84eb92c1198f1?utm_source=3Dera&utm_medium=3Dem=
+ail&utm_campaign=3DZE-POSTRETURN&utm_customparam=3D100181f70fa4f710464804=
+806122026" style=3D"text-decoration:none; color:#000000; display:block; l=
+ine-height:31px;">VIEW RECEIPT</a></td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+									<td class=3D"em_side10" style=3D"width:20px;" width=3D"20">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--END VIEW RENTAL RECORD--><!--20 Spacer-->
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_ful=
+l_wrap" width=3D"100%">
+			<tbody>
+				<tr>
+					<td class=3D"em_h5" height=3D"20" style=3D"height:20px; font-size:0p=
+x; line-height:0px;">
+						<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://www.transact=
+iontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;" width=3D"1=
+" /></td>
+				</tr>
+			</tbody>
+		</table>
+		<!--END 20 Spacer--><!--RECEIPT HTML-->
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_ful=
+l_wrap" width=3D"100%">
+			<tbody>
+				<tr>
+					<td align=3D"center" valign=3D"top">
+						<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0" class=3D"em_main_table lds_main_table brand_ze" width=3D"632" style=3D=
+'border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;=
+ font-family: "Ride",Arial,sans-serif; color: #464646; line-height: 20px;=
+ width: 632px; table-layout: fixed;'><tbody>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_empty" width=3D"=
+316" style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">=
+</td><td class=3D"lds_style_1 " align=3D"left" width=3D"14" style=3D"bord=
+er-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; fo=
+nt-weight: 400;">#</td><td class=3D"lds_style_1 " align=3D"right" width=3D=
+"26" style=3D"border-collapse: collapse; mso-line-height-rule: exactly; f=
+ont-size: 10px; font-weight: 400; padding-right: 6px;">01</td><td class=3D=
+"lds_style_1 " align=3D"left" width=3D"56" style=3D"border-collapse: coll=
+apse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400;">=
+PN</td><td class=3D"lds_style_7 " align=3D"left" width=3D"40" style=3D"bo=
+rder-collapse: collapse; mso-line-height-rule: exactly; font-size: 14px; =
+font-weight: 700;">RR</td><td class=3D"lds_style_7 " align=3D"right" widt=
+h=3D"180" style=3D"border-collapse: collapse; mso-line-height-rule: exact=
+ly; font-size: 14px; font-weight: 700;">582293714</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_empty" width=3D"=
+412" style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">=
+</td><td class=3D"lds_style_1 " align=3D"left" width=3D"48" style=3D"bord=
+er-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; fo=
+nt-weight: 400;">RES</td><td class=3D"lds_style_1 " align=3D"right" width=
+=3D"172" style=3D"border-collapse: collapse; mso-line-height-rule: exactl=
+y; font-size: 10px; font-weight: 400;">L5924583610</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr><tr><td class=3D"padding" height=3D"10" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;"></td></tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_section_title " =
+align=3D"left" width=3D"552" style=3D"border-collapse: collapse; mso-line=
+-height-rule: exactly; font-size: 14px; font-weight: 600;">CODY RICE-VELA=
+SQUEZ</td><td class=3D"lds_section_title " align=3D"left" width=3D"80" st=
+yle=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-siz=
+e: 14px; font-weight: 600;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr><tr><td class=3D"padding" height=3D"10" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;"></td></tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_section_title " =
+align=3D"left" width=3D"632" style=3D"border-collapse: collapse; mso-line=
+-height-rule: exactly; font-size: 14px; font-weight: 600;">INITIAL CHARGE=
+S</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_1 " align=3D=
+"left" width=3D"130" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 400;">RENT RT</td><td class=3D=
+"lds_style_1 lds_taxable_dollar" align=3D"right" width=3D"25" style=3D"bo=
+rder-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; =
+font-weight: 400; line-height: 17px; text-align: right; min-width: 25px;"=
+>$</td><td class=3D"lds_style_1 " align=3D"right" width=3D"65" style=3D"b=
+order-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px;=
+ font-weight: 400;">296.00</td><td class=3D"lds_style_1 lds_unit_ps" alig=
+n=3D"left" width=3D"65" style=3D"border-collapse: collapse; mso-line-heig=
+ht-rule: exactly; font-size: 10px; font-weight: 400;">/ WEEK</td><td clas=
+s=3D"lds_style_1 " align=3D"left" width=3D"127" style=3D"border-collapse:=
+ collapse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 4=
+00;">@</td><td class=3D"lds_style_1 " align=3D"right" width=3D"65" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly; font-size: 10p=
+x; font-weight: 400;">3</td><td class=3D"lds_style_1 lds_unit_ps" align=3D=
+"left" width=3D"65" style=3D"border-collapse: collapse; mso-line-height-r=
+ule: exactly; font-size: 10px; font-weight: 400;">/ WEEKS</td><td class=3D=
+"lds_style_1 lds_taxable_dollar" align=3D"right" width=3D"25" style=3D"bo=
+rder-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; =
+font-weight: 400; line-height: 17px; text-align: right; min-width: 25px;"=
+>$</td><td class=3D"lds_style_1 " align=3D"right" width=3D"65" style=3D"b=
+order-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px;=
+ font-weight: 400;">888.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_1 " align=3D=
+"left" width=3D"130" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 400;">RENT RT</td><td class=3D=
+"lds_style_1 lds_taxable_dollar" align=3D"right" width=3D"25" style=3D"bo=
+rder-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; =
+font-weight: 400; line-height: 17px; text-align: right; min-width: 25px;"=
+>$</td><td class=3D"lds_style_1 " align=3D"right" width=3D"65" style=3D"b=
+order-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px;=
+ font-weight: 400;">42.29</td><td class=3D"lds_style_1 lds_unit_ps" align=
+=3D"left" width=3D"65" style=3D"border-collapse: collapse; mso-line-heigh=
+t-rule: exactly; font-size: 10px; font-weight: 400;">/ DAY</td><td class=3D=
+"lds_style_1 " align=3D"left" width=3D"127" style=3D"border-collapse: col=
+lapse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400;"=
+>@</td><td class=3D"lds_style_1 " align=3D"right" width=3D"65" style=3D"b=
+order-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px;=
+ font-weight: 400;">3</td><td class=3D"lds_style_1 lds_unit_ps" align=3D"=
+left" width=3D"65" style=3D"border-collapse: collapse; mso-line-height-ru=
+le: exactly; font-size: 10px; font-weight: 400;">/ DAYS</td><td class=3D"=
+lds_style_1 lds_taxable_dollar" align=3D"right" width=3D"25" style=3D"bor=
+der-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; f=
+ont-weight: 400; line-height: 17px; text-align: right; min-width: 25px;">=
+$</td><td class=3D"lds_style_1 " align=3D"right" width=3D"65" style=3D"bo=
+rder-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; =
+font-weight: 400;">126.87</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_2 " align=3D=
+"left" width=3D"542" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 700;">SUBTOTAL</td><td class=
+=3D"lds_style_2 lds_taxable_dollar" align=3D"right" width=3D"25" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly; font-size: 10p=
+x; font-weight: 400; line-height: 17px; text-align: right; min-width: 25p=
+x;">T $</td><td class=3D"lds_style_2 " align=3D"right" width=3D"65" style=
+=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-size: =
+10px; font-weight: 700;">1014.87</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr><tr><td class=3D"padding" height=3D"10" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;"></td></tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_section_title " =
+align=3D"left" width=3D"632" style=3D"border-collapse: collapse; mso-line=
+-height-rule: exactly; font-size: 14px; font-weight: 600;">CHARGES ADDED =
+DURING RENTAL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_1 " align=3D=
+"left" width=3D"144" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 400;">LDW</td><td class=3D"l=
+ds_style_1 " align=3D"left" width=3D"147" style=3D"border-collapse: colla=
+pse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400;">A=
+CCEPTED @ $</td><td class=3D"lds_style_1 " align=3D"right" width=3D"85" s=
+tyle=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-si=
+ze: 10px; font-weight: 400; padding-right: 10px;">10.99</td><td class=3D"=
+lds_style_1 " align=3D"left" width=3D"166" style=3D"border-collapse: coll=
+apse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400;">=
+DAY</td><td class=3D"lds_style_1 lds_taxable_dollar" align=3D"right" widt=
+h=3D"25" style=3D"border-collapse: collapse; mso-line-height-rule: exactl=
+y; font-size: 10px; font-weight: 400; line-height: 17px; text-align: righ=
+t; min-width: 25px;">T $</td><td class=3D"lds_style_1 " align=3D"right" w=
+idth=3D"65" style=3D"border-collapse: collapse; mso-line-height-rule: exa=
+ctly; font-size: 10px; font-weight: 400;">263.76</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_1 " align=3D=
+"left" width=3D"144" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 400;">LIS</td><td class=3D"l=
+ds_style_1 " align=3D"left" width=3D"488" style=3D"border-collapse: colla=
+pse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400;">D=
+ECLINED</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_1 " align=3D=
+"left" width=3D"144" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 400;">PAI, PEC</td><td class=
+=3D"lds_style_1 " align=3D"left" width=3D"488" style=3D"border-collapse: =
+collapse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 40=
+0;">DECLINED</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_1 " align=3D=
+"left" width=3D"144" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 400;">PREM RD SVC</td><td cl=
+ass=3D"lds_style_1 " align=3D"left" width=3D"147" style=3D"border-collaps=
+e: collapse; mso-line-height-rule: exactly; font-size: 10px; font-weight:=
+ 400;">ACCEPTED @ $</td><td class=3D"lds_style_1 " align=3D"right" width=3D=
+"85" style=3D"border-collapse: collapse; mso-line-height-rule: exactly; f=
+ont-size: 10px; font-weight: 400; padding-right: 10px;">1.01</td><td clas=
+s=3D"lds_style_1 " align=3D"left" width=3D"166" style=3D"border-collapse:=
+ collapse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 4=
+00;">DAY</td><td class=3D"lds_style_1 lds_taxable_dollar" align=3D"right"=
+ width=3D"25" style=3D"border-collapse: collapse; mso-line-height-rule: e=
+xactly; font-size: 10px; font-weight: 400; line-height: 17px; text-align:=
+ right; min-width: 25px;">T $</td><td class=3D"lds_style_1 " align=3D"rig=
+ht" width=3D"65" style=3D"border-collapse: collapse; mso-line-height-rule=
+: exactly; font-size: 10px; font-weight: 400;">24.24</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_1 " align=3D=
+"left" width=3D"632" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 400;">* ADDITIONAL CHARGES</=
+td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr><tr><td class=3D"padding" height=3D"10" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;"></td></tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_section_title " =
+align=3D"left" width=3D"632" style=3D"border-collapse: collapse; mso-line=
+-height-rule: exactly; font-size: 14px; font-weight: 600;">SERVICE CHARGE=
+S/TAXES</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_1 " align=3D=
+"left" width=3D"542" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 400;">VEHICLE LICENSE COST R=
+ECOVERY</td><td class=3D"lds_style_1 lds_taxable_dollar" align=3D"right" =
+width=3D"25" style=3D"border-collapse: collapse; mso-line-height-rule: ex=
+actly; font-size: 10px; font-weight: 400; line-height: 17px; text-align: =
+right; min-width: 25px;">T $</td><td class=3D"lds_style_1 " align=3D"righ=
+t" width=3D"65" style=3D"border-collapse: collapse; mso-line-height-rule:=
+ exactly; font-size: 10px; font-weight: 400;">12.24</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_1 " align=3D=
+"left" width=3D"150" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 400;">TAX</td><td class=3D"l=
+ds_style_1 " align=3D"left" width=3D"171" style=3D"border-collapse: colla=
+pse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400;">1=
+7.000%</td><td class=3D"lds_style_1 " align=3D"right" width=3D"114" style=
+=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-size: =
+10px; font-weight: 400;">ON TAXABLE TTL OF $</td><td class=3D"lds_style_1=
+ " align=3D"right" width=3D"107" style=3D"border-collapse: collapse; mso-=
+line-height-rule: exactly; font-size: 10px; font-weight: 400; padding-rig=
+ht: 32px;">1315.11</td><td class=3D"lds_style_1 lds_taxable_dollar" align=
+=3D"right" width=3D"25" style=3D"border-collapse: collapse; mso-line-heig=
+ht-rule: exactly; font-size: 10px; font-weight: 400; line-height: 17px; t=
+ext-align: right; min-width: 25px;">$</td><td class=3D"lds_style_1 " alig=
+n=3D"right" width=3D"65" style=3D"border-collapse: collapse; mso-line-hei=
+ght-rule: exactly; font-size: 10px; font-weight: 400;">223.57</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr><tr><td class=3D"padding" height=3D"10" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;"></td></tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_section_title " =
+align=3D"left" width=3D"542" style=3D"border-collapse: collapse; mso-line=
+-height-rule: exactly; font-size: 14px; font-weight: 600;">TOTAL AMOUNT D=
+UE</td><td class=3D"lds_section_title lds_taxable_dollar" align=3D"right"=
+ width=3D"25" style=3D"border-collapse: collapse; mso-line-height-rule: e=
+xactly; font-size: 10px; font-weight: 400; line-height: 17px; text-align:=
+ right; min-width: 25px;">$</td><td class=3D"lds_section_title " align=3D=
+"right" width=3D"65" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 14px; font-weight: 600;">1538.68</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_2 " align=3D=
+"left" width=3D"272" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 10px; font-weight: 700;">CHARGED ON HERTZ CARD<=
+/td><td class=3D"lds_style_2 " align=3D"left" width=3D"360" style=3D"bord=
+er-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; fo=
+nt-weight: 700;">XXXXXXXX9990</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_4 " align=3D=
+"left" width=3D"632" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 12px; font-weight: 600;">FOR EXPLANATION OF THE=
+ ABOVE CHARGES,</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_4 " align=3D=
+"left" width=3D"632" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 12px; font-weight: 600;">PLEASE ASK A REPRESENT=
+ATIVE OR GO TO</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class=3D"content_row" width=3D"100%" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly;">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bo=
+rder=3D"0" width=3D"100%" align=3D"right" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tbody>
+                                    <tr><td class=3D"lds_style_4 " align=3D=
+"left" width=3D"632" style=3D"border-collapse: collapse; mso-line-height-=
+rule: exactly; font-size: 12px; font-weight: 600;">WWW.HERTZ.COM/CHARGEEX=
+PLAINED</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"632" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" width=3D"632" style=3D"border-collapse: collap=
+se; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; pad=
+ding-right: 10px;">VEHICLE:</td><td class=3D"lds_style_1 " align=3D"right=
+" style=3D"border-collapse: collapse; mso-line-height-rule: exactly; font=
+-size: 10px; font-weight: 400; white-space: nowrap;">01494</td><td class=3D=
+"lds_style_1 lds_unit_slash" align=3D"right" style=3D"border-collapse: co=
+llapse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400;=
+ white-space: nowrap;">/</td><td class=3D"lds_style_1 " align=3D"right" s=
+tyle=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-si=
+ze: 10px; font-weight: 400; white-space: nowrap;">3873130</td><td class=3D=
+"lds_style_1 " align=3D"right" style=3D"border-collapse: collapse; mso-li=
+ne-height-rule: exactly; font-size: 10px; font-weight: 400; white-space: =
+nowrap;">24</td><td class=3D"lds_style_1 " align=3D"right" style=3D"borde=
+r-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; fon=
+t-weight: 400; white-space: nowrap;">TNCNIS SNT FWDN</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"632" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" width=3D"632" style=3D"border-collapse: collap=
+se; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; pad=
+ding-right: 10px;">LICENSE:</td><td class=3D"lds_style_1 " align=3D"right=
+" style=3D"border-collapse: collapse; mso-line-height-rule: exactly; font=
+-size: 10px; font-weight: 400; white-space: nowrap;">TN</td><td class=3D"=
+lds_style_1 " align=3D"right" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly; font-size: 10px; font-weight: 400; white-space: n=
+owrap;">757BMYJ</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"632" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" width=3D"632" style=3D"border-collapse: collap=
+se; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; pad=
+ding-right: 10px;">FUEL:</td><td class=3D"lds_style_1 " align=3D"right" s=
+tyle=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-si=
+ze: 10px; font-weight: 400; white-space: nowrap;">50</td><td class=3D"lds=
+_style_1 " align=3D"right" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly; font-size: 10px; font-weight: 400; white-space: nowr=
+ap;">% OUT</td><td class=3D"lds_style_1 " align=3D"right" style=3D"border=
+-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; font=
+-weight: 400; white-space: nowrap;">50</td><td class=3D"lds_style_1 " ali=
+gn=3D"right" style=3D"border-collapse: collapse; mso-line-height-rule: ex=
+actly; font-size: 10px; font-weight: 400; white-space: nowrap;">% IN</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"316" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly; font-size: 10px; font-weight: 400; padding-right: 10=
+px; white-space: nowrap;">MILEAGE IN:</td><td class=3D"lds_style_1 " alig=
+n=3D"left" style=3D"border-collapse: collapse; mso-line-height-rule: exac=
+tly; font-size: 10px; font-weight: 400; white-space: nowrap;">78538</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                <td width=3D"316" class=3D"lds_merged_cel=
+ls  sub_row_2" align=3D"right" style=3D"border-collapse: collapse; mso-li=
+ne-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"right" style=3D"border-collapse: collapse; mso-line-=
+height-rule: exactly; font-size: 10px; font-weight: 400; padding-right: 1=
+0px; white-space: nowrap;">TR-X MILES:</td><td class=3D"lds_empty" width=3D=
+"65" style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">=
+</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"316" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly; font-size: 10px; font-weight: 400; padding-right: 10=
+px; white-space: nowrap;">MILEAGE OUT:</td><td class=3D"lds_style_1 " ali=
+gn=3D"left" style=3D"border-collapse: collapse; mso-line-height-rule: exa=
+ctly; font-size: 10px; font-weight: 400; white-space: nowrap;">75429</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                <td width=3D"316" class=3D"lds_merged_cel=
+ls  sub_row_2" align=3D"right" style=3D"border-collapse: collapse; mso-li=
+ne-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"right" style=3D"border-collapse: collapse; mso-line-=
+height-rule: exactly; font-size: 10px; font-weight: 400; padding-right: 1=
+0px; white-space: nowrap;">MILES ALLOWED:</td><td class=3D"lds_empty" wid=
+th=3D"65" style=3D"border-collapse: collapse; mso-line-height-rule: exact=
+ly;"></td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"316" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly; font-size: 10px; font-weight: 400; padding-right: 10=
+px; white-space: nowrap;">MILES DRIVEN:</td><td class=3D"lds_style_1 " al=
+ign=3D"left" style=3D"border-collapse: collapse; mso-line-height-rule: ex=
+actly; font-size: 10px; font-weight: 400; white-space: nowrap;">3109</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                <td width=3D"316" class=3D"lds_merged_cel=
+ls  sub_row_2" align=3D"right" style=3D"border-collapse: collapse; mso-li=
+ne-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"right" style=3D"border-collapse: collapse; mso-line-=
+height-rule: exactly; font-size: 10px; font-weight: 400; padding-right: 1=
+0px; white-space: nowrap;">MILES CHARGED:</td><td class=3D"lds_empty" wid=
+th=3D"65" style=3D"border-collapse: collapse; mso-line-height-rule: exact=
+ly;"></td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"632" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" width=3D"632" style=3D"border-collapse: collap=
+se; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; pad=
+ding-right: 10px;">CDP:</td><td class=3D"lds_style_1 " align=3D"right" st=
+yle=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-siz=
+e: 10px; font-weight: 400; white-space: nowrap;">2091047</td><td class=3D=
+"lds_style_1 " align=3D"right" style=3D"border-collapse: collapse; mso-li=
+ne-height-rule: exactly; font-size: 10px; font-weight: 400; white-space: =
+nowrap;">-</td><td class=3D"lds_style_1 " align=3D"right" style=3D"border=
+-collapse: collapse; mso-line-height-rule: exactly; font-size: 10px; font=
+-weight: 400; white-space: nowrap;">LYFT DRIVER PROGRAM</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"632" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" width=3D"632" style=3D"border-collapse: collap=
+se; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; pad=
+ding-right: 10px;">RENTED:</td><td class=3D"lds_style_1 " align=3D"right"=
+ style=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-=
+size: 10px; font-weight: 400; white-space: nowrap;">INDIANAPOLIS LYFT</td=
+>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"632" class=3D"lds_merged_cel=
+ls  sub_row_1 lds_time_row" align=3D"left" style=3D"border-collapse: coll=
+apse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" width=3D"632" style=3D"border-collapse: collap=
+se; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; pad=
+ding-right: 10px;">RENTAL:</td><td class=3D"lds_style_1 " align=3D"right"=
+ style=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-=
+size: 10px; font-weight: 400; white-space: nowrap;">05</td><td class=3D"l=
+ds_style_1 lds_unit_slash" align=3D"right" style=3D"border-collapse: coll=
+apse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; w=
+hite-space: nowrap;">/</td><td class=3D"lds_style_1 " align=3D"right" sty=
+le=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-size=
+: 10px; font-weight: 400; white-space: nowrap;">19</td><td class=3D"lds_s=
+tyle_1 lds_unit_slash" align=3D"right" style=3D"border-collapse: collapse=
+; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; white=
+-space: nowrap;">/</td><td class=3D"lds_style_1 " align=3D"right" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly; font-size: 10p=
+x; font-weight: 400; white-space: nowrap;">26</td><td class=3D"lds_style_=
+1 " align=3D"right" style=3D"border-collapse: collapse; mso-line-height-r=
+ule: exactly; font-size: 10px; font-weight: 400; white-space: nowrap;">15=
+</td><td class=3D"lds_style_1 " align=3D"right" style=3D"border-collapse:=
+ collapse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 4=
+00; white-space: nowrap;">:</td><td class=3D"lds_style_1 " align=3D"right=
+" style=3D"border-collapse: collapse; mso-line-height-rule: exactly; font=
+-size: 10px; font-weight: 400; white-space: nowrap;">49</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"632" class=3D"lds_merged_cel=
+ls  sub_row_1 lds_time_row" align=3D"left" style=3D"border-collapse: coll=
+apse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" width=3D"632" style=3D"border-collapse: collap=
+se; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; pad=
+ding-right: 10px;">RETURN:</td><td class=3D"lds_style_1 " align=3D"right"=
+ style=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-=
+size: 10px; font-weight: 400; white-space: nowrap;">06</td><td class=3D"l=
+ds_style_1 lds_unit_slash" align=3D"right" style=3D"border-collapse: coll=
+apse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; w=
+hite-space: nowrap;">/</td><td class=3D"lds_style_1 " align=3D"right" sty=
+le=3D"border-collapse: collapse; mso-line-height-rule: exactly; font-size=
+: 10px; font-weight: 400; white-space: nowrap;">12</td><td class=3D"lds_s=
+tyle_1 lds_unit_slash" align=3D"right" style=3D"border-collapse: collapse=
+; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; white=
+-space: nowrap;">/</td><td class=3D"lds_style_1 " align=3D"right" style=3D=
+"border-collapse: collapse; mso-line-height-rule: exactly; font-size: 10p=
+x; font-weight: 400; white-space: nowrap;">26</td><td class=3D"lds_style_=
+1 " align=3D"right" style=3D"border-collapse: collapse; mso-line-height-r=
+ule: exactly; font-size: 10px; font-weight: 400; white-space: nowrap;">10=
+</td><td class=3D"lds_style_1 " align=3D"right" style=3D"border-collapse:=
+ collapse; mso-line-height-rule: exactly; font-size: 10px; font-weight: 4=
+00; white-space: nowrap;">:</td><td class=3D"lds_style_1 " align=3D"right=
+" style=3D"border-collapse: collapse; mso-line-height-rule: exactly; font=
+-size: 10px; font-weight: 400; white-space: nowrap;">45</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"632" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" width=3D"632" style=3D"border-collapse: collap=
+se; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; pad=
+ding-right: 10px;">RETURNED:</td><td class=3D"lds_style_1 " align=3D"righ=
+t" style=3D"border-collapse: collapse; mso-line-height-rule: exactly; fon=
+t-size: 10px; font-weight: 400; white-space: nowrap;">INDIANAPOLIS LYFT</=
+td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"632" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" width=3D"632" style=3D"border-collapse: collap=
+se; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; pad=
+ding-right: 10px;">COMPLETED BY:</td><td class=3D"lds_style_1 " align=3D"=
+right" style=3D"border-collapse: collapse; mso-line-height-rule: exactly;=
+ font-size: 10px; font-weight: 400; white-space: nowrap;">0316</td><td cl=
+ass=3D"lds_style_1 lds_unit_slash" align=3D"right" style=3D"border-collap=
+se: collapse; mso-line-height-rule: exactly; font-size: 10px; font-weight=
+: 400; white-space: nowrap;">/</td><td class=3D"lds_style_1 " align=3D"ri=
+ght" style=3D"border-collapse: collapse; mso-line-height-rule: exactly; f=
+ont-size: 10px; font-weight: 400; white-space: nowrap;">INCAS37</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"316" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly; font-size: 10px; font-weight: 400; padding-right: 10=
+px; white-space: nowrap;">PLAN IN:</td><td class=3D"lds_style_1 " align=3D=
+"left" style=3D"border-collapse: collapse; mso-line-height-rule: exactly;=
+ font-size: 10px; font-weight: 400; white-space: nowrap;">CRL</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                <td width=3D"316" class=3D"lds_merged_cel=
+ls  sub_row_2" align=3D"right" style=3D"border-collapse: collapse; mso-li=
+ne-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"right" style=3D"border-collapse: collapse; mso-line-=
+height-rule: exactly; font-size: 10px; font-weight: 400; padding-right: 1=
+0px; white-space: nowrap;">RATE CLASS:</td><td class=3D"lds_style_1 " ali=
+gn=3D"right" style=3D"border-collapse: collapse; mso-line-height-rule: ex=
+actly; font-size: 10px; font-weight: 400; white-space: nowrap;">M6</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class=3D"content_row" width=3D"100%" =
+style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px;">
+                                        <tbody>
+                                            <tr>
+                                <td width=3D"632" class=3D"lds_merged_cel=
+ls  sub_row_1" align=3D"left" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                                    <table cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0p=
+x; mso-table-rspace: 0px;">
+                                    <tbody>
+                                        <tr><td class=3D"lds_style_1 lds_=
+first_cell" align=3D"left" width=3D"632" style=3D"border-collapse: collap=
+se; mso-line-height-rule: exactly; font-size: 10px; font-weight: 400; pad=
+ding-right: 10px;">PLAN OUT:</td><td class=3D"lds_style_1 " align=3D"righ=
+t" style=3D"border-collapse: collapse; mso-line-height-rule: exactly; fon=
+t-size: 10px; font-weight: 400; white-space: nowrap;">CRL</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </td>
+                           =20
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr><tr><td align=3D"center" width=3D"100%" clas=
+s=3D"lds_style_3" style=3D"border-collapse: collapse; mso-line-height-rul=
+e: exactly; font-size: 12px; font-weight: 500;">www.Hertz.com</td></tr></=
+tbody></table></td>
+				</tr>
+			</tbody>
+		</table>
+		<!--END RECEIPT HTML--><!--20 Spacer-->
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_ful=
+l_wrap" width=3D"100%">
+			<tbody>
+				<tr>
+					<td class=3D"em_h5" height=3D"20" style=3D"height:20px; font-size:0p=
+x; line-height:0px;">
+						<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://www.transact=
+iontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;" width=3D"1=
+" /></td>
+				</tr>
+			</tbody>
+		</table>
+		<!--END 20 Spacer-->
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_ful=
+l_wrap" width=3D"100%">
+			<tbody>
+				<tr>
+					<td align=3D"center" valign=3D"top">
+						<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"em_main_table" style=3D"width:632px; table-layout:fixed;" wi=
+dth=3D"632">
+							<!-- Title section -->
+							<tbody>
+								<!-- //Content section -->
+								<tr>
+									<td align=3D"center" valign=3D"top">
+										<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" class=3D"em_wrapper" style=3D"width:600px;" width=3D"600">
+											<tbody>
+												<tr>
+													<td height=3D"20" style=3D"height:20px; font-size:0px; line-=
+height:0px;">
+														<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://www.=
+transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;" wi=
+dth=3D"1" /></td>
+												</tr>
+												<tr>
+													<td align=3D"center" valign=3D"top">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"width:150px;" width=3D"150">
+															<tbody>
+																<tr>
+																	<td bgcolor=3D"#ffd100" height=3D"2" style=3D"height:2px=
+; font-size:0px; line-height:0px;">
+																		<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://=
+www.transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;=
+" width=3D"1" /></td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height=3D"20" style=3D"height:20px; font-size:0px; line-=
+height:0px;">
+														<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://www.=
+transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;" wi=
+dth=3D"1" /></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_ful=
+l_wrap" width=3D"100%">
+			<tbody>
+				<tr>
+					<td align=3D"center" valign=3D"top">
+						<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"em_main_table" style=3D"width:632px; table-layout:fixed;" wi=
+dth=3D"632">
+							<!-- Title section -->
+							<tbody>
+								<!-- Bottom Banner section -->
+								<tr>
+									<td align=3D"center" valign=3D"top">
+										<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" class=3D"em_wrapper" style=3D"width:600px;" width=3D"600">
+											<tbody>
+												<tr>
+													<td align=3D"center" valign=3D"top">
+														<a href=3D"https://hertzera.bormc.com/r.html?uid=3D6.3t.7fd=
+6h.3ky.usb2m6vfln" style=3D"text-decoration:none;"><img alt=3D"Hertz Car =
+Sales" border=3D"0" class=3D"em_full_img" height=3D"280" src=3D"https://w=
+ww.transactiontree.com/framework/hertz/2020/img/hertz-sales.jpg" style=3D=
+"display:block; max-width:600px;" width=3D"600" /></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<!-- //Bottom Banner section -->
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- =3D=3D //Body Section =3D=3D --><!-- =3D=3D Footer Section =3D=3D =
+-->
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"em_ful=
+l_wrap" width=3D"100%">
+			<tbody>
+				<tr>
+					<td align=3D"center" valign=3D"top">
+						<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"em_main_table" style=3D"width:632px; table-layout:fixed;" wi=
+dth=3D"632">
+							<tbody>
+								<tr>
+									<td align=3D"center" valign=3D"top">
+										<table align=3D"center" bgcolor=3D"#fafafa" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" class=3D"em_wrapper" style=3D"width:600px; =
+background-color: #fafafa" width=3D"600">
+											<tbody>
+												<tr>
+													<td class=3D"em_hide" style=3D"width:20px;" width=3D"20">
+													</td>
+													<td align=3D"center" valign=3D"top">
+														<table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%">
+															<tbody>
+																<tr>
+																	<td height=3D"20" style=3D"height:20px; font-size:0px; l=
+ine-height:0px;">
+																		<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://=
+www.transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;=
+" width=3D"1" /></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" class=3D"em_aside15" valign=3D"top"=
+>
+																		<table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0">
+																			<tbody>
+																				<tr>
+																					<td align=3D"center" valign=3D"top">
+																						<a href=3D"https://hertzera.bormc.com/r.html?uid=3D=
+6.3t.7fd6h.3kr.i6h5s9g3sm" style=3D"text-decoration:none;"><img alt=3D"fb=
+" border=3D"0" height=3D"40" src=3D"https://image.emails.hertz.com/lib/fe=
+8b13727063027b76/m/1/1b39e279-9e35-4ac2-8090-d2224e099b60.png" style=3D"d=
+isplay:block; max-width:40px; font-family:Arial, Helvetica, sans-serif; f=
+ont-size:12px; line-height:14px; color:#000000;" width=3D"40" /></a></td>
+																					<td style=3D"width:9px; font-size:0px; line-height:0=
+px;" width=3D"9">
+																					</td>
+																					<td align=3D"center" valign=3D"top">
+																						<a href=3D"https://hertzera.bormc.com/r.html?uid=3D=
+6.3t.7fd6h.3kq.86sgu379b2" style=3D"text-decoration:none;"><img alt=3D"tw=
+" border=3D"0" height=3D"40" src=3D"https://image.emails.hertz.com/lib/fe=
+8b13727063027b76/m/1/fc9b14a7-c87b-468b-903f-a746259b1fe0.png" style=3D"d=
+isplay:block; max-width:40px; font-family:Arial, Helvetica, sans-serif; f=
+ont-size:12px; line-height:14px; color:#000000;" width=3D"40" /></a></td>
+																					<td style=3D"width:9px; font-size:0px; line-height:0=
+px;" width=3D"9">
+																					</td>
+																					<td align=3D"center" valign=3D"top">
+																						<a href=3D"https://hertzera.bormc.com/r.html?uid=3D=
+6.3t.7fd6h.3kz.l5npqtfj6b" style=3D"text-decoration:none;"><img alt=3D"in=
+sta" border=3D"0" height=3D"40" src=3D"https://image.emails.hertz.com/lib=
+/fe8b13727063027b76/m/1/bcec4695-a9d5-4afd-9828-a0aa93cd2541.png" style=3D=
+"display:block; max-width:40px; font-family:Arial, Helvetica, sans-serif;=
+ font-size:12px; line-height:14px; color:#000000;" width=3D"40" /></a></t=
+d>
+																					<td style=3D"width:9px; font-size:0px; line-height:0=
+px;" width=3D"9">
+																					</td>
+																					<td align=3D"center" valign=3D"top">
+																						<a href=3D"https://hertzera.bormc.com/r.html?uid=3D=
+6.3t.7fd6h.3kh.48dmpqn4kp" style=3D"text-decoration:none;"><img alt=3D"yt=
+" border=3D"0" height=3D"40" src=3D"https://image.emails.hertz.com/lib/fe=
+8b13727063027b76/m/1/77017d7d-deaa-43b6-8e90-543b0cce8c1b.png" style=3D"d=
+isplay:block; max-width:40px; font-family:Arial, Helvetica, sans-serif; f=
+ont-size:12px; line-height:14px; color:#000000;" width=3D"40" /></a></td>
+																					<td style=3D"width:9px; font-size:0px; line-height:0=
+px;" width=3D"9">
+																					</td>
+																					<td align=3D"center" valign=3D"top">
+																						<a href=3D"https://hertzera.bormc.com/r.html?uid=3D=
+6.3t.7fd6h.3kt.smk403x58h" style=3D"text-decoration:none;"><img alt=3D"bl=
+og" border=3D"0" height=3D"40" src=3D"https://image.emails.hertz.com/lib/=
+fe8b13727063027b76/m/1/38dd2845-7cf3-4a54-bb5a-0d56f91d733e.png" style=3D=
+"display:block; max-width:40px; font-family:Arial, Helvetica, sans-serif;=
+ font-size:12px; line-height:14px; color:#000000;" width=3D"40" /></a></t=
+d>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td height=3D"15" style=3D"height:15px; font-size:0px; l=
+ine-height:0px;">
+																		<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://=
+www.transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;=
+" width=3D"1" /></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" class=3D"em_defaultlink em_aside15"=
+ style=3D"font-family:'Ride', Arial, sans-serif; font-size:12px; line-hei=
+ght:16px; color:#000000;" valign=3D"top">
+																		<a href=3D"https://hertzera.bormc.com/r.html?uid=3D6.3t=
+=2E7fd6h.3kx.t91g51h11a" style=3D"text-decoration:none; color:#000000;">R=
+eservations</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href=3D"https://hertzera.bor=
+mc.com/r.html?uid=3D6.3t.7fd6h.3ku.piikz2u80h" style=3D"text-decoration:n=
+one; color:#000000;">Contact Us</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href=3D"=
+https://hertzera.bormc.com/r.html?uid=3D6.3t.7fd6h.3kv.0hmfe3rv4n" style=3D=
+"text-decoration:none; color:#000000;">FAQs</a> &nbsp;&nbsp;|&nbsp;&nbsp;=
+ <a href=3D"https://hertzera.bormc.com/r.html?uid=3D6.3t.7fd6h.3kw.fn7jcz=
+azla" style=3D"text-decoration:none; color:#000000;">Privacy Policy</a></=
+td>
+																</tr>
+																<tr>
+																	<td height=3D"16" style=3D"height:16px; font-size:0px; l=
+ine-height:0px;">
+																		<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://=
+www.transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;=
+" width=3D"1" /></td>
+																</tr>
+																<tr>
+																	<td align=3D"center" class=3D"em_defaultlink em_aside15"=
+ style=3D"font-family:'Ride', Arial, sans-serif; font-size:11px; line-hei=
+ght:13px; color:#8f8d8e; padding:0px 20px;" valign=3D"top">
+																		This electronic-mail message contains confidential info=
+rmation intended only for the use of the individual or entity named. If t=
+he reader of this message is not the intended recipient, the reader is he=
+reby notified that any dissemination, distribution, copying or other use =
+of this message is strictly prohibited and is hereby instructed to return=
+ or destroy this copy of this&nbsp;message.<br />
+																		<br />
+																		&reg; Reg. U.S. Pat. Off. &copy;2022 The Hertz Corporat=
+ion. All&nbsp;rights&nbsp;reserved.<br />
+																		<br />
+																		5601 Northwest Expressway, Oklahoma City, OK 73132&nbsp=
+;U.S.A.</td>
+																</tr>
+																<tr>
+																	<td height=3D"20" style=3D"height:20px; font-size:0px; l=
+ine-height:0px;">
+																		<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://=
+www.transactiontree.com/hz/era/img/hz/spacer.gif" style=3D"display:block;=
+" width=3D"1" /></td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+													<td class=3D"em_hide" style=3D"width:20px;" width=3D"20">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class=3D"em_hide" style=3D"line-height:1px;min-width:600px;b=
+ackground-color:#fafafa;">
+										<img alt=3D"" border=3D"0" height=3D"1" src=3D"https://www.tran=
+sactiontree.com/hz/era/img/hz/spacer.gif" style=3D"max-height:1px; min-he=
+ight:1px; display:block; width:600px; min-width:600px;" width=3D"600" /><=
+/td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- =3D=3D //Footer Section =3D=3D --><img src=3D"https://www.google-a=
+nalytics.com/collect?v=3D1&tid=3DUA-74251559-4&cid=3D6.3t.7fd6h.0.loi26b1=
+35h&t=3Devent&ec=3Demail&ea=3Dopen&el=3DHertz&cs=3DHertz&cm=3Demail&cn=3D=
+Hertz-return&cd1=3D12474233&cd2=3DHertz&cd3=3D&cd4=3Dreturn&cd5=3D5822937=
+14&cm1=3D1" /></body>
+</html>
+---==AGNITASOUTER164240059B29000089==--
+

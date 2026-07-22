@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "29753b6b690aa747",
+        "id": "eccae8f9bab09592",
         "type": "tabs",
         "children": [
           {
-            "id": "cf35c9f9ca9c30a3",
+            "id": "f25e4c9741378845",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -176,7 +176,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "cf35c9f9ca9c30a3",
+  "active": "f25e4c9741378845",
   "lastOpenFiles": [
     "title_01_truth/title_01_truth.md",
     "title_02_self/article_03_sacred_interior.md",

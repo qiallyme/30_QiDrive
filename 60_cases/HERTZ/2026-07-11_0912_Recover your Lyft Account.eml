@@ -1,0 +1,831 @@
+Delivered-To: crice4485@gmail.com
+Received: by 2002:a05:6214:3f8c:b0:8db:e762:4bd3 with SMTP id ow12csp354127qvb;
+        Sat, 11 Jul 2026 10:12:45 -0700 (PDT)
+X-Received: by 2002:a05:6a21:a341:b0:3c0:9c18:d5a8 with SMTP id adf61e73a8af0-3c111079720mr3627628637.69.1783789964920;
+        Sat, 11 Jul 2026 10:12:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1783789964; cv=none;
+        d=google.com; s=arc-20260327;
+        b=JTfAw78Boxw9dgWEp2fIha+L0fMq1nxl1kSWlfgf1IeaY5VYkTni7D6z4HP60Eb8VH
+         qPOr6iRuzIAh5naRhSvn9roctwQdi9ZR6TCxwQ8WvD9o6QNdrAEjXnyb8Gxj67af3Ez6
+         WT91K0tw/Qk/JOnwKekFavIcX9FWU7LOBu/3HXRFacynKFdBMZQpy9rCO+71Zebs23+K
+         YgnfNcCEK+4YFEYpHA6n7dkf/7sNkJRc/9IpKFvZH5QQB+mTI6xqM/kDFgDA4DFioFGW
+         bI3Sr/i3zRmAgeGY/7TOjuW+cMJGUQXYPXnK+ObOnflbVVMbrD4tEyuEvheZawfxrowB
+         7aAQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=content-transfer-encoding:message-id:to:from:subject:mime-version
+         :date:sender:dkim-signature:dkim-signature;
+        bh=Q9e1wxR8Qrsnk/Zc3+apwimeGgEsd9K8oowE2tSgOlo=;
+        fh=NTbmbZukplYm3Ogh6XdTElFL10YUVxJH/OeDWq4sHNQ=;
+        b=WgYHaxWzJPtfS79n9LjsgNXzeU6gk70JW01vjOj66WQxaZyEX6EnaiPLKAFDz7wHqy
+         7gx3xDR2p4FaiOLUHDAWgMFyn0LvAqXnxKlftK9nIoNkAXeLn53L7vaN+ajyTE9v/06l
+         ICuI5fvo02rVpTlXYbvkoiIz//z4QXn5ioC0gPtgfXI345zWMr93SlOgqLFeE4/2Luol
+         c6nEaz6Jc3hpCydZq6ZyRHY/aSrbjgXXY5cEalEcc9OeuQV+HAP4K3Lnex+TkOVEb06q
+         ZYjMgagJr9+M/V4cgKrevP0+4XdFYqO/EcHIZmHRk2ZvsHmg0ct4sCA0VyQ6KsSmXuYu
+         9a8Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@lyftmail.com header.s=mg header.b=AGVY4Typ;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=LFfaNEcl;
+       spf=pass (google.com: domain of bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com designates 161.38.201.151 as permitted sender) smtp.mailfrom="bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=lyftmail.com
+Return-Path: <bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com>
+Received: from v5151.v5075e2e3.usw1.send.mailgun.net (v5151.v5075e2e3.usw1.send.mailgun.net. [161.38.201.151])
+        by mx.google.com with UTF8SMTPS id 41be03b00d2f7-ca5b46cb9e3si19907505a12.327.2026.07.11.10.12.44
+        for <crice4485@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 11 Jul 2026 10:12:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com designates 161.38.201.151 as permitted sender) client-ip=161.38.201.151;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@lyftmail.com header.s=mg header.b=AGVY4Typ;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=LFfaNEcl;
+       spf=pass (google.com: domain of bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com designates 161.38.201.151 as permitted sender) smtp.mailfrom="bounce+67ddbe.a9d1e-crice4485=gmail.com@lyftmail.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=lyftmail.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=lyftmail.com; q=dns/txt; s=mg; t=1783789964; x=1783797164;
+ h=Content-Transfer-Encoding: Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=Q9e1wxR8Qrsnk/Zc3+apwimeGgEsd9K8oowE2tSgOlo=;
+ b=AGVY4TypaGPU53vC2dS2vm5hExQMIuvzQV354jEDiUWsCfNn+rLyZBbkY7D6SqvqzOFiBeJAIUgbzF53Vapkk5WrYMtTJorKCxzL40x9Hs5ymFnIekTg+S+FrwnQvfbx6y+qrY/VumJnw4eRwIyNmyzQMQGOcns7ZeI3YFTFdR4=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1783789964; x=1783797164;
+ h=Content-Transfer-Encoding: Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=Q9e1wxR8Qrsnk/Zc3+apwimeGgEsd9K8oowE2tSgOlo=;
+ b=LFfaNEcls1yj7TQGA6VNl7FE0e67QrDACh2BtMhAHLZb8bWZMTpE/qS9I4chRFmzw+7MFXy68NxxqX3ozQxNhaImyeto5tnp6nj6iN/5zR/8zw/8UNIUEa2rbbqvIMIFoPwxyLhkfE8MB7gj4HQyZITMPxlR4x7OBF7ZTlgzZW8=
+X-Mailgun-Sid: WyJlOTFiMyIsImNyaWNlNDQ4NUBnbWFpbC5jb20iLCJhOWQxZSJd
+X-Feedback-Id: no-reply@lyftmail.com::5266f7d75a7618418e1e4cef:mailgun
+Received: by cacaad777a5be444a813648bc29c5ff5ef1861fd6965d0c7cb3c8f114b317d83 with HTTP
+ id 6a52798c83c8533d02ac5b06; Sat, 11 Jul 2026 17:12:44 GMT
+X-Mailgun-Sending-Ip: 161.38.201.151
+Sender: no-reply@lyftmail.com
+Date: Sat, 11 Jul 2026 17:12:44 +0000
+Mime-Version: 1.0
+Subject: Recover your Lyft Account
+From: Lyft <no-reply@lyftmail.com>
+To: crice4485@gmail.com
+X-Mailgun-Track: true
+X-Mailgun-Track-Opens: true
+X-Mailgun-Track-Clicks: false
+X-Mailgun-Variables: {"lyft_message_id": "80775eff-5e61-4ff7-85ac-4e64322e6237"}
+Message-Id: <20260711171244.16c6322e1e43ce70@lyftmail.com>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!-- Automatically generated by make_email v1.4.1. Do not edit this file. -=
+->
+<!-- get reference table data here -->
+
+
+
+   =20
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta charset=3D"utf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta name=3D"apple-mobile-web-app-capable" content=3D"yes">
+    <meta content=3D"yes" name=3D"apple-touch-fullscreen">
+    <meta name=3D"apple-mobile-web-app-status-bar-style" content=3D"black">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+    <meta name=3D"format-detection" content=3D"date">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta name=3D"x-apple-disable-message-reformatting" />
+    <title>Lyft</title>
+    <style type=3D"text/css">
+    /*******************FONT STYLING LYFT*********************/
+
+    @import url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro%20UI/L=
+yftProUI-Bold.otf);
+
+    @font-face {
+        font-family: 'LyftProUI-Bold';
+        src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro%20UI/=
+LyftProUI-Bold.otf) format("opentype");
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @import url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro%20UI/L=
+yftProUI-Regular.otf);
+
+    @font-face {
+        font-family: 'LyftProUI-Regular';
+        src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro%20UI/=
+LyftProUI-Regular.otf) format("opentype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @import url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro%20UI/L=
+yftProUI-SemiBold.otf);
+
+    @font-face {
+        font-family: 'LyftProUI-SemiBold';
+        src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro%20UI/=
+LyftProUI-SemiBold.otf) format("opentype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /************************* END FONT STYLING ***************************=
+*********/
+    /* standard resets */
+
+    div,
+    p,
+    a,
+    li,
+    td {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    table td {
+        border-collapse: collapse;
+    }
+
+    .ExternalClass {
+        width: 100%;
+    }
+
+    .ExternalClass * {
+        line-height: 110%
+    }
+
+    img {
+        -ms-interpolation-mode: bicubic;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    /* control text changed to links by phones */
+
+    @media only screen {
+
+        a[href^=3D"tel"],
+        a[href^=3D"sms"] {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    /* Stops automatic email inks in iOS */
+
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+    a[href^=3D"x-apple-data-detectors:"] {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    .footerLinks {
+        text-decoration: none;
+        color: inherit !important;
+        font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Aria=
+l, sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: normal;
+    }
+
+    /********* CTA Style - fixed padding *********/
+
+    .cta-shadow {
+        -webkit-box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        text-decoration: none;
+    }
+
+    /************************* Fixing Auto Styling for Gmail***************=
+******/
+
+    .contact {
+        color: #88888f !important !;
+        text-decoration: none;
+    }
+
+    u+#body a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+    </style>
+    <style type=3D"text/css">
+    /* Yahoo and apple mail reset on desktop */
+    @media screen and (min-width: 600px) {
+
+        .wrapto640px {
+            width: 640px !important;
+        }
+
+        .wrapto600px {
+            width: 600px !important;
+        }
+
+        .wrapto768px {
+            width: 600px !important;
+        }
+
+        .block {
+            width: 300px !important;
+        }
+
+        .block400 {
+            width: 400px !important;
+        }
+
+        .block360 {
+            width: 360px !important;
+        }
+
+        .block350 {
+            width: 350px !important;
+        }
+
+        .block285 {
+            width: 285px !important;
+        }
+
+        .block250 {
+            width: 250px !important;
+        }
+
+        .block200 {
+            width: 200px !important;
+        }
+
+        .block400bottom {
+            width: 400px !important;
+        }
+
+        .block200top {
+            width: 200px !important;
+        }
+
+        .threecolumn {
+            width: 200px !important;
+            height: auto !important;
+        }
+
+        .threecolumn93px {
+            width: 93px !important;
+            height: auto !important;
+        }
+
+        .threecolumn277px {
+            width: 277px !important;
+            height: auto !important;
+        }
+
+        .threecolumn170px {
+            width: 170px !important;
+            height: auto !important;
+        }
+    }
+    </style>
+    <style type=3D"text/css">
+    /* responsive rules */
+    @media screen and (max-device-width: 600px),
+    screen and (max-width: 600px) {
+        .wrapto100pc {
+            width: 100% !important;
+            height: auto !important;
+            max-width: 100% !important;
+            max-height: auto !important;
+        }
+
+        .wrapto95pc {
+            width: 95% !important;
+            height: auto !important;
+            max-width: 95% !important;
+            max-height: auto !important;
+        }
+
+        .wrapto90pc {
+            width: 90% !important;
+            height: auto !important;
+            max-width: 90% !important;
+            max-height: auto !important;
+        }
+
+        .wrapto100pcpt20 {
+            width: 100% !important;
+            height: auto !important;
+            padding-top: 20px !important;
+        }
+
+        .wrapto640px {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .wrapto600px {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .wrapto768px {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .mobheight40 {
+            height: 40px !important;
+        }
+
+        .block {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .block400 {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .block360 {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .block350 {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .block285 {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .block250 {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .block200 {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .flip {
+            width: 100% !important;
+            height: auto !important;
+            display: table !important;
+        }
+
+        .blocktop {
+            width: 100% !important;
+            height: auto !important;
+            display: table-header-group !important;
+        }
+
+        .blockbottom {
+            width: 100% !important;
+            height: auto !important;
+            display: table-footer-group !important;
+        }
+
+        .block200top {
+            width: 100% !important;
+            height: auto !important;
+            display: table-header-group !important;
+        }
+
+        .block400bottom {
+            width: 100% !important;
+            height: auto !important;
+            display: table-footer-group !important;
+        }
+
+        .wrapto55pc {
+            width: 55% !important;
+            height: auto !important;
+        }
+
+        .threecolumn {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .threecolumn93px {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .threecolumn277px {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .threecolumn170px {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .centertext {
+            text-align: center !important;
+        }
+
+        .heightauto {
+            height: auto !important;
+        }
+
+        .h10 {
+            height: 10px !important;
+        }
+
+        .h20 {
+            height: 20px !important;
+        }
+
+        .h30 {
+            height: 30px !important;
+        }
+
+        .w30 {
+            width: 30px !important;
+        }
+
+        .w10 {
+            width: 10px !important;
+        }
+
+        .nomob {
+            display: none !important;
+            width: 0px !important;
+            height: 0px !important;
+        }
+
+        .wrapto100pcpt10 {
+            width: 100% !important;
+            height: auto !important;
+            padding-top: 10px !important;
+        }
+
+        .fontsize15 {
+            font-size: 15px !important;
+            line-height: 20px !important;
+        }
+
+        .fontsize16 {
+            font-size: 16px !important;
+            line-height: 21px !important;
+        }
+
+        .fontsize17 {
+            font-size: 17px !important;
+            line-height: 22px !important;
+        }
+
+        .titlefont {
+            font-size: 24px !important;
+            line-height: 30px !important;
+        }
+
+        .subtitlefont {
+            font-size: 14px !important;
+            line-height: 22px !important;
+        }
+
+        .paddingt20 {
+            padding-top: 20px !important;
+        }
+
+        .paddinglr0 {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .paddinglr30 {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+
+        .paddinglr40 {
+            padding-left: 40px !important;
+            padding-right: 40px !important;
+        }
+
+        .blockswitch {
+            direction: ltr !important;
+            width: 100% !important;
+        }
+
+        .blockswitch2 {
+            display: table-footer-group !important;
+            width: 100% !important;
+        }
+
+        .blockswitch3 {
+            display: table-header-group !important;
+            width: 100% !important;
+        }
+
+        .bump {
+            display: block !important;
+        }
+
+        .showmob {
+            display: block !important;
+            max-height: none !important;
+            font-family: 'raleway-regular', Helvetica, Arial, sans-serif;
+            font-size: 24px;
+            line-height: 30px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            text-align: center;
+            color: #475262;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+    </style>
+    <style type=3D"text/css">
+    @media only screen and (max-width: 385px) {
+        .mobileSpacer {
+            height: 35px;
+        }
+
+        .mobileHeaderSmall {
+            font-size: 18px !important;
+            line-height: 18px !important;
+            padding-right: none;
+        }
+
+        .mobileBodySmall {
+            font-size: 14px !important;
+            padding-right: none;
+        }
+    }
+    </style>
+    <style type=3D"text/css">
+    @media only screen and (max-width: 520px) {
+        .mobileHeader {
+            font-size: 44px !important;
+            line-height: 44px !important;
+        }
+
+        .mobileBody {
+            font-size: 14px !important;
+        }
+
+        .mobilepadRL {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+    }
+    </style>
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+     </o:OfficeDocumentSettings>
+    </xml>
+   <![endif]-->
+    <!--[if mso]>
+<style type=3D"text/css">
+span {font-family: Helvetica, Arial, sans-serif !important;}
+</style>
+<![endif]-->
+    <!-- Fall-back font for Outlook (Arial) -->
+    <!--[if (gte mso 9)|(IE)]>
+
+    <style type=3D"text/css">
+
+    a, body, div, li, p, strong, td, span {font-family: Arial, Helvetica, s=
+ans-serif !important;}
+   =20
+    </style>
+
+  <![endif]-->
+</head>
+
+<body leftmargin=3D"0" topmargin=3D"0" rightmargin=3D"0" width=3D"100%">
+    <!-- Begin Preheader -->
+    <div style=3D"display:none; font-size:1px; color:#ededf0; line-height:1=
+px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <!-- End Preheader -->
+    <!--  Content -->
+    <!--[if (gte mso 9)|(IE)]><table border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" width=3D"600" align=3D"center"><tr><td align=3D"center"><![endif=
+]-->
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" =
+align=3D"center">
+        <tr>
+            <td width=3D"100%" align=3D"center">
+                <table class=3D"wrapto600px" width=3D"600" align=3D"center"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                    <tr>
+                        <td align=3D"center" valign=3D"top">
+                            <!----Banner Image---->
+                            <table class=3D"wrapto600px" width=3D"600" alig=
+n=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                                <tr>
+                                    <td height=3D"25">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                   <td style=3D"-webkit-font-smoothing: ant=
+ialiased; font-family: 'LyftProUI-SemiBold', 'Helvetica Neue', Helvetica, A=
+rial, sans-serif; font-size: 56px; color: #ff00bf; line-height: 64px; paddi=
+ng-left:25px; padding-right:25px; text-align: left;" align=3D"left" class=
+=3D"mobileHeader">
+                      <img height=3D"36" src=3D"https://s3.amazonaws.com/gr=
+owth.lyft.com/lyft_logo_template.png" alt=3D"lyft" border=3D"0" width=3D"51=
+" /></td>
+                                </tr>
+                                <tr>
+                                    <td height=3D"35">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                                    <td style=3D"width:100% !important; fon=
+t-family: 'LyftProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;=
+ font-size: 34px; color: #11111F; font-weight: 600; line-height: 34px; padd=
+ing-bottom: 10px; padding-left:25px; padding-right:25px;" class=3D"mobileHe=
+aderFont">
+
+
+                                     Recover your account</td>
+                    </tr>
+                    <tr>
+                        <td style=3D"-webkit-font-smoothing: antialiased; f=
+ont-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvetica, Arial, sans-s=
+erif; font-size: 16px; color: #11111F; line-height: 22px; padding:0 25px; t=
+ext-align: left;">
+                            <p>=20
+                           To continue recovering your Lyft account, comple=
+te one of the options below.
+                           This email recovery code and link is valid for 3=
+0 min. Once verified, you will be able to choose a new phone number to secu=
+re your Lyft account.
+</br>
+                            </p>
+                          <a href=3D"https://account.lyft.com/dontrecover?c=
+ode=3DAQAAAAGfUkYe-J5DXyevaIWqSJdZ0EgUqu_qXpeCtw8AGmBrcbrwhsn6tM2sFEBYw-XnM=
+1-ak7Nm5cNpJ5VwXG2KT6GaCs3664w%3D" style=3D"text-decoration:underline; colo=
+r:#523BE4;" target=3D"_blank">I did not request to recover an account</a>
+                            <p style=3D"margin:22px;font-size: 16px;">
+<p>
+                            <b>Option 1</b> <br/>
+                            <p> Enter this 6 digit code in your Lyft app </=
+p>
+</p>
+                            </p>
+                            <p style=3D"border:none;
+          border-width:1px; padding-left:9px; padding-top:24px;=20
+          padding-bottom:24px; letter-spacing: 13px; margin-top:22px; margi=
+n-bottom:22px;margin-right:22px;width:500px;font-size: 48px;background-colo=
+r: #E6E6FA;text-align:center;border-radius: 12px;">
+                            769898
+                            </p>
+
+<b>Option 2</b> <br>
+<p> Tap this button on the phone attempting to log in.</p> <br/>
+<table border=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" st=
+yle=3D"background-color:#523BE4; border-radius:30px;min-width:200px; max-wi=
+dth:350px; min-height:50px;">
+                                  <tr>
+                                    <td align=3D"center" style=3D"padding-l=
+eft:20px;padding-right:20px; vertical-align: middle;padding-top:14px; paddi=
+ng-bottom: 14px;width:280px;" valign=3D"middle">
+                                        <center><a href=3D"https://account.=
+lyft.com/recover?code=3DAQAAAAGfUkYe-J5DXyevaIWqSJdZ0EgUqu_qXpeCtw8AGmBrcbr=
+whsn6tM2sFEBYw-XnM1-ak7Nm5cNpJ5VwXG2KT6GaCs3664w%3D&amp;rua=3Dlyft%3Aandroi=
+d%3A16%3A2026.23.3.1781681112" style=3D"-webkit-font-smoothing: antialiased=
+; font-family: 'LyftProUI-Bold', 'Helvetica Neue', Helvetica, Arial, sans-s=
+erif;color:#ffffff;text-decoration: none;font-size:16px;font-weight:bold;li=
+ne-height:22px;text-align:center;">Recover my account</a></center>
+                                    </td>
+                                  </tr>
+                                </table>
+                       </td>
+                    </tr>
+                    <tr>
+                                    <td height=3D"50">&nbsp;</td>
+                                </tr>
+                </table>
+                <table class=3D"wrapto600px" width=3D"600" align=3D"center"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                    <tr>
+                        <td align=3D"center" bgcolor=3D"#FFFFFF" style=3D"p=
+adding:0px" width=3D"100%">
+                            <!--=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3DFOOTER=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D-->
+                            <!-- 80px footer padding, do not remove unless =
+specified by creative -->
+                            <table align=3D"center" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%" style=3D"">
+                                <tr>
+                                    <td align=3D"center" valign=3D"middle" =
+style=3D"padding: 0 25px 0 0;"></td>
+                                    <td width=3D"100%" align=3D"center" val=
+ign=3D"middle" style=3D"border-top: 1px solid #88888f;"></td>
+                                    <td align=3D"center" valign=3D"middle" =
+style=3D"padding: 0 25px 0 0;"></td>
+                                </tr>
+                            </table>
+                            <table align=3D"center" bgcolor=3D"#ffffff" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mobileView" style=3D=
+"" width=3D"100%">
+                                <tr>
+                                    <td>
+                                        <table align=3D"center" bgcolor=3D"=
+#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mobileVi=
+ew" style=3D"" width=3D"100%">
+                                            <tr>
+                                                <td align=3D"left" style=3D=
+"color: #88888f; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif; font-size: 12px; line-height: 18px; font-weight:nor=
+mal; padding: 10px 0px 0px 25px;" valign=3D"middle" width=3D"100%"><a class=
+=3D"footerLinks" href=3D"https://help.lyft.com/hc" style=3D" text-decoratio=
+n: none; color: #88888f" target=3D"_blank"><span class=3D"contact">  Contac=
+t </span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=3D"left" style=3D=
+"color: #88888f; font-family: 'LyftProUI-Regular', 'Helvetica Neue', Helvet=
+ica, Arial, sans-serif; font-size: 12px; line-height:18px; font-weight: nor=
+mal; padding: 10px 0px 0px 25px; text-decoration: none;" valign=3D"middle" =
+class=3D"appleLinks">
+                                                    <span class=3D"appleLin=
+ks">548 Market St., P.O. Box 68514, San Francisco, CA 94104 </span><br> &#1=
+69; 2026 Lyft, Inc.<br>CPUC ID No. TCP0032513 - P</td>
+                                            </tr>
+                                            <!--=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3DCUSTOMER ACTIONS=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D-->
+                                        </table>
+                                        <!--=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3DEND CUSTOMER ACTIONS=3D=3D=3D=3D=3D=3D=3D=3D-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width=3D"auto" style=3D"display: bl=
+ock;" height=3D"40">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <!--=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3DEND FOOTER=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D-->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+<img width=3D"1" height=3D"1" alt=3D"" src=3D"https://email.lyftmail.com/o/=
+eJw8zDFqxTAMANDTfG_-WLIs2YPPEhxFSg0JhaQUevuS5Y9veVsfbQML1kFqltoaU_jqPrS0zL7=
+SqMnzig25gjSnrD6IwuyYkJMAgAASvYGVM6KBUVaT9KJ0_PnPOebx1u8zPFhOu--x2zK3XpNIMf=
+dYjCGSu8RahkYypudhzBKurtdUI6rlRWn_ZL8d_wMAAP__dBw0ag"></body>
+
+</html>

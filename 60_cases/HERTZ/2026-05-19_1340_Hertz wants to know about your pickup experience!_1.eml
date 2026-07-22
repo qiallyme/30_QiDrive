@@ -1,0 +1,508 @@
+Delivered-To: crice4485@gmail.com
+Received: by 2002:a05:6000:1292:b0:43d:78c:b6b0 with SMTP id f18csp2008548wrx;
+        Tue, 19 May 2026 14:40:17 -0700 (PDT)
+X-Received: by 2002:a05:620a:44c4:b0:8ef:c472:cd71 with SMTP id af79cd13be357-911cf9e0d36mr2916573485a.31.1779226816842;
+        Tue, 19 May 2026 14:40:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1779226816; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Qu0SNcDoYLpQbdnmvTot5a6UpK0vOA1ETnGulOf0ZEYcPSj+vkU7owADldVMWBF1yE
+         xARWp5fRXUhqKdL89xrPutVIBEUompgtJ14ni4obnd6XtdMU4HKJ7lkA7xgvgr1Tq4Ni
+         19hTnflkjiplf2seO+825w8/oDzDFV6/Da3+rebjOeJgea6xAwdKZ/q7s3VAYPS4z9+4
+         jtgJXQvUvYGsBPqTIFVrCMOD1RW1Nml73y9aT01FehCEaS3OPyP2esVDICuPf51y4Jzu
+         zXYvENwgflRgmlDrsnBVkMv3LJ81NbP4sTke5qxoSBI0B1xiDA4umo6Jb2a7eGmT7GD/
+         f+Ww==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=list-id:feedback-id:list-unsubscribe-post:list-unsubscribe
+         :mime-version:subject:message-id:to:reply-to:sender:from:date
+         :dkim-signature:dkim-signature;
+        bh=oHZnIgWp6qrPWMuYkw35T6g4/wwtt6ZvfiEzW8riviM=;
+        fh=eZIZaaexJExq3ep8KQOwT+WyRf4q+XhusVI9CEAiKj0=;
+        b=bx3Mk+tsstvuS1dah87y1pbgFM+evjIYiNW6d2SPn2N3TaYlrM+T6gfOQIBbMBFENV
+         Qf1dr8/Lh1dzeWojsK/ic+69a2UVPn6E/tZLo9QfjBzOJpZgXA0pFxSJ5txkC3QhHBxH
+         WSWSnbQR2NUDJq+620huTeTB/bUizWvHJpj3I57alGxH8kFFewjdsnCZSttn16WEahUU
+         Ew/Oo7FCiDWVG05W7WID2h+dl5CjHAp3rscaLFmY1eEPtQdQjVNwD7ClsFg99L7Xl1KO
+         rtkwsyac8TfYo1SfQx8NJNCKuXB8zX7BT5jsHyJCHdX7eaiSZy6cQ8vIbBkOGRsEgRg8
+         +JBA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@iad1.xm-feedback.com header.s=qualtrics2k1 header.b=ENTrhgXp;
+       dkim=pass header.i=@hertzlistens.com header.s=qualtrics header.b=khGBGXlP;
+       spf=pass (google.com: domain of feedback@hertzlistens.com designates 98.97.252.47 as permitted sender) smtp.mailfrom=feedback@hertzlistens.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hertzlistens.com
+Return-Path: <feedback@hertzlistens.com>
+Received: from smtp-252-47.iad1.qemailserver.com (smtp-252-47.iad1.qemailserver.com. [98.97.252.47])
+        by mx.google.com with ESMTPS id af79cd13be357-910bd824460si2015463285a.162.2026.05.19.14.40.16
+        for <crice4485@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 19 May 2026 14:40:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of feedback@hertzlistens.com designates 98.97.252.47 as permitted sender) client-ip=98.97.252.47;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@iad1.xm-feedback.com header.s=qualtrics2k1 header.b=ENTrhgXp;
+       dkim=pass header.i=@hertzlistens.com header.s=qualtrics header.b=khGBGXlP;
+       spf=pass (google.com: domain of feedback@hertzlistens.com designates 98.97.252.47 as permitted sender) smtp.mailfrom=feedback@hertzlistens.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=hertzlistens.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=simple/relaxed; t=1779226816;
+	s=qualtrics2k1; d=iad1.xm-feedback.com;
+	h=List-ID:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:MIME-Version:Subject:Message-ID:To:Reply-To:Sender:From:Date;
+	bh=oHZnIgWp6qrPWMuYkw35T6g4/wwtt6ZvfiEzW8riviM=;
+	b=ENTrhgXpORh9itnh6ZXFiHdQipO3gu6/YLnPbuhQYuYxO6RgBrxn/PZlJYsUPOS6
+	dcBoCU84XIX2swYQc8Y9ab37Tb3+AecYNOB8TJGUdzyIn7UguvYqwov1od74HXf5PZT
+	iI9opp3n2hzwZLg1EOS09lUcIAcjH7Cni8HTUA56yVt6y2KgajeDyHb7TJFkFtDb90+
+	Q4UFaV3NAIY8QxHDZrRZxu6X623Pznl8e1bsqD82kt1/Sl+gpS1jMgEfz6iW3NJAL4h
+	BgfkOJkMx/lcCTeHDQsWJ+6HmvXh70cpU2X+ZqIVA3K7dM1O81SkG4sgO8MVvdJRV7U
+	9/j3Dh+5OA==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=simple/relaxed; t=1779226816;
+	s=qualtrics; d=hertzlistens.com;
+	h=List-ID:List-Unsubscribe-Post:List-Unsubscribe:Content-Type:MIME-Version:Subject:Message-ID:To:Reply-To:Sender:From:Date;
+	bh=oHZnIgWp6qrPWMuYkw35T6g4/wwtt6ZvfiEzW8riviM=;
+	b=khGBGXlPPhhN6iQ+z/+eE12oyYyglfa5ABtvbWYMWklbcO7yF0WksR12TnosBytR
+	GJ9x4qvM+9QczJtDGqkLVXBo0XVgsCz6+fDsSJMT0ZhWAL2KDGTk8dEWxvhkCAZk2/T
+	+h/ohvxOkPXIquskpETnYjvahTTN+rnDaT44H5oA=
+Date: Tue, 19 May 2026 15:40:16 -0600 (MDT)
+From: Hertz <feedback@hertzlistens.com>
+Sender: Hertz <feedback@hertzlistens.com>
+Reply-To: Hertz <noreply@hertzlistens.com>
+To: Cody Rice-velasquez <crice4485@gmail.com>
+Message-ID: <1335479719.6207327.1779226816263@jwm-cb5566844-xwcfp>
+Subject: Hertz wants to know about your pickup experience!
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_6207324_488430371.1779226816262"
+X-QUMID: UR_eWMaVnHtzGsyfz0-EMD_L8SP1yfAQhfFNKM-CTR_1O0ptrx3M6a6rVD-SV_0xOUA75lP5lWf0q
+List-Unsubscribe: <https://iad1.qualtrics.com/subscription/manage/unsubscribe?recipientId=CTR_1O0ptrx3M6a6rVD&libraryId=GR_0VvDjZvBVevPTQF&distributionId=EMD_L8SP1yfAQhfFNKM&BT=aGVydHo>,<mailto:CD.GFHTA4DUOJ4DGTJWME3HEVSE.MVLU2YKWNZEHI6SHON4WM6RQ@unsubscribe.qemailserver.com?subject=qunsub_CTR_1O0ptrx3M6a6rVD.UR_eWMaVnHtzGsyfz0.hertz.EMD_L8SP1yfAQhfFNKM.SV_0xOUA75lP5lWf0q.UR_eWMaVnHtzGsyfz0.CG_1LcBYnl1VziBHaX.https%3A%2F%2Fhertz.iad1.qualtrics.com%2FCP%2FRegister.php>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-ID: EMD_L8SP1yfAQhfFNKM+hertz:SV_0xOUA75lP5lWf0q+hertz:hertz:qemailserver
+List-ID: <00f531c0a4496a791b0da2cbf112b068b279f046.hertzlistens.com>
+
+------=_Part_6207324_488430371.1779226816262
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_6207325_667970447.1779226816262"
+
+------=_Part_6207325_667970447.1779226816262
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Hi Cody,
+
+Thank you for partnering with Hertz.
+
+We'd like to hear about your recent Hertz pick-up experience at Lyft
+Indianapolis on 2026-05-19. Please take a moment and share your feedback. W=
+e
+value your feedback to recognize our team members who provided excellent
+service and to help us identify areas to improve.
+
+
+Simply respond to the question below to get started.
+
+How satisfied or dissatisfied were you with your vehicle pickup experience?
+
+Completely dissatisfied
+<https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=3DL8SP1y=
+fAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail&Q_PopulateRespo=
+nse=3D%7B%22QID1%22:%221%22%7D&Q_PopulateValidate=3D1>
+Dissatisfied
+<https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=3DL8SP1y=
+fAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail&Q_PopulateRespo=
+nse=3D%7B%22QID1%22:%222%22%7D&Q_PopulateValidate=3D1>
+Neither satisfied nor dissatisfied
+<https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=3DL8SP1y=
+fAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail&Q_PopulateRespo=
+nse=3D%7B%22QID1%22:%223%22%7D&Q_PopulateValidate=3D1>
+Satisfied
+<https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=3DL8SP1y=
+fAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail&Q_PopulateRespo=
+nse=3D%7B%22QID1%22:%224%22%7D&Q_PopulateValidate=3D1>
+Completely satisfied
+<https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=3DL8SP1y=
+fAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail&Q_PopulateRespo=
+nse=3D%7B%22QID1%22:%225%22%7D&Q_PopulateValidate=3D1>
+We greatly appreciate your time and input.
+
+
+Hertz Rental Car. Let=E2=80=99s Go!
+
+
+Click to take your survey.
+<https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=3DL8SP1y=
+fAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail>
+
+To remove crice4485@gmail.com <mailto:crice4485@gmail.com> from future
+surveys, followthis LINK
+<https://hertz.iad1.qualtrics.com/subscription/manage/confirmation?recipien=
+tId=3DCTR_1O0ptrx3M6a6rVD&libraryId=3DGR_0VvDjZvBVevPTQF&distributionId=3DE=
+MD_L8SP1yfAQhfFNKM&BT=3DaGVydHo>
+.
+
+Hertz Global Holdings Inc.
+8501 Williams Road,
+Estero, FL 33928
+------=_Part_6207325_667970447.1779226816262
+Content-Type: multipart/related; 
+	boundary="----=_Part_6207326_1135613024.1779226816262"
+
+------=_Part_6207326_1135613024.1779226816262
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+=09<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-88=
+59-1">
+=09<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+=09<!--[if !mso]><!-- -->
+=09<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+=09<!--<![endif]-->
+=09<title></title>
+=09<style type=3D"text/css">
+
+=09=09.paddingHeight {height: 30px !important;}
+=09=09.optout,.optout a,.optout a:visited {color: #808080;text-decoration: =
+underline;font-size: 12px;}
+=09=09.questionButtonTable {width: 600px !important;}
+=09=09.questionButton {width: 100px !important;height: 50px;line-height: 14=
+px;}
+=09=09.questionButtonColumn {width: 116px;}
+
+=09=09@media only screen and (max-width: 479px) {
+=09=09=09.questionButton {width: 220px !important;}
+=09=09=09.questionButtonTable {width: 220px !important;}
+=09=09=09.questionButtonColumn {display: inline-block !important;width: 100=
+% !important;padding-bottom: 10px !important;width: 220px !important;}
+=09=09=09.deviceWidth {width: 280px !important;padding: 0 !important;}
+=09=09=09.paddingHeight {height: 20px !important;}
+=09=09}
+
+=09=09p,td,span,div {font-family: Helvetica, Arial, sans-serif;font-size: 1=
+6px;}
+=09=09body {width: 100%;margin: 0;padding: 0;background-color: #ffffff;font=
+-family: Helvetica, sans-serif;mso-line-height-rule: exactly;-webkit-font-s=
+moothing: antialiased;-ms-text-size-adjust: none !important;}
+=09=09table {border-spacing: 0;border-collapse: collapse;mso-table-lspace: =
+0;mso-table-rspace: 0;}
+=09=09table td {border-collapse: collapse;mso-table-lspace: 0;mso-table-rsp=
+ace: 0;}
+=09=09img {border: 0;-ms-interpolation-mode: bicubic;display: block !import=
+ant}
+
+=09</style>
+<!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPer=
+Inch>96</o:PixelsPerInch</o:OfficeDocumentSettings></xml><![endif]-->
+</head>
+<body><!-- Start: Wrapper -->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" st=
+yle=3D"border-spacing:0;border-collapse:collapse;" width=3D"100%">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td style=3D"border-collapse:collapse;" valign=3D"top" width=3D"10=
+0%"><!-- Start: Preheader -->
+=09=09=09<div style=3D"color:#ffffff;line-height:1px;overflow:hidden;font-s=
+ize:1px;display:none;max-height:0px;max-width:0px;opacity:0;mso-hide:all;">=
+&nbsp;</div>
+=09=09=09<!-- End: Preheader --><!-- Start: Header -->
+
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"deviceWidth" style=3D"margin:0px auto;width:600px;border-co=
+llapse:collapse;border-spacing:0;">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" style=3D"width:600px;text-align:cent=
+er;border-collapse:collapse;padding-top:30px;padding-bottom:20px;"><!-- BEG=
+IN: HEADER IMAGE --><img align=3D"center" alt=3D"Our Company" border=3D"0" =
+src=3D"https://hertz.co1.qualtrics.com/CP/Graphic.php?IM=3DIM_toeDNGD19bOWi=
+cG" style=3D"width:400px;height:auto;display:block;border-width:0;-ms-inter=
+polation-mode:bicubic;margin:0 auto;" width=3D"400"> <!-- END: HEADER IMAGE=
+ --></td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09<!-- End: Header --><!-- START: CONTENT CONTAINER -->
+
+=09=09=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"deviceWidth" style=3D"margin:0px auto;width:600px;border-co=
+llapse:collapse;border-spacing:0;">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" style=3D"text-align:left;line-height:2=
+4px;font-size:16px;border-collapse:collapse;" valign=3D"top"><!-- START: Ma=
+in Content -->
+=09=09=09=09=09=09<p style=3D"font-size:18px;text-align:center;color:#43424=
+4;font-weight:bold;">&nbsp;</p>
+
+=09=09=09=09=09=09<p>Hi Cody,</p>
+
+=09=09=09=09=09=09<p>Thank you for partnering with Hertz.<br>
+=09=09=09=09=09=09<br>
+=09=09=09=09=09=09We'd like to hear about your recent&nbsp;Hertz pick-up ex=
+perience at&nbsp;Lyft Indianapolis on&nbsp;2026-05-19. Please take a moment=
+ and share your feedback. We value your feedback to recognize our team memb=
+ers who provided excellent service and to help us identify areas to improve=
+.&nbsp;</p>
+
+=09=09=09=09=09=09<p><br>
+=09=09=09=09=09=09Simply respond to the question below to get started.</p>
+=09=09=09=09=09=09<!-- END: Main Content --></td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" class=3D"paddingHeight" style=3D"hei=
+ght:30px;line-height:1px;font-size:1px;">&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" style=3D"padding-top:15px;padding-bo=
+ttom:20px;"><!-- START: Question -->
+=09=09=09=09=09=09<p style=3D"font-size:18px;line-height:21px;font-weight:b=
+old;text-align:center;">How satisfied or dissatisfied were you with your ve=
+hicle pickup experience?</p>
+=09=09=09=09=09=09<!-- END: Question -->
+
+=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"questionButtonTable">
+=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<th class=3D"questionButtonColumn" style=3D"marg=
+in:0 auto;padding:0;padding-left:4px;padding-right:0;text-align:left"><!--[=
+if mso]>
+=09                                                <v:roundrect xmlns:v=3D"=
+urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:=
+word" href=3D"https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?=
+Q_DL=3DL8SP1yfAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail&Q_=
+PopulateResponse=3D%7B%22QID1%22:%221%22%7D&Q_PopulateValidate=3D1" style=
+=3D"height:80px;v-text-anchor:middle;width:120%;" arcsize=3D"10%" strokecol=
+or=3D"#434244" fill=3D"t">
+=09                                                <v:fill type=3D"tile" co=
+lor=3D"#434244" />
+=09                                                <w:anchorlock/>
+=09                                                <center style=3D"color:#=
+ffffff;font-family:sans-serif;font-size:12px;font-weight:bold;">Completely =
+dissatisfied</center>
+=09                                              </v:roundrect>
+=09                                            <![endif]-->
+=09=09=09=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"mso-hide:all;">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" class=3D"questionB=
+utton" style=3D"background-color:#434244;border-radius:4px;height:60px;"><a=
+ href=3D"https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=
+=3DL8SP1yfAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&amp;Q_CHL=3Demail&am=
+p;Q_PopulateResponse=3D%7B%22QID1%22:%221%22%7D&amp;Q_PopulateValidate=3D1"=
+ style=3D"background-color:#434244;border-radius:4px;color:#ffffff;display:=
+block;font-size:12px;font-weight:bold;line-height:16px;text-align:center;te=
+xt-decoration:none;width:95px;padding:12px 10px;-webkit-text-size-adjust:no=
+ne;mso-hide:all;">Completely dissatisfied</a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09<th class=3D"questionButtonColumn" style=3D"marg=
+in:0 auto;padding:0;padding-left:4px;padding-right:0;text-align:left"><!--[=
+if mso]>
+=09                                                <v:roundrect xmlns:v=3D"=
+urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:=
+word" href=3D"https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?=
+Q_DL=3DL8SP1yfAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail&Q_=
+PopulateResponse=3D%7B%22QID1%22:%222%22%7D&Q_PopulateValidate=3D1" style=
+=3D"height:80px;v-text-anchor:middle;width:120%;" arcsize=3D"10%" strokecol=
+or=3D"#434244" fill=3D"t">
+=09                                                <v:fill type=3D"tile" co=
+lor=3D"#434244" />
+=09                                                <w:anchorlock/>
+=09                                                <center style=3D"color:#=
+ffffff;font-family:sans-serif;font-size:12px;font-weight:bold;">Dissatisfie=
+d</center>
+=09                                              </v:roundrect>
+=09                                            <![endif]-->
+=09=09=09=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"mso-hide:all;">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" class=3D"questionB=
+utton" style=3D"background-color:#434244;border-radius:4px;height:60px;"><a=
+ href=3D"https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=
+=3DL8SP1yfAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&amp;Q_CHL=3Demail&am=
+p;Q_PopulateResponse=3D%7B%22QID1%22:%222%22%7D&amp;Q_PopulateValidate=3D1"=
+ style=3D"background-color:#434244;border-radius:4px;color:#ffffff;display:=
+block;font-size:12px;font-weight:bold;line-height:16px;text-align:center;te=
+xt-decoration:none;width:95px;padding:12px 10px;-webkit-text-size-adjust:no=
+ne;mso-hide:all;">Dissatisfied</a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09<th class=3D"questionButtonColumn" style=3D"marg=
+in:0 auto;padding:0;padding-left:4px;padding-right:0;text-align:left"><!--[=
+if mso]>
+=09                                                <v:roundrect xmlns:v=3D"=
+urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:=
+word" href=3D"https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?=
+Q_DL=3DL8SP1yfAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail&Q_=
+PopulateResponse=3D%7B%22QID1%22:%223%22%7D&Q_PopulateValidate=3D1" style=
+=3D"height:80px;v-text-anchor:middle;width:120%;" arcsize=3D"10%" strokecol=
+or=3D"#434244" fill=3D"t">
+=09                                                <v:fill type=3D"tile" co=
+lor=3D"#434244" />
+=09                                                <w:anchorlock/>
+=09                                                <center style=3D"color:#=
+ffffff;font-family:sans-serif;font-size:12px;font-weight:bold;">Neither sat=
+isfied nor dissatisfied</center>
+=09                                              </v:roundrect>
+=09                                            <![endif]-->
+=09=09=09=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"mso-hide:all;">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" class=3D"questionB=
+utton" style=3D"background-color:#434244;border-radius:4px;height:60px;"><a=
+ href=3D"https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=
+=3DL8SP1yfAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&amp;Q_CHL=3Demail&am=
+p;Q_PopulateResponse=3D%7B%22QID1%22:%223%22%7D&amp;Q_PopulateValidate=3D1"=
+ style=3D"background-color:#434244;border-radius:4px;color:#ffffff;display:=
+block;font-size:12px;font-weight:bold;line-height:16px;text-align:center;te=
+xt-decoration:none;width:95px;padding:12px 10px;-webkit-text-size-adjust:no=
+ne;mso-hide:all;">Neither satisfied nor dissatisfied</a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09<th class=3D"questionButtonColumn" style=3D"marg=
+in:0 auto;padding:0;padding-left:4px;padding-right:0;text-align:left"><!--[=
+if mso]>
+=09                                                <v:roundrect xmlns:v=3D"=
+urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:=
+word" href=3D"https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?=
+Q_DL=3DL8SP1yfAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail&Q_=
+PopulateResponse=3D%7B%22QID1%22:%224%22%7D&Q_PopulateValidate=3D1" style=
+=3D"height:80px;v-text-anchor:middle;width:120%;" arcsize=3D"10%" strokecol=
+or=3D"#434244" fill=3D"t">
+=09                                                <v:fill type=3D"tile" co=
+lor=3D"#434244" />
+=09                                                <w:anchorlock/>
+=09                                                <center style=3D"color:#=
+ffffff;font-family:sans-serif;font-size:12px;font-weight:bold;">Satisfied</=
+center>
+=09                                              </v:roundrect>
+=09                                            <![endif]-->
+=09=09=09=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"mso-hide:all;">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" class=3D"questionB=
+utton" style=3D"background-color:#434244;border-radius:4px;height:60px;"><a=
+ href=3D"https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=
+=3DL8SP1yfAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&amp;Q_CHL=3Demail&am=
+p;Q_PopulateResponse=3D%7B%22QID1%22:%224%22%7D&amp;Q_PopulateValidate=3D1"=
+ style=3D"background-color:#434244;border-radius:4px;color:#ffffff;display:=
+block;font-size:12px;font-weight:bold;line-height:16px;text-align:center;te=
+xt-decoration:none;width:95px;padding:12px 10px;-webkit-text-size-adjust:no=
+ne;mso-hide:all;">Satisfied</a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09=09<th class=3D"questionButtonColumn" style=3D"marg=
+in:0 auto;padding:0;padding-left:4px;padding-right:0;text-align:left"><!--[=
+if mso]>
+=09                                                <v:roundrect xmlns:v=3D"=
+urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:=
+word" href=3D"https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?=
+Q_DL=3DL8SP1yfAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&Q_CHL=3Demail&Q_=
+PopulateResponse=3D%7B%22QID1%22:%225%22%7D&Q_PopulateValidate=3D1" style=
+=3D"height:80px;v-text-anchor:middle;width:120%;" arcsize=3D"10%" strokecol=
+or=3D"#434244" fill=3D"t">
+=09                                                <v:fill type=3D"tile" co=
+lor=3D"#434244" />
+=09                                                <w:anchorlock/>
+=09                                                <center style=3D"color:#=
+ffffff;font-family:sans-serif;font-size:12px;font-weight:bold;">Completely =
+satisfied</center>
+=09                                              </v:roundrect>
+=09                                            <![endif]-->
+=09=09=09=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"mso-hide:all;">
+=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" class=3D"questionB=
+utton" style=3D"background-color:#434244;border-radius:4px;height:60px;"><a=
+ href=3D"https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=
+=3DL8SP1yfAQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&amp;Q_CHL=3Demail&am=
+p;Q_PopulateResponse=3D%7B%22QID1%22:%225%22%7D&amp;Q_PopulateValidate=3D1"=
+ style=3D"background-color:#434244;border-radius:4px;color:#ffffff;display:=
+block;font-size:12px;font-weight:bold;line-height:16px;text-align:center;te=
+xt-decoration:none;width:95px;padding:12px 10px;-webkit-text-size-adjust:no=
+ne;mso-hide:all;">Completely satisfied</a></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09</th>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" class=3D"paddingHeight" style=3D"hei=
+ght:30px;line-height:1px;font-size:1px;">&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr class=3D"bodyElement">
+=09=09=09=09=09=09<td align=3D"left" class=3D"paddingWidth" style=3D"text-a=
+lign:left;line-height:24px;font-size:16px;border-collapse:collapse;" valign=
+=3D"top"><!-- START: Post-question Content -->
+=09=09=09=09=09=09<p>We greatly appreciate your time and input.<br>
+=09=09=09=09=09=09&nbsp;</p>
+
+=09=09=09=09=09=09<p><strong>Hertz Rental Car. Let=E2=80=99s Go!</strong></=
+p>
+=09=09=09=09=09=09<!-- START: Signature Block or logo: remove if not needed=
+ --><br>
+=09=09=09=09=09=09<!-- END: Signature Block --><!-- END: Post-question Cont=
+ent --></td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" class=3D"paddingHeight" style=3D"hei=
+ght:30px;line-height:1px;font-size:1px;">&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<!-- END: BODY CONTENT -->
+=09=09=09=09=09<tr><!-- START: FOOTER -->
+=09=09=09=09=09=09<td align=3D"center" style=3D"padding-top:20px;border-col=
+lapse:collapse;border-top:1px solid #cccccc" valign=3D"top"><!-- BEGIN: SUR=
+VEY LINK -->
+=09=09=09=09=09=09<p style=3D"font-size:12px;line-height:16px;"><a href=3D"=
+https://hertz.iad1.qualtrics.com/jfe/form/SV_0xOUA75lP5lWf0q?Q_DL=3DL8SP1yf=
+AQhfFNKM_0xOUA75lP5lWf0q_CTR_1O0ptrx3M6a6rVD&amp;Q_CHL=3Demail" style=3D"co=
+lor: #808080; text-decoration: underline;">Click to take your survey.</a></=
+p>
+=09=09=09=09=09=09<!-- END: SURVEY LINK --><!-- BEGIN: OPT OUT -->
+
+=09=09=09=09=09=09<p style=3D"font-size:12px;line-height:16px;">To remove <=
+a href=3D"mailto:crice4485@gmail.com" style=3D"color:#808080;">crice4485@gm=
+ail.com</a> from future surveys, follow <span class=3D"optout"><a href=3D"h=
+ttps://hertz.iad1.qualtrics.com/subscription/manage/confirmation?recipientI=
+d=3DCTR_1O0ptrx3M6a6rVD&amp;libraryId=3DGR_0VvDjZvBVevPTQF&amp;distribution=
+Id=3DEMD_L8SP1yfAQhfFNKM&amp;BT=3DaGVydHo">this LINK</a></span>.<br>
+=09=09=09=09=09=09<br>
+=09=09=09=09=09=09Hertz Global Holdings Inc.<br>
+=09=09=09=09=09=098501 Williams Road,<br>
+=09=09=09=09=09=09Estero, FL&nbsp;33928</p>
+=09=09=09=09=09=09<!-- END: FOOTER --></td>
+=09=09=09=09=09</tr>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" class=3D"paddingHeight" style=3D"hei=
+ght:30px;line-height:1px;font-size:1px;">&nbsp;</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<img width=3D"1" height=3D"1" alt=3D"" src=3D"https://hertz.iad1.qualtrics.=
+com/subscription/watermark.gif?UID=3DUR_eWMaVnHtzGsyfz0&amp;EMD=3DEMD_L8SP1=
+yfAQhfFNKM&amp;CGC=3DCTR_1O0ptrx3M6a6rVD&amp;SV=3DSV_0xOUA75lP5lWf0q"></bod=
+y></html>
+------=_Part_6207326_1135613024.1779226816262--
+
+------=_Part_6207325_667970447.1779226816262--
+
+------=_Part_6207324_488430371.1779226816262--

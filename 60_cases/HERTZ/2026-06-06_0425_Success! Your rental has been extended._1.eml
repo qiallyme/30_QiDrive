@@ -1,0 +1,811 @@
+Delivered-To: crice4485@gmail.com
+Received: by 2002:adf:f689:0:b0:43d:78c:b6b0 with SMTP id v9csp514219wrp;
+        Sat, 6 Jun 2026 05:25:18 -0700 (PDT)
+X-Received: by 2002:a05:620a:4886:b0:915:8f76:7ff9 with SMTP id af79cd13be357-915a9dc15a6mr1271098685a.49.1780748717992;
+        Sat, 06 Jun 2026 05:25:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1780748717; cv=none;
+        d=google.com; s=arc-20240605;
+        b=b0TNaEMejoQ1uunipRJQF9fR54tVGt1K0eAqkuGFLNq5NrPVvtxgpl308Qa42cMScb
+         REuLjXR7jIKJeFGK9+3rNwBqib6yB1clzfZND8UoeOoYlD5uMhZFv6C3Yp099EnYS0Kq
+         MZoTwCZfCOVTKswncylDx0dqUNRJ2hp4of2mGgV8mEINlxQRJDXzwaAOCFiefTe4OGxS
+         bDSlX5ivtgdyBf8Bxes6Yj50FW8pQxVVsb7wsKG12SI6aqpXB06eHaFY8FSx+EoCUsYS
+         t7su8D6YMPRKZgdno5nd/9ciV7k8l7jML7c58NwRmNTW3r6G0A3TI4YcjXeIzc9PO/gi
+         Ha+A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=content-transfer-encoding:feedback-id:message-id:reply-to
+         :mime-version:list-help:date:subject:to:from:dkim-signature
+         :dkim-signature;
+        bh=dty8c5zz5ILKvIu+avZbHvQc/2jSuDKpQDgxh0mu1ws=;
+        fh=BENPBlrQWliizvb6F3Fdgbc9sIWKg8f036o+xjMZyjY=;
+        b=KLwB5KLTFgzO7BQnMGTauWYxoc5pd7CXcRn5c53aMaa4AbReYmrlJeCuip0ZmkmMuu
+         5STXrhOh9QtVmLWubykqrsw0eRk6ioLSnnEMqTGEi2U9IXXe3u3L9ld7oMt+ktnk+0Oz
+         tLbZZW21tdFCrcbmdxXDQiup0j0EA0j8d6WpyPQS3CPAPTBHcFlvvCiG4EnzvmYrvT7D
+         ZovWnDcuITknwafWhxx2iOeaTJAIQzxUiS+VvU1eoX4W8gqzOkedJg6sN6iFfO/8HUIq
+         pTtRTZLHzwZNcm2ZFIdNIZ0eKqSM0J4FICATkH8s7WbMVzqcmpcP1NeSaNtqPx/kHOMA
+         lPYw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@emails.hertz.com header.s=200608 header.b=vC90DdCW;
+       dkim=pass header.i=@s7.y.mc.salesforce.com header.s=fbldkim7 header.b=WQAJz7RJ;
+       spf=pass (google.com: domain of bounce-glzwl5dk3ntujpwecaq7mzudz4.70253@bounce.emails.hertz.com designates 13.111.15.198 as permitted sender) smtp.mailfrom=bounce-GLZWL5DK3NTUJPWECAQ7MZUDZ4.70253@bounce.emails.hertz.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=emails.hertz.com
+Return-Path: <bounce-GLZWL5DK3NTUJPWECAQ7MZUDZ4.70253@bounce.emails.hertz.com>
+Received: from mta2.emails.hertz.com (mta2.emails.hertz.com. [13.111.15.198])
+        by mx.google.com with ESMTPS id af79cd13be357-9158a5b52d9si1325862685a.378.2026.06.06.05.25.17
+        for <crice4485@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 06 Jun 2026 05:25:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-glzwl5dk3ntujpwecaq7mzudz4.70253@bounce.emails.hertz.com designates 13.111.15.198 as permitted sender) client-ip=13.111.15.198;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@emails.hertz.com header.s=200608 header.b=vC90DdCW;
+       dkim=pass header.i=@s7.y.mc.salesforce.com header.s=fbldkim7 header.b=WQAJz7RJ;
+       spf=pass (google.com: domain of bounce-glzwl5dk3ntujpwecaq7mzudz4.70253@bounce.emails.hertz.com designates 13.111.15.198 as permitted sender) smtp.mailfrom=bounce-GLZWL5DK3NTUJPWECAQ7MZUDZ4.70253@bounce.emails.hertz.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=emails.hertz.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=200608; d=emails.hertz.com;
+ h=From:To:Subject:Date:List-Help:MIME-Version:Reply-To:Message-ID:
+ Content-Type:Content-Transfer-Encoding; i=reservations@emails.hertz.com;
+ bh=dty8c5zz5ILKvIu+avZbHvQc/2jSuDKpQDgxh0mu1ws=;
+ b=vC90DdCWIO74PGgiuOVd8k4gswEa3ghnx5uN5u3cHddYFN5jad3DLGCRl460Nrjwbv9M1+s4+E+z
+   vQYTWKSfoGPYhESLGUqdXZk3nC24J76i2wP/jVf9RWytfcYwG8iG9k7trxxVVn9oZwu3ixTlpCUF
+   /8AM8JtD2KHk8+qQLu0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=fbldkim7; d=s7.y.mc.salesforce.com;
+ h=From:To:Subject:Date:List-Help:MIME-Version:Reply-To:Message-ID:
+ Content-Type:Content-Transfer-Encoding;
+ bh=dty8c5zz5ILKvIu+avZbHvQc/2jSuDKpQDgxh0mu1ws=;
+ b=WQAJz7RJb6KiKqsFtx0GyQvBsMI922lWnxMm8Rd1sxckl3L5APoLb0RFXECHggyGcUBJ4JQetJtr
+   h1fnq06ngOgmcxbPVg0yEuE+NHX3fy4EnnROeBq+ume8pvRnzSF3GybOzufDJ4KVF1e4L+7hxRZP
+   +wPPeoBVzDk/nfnMmdD3vkjP51hEQF1JTtfICaa8Q5GDSQcvu8FB4AafGj9M86kEzmYpWq4uosCK
+   gQXoCOzlE1jabvGJOOOBPjuPzo/M3YHaNNji3vNOrTRh0sFvf0t6otJujQ28lrNoI2H3ZnIqlHwT
+   wqm/Z/629qskPUUTir/E/MZh/gDaA6UPAJtb6g==
+Received: by mta2.emails.hertz.com id h4g8qq39mjce for <crice4485@gmail.com>; Sat, 6 Jun 2026 12:25:17 +0000 (envelope-from <bounce-GLZWL5DK3NTUJPWECAQ7MZUDZ4.70253@bounce.emails.hertz.com>)
+From: "Hertz" <reservations@emails.hertz.com>
+To: <crice4485@gmail.com>
+Subject: Success! Your rental has been extended.
+Date: Sat, 06 Jun 2026 06:25:16 -0600
+List-Help: <https://click.emails.hertz.com/subscription_center.aspx?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtaWQiOiI3MjU3NjYzIiwicyI6IjYwMzMyNTgxOCIsImxpZCI6IjIwIiwiaiI6Ijc5NzE1MiIsImpiIjoiOTg2NDkwIiwiZCI6IjcwMjUzIn0.Tmt-DFmkCsPINiLiH8FVt265T9-f7Y6m12Pt_5DG6d8>
+MIME-Version: 1.0
+Reply-To: "Hertz" <reply-22F5UMSLIWPUVPKXUDWKBMSG7E.70253@emails.hertz.com>
+X-SFMC-Stack: 7
+x-job: 7257663_797152
+Message-ID: <80944eec-1b21-4ffc-9572-4f9dd5a1ef0f@atl1s07mta0290.xt.local>
+Feedback-ID: 7257663:797152:13.111.15.198:sfmktgcld
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta content="text/html; charset=UTF-8">
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  <meta name="referrer" content="no-referrer">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="Hertz Confirmation" name="title">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,600&display=swap');
+
+  </style>
+
+  <style type="text/css">
+    ReadMsgBody {
+      width: 100%;
+    }
+
+    .ExternalClass {
+      width: 100%;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0 !important;
+    }
+
+    th {
+      font-weight: normal !important;
+    }
+
+    p {
+      margin: 1em 0;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    ul {
+      margin: 0px;
+    }
+
+    img {
+      outline: 0;
+    }
+
+    a img {
+      border: none;
+    }
+
+    span {
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+      color: #434244;
+    }
+
+    a:visited {
+      color: #000000;
+    }
+
+    span.MsoHyperlink {
+      mso-style-priority: 99;
+      color: inherit;
+    }
+
+    span.MsoHyperlinkFollowed {
+      mso-style-priority: 99;
+      color: inherit;
+    }
+
+    .ph-left .preheader {
+      color: #808285;
+    }
+
+    .text-h-align {
+      text-align: right !important;
+    }
+
+    @-ms-viewport {
+      width: device-width;
+    }
+
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width: 480px) {
+      .container {
+        width: 99% !important;
+      }
+
+      .footer {
+        width: auto !important;
+        margin-left: 0;
+      }
+
+      .mobile-hidden {
+        display: none !important;
+      }
+
+      .text-h-align {
+        text-align: center !important;
+      }
+
+      .mobile-img100 {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .mobile-img25 {
+        width: 25% !important;
+        height: auto !important;
+      }
+
+      .logo {
+        display: block !important;
+        padding: 0 !important;
+      }
+
+      .photo img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+      }
+
+      .drop {
+        display: block !important;
+        width: 100% !important;
+        float: left;
+        clear: both;
+      }
+
+      .footerlogo {
+        display: block !important;
+        width: 100% !important;
+        padding-top: 15px;
+        float: left;
+        clear: both;
+      }
+
+      .nav4,
+      .nav5,
+      .nav6 {
+        display: none !important;
+      }
+
+      .tableBlock {
+        width: 100% !important;
+      }
+
+      .unStack-td {
+        width: 50% !important;
+        display: inline-block !important;
+        padding: 0px !important;
+      }
+
+      .responsive-td {
+        width: 100% !important;
+        display: block !important;
+        padding: 10px 0px !important;
+      }
+
+      .responsive-td .l-t {
+        padding-bottom: 20px;
+        border-bottom: 3px solid #EEEEEE;
+      }
+
+      .responsive-td .r-t {
+        padding-top: 20px;
+      }
+
+      .responsive-td-left {
+        width: 100% !important;
+        display: block !important;
+        padding: 20px 0px 10px 0px !important;
+      }
+
+      .responsive-td-right {
+        width: 100% !important;
+        display: block !important;
+        padding: 10px 0px 20px 0px !important;
+      }
+
+      .b-row .responsive-td-left {
+        width: 100% !important;
+        display: block !important;
+        padding: 10px 0px 0px 0px !important;
+      }
+
+      .b-row .responsive-td-right {
+        width: 100% !important;
+        display: block !important;
+        padding: 0px 0px 20px 0px !important;
+      }
+
+      .responsive-td-50 {
+        width: 50% !important;
+        display: inline-block !important;
+        padding: 20px 0px 20px 0px !important;
+      }
+
+      .responsive-td-100 {
+        width: 96% !important;
+        display: block !important;
+        padding: 0px 0px 20px 20px !important;
+      }
+
+      .m-padding-x {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+      }
+
+      .m-padding-y {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+      }
+
+      .m-drop-padding {
+        padding-top: 0px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+      }
+
+      .m-drop-height {
+        height: auto !important;
+      }
+
+      .mobile90 {
+        width: 90% !important;
+        max-width: 90% !important;
+      }
+
+      .mobile100 {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .mobile-borderless {
+        border: 0px none transparent !important;
+      }
+
+      .m-center-text {
+        text-align: center !important;
+      }
+
+      .m-left-text {
+        text-align: left !important;
+      }
+
+      .m-b-h {
+        font-size: 32px !important;
+      }
+
+      m-f-s {
+        font-size: 18px;
+      }
+
+      .vas-mobile-h {
+        font-size: 24px !important;
+      }
+
+      .vas-img {
+        width: 70px !important;
+      }
+
+      .vas-mobile-padding {
+        padding: 0px 15px !important;
+      }
+
+      .fluid,
+      .fluid-centered {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      .fluid-centered {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      body {
+        padding: 0px !important;
+        font-size: 16px !important;
+        line-height: 150% !important;
+      }
+
+      h1 {
+        font-size: 22px !important;
+        line-height: normal !important;
+      }
+
+      h2 {
+        font-size: 20px !important;
+        line-height: normal !important;
+      }
+
+      h3 {
+        font-size: 18px !important;
+        line-height: normal !important;
+      }
+
+      .buttonstyles {
+        font-family: arial, helvetica, sans-serif !important;
+        font-size: 16px !important;
+        color: #FFFFFF !important;
+        padding: 10px !important;
+      }
+
+      /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+    }
+
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width: 420px) {
+      .md-mobile-hidden {
+        display: none !important;
+      }
+    }
+
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width: 400px) {
+      .m-r1-height {
+        height: 72px !important;
+      }
+    }
+
+  </style>
+
+  <style type="text/css">
+    .mobile-clear {
+      display: none !important;
+      mso-hide: all;
+    }
+
+    .desktop-clear {
+      display: block !important;
+    }
+
+    @media only screen and (max-width:480px) {
+      .mobile-clear {
+        display: block !important;
+      }
+
+      .desktop-clear {
+        display: none !important;
+      }
+
+      .mobile_bt {
+        width: 90% !important;
+      }
+    }
+
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width: 360px) {
+      .sm-mobile-hidden {
+        display: none !important;
+      }
+
+      .sm-mobile95 {
+        width: 95% !important;
+      }
+    }
+
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+  </style>
+  <!--[if mso]> <style type="text/css"> /* Begin Outlook Font Fix */ body, table, td { font-family: Arial, Helvetica, sans-serif ; font-size:16px; color:#000000; line-height:1; } /* End Outlook Font Fix */ </style> <![endif]-->
+</head>
+
+<body bgcolor="#ffffff" text="#000000" style="background-color: #F5F5F5; color: #000000; padding: 0px; -webkit-text-size-adjust:none; font-size: 16px; font-family:arial,helvetica,sans-serif;">
+  <img src="https://click.emails.hertz.com/open.aspx?WZLECXAHUOKUJMNUIC4SGA7J6I.70253&d=70253&bmt=0" width="1" height="1" alt="">
+  <img src="https://beacon.krxd.net/1x1_usermatch.gif?partner=L8Pijb6F_sfmc_7257663_sha256&partner_uid=52cfd98c8b26ee3384450892016d50105c563ea267cfb8f5f4d70b9e8822aba1" width=0 height=0 style="display:none" /> 
+<img src="https://beacon.krxd.net/1x1_usermatch.gif?partner=L8Pijb6F_sfmc_7257663_subid&partner_uid=603325818" width=0 height=0 style="display:none" /> 
+<img src="https://beacon.krxd.net/1x1_ad_impression.gif?confid=s6iu815js&advertiserid=7257663&campaignid=Rental_Extension_Confirmation_v3.2" width=0 height=0 style="display:none;" />
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+    <tr>
+      <td align="center">
+        <table cellspacing="0" cellpadding="0" border="0" class="container" align="center" background="#F5F5F5" style="background-color: #F5F5F5; width:100%; max-width: 100%;">
+          <tr>
+            <td align="center">
+              <table cellpadding="0" cellspacing="0" align="center" width="700" style="width: 100%; max-width: 700px">
+                <tr>
+                  <td align="center">
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" style="width: 100%;">
+                      <tr>
+                        <td align="center" style="padding:10px 15px;">
+                          <table cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                              <td align="left" width="40%" class="ph-left">
+                                <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 11px; color: #808285;"></span>
+                              </td>
+                              <td align="right" width="60%" class="mobile-hidden">
+                                <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 11px;"><span style="color: #808285;">Trouble Viewing?</span>&nbsp;<a  href="https://view.emails.hertz.com/?qs=ABB7InYiOjEsImQiOjQ4OTl9AAcAAAAAAlb2EUM33-jd5Jq_90VYH4cpWN4qeQvVr8gJaLaIVigiLY38MwKyBVGmTwZTB7l4YHI_6GHlSfUvJpwMoEp6n27H_9I5br_QgRYjo4vx23hhy6mAT952rRriubTPV5ZoypCa" title="View in Browser" style="color: #808285; text-decoration: underline; font-weight: bold;">View in Browser</a></span>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding: 10px 15px 15px;">
+                          <table cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td style="padding: 10px 0px;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                  <tr>
+                                    <td>
+                                      <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                        <tr>
+                                          <td valign="top" style="width: 50%; padding-right: 3px;">
+                                            <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;">
+                                              <tr>
+                                                <td>
+                                                  <table width="100%" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td align="left">
+                                                        <a  href="https://click.emails.hertz.com/?qs=ABB7InYiOjEsImQiOjQ4OTl9AAcAAAAAAlb2EUM40M-7Fo0bFP0m8ZtdHviEz2qfTuGvUsAW07wx4wPnTSYje8gXzDD4SpaJwV1zkXYZCUnFf-xPlIPNwNhr1LtoX_0KPra1Q9QgBdFs1g" target="_blank" title="Hertz" data-linkto="https://"><img data-assetid="1454" src="http://image.emails.hertz.com/lib/fe8e1372736d057876/m/1/3669fa11-b344-4c62-b7f2-62dc4f0ecd6f.png" alt="Hertz" height="40" width="115" style="display: block; padding: 0px; text-align: left; height: 40px; width: 115px; border: 0px;"></a>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td valign="middle" style="width: 50%; padding-left: 3px;">
+                                            <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;">
+                                              <tr>
+                                                <td>
+                                                  <table align="right" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td style="padding-right: 10px">
+                                                        <img src="https://image.emails.hertz.com/lib/fe8b13727063027b76/m/4/3689cca7-3086-4b3b-8dc2-ebf7ec95d7cb.png" width="12" height="38" style="display: inline-block; width: 12px; height: 38px">
+                                                      </td>
+                                                      <td align="right">
+                                                        <b style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #808285;">
+                                                          RENTAL AGREEMENT NUMBER
+                                                        </b><br><b style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 18px; color: #434244;">
+                                                          582293714
+                                                        </b>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding-bottom: 20px">
+                    <table cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 700px; background-color: #FFFFFF;">
+                      <tr>
+                        <td valign="middle" style="border-top: 4px solid #FFCC00; padding: 30px 30px 35px;">
+                          <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                            <tr>
+                              <td align="left" style="padding-bottom: 20px;">
+                                <table cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td align="left">
+                                      <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 24px; color: #434244;">
+                                        Hi, Cody Rice-velasquez:</span>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="padding-bottom: 0px;">
+                                <table cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td align="left">                                    
+                                      <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #434244;">
+                                        You’ve successfully extended your Hertz rental until 06/09/2026 12:53 PM.</span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left">
+                                      <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 15px; color: #434244;">
+                                        Thank you for renting with us.</span>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            
+                            
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mobile-hidden" align="center">
+                    <img alt="map image" width="100%" height="auto" src="https://image.emails.hertz.com/lib/fe8b13727063027b76/m/4/b5b41e7a-5236-481f-af9c-7f59889b423e.png">
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding-bottom: 40px;">
+                    <table cellpadding="0" cellspacing="0" align="center" style="padding-bottom: 40px; width: 100%; max-width: 700px; background-color: #FFFFFF;">
+                      <tr>
+                        <td valign="middle" style="padding: 30px 30px 0px;">
+                          <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                            <tr>
+                              <td align="left" style="padding-bottom: 30px;">
+                                <table cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td align="left">
+                                      <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 24px; color: #434244;">
+                                        Rental Itinerary</span>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center">
+                                <table cellpadding="0" cellspacing="0" width="100%">
+                                  <tr>
+                                    <td class="responsive-td mobile-borderless" valign="top" style="width: 50%; padding-right: 20px;">
+                                      <table cellpadding="0" cellspacing="0" align="left">
+                                        <tr>
+                                          <td align="left" style="padding-bottom: 0px;">
+                                            <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #808285;">
+                                              DROP-OFF LOCATION
+                                            </span><br>
+                                            <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #434244;">
+                                              INDIANAPOLIS LYFT
+                                            </span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="padding-bottom: 0px;">
+                                            <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #434244;">
+                                              1321 N SHADELAND AVE
+                                            </span>
+                                          </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                          <td align="left" style="padding-bottom: 0px;">
+                                            <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #434244;">
+                                              INDIANAPOLIS, IN 46219
+                                            </span>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                    <td class="responsive-td" valign="top" style="width: 50%;">
+                                      <table cellpadding="0" cellspacing="0" align="left">
+                                        
+                                      <tr>
+                                          <td align="left" style="padding-bottom: 15px;">
+                                            <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #808285;">
+                                              NEW DROP-OFF DATE & TIME
+                                            </span><br>
+                                            <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #434244;">
+                                              06/09/2026 12:53 PM
+                                            </span>
+                                          </td>
+                                        </tr>
+                                       
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 700px">
+                      <tr>
+                        <td align="center" style="padding-left: 0px; padding-bottom: 20px">
+                          <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                            <tr>
+                              <td valign="middle" style="width: 40%; padding-right: 3px;">
+                                <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%">
+                                  <tr>
+                                    <td>
+                                      <table width="100%" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td align="left">
+                                            <a  href="https://click.emails.hertz.com/?qs=ABB7InYiOjEsImQiOjQ4OTl9AAcAAAAAAlb2EUM5yYgJSAKOPE6Op9MtFIFUGaukcI3bqHEugeyicE0l6hAilcUuuleWJh23zMrtKi9Touo7rlzr7h1qdz63z4qLJsVmCHG5HOwpRkc-Fw" target="_blank" title="Hertz" data-linkto="https://"><img data-assetid="21270" src="https://image.emails.hertz.com/lib/fe8b13727063027b76/m/4/a09aaa5c-2766-43d6-8dde-3807a694057a.png" alt="Hertz" height="25" width="75" style="display: block; padding: 0px; text-align: left; height: 25px; width: 75px; border: 0px"></a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding-left: 0px; border-bottom: 3px solid #eeeeee;">
+                          <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                            <tr>
+                              <td class="responsive-td" style="text-align: left; padding-bottom: 10px;">
+                                <table cellpadding="0" cellspacing="0" align="left">
+                                  <tr>
+                                    <td style="padding-right: 10px">
+                                      <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 14px; color: #808285">Get the Hertz app for:</span>
+                                    </td>
+                                    <td style="padding-right: 10px">
+                                      <a style="                                           font-family: 'Open Sans', Arial, Helvetica, sans-serif;                                           font-size: 14px;                                           font-weight: bold;                                           color: #434244;                                           text-decoration: none;                                         ">iPhone</a>
+                                    </td>
+                                    <td style="padding-right: 10px">
+                                      <img src="https://image.emails.hertz.com/lib/fe8b13727063027b76/m/4/3689cca7-3086-4b3b-8dc2-ebf7ec95d7cb.png" width="12" height="38" style="display: inline-block; width: 12px; height: 38px">
+                                    </td>
+                                    <td style="padding-right: 10px">
+                                      <a style="                                           font-family: 'Open Sans', Arial, Helvetica, sans-serif;                                           font-size: 14px;                                           font-weight: bold;                                           color: #434244;                                           text-decoration: none;                                         ">Android</a>
+                                    </td>
+                                    <td>
+                                      <img src="https://image.emails.hertz.com/lib/fe8b13727063027b76/m/4/3689cca7-3086-4b3b-8dc2-ebf7ec95d7cb.png" width="12" height="38" style="display: inline-block; width: 12px; height: 38px">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td class="responsive-td" align="middle" width="20%" style="text-align: left; padding-bottom: 10px;">
+                                <table align="left" cellpadding="0" width="50%" cellspacing="0">
+                                  <tr>
+                                    <td width="25%" style="-webkit-text-size-adjust: none; padding: 0px 20px 0px 0px">
+                                      <a  title="Facebook" href="https://click.emails.hertz.com/?qs=ABB7InYiOjEsImQiOjQ4OTl9AAcAAAAAAlb2EUM6zW8yc5HCbZBzGQA12zVr3L-Ec62fwx6qX-67w6emd4YxC1dDvPbqi0HYhuhE79zHRGMSiXfeQIGZIcNMgdMpDZRP9qPBwrBXrdy1mQ" style="-webkit-text-size-adjust: none; border-radius: 3px; color: #034ea2; text-decoration: underline" target="_blank">
+                                        <img alt="Facebook" border="0" height="26" src="https://image.emails.hertz.com/lib/fe8b13727063027b76/m/4/13745df2-328d-458a-99c8-d7e92c3af517.png" style="border: 0; display: inline-block; border: none; height: 26px; width: auto">
+                                      </a>
+                                    </td>
+                                    <td align="center" width="25%" style="-webkit-text-size-adjust: none; padding: 0px 20px 0px 0px">
+                                      <a  title="Twitter" href="https://click.emails.hertz.com/?qs=ABB7InYiOjEsImQiOjQ4OTl9AAcAAAAAAlb2EUM7K3USBjAom7X8NHsTQeY-X8T8XDaXY1gkqdvKnIqRu1L5JpEIuoE3Iah27cCsN9KLMLvHmAQmQgz0Zt1h9CNOkByadR3F6KlSBfuimw" style="-webkit-text-size-adjust: none; border-radius: 3px; color: #034ea2; text-decoration: underline" target="_blank">
+                                        <img alt="Twitter" border="0" height="26" src="https://image.emails.thrifty.com/lib/fe8913727063027b70/m/1/b7082ab2-398a-4232-8e1e-0e260c0ee3d9.png" style="border: 0; display: inline-block; border: none; height: 26px; width: auto">
+                                      </a>
+                                    </td>
+                                    <td align="center" width="25%" style="-webkit-text-size-adjust: none; padding: 0px 20px 0px 0px">
+                                      <a  title="Instagram" href="https://click.emails.hertz.com/?qs=ABB7InYiOjEsImQiOjQ4OTl9AAcAAAAAAlb2EUM8JXs0sajLWKDUPGWjJ8U7UA8Q8pOs4_rMOAQHtDaMDyPMKXTqSLezKhV2z3M5M-vcPBHLqyHooqcTVyNW_ELMDXliVYZODk5qZXK76Q" style="-webkit-text-size-adjust: none; border-radius: 3px; color: #034ea2; text-decoration: underline" target="_blank">
+                                        <img alt="Instagram" border="0" height="26" src="https://image.emails.hertz.com/lib/fe8b13727063027b76/m/4/c3a34fa1-d6a0-4d8a-aaf1-8ea91c83b6ef.png" style="border: 0; display: inline-block; border: none; height: 26px; width: auto">
+                                      </a>
+                                    </td>
+                                    <td align="center" width="25%" style="-webkit-text-size-adjust: none; padding: 0px 20px 0px 0px">
+                                      <a  href="https://click.emails.hertz.com/?qs=ABB7InYiOjEsImQiOjQ4OTl9AAcAAAAAAlb2EUM92CEAw0dQewM1_yl3jdQSoXIdLaRHizzeDgSMvfcQ5CBA6Q4ZLQLszjon7vhO_Mb5OFcSXpwPwp6Q3UcAPf9Mkk32-emC-uZwVX9V8w" style="-webkit-text-size-adjust: none; border-radius: 3px; color: #034ea2; text-decoration: underline" target="_blank">
+                                        <img alt="Youtube" title="Youtube" border="0" height="26" src="https://image.emails.hertz.com/lib/fe8b13727063027b76/m/4/004072f2-2d01-4390-9a38-4ecd971e745c.png" style="border: 0; display: inline-block; border: none; height: 26px; width: auto">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top: 30px; padding-left: 0px; padding-bottom: 30px;">
+                          <table cellpadding="0" cellspacing="0" style="width: 100%">
+                            <tr>
+                              <td style="padding-right: 20px">
+                                <table cellpadding="0" cellspacing="0" style="width: 100%">
+                                  <tr>
+                                    <td align="left" style="padding-bottom: 20px">
+                                      <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #808285">
+                                        This electronic-mail message contains confidential information intended only for the use of the individual or entity
+                                        named. If the reader of this message is not the intended recipient, the reader is hereby notified that any
+                                        dissemination, distribution, copying or other use of this message is strictly prohibited and is hereby instructed to
+                                        return or destroy this copy of this message.
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left">
+                                      <span style="font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #808285">©2026 The Hertz Corporation. All rights reserved<br>8501 Williams Road<br>Estero, FL 33928 U.S.A</span>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>                                    
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
