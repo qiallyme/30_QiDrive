@@ -11,14 +11,10 @@
             "id": "676b7fa77d3aa6d6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "40_projects/jobs_apply_cody/01_candidate_profile.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "01_candidate_profile"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -191,11 +187,27 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-kanban:Create new board": false,
+      "markwhen:Create new Markwhen file": false,
+      "omnisearch:Omnisearch": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "templater-obsidian:Templater": false,
+      "vault-timeline:Open Vault Timeline": false,
+      "webpage-html-export:Export as HTML": false,
+      "smart-second-brain:Open S2B Chat": false,
+      "smart-lookup:Smart Lookup: Open lookup view": false,
+      "smart-connections-visualizer:Open smart connections visualizer": false,
+      "semantic-auto-linker:Semantic auto-linker": false,
+      "nexus-ai-chat-importer:Nexus AI Chat Importer - Import new file": false
     }
   },
-  "active": "files-tab",
+  "active": "676b7fa77d3aa6d6",
   "lastOpenFiles": [
+    "40_projects/MS-IL_Reentry/00_HOME/Dashboard.md",
+    "40_projects/jobs_apply_cody/01_candidate_profile.md",
     "40_projects/jobs_apply_cody/20_submissions/2026-07-22_career_team_senior_director_of_people_and_culture/2026-07-22_career_team_senior_director_of_people_and_culture.md",
     "40_projects/jobs_apply_cody/20_submissions/2026-07-22_career_team_senior_director_of_people_and_culture",
     "40_projects/jobs_apply_cody/20_submissions/2026-07-22_metro_public_adjustment_remote_claims_representative/2026-07-22_metro_public_adjustment_remote_claims_representative.md",
@@ -229,8 +241,6 @@
     "00_home/00_QiCode/title_11_qilabs_workspace/article_07_qinotion_project_workspace.md",
     "00_home/00_QiCode/title_11_qilabs_workspace/article_06_logs_reports_and_plans.md",
     "00_home/00_QiCode/title_11_qilabs_workspace/article_05_codex_and_agent_instructions.md",
-    "00_home/00_QiCode/title_09_qispark_bridge/article_03_qiserver_and_connected_systems.md",
-    "00_home/00_QiCode/title_09_qispark_bridge/article_01_bridge_rule.md",
     "00_home/00_QiCode/sources/legacy_monoliths",
     "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000d9dc71f5810e3ffd648934f4-sanitized.png",
     "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000ca5871f681a2543c43b2de54-sanitized.png",

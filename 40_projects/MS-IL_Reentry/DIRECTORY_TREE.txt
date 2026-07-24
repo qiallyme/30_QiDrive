@@ -1,0 +1,14 @@
+MS-IL_Reentry_Obsidian_Workspace/
+├── README.md
+├── MS-IL Reentry Mission.canvas
+├── 00_HOME/
+├── 01_STRATEGY/
+├── 02_OUTREACH/
+├── 03_LINKEDIN/
+├── 04_WEB_PRESENCE/
+├── 05_EVIDENCE/
+├── 06_TASKS/
+├── 07_TRACKING/
+├── 08_TEMPLATES/
+├── 09_DRAFTS/
+└── 99_ARCHIVE/
