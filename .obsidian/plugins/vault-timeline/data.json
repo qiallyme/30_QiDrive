@@ -37089,9 +37089,14 @@
     },
     {
       "id": "30_empowerqnow713/00_System/maps/2026-07-02_qisaysit_series_routing_map.md",
-      "title": "2026-07-02_qisaysit_series_routing_map",
+      "title": "QiSaysIt Series Routing Map",
       "date": 1783500946809,
-      "tags": [],
+      "tags": [
+        "qisaysit",
+        "content-system",
+        "series-map",
+        "publishing"
+      ],
       "excerpt": "QiSaysIt Series Routing Map Purpose This map decides where a QiSaysIt post belongs. The rule is simple: > Every post get…",
       "folder": "30_empowerqnow713/00_System/maps"
     },
