@@ -1,1 +1,0 @@
-# Local vs Web vs Mobile Access

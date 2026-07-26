@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiAudioWaveform",
-      "LiAppWindow",
-      "LiArchive",
-      "💼",
-      "LiMessageCircleDashed"
+      "LiTicketsPlane",
+      "LiHome",
+      "💙",
+      "☑",
+      "LiAudioWaveform"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -58,5 +58,9 @@
   "_system": "LiAppWindow",
   "01_inbox/Voice Entries": "LiAudioWaveform",
   "_qiconfig/Templates 1": "LiBookTemplate",
-  "00_home/00_QiCode": "LiAudioWaveform"
+  "00_home/00_QiCode": "LiAudioWaveform",
+  "40_projects/jobs_apply_cody/MS-IL_Reentry": "💙",
+  "40_projects/jobs_apply_cody/MS-IL_Reentry/00_HOME": "LiHome",
+  "40_projects/jobs_apply_cody/MS-IL_Reentry/01_STRATEGY": "LiTicketsPlane",
+  "40_projects/jobs_apply_cody/MS-IL_Reentry/02_OUTREACH/Email - Elvis CC Matt": "☑"
 }

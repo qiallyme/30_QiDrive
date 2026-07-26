@@ -1,1 +1,0 @@
-# Voice, keyboard, visual triggers

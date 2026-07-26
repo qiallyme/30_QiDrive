@@ -67,7 +67,7 @@ generated_at: ""
 - [[07_inherited_onions_2|07 inherited onions 2]]
 - [[08_the_onion_doesnt_lie|08 the onion doesnt lie]]
 - [[08_the_onion_doesnt_lie_2|08 the onion doesnt lie 2]]
-- [[README|README]]
+- [[30_empowerqnow713/20_Series/20_the_onion_effect/README|README]]
 - [[index_2|index 2]]
 - [[readme_2|readme 2]]
 - [[the_onion_effect|the onion effect]]

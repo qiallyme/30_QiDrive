@@ -32,7 +32,7 @@ generated_at: ""
 
 ## Housekeeping Index
 
-- [[README|README]]
+- [[40_projects/jobs_apply_zai/90_closed_and_archive/README|README]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
 

@@ -1,1 +1,0 @@
-# App icons, names, branding logic (Quin, Qi, etc.)

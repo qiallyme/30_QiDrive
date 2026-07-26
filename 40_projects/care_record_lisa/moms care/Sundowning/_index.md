@@ -32,7 +32,7 @@ generated_at: ""
 
 ## Housekeeping Index
 
-- [[readme|readme]]
+- [[40_projects/care_record_lisa/moms care/Sundowning/readme|readme]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
 

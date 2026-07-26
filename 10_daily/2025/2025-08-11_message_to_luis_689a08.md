@@ -1,0 +1,38 @@
+---
+title: "Message to Luis"
+date: "2025-08-11"
+created_at: "2025-08-11T15:13:20.211824+00:00"
+conversation_id: "689a088f-9ae4-832c-9142-c69a67e93f38"
+tags:
+  - ai_chat
+  - export
+---
+
+# Message to Luis
+
+> **Date:** 2025-08-11 | **Conversation ID:** `689a088f-9ae4-832c-9142-c69a67e93f38`
+
+---
+
+### **User**
+Um, quick update for Luis, letting him know that, um, I need him to confirm if he can gain access to his iOS account, because I haven't received anything and I guess he hasn't either, so I don't know if they just didn't process the request, or they lost it in the mail, but I really need to get, make sure and see what's been filed for him, so we can start working on that.
+
+---
+
+### **Assistant**
+Here’s a clean, direct version you can send to Luis:  
+
+---
+
+Hi Luis,  
+
+Can you confirm if you’re able to access your iOS account? I haven’t received anything on my end, and it sounds like you haven’t either. I’m not sure if they didn’t process the request or if it got lost in the mail, but I need to verify what’s been filed for you so we can start working on it.  
+
+Thanks,  
+[Your Name]  
+
+---
+
+Want me to also make you a sharper, urgency-loaded version so he feels the push to respond fast?
+
+---

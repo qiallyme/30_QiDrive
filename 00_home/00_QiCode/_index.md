@@ -62,3 +62,20 @@ QiCode is the citeable personal life doctrine for truth, identity, inner work, o
 - [QiServer](../10_QiSpark/20_QiServer/_index.md)
 - [QiMemory](../10_QiSpark/30_QiMemory/_index.md)
 - [QiConnect](../10_QiSpark/50_QiConnect/_index.md)
+
+
+## Master Legacy Imports & Specifications
+> Consolidated legacy doctrine, QiLife specs, decimal registry, and roadmap notes imported from legacy vault.
+
+- [[sources/qicodex_master_imports/INGESTED_00_QiCode_Master_Index.md|00_QiCode_Master_Index.md]]
+- [[sources/qicodex_master_imports/INGESTED_01_-_Registry_QiCode_Registry_&_Governance_Master.md|01_-_Registry_QiCode_Registry_&_Governance_Master.md]]
+- [[sources/qicodex_master_imports/INGESTED_01_QiCode_Governance_&_Titles.md|01_QiCode_Governance_&_Titles.md]]
+- [[sources/qicodex_master_imports/INGESTED_02_-_QiLife_QiLife_Master_Specification.md|02_-_QiLife_QiLife_Master_Specification.md]]
+- [[sources/qicodex_master_imports/INGESTED_02_QiCode_Articles_&_Doctrine.md|02_QiCode_Articles_&_Doctrine.md]]
+- [[sources/qicodex_master_imports/INGESTED_03_QiCode_Sections_&_Architecture.md|03_QiCode_Sections_&_Architecture.md]]
+- [[sources/qicodex_master_imports/INGESTED_05_QiAlly_Delivery_OS_&_General_Specs.md|05_QiAlly_Delivery_OS_&_General_Specs.md]]
+- [[sources/qicodex_master_imports/INGESTED_06_QiCode_Templates.md|06_QiCode_Templates.md]]
+- [[sources/qicodex_master_imports/INGESTED_07_QiCode_Roadmap_&_Feature_Notes.md|07_QiCode_Roadmap_&_Feature_Notes.md]]
+- [[sources/qicodex_master_imports/INGESTED_08_QiCode_Section_Registry_Stubs.md|08_QiCode_Section_Registry_Stubs.md]]
+- [[sources/qicodex_master_imports/INGESTED_90_-_Archive_QiCode_Legacy_Archive_Master.md|90_-_Archive_QiCode_Legacy_Archive_Master.md]]
+- [[sources/qicodex_master_imports/INGESTED_QiCodex_Registry_Master.csv|QiCodex_Registry_Master.csv]]

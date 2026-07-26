@@ -1,1 +1,0 @@
-# Final blueprint export (PDF + interactive map)

@@ -31,7 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[README|README]]
+- [[40_projects/jobs_apply_zai/10_resume_and_identity/README|README]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
 

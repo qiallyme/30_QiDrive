@@ -1,1 +1,0 @@
-# QiCall™ (Twilio AI assistant for SMS/calls)

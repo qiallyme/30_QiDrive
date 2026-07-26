@@ -1,1 +1,0 @@
-# QiLifeFeed™ (daily activity logs, media summaries, event contexting)

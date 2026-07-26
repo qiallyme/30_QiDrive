@@ -31,7 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[README|README]]
+- [[40_projects/jobs_apply_cody/50_offers_and_onboarding/README|README]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
 

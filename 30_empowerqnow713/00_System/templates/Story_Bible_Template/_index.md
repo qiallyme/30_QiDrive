@@ -31,7 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[README|README]]
+- [[30_empowerqnow713/00_System/templates/Story_Bible_Template/README|README]]
 - [[Story_Bible_Master_Template|Story Bible Master Template]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->

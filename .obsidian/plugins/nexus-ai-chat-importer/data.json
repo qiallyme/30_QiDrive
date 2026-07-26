@@ -1,8 +1,8 @@
 {
   "settings": {
-    "conversationFolder": "Nexus/Conversations",
-    "reportFolder": "Nexus/Reports",
-    "attachmentFolder": "Nexus/Attachments",
+    "conversationFolder": "70_Knowledge/Chats",
+    "reportFolder": "90_outputs/Chat-Reports",
+    "attachmentFolder": "90_outputs/_attachments",
     "addDatePrefix": true,
     "dateFormat": "YYYY-MM-DD",
     "useCustomMessageTimestampFormat": false,

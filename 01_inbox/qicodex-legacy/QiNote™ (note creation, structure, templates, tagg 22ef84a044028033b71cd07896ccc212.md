@@ -1,1 +1,0 @@
-# QiNote™ (note creation, structure, templates, tagging, semantic map)
