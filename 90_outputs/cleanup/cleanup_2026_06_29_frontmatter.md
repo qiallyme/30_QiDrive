@@ -39,7 +39,7 @@ type: note
 
 ## Manual Review Pass
 
-- Rebuilt [QiNotesSync Home](00_home/00_home.md).
+- Rebuilt [QiNotesSync Home](_home/00_home.md).
 - Rebuilt [Lisa Care Record 2026](40_projects/Lisa_Care_Record_2026/Lisa_Care_Record_2026.md).
 - Rebuilt [Lisa Care Record start page](../40_projects/Lisa_Care_Record_2026/00_START_HERE/index.md).
 - Rebuilt [Lisa Care Record Dashboard](dashboard.care_record.md).

@@ -32,7 +32,7 @@ index_scope: ""
 ## Housekeeping Index
 
 - [[10_daily|10 daily]]
-- [[timeline_dashboard|timeline dashboard]]
+- [[10_daily/timeline_dashboard|timeline dashboard]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
 

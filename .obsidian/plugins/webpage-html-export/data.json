@@ -137,7 +137,7 @@
       },
       "displayTitle": "Graph View",
       "showOrphanNodes": true,
-      "showAttachments": false,
+      "showAttachments": true,
       "allowGlobalGraph": true,
       "allowExpand": true,
       "attractionForce": 1,
@@ -217,9 +217,31 @@
     "iconEmojiStyle": "Native",
     "exportRoot": "40_projects/jobs_apply_zai",
     "includePluginCss": [
-      "dataview"
+      "dataview",
+      "mindmap-cm6-fadeout-style",
+      "html-viewer",
+      "vault-timeline",
+      "better-export-pdf",
+      "obsidian-pandoc",
+      "semantic-auto-linker",
+      "mindmap",
+      "obsidian-markmind",
+      "obsidian-enhancing-mindmap",
+      "obsidian-enhancing-export"
     ],
-    "includeStyleCssIds": [],
+    "includeStyleCssIds": [
+      "dataview",
+      "mindmap-cm6-fadeout-style",
+      "html-viewer",
+      "vault-timeline",
+      "better-export-pdf",
+      "obsidian-pandoc",
+      "semantic-auto-linker",
+      "mindmap",
+      "obsidian-markmind",
+      "obsidian-enhancing-mindmap",
+      "obsidian-enhancing-export"
+    ],
     "autoDisposeWebpages": true
   },
   "logLevel": "warning",

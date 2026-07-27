@@ -4,10 +4,11 @@ layout: page
 slug: content-strategy
 summary: ""
 status: active
-created_at: "2026-07-16T06:19:39-04:00"
-updated_at: "2026-07-18T11:03:16-04:00"
-author: ""
-owner: ""
+created_at: 2026-07-16T06:19:39-04:00
+updated_at: 2026-07-18T11:03:16-04:00
+author: Cody J. Rice-Velasquez
+owner:
+  - CRV
 tags: []
 keywords: []
 aliases: []

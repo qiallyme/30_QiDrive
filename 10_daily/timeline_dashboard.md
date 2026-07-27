@@ -8,8 +8,8 @@ status: active
 visibility: internal
 publish_target: none
 publish_url: ""
-created_at: "2026-07-16"
-updated_at: "2026-07-18T11:03:11-04:00"
+created_at: 2026-07-16
+updated_at: 2026-07-18T11:03:11-04:00
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: Timeline
@@ -21,12 +21,16 @@ parent_ref: "[[10_daily/_index]]"
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-tags: [dashboard, timeline]
-keywords: [timeline, chronology]
+tags:
+  - dashboard
+  - timeline
+keywords:
+  - timeline
+  - chronology
 aliases: []
 context: ""
 uid: 0f0df2244e3a4f1aa128f9c5ddb93377
-canonical_ref: "[[00_home/timeline_dashboard]]"
+canonical_ref: "[[_home/timeline_dashboard]]"
 source_type: manual
 template_key: master-template
 index_scope: ""
@@ -36,6 +40,6 @@ generated_at: ""
 
 # Timeline Dashboard
 
-The canonical timeline command center is [[../00_home/timeline_dashboard|Timeline Dashboard]].
+The canonical timeline command center is [[_home/timeline_dashboard|Timeline Dashboard]].
 
 Use [[10_daily/_index|10 Daily]] to browse records by folder and year.

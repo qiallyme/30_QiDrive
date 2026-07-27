@@ -1,51 +1,22 @@
 {
-  "collapse-filter": true,
-  "search": "-path:.trash -path:_qiconfig -path:_system -path:99_archive -path:90_outputs -path:_attachments",
+  "collapse-filter": false,
+  "search": "",
   "showTags": true,
-  "showAttachments": false,
-  "hideUnresolved": true,
-  "showOrphans": false,
-  "collapse-color-groups": true,
-  "colorGroups": [
-    {
-      "query": "path:10_daily",
-      "color": {
-        "a": 1,
-        "rgb": 3447003
-      }
-    },
-    {
-      "query": "path:40_projects",
-      "color": {
-        "a": 1,
-        "rgb": 16098851
-      }
-    },
-    {
-      "query": "path:50_QiLabs",
-      "color": {
-        "a": 1,
-        "rgb": 1752220
-      }
-    },
-    {
-      "query": "path:02_directory",
-      "color": {
-        "a": 1,
-        "rgb": 10038562
-      }
-    }
-  ],
-  "collapse-display": true,
-  "showArrow": false,
+  "showAttachments": true,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [],
+  "collapse-display": false,
+  "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.36,
-  "repelStrength": 7,
+  "nodeSizeMultiplier": 0.736694386694387,
+  "lineSizeMultiplier": 0.634823284823285,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
   "linkStrength": 1,
-  "linkDistance": 120,
-  "scale": 0.12919727309533396,
+  "linkDistance": 250,
+  "scale": 0.060794773630379224,
   "close": false
 }

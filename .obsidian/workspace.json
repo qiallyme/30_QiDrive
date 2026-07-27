@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "1f65af9598c9e4da",
+        "id": "e996993c8c417b67",
         "type": "tabs",
         "children": [
           {
-            "id": "f661fbb335d164b0",
+            "id": "287a9f265069df5d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30_empowerqnow713/00_System/maps/empowerqnow713_series_roadmap.md",
+                "file": "00_QiCode/_index.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          },
+          {
+            "id": "41fac4e247c296b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_QiCode/title_07_ethics/title_07_ethics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "empowerqnow713_series_roadmap"
+              "title": "title_07_ethics"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,14 +178,25 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "84421da5688e8ba3",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "00_QiCode/title_07_ethics/title_07_ethics.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for title_07_ethics"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 350,
-    "collapsed": true
+    "width": 350
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,37 +210,42 @@
       "bases:Create new base": false,
       "obsidian-kanban:Create new board": false,
       "markwhen:Create new Markwhen file": false,
-      "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Toggle Footer Connections": false,
-      "smart-connections:Smart Connections: Open random connection": false,
       "templater-obsidian:Templater": false,
       "vault-timeline:Open Vault Timeline": false,
       "webpage-html-export:Export as HTML": false,
-      "smart-second-brain:Open S2B Chat": false,
-      "smart-lookup:Smart Lookup: Open lookup view": false,
-      "smart-connections-visualizer:Open smart connections visualizer": false,
       "semantic-auto-linker:Semantic auto-linker": false,
       "nexus-ai-chat-importer:Nexus AI Chat Importer - Import new file": false
     }
   },
-  "active": "f661fbb335d164b0",
+  "active": "files-tab",
   "lastOpenFiles": [
-    "30_empowerqnow713/00_System/maps/2026-07-02_qisaysit_series_routing_map.md",
-    "30_empowerqnow713/00_System/maps/_index.md",
-    "30_empowerqnow713/00_System/checklists/_index.md",
-    "30_empowerqnow713/00_System/_qsaysit_site/_index.md",
-    "30_empowerqnow713/00_System/index.md",
-    "30_empowerqnow713/00_System/_index.md",
-    "30_empowerqnow713/_index.md",
-    "40_projects/jobs_apply_cody/MS-IL_Reentry/07_TRACKING/Application Tracker.md",
-    "qilabs_full_tree.md",
-    "80_records/Portfolio/Resume_Education/_index.md",
-    "80_records/Portfolio/_index.md",
-    "99_archive/ingested_sources/logs/work-activity/_index.md",
-    "99_archive/ingested_sources/logs/captains_logs/_index.md",
-    "99_archive/ingested_sources/logs/_index.md",
-    "99_archive/ingested_sources/imports/_index.md",
-    "99_archive/ingested_sources/_index.md",
+    "00_QiCode/title_07_ethics/article_03_disclosure.md",
+    "00_QiCode/title_07_ethics/article_02_responsibility.md",
+    "00_QiCode/title_07_ethics/article_01_ethics.md",
+    "00_QiCode/title_07_ethics/_index.md",
+    "00_QiCode/title_06_people/title_06_people.md",
+    "00_QiCode/title_06_people/article_03_exchange.md",
+    "00_QiCode/title_06_people/article_02_communication.md",
+    "00_QiCode/title_06_people/article_01_people.md",
+    "00_QiCode/title_06_people/_index.md",
+    "00_QiCode/title_05_work/title_05_work.md",
+    "00_QiCode/title_05_work/article_03_stewardship.md",
+    "00_QiCode/title_05_work/article_02_creation.md",
+    "00_QiCode/title_05_work/article_01_work.md",
+    "00_QiCode/title_05_work/_index.md",
+    "00_QiCode/title_04_mind/title_04_mind.md",
+    "00_QiCode/title_04_mind/article_03_will.md",
+    "00_QiCode/title_04_mind/article_02_decision.md",
+    "00_QiCode/title_04_mind/article_01_attention.md",
+    "00_QiCode/title_04_mind/_index.md",
+    "00_QiCode/title_03_identity/title_03_identity.md",
+    "00_QiCode/title_03_identity/article_03_boundaries.md",
+    "00_QiCode/title_03_identity/article_02_integrity.md",
+    "00_QiCode/title_03_identity/article_01_identity.md",
+    "00_QiCode/title_03_identity/_index.md",
+    "00_QiCode/title_02_self/title_02_self.md",
+    "00_QiCode/title_02_self/article_03_sacred_interior.md",
+    "TaskNotes/Views/agenda-default.base",
     "80_records/Portfolio/Resume_Education/WGU_BBA_Human_Resources.html",
     "80_records/Portfolio/Resume_Education/Ivy_Tech_AAS_Network_Infrastructure.html",
     "80_records/Portfolio/Resume_Education/IUPUI_Education_Record.html",
@@ -223,21 +254,10 @@
     "80_records/Portfolio/Resume_Education",
     "80_records/Portfolio/resumelogo.png",
     "80_records/Portfolio/portfolio_thumbnail.jfif",
-    "80_records/Portfolio/Cody_Rice_Velasquez_Portfolio_&_Resume.md",
     "80_records/Portfolio/Cody_Rice_Velasquez_Portfolio.html",
     "80_records/Portfolio",
     "30_empowerqnow713/I am the plan.png",
     "99_archive/ingested_sources/logs/work-activity/INGESTED_Work Summary - Wednesday February 19th, 2025.html",
-    "99_archive/ingested_sources/logs/work-activity/INGESTED_Work Summary - Saturday, February 15th.html",
-    "99_archive/ingested_sources/logs/work-activity/INGESTED_2025-02-07_event_absent_friday.md",
-    "99_archive/ingested_sources/logs/INGESTED_2025-11-19_qivault_building_bridges_understanding.md",
-    "99_archive/ingested_sources/logs/INGESTED_2025-11-19_event_building_bridges.md",
-    "99_archive/ingested_sources/logs/INGESTED_2025-10-16_event_argument_transcript.md",
-    "99_archive/ingested_sources/logs/INGESTED_2025-05-16_event_chatgpt_boundaries.md",
-    "99_archive/ingested_sources/logs/INGESTED_2025-03-19_event_very_ill.md",
-    "99_archive/ingested_sources/logs/INGESTED_2025-03-15_event_worked_remote.md",
-    "99_archive/ingested_sources/logs/INGESTED_2024-10-02_event_youtube_analysis.md",
-    "99_archive/ingested_sources/imports/INGESTED_Why Is Everyone Else Crazy.md",
     "01_inbox/Cody Rice-Velasquez Portfolio/resumelogo.png",
     "01_inbox/Cody Rice-Velasquez Portfolio/Cody_Cody_Rice-Velasquez.png",
     "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000d9dc71f5810e3ffd648934f4-sanitized.png",

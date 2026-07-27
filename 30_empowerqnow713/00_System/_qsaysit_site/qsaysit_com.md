@@ -21,7 +21,6 @@ source_type: manual
 template_key: master-template
 type: note
 ---
-
 # qsaysit.com
 
 Status: Active
