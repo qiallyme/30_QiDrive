@@ -1,0 +1,17 @@
+{
+  "protected_id_version": 1,
+  "provisions": [
+    { "id": "QIC-09-04-001", "citation": "QiCode Sec. 9.04.010", "status": "active", "contradiction_group": "human-final-authority" },
+    { "id": "QIC-09-04-002", "citation": "QiCode Sec. 9.04.020", "status": "active" },
+    { "id": "QIC-09-05-001", "citation": "QiCode Sec. 9.05.010", "status": "active" },
+    { "id": "QIC-09-05-002", "citation": "QiCode Sec. 9.05.020", "status": "active" },
+    { "id": "QIC-09-06-001", "citation": "QiCode Sec. 9.06.010", "status": "active" },
+    { "id": "QIC-09-06-002", "citation": "QiCode Sec. 9.06.020", "status": "active" },
+    { "id": "QIC-09-06-003", "citation": "QiCode Sec. 9.06.030", "status": "active" },
+    { "id": "QIC-09-07-001", "citation": "QiCode Sec. 9.07.010", "status": "active" },
+    { "id": "QIC-09-07-002", "citation": "QiCode Sec. 9.07.020", "status": "active" },
+    { "id": "QIC-09-07-003", "citation": "QiCode Sec. 9.07.030", "status": "active" },
+    { "id": "QIC-09-07-004", "citation": "QiCode Sec. 9.07.040", "status": "active" },
+    { "id": "QIC-10-01-001", "citation": "Historical QiCode Title 10", "status": "superseded", "contradiction_group": "human-final-authority" }
+  ]
+}

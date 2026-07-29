@@ -1,0 +1,6 @@
+{
+  "system_id": "qifi",
+  "conformance": [
+    { "system_id": "qifi", "provision_id": "QIC-09-04-001", "status": "unverified", "evidence": [], "verified_at": null, "verified_by": null, "notes": "QiFi requires a separate repository evidence review." }
+  ]
+}

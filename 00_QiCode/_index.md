@@ -35,7 +35,11 @@ QiCode is the citeable personal life doctrine for truth, identity, inner work, o
 
 - [Title 9. QiSpark Technical Doctrine Bridge](title_09_qispark_bridge.md)
 
-## Developer / System Doctrine
+## Superseded System Structure
+
+Titles 10–18 are preserved for citation and migration history. They are
+superseded as QiCode doctrine: current system behavior is declared through
+Title 9 conformance contracts and QiSpark architecture records.
 
 - [Title 10. QiLabs — Root Operating Environment](title_10_qilabs.md)
 - [Title 11. QiLabs Workspace — Tools, Templates, and Housekeeping](title_11_qilabs_workspace.md)

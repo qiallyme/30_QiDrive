@@ -1,0 +1,11 @@
+{
+  "system_id": "qilife",
+  "conformance": [
+    { "system_id": "qilife", "provision_id": "QIC-09-04-001", "status": "partial", "evidence": [{ "type": "architecture_document", "value": "docs/ARCHITECTURE.md" }], "verified_at": "2026-07-29", "verified_by": "codex", "notes": "Deterministic persistence exists; consequential AI workflows remain deferred." },
+    { "system_id": "qilife", "provision_id": "QIC-09-05-001", "status": "partial", "evidence": [{ "type": "repository_path", "value": "src/modules/today/services/todayProjection.ts" }], "verified_at": "2026-07-29", "verified_by": "codex", "notes": "Today provides steering projections; verified-result learning loops remain partial." },
+    { "system_id": "qilife", "provision_id": "QIC-09-06-001", "status": "aligned", "evidence": [{ "type": "repository_path", "value": "src/modules/journal/services/journalRepository.ts" }, { "type": "test_path", "value": "src/features/qilife/reliability/recoveryService.test.ts" }], "verified_at": "2026-07-29", "verified_by": "codex", "notes": "Raw capture and recovery history remain separate from summaries." },
+    { "system_id": "qilife", "provision_id": "QIC-09-06-002", "status": "aligned", "evidence": [{ "type": "repository_path", "value": "src/features/qilife/services/qilifeStore.ts" }, { "type": "architecture_document", "value": "docs/architecture/DATA_RECOVERY.md" }], "verified_at": "2026-07-29", "verified_by": "codex", "notes": "Persistence, owner scope, relationships, export, and restore are deterministic." },
+    { "system_id": "qilife", "provision_id": "QIC-09-07-001", "status": "aligned", "evidence": [{ "type": "migration", "value": "supabase/migrations/0002_qilife_auth_rls.sql" }], "verified_at": "2026-07-29", "verified_by": "codex", "notes": "Shared records are owner scoped." },
+    { "system_id": "qilife", "provision_id": "QIC-09-07-002", "status": "deferred", "evidence": [], "verified_at": "2026-07-29", "verified_by": "codex", "notes": "Universal Object Registry implementation is the active QiLife milestone." }
+  ]
+}

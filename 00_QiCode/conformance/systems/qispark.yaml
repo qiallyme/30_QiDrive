@@ -1,0 +1,6 @@
+{
+  "system_id": "qispark",
+  "conformance": [
+    { "system_id": "qispark", "provision_id": "QIC-09-04-001", "status": "unverified", "evidence": [], "verified_at": null, "verified_by": null, "notes": "QiSpark requires a separate source and deployment evidence review." }
+  ]
+}

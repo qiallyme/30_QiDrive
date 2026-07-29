@@ -24,7 +24,7 @@ Stable ID: `T09.A01.S010`
 
 - `Line 1` QiSpark technical doctrine serves QiCode; it does not replace the personal life doctrine. (`Sec. 9.01.010.L001`; stable ID `T09.A01.S010.L001`)
 - `Line 2` Apply this provision with truth, care, consent, and proportion. (`Sec. 9.01.010.L002`; stable ID `T09.A01.S010.L002`)
-- `Line 3` This bridge continues into developer and system doctrine at QiCode Titles 10â€“18, which govern QiLabs root domains. (`Sec. 9.01.010.L003`; stable ID `T09.A01.S010.L003`)
+- `Line 3` This bridge continues into current QiSpark architecture and implementation contracts. Former QiCode Titles 10–18 are preserved as superseded system-structure history and are not co-active personal doctrine. (`Sec. 9.01.010.L003`; stable ID `T09.A01.S010.L003`)
 
 ### Sec. 9.01.020. Translation
 
