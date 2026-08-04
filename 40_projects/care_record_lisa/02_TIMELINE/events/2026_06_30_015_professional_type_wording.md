@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Event: Clarification of record packet drafted
-slug: clarification-of-record-packet-drafted
-status: Draft exists
+title: Event Professional type wording for APS form drafted
+slug: professional-type-wording-for-aps-form-drafted
+status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
 tags:
   - projects
@@ -19,24 +19,24 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: 089efb1e99b14ab998a2d2466400eb33
+uid: 46051c3c9f024bd7b46bf8d8623700df
 canonical_ref: ""
 template_key: master-template
 type: note
 ---
 
-# Event: Clarification of record packet drafted
+# Event: Professional type wording for APS form drafted
 
-- **Event ID**: `E-2026-06-28-002`
-- **Date**: `2026-06-28`
+- **Event ID**: `E-2026-06-30-015`
+- **Date**: `2026-06-30`
 - **Time**: ``
 - **Category**: `Reports / Statements`
-- **People**: `Cody; Lisa; Humana; Comfort Keepers; doctors`
-- **Evidence / Link**: `RPT-2026-06-28-CLARIFICATION`
+- **People**: `Cody; Lisa; APS/FSSA`
+- **Evidence / Link**: `RPT-APS-2026-06-30-ROLE-DESCRIPTION`
 - **Related Ledger**: ``
 - **Related Evidence**: ``
 - **Estimated Hours**: ``
-- **Status**: `Draft exists`
+- **Status**: `Reusable draft`
 
 ## Notes
-Formal-record output; should be generated from timeline/evidence, not become the source of truth.
+Former in-home caregiver / primary family support.

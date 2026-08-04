@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Event: Professional type wording for APS form drafted
-slug: professional-type-wording-for-aps-form-drafted
+title: Event APS/FSSA reporting lane reviewed
+slug: aps-fssa-reporting-lane-reviewed
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
 tags:
@@ -19,24 +19,24 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: 46051c3c9f024bd7b46bf8d8623700df
+uid: 010aaea0112e4ec092e3fda55b48cb77
 canonical_ref: ""
 template_key: master-template
 type: note
 ---
 
-# Event: Professional type wording for APS form drafted
+# Event: APS/FSSA reporting lane reviewed
 
-- **Event ID**: `E-2026-06-30-015`
+- **Event ID**: `E-2026-06-30-013`
 - **Date**: `2026-06-30`
 - **Time**: ``
 - **Category**: `Reports / Statements`
-- **People**: `Cody; Lisa; APS/FSSA`
-- **Evidence / Link**: `RPT-APS-2026-06-30-ROLE-DESCRIPTION`
+- **People**: `Cody; APS/FSSA`
+- **Evidence / Link**: `RPT-APS-2026-06-30-REPORTING-LANE`
 - **Related Ledger**: ``
 - **Related Evidence**: ``
 - **Estimated Hours**: ``
-- **Status**: `Reusable draft`
+- **Status**: `Internal note`
 
 ## Notes
-Former in-home caregiver / primary family support.
+Distinguish APS endangered-adult report from provider incident report lane.

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Event: APS/FSSA reporting lane reviewed
-slug: aps-fssa-reporting-lane-reviewed
-status: publish
+title: Event Reporter identity/confidentiality concern
+slug: reporter-identity-confidentiality-concern
+status: Internal note
 updated_at: "2026-07-18T11:03:18-04:00"
 tags:
   - projects
@@ -19,24 +19,24 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: 010aaea0112e4ec092e3fda55b48cb77
+uid: 7ddbe284444a4a259a131644780f05bf
 canonical_ref: ""
 template_key: master-template
 type: note
 ---
 
-# Event: APS/FSSA reporting lane reviewed
+# Event: Reporter identity/confidentiality concern
 
-- **Event ID**: `E-2026-06-30-013`
+- **Event ID**: `E-2026-06-30-014`
 - **Date**: `2026-06-30`
 - **Time**: ``
 - **Category**: `Reports / Statements`
 - **People**: `Cody; APS/FSSA`
-- **Evidence / Link**: `RPT-APS-2026-06-30-REPORTING-LANE`
+- **Evidence / Link**: `RPT-APS-2026-06-30-REPORTER-CONFIDENTIALITY`
 - **Related Ledger**: ``
 - **Related Evidence**: ``
 - **Estimated Hours**: ``
 - **Status**: `Internal note`
 
 ## Notes
-Distinguish APS endangered-adult report from provider incident report lane.
+Cody considered anonymous reporting; best stored as confidentiality/retaliation concern.

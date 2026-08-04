@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Event: Reporter identity/confidentiality concern
-slug: reporter-identity-confidentiality-concern
-status: Internal note
+title: Event Clarification of record packet drafted
+slug: clarification-of-record-packet-drafted
+status: Draft exists
 updated_at: "2026-07-18T11:03:18-04:00"
 tags:
   - projects
@@ -19,24 +19,24 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: 7ddbe284444a4a259a131644780f05bf
+uid: 089efb1e99b14ab998a2d2466400eb33
 canonical_ref: ""
 template_key: master-template
 type: note
 ---
 
-# Event: Reporter identity/confidentiality concern
+# Event: Clarification of record packet drafted
 
-- **Event ID**: `E-2026-06-30-014`
-- **Date**: `2026-06-30`
+- **Event ID**: `E-2026-06-28-002`
+- **Date**: `2026-06-28`
 - **Time**: ``
 - **Category**: `Reports / Statements`
-- **People**: `Cody; APS/FSSA`
-- **Evidence / Link**: `RPT-APS-2026-06-30-REPORTER-CONFIDENTIALITY`
+- **People**: `Cody; Lisa; Humana; Comfort Keepers; doctors`
+- **Evidence / Link**: `RPT-2026-06-28-CLARIFICATION`
 - **Related Ledger**: ``
 - **Related Evidence**: ``
 - **Estimated Hours**: ``
-- **Status**: `Internal note`
+- **Status**: `Draft exists`
 
 ## Notes
-Cody considered anonymous reporting; best stored as confidentiality/retaliation concern.
+Formal-record output; should be generated from timeline/evidence, not become the source of truth.

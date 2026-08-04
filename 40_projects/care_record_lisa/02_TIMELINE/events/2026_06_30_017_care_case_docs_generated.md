@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Care case file documents generated
+title: Event Care case file documents generated
 slug: care-case-file-documents-generated
 status: Generated docs
 updated_at: "2026-07-18T11:03:18-04:00"

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Cody resigns from Comfort Keepers caregiver role
+title: Event Cody resigns from Comfort Keepers caregiver role
 slug: cody-resigns-from-comfort-keepers-caregiver-role
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -24,7 +24,6 @@ canonical_ref: ""
 template_key: master-template
 type: note
 ---
-
 # Event: Cody resigns from Comfort Keepers caregiver role
 
 - **Event ID**: `E-2026-06-07-001`
