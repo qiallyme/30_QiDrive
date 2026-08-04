@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_QiCode/title_07_ethics/title_07_ethics.md",
-                "mode": "source",
+                "file": "10_daily/_index.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "title_07_ethics"
+              "title": "_index"
             }
           }
         ],
@@ -56,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -93,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 320
+    "width": 251.10000610351562
   },
   "right": {
     "id": "qivault-right",
@@ -109,13 +111,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_home/00_home.md",
+                "file": "10_daily/_index.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 00_home"
+              "title": "Outline"
             }
           },
           {
@@ -185,18 +187,17 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "00_QiCode/title_07_ethics/title_07_ethics.md"
+                "file": "10_daily/_index.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for title_07_ethics"
+              "title": "File properties"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 350
+    "width": 343.9000244140625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,53 +218,53 @@
       "nexus-ai-chat-importer:Nexus AI Chat Importer - Import new file": false
     }
   },
-  "active": "files-tab",
+  "active": "41fac4e247c296b2",
   "lastOpenFiles": [
-    "00_QiCode/title_07_ethics/article_03_disclosure.md",
-    "00_QiCode/title_07_ethics/article_02_responsibility.md",
-    "00_QiCode/title_07_ethics/article_01_ethics.md",
-    "00_QiCode/title_07_ethics/_index.md",
-    "00_QiCode/title_06_people/title_06_people.md",
-    "00_QiCode/title_06_people/article_03_exchange.md",
-    "00_QiCode/title_06_people/article_02_communication.md",
-    "00_QiCode/title_06_people/article_01_people.md",
-    "00_QiCode/title_06_people/_index.md",
-    "00_QiCode/title_05_work/title_05_work.md",
-    "00_QiCode/title_05_work/article_03_stewardship.md",
-    "00_QiCode/title_05_work/article_02_creation.md",
-    "00_QiCode/title_05_work/article_01_work.md",
-    "00_QiCode/title_05_work/_index.md",
-    "00_QiCode/title_04_mind/title_04_mind.md",
-    "00_QiCode/title_04_mind/article_03_will.md",
-    "00_QiCode/title_04_mind/article_02_decision.md",
-    "00_QiCode/title_04_mind/article_01_attention.md",
-    "00_QiCode/title_04_mind/_index.md",
-    "00_QiCode/title_03_identity/title_03_identity.md",
-    "00_QiCode/title_03_identity/article_03_boundaries.md",
-    "00_QiCode/title_03_identity/article_02_integrity.md",
-    "00_QiCode/title_03_identity/article_01_identity.md",
-    "00_QiCode/title_03_identity/_index.md",
-    "00_QiCode/title_02_self/title_02_self.md",
-    "00_QiCode/title_02_self/article_03_sacred_interior.md",
+    "40_projects/care_record_lisa/_index.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/backups_before_changes/02_daily/2025/_index.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/backups_before_changes/02_daily/2026/_index.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/backups_before_changes/02_daily/_index.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/backups_before_changes/00_home/_index.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/backups_before_changes/00_home/timeline_dashboard.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/backups_before_changes/00_home/projects_dashboard.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/backups_before_changes/00_home/missing_metadata.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/backups_before_changes/00_home/inbox_dashboard.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/backups_before_changes/00_home/00_home.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/backups_before_changes/_index.md",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-28/_index.md",
+    "40_projects/care_record_lisa/_qiconfig/_index.md",
+    "70_Knowledge/QiAlly/the_qially_manifesto_a_blueprint_for_asynchronous_holistic_consulting.md",
+    "70_Knowledge/QiAlly/_index.md",
+    "70_Knowledge/QiAlly",
+    "70_Knowledge/Conflict/incident_de_escalation_script_and_action_plan.md",
+    "70_Knowledge/Conflict/_index.md",
+    "70_Knowledge/Conflict",
+    "70_Knowledge/GoogleWorkspace/GoogleVoice/_index.md",
+    "70_Knowledge/GoogleWorkspace/_index.md",
+    "70_Knowledge/Chats/_index.md",
+    "70_Knowledge/_index.md",
+    "80_records/Portfolio/imgs/_index.md",
+    "80_records/Portfolio/_index.md",
+    "80_records/Portfolio/imgs",
+    "90_outputs/cleanup/_index.md",
+    "30_empowerqnow713/20_Series/10_empqnow713/7.1_Memoir/Volume 2 — Silence Isn't Distance/silence_isn_t_distance.md",
+    "Clippings/_index.md",
+    "30_empowerqnow713/20_Series/10_empqnow713/7.1_Memoir/Volume 4 — You Thought You Knew Me/_archive",
+    "30_empowerqnow713/20_Series/10_empqnow713/7.1_Memoir/Volume 2 — Silence Isn't Distance/chapters",
+    "30_empowerqnow713/20_Series/90_source_work_public/signal in the system (2).png",
+    "30_empowerqnow713/20_Series/90_source_work_public/signal-through-the-system (2).jpg",
     "TaskNotes/Views/agenda-default.base",
     "80_records/Portfolio/Resume_Education/WGU_BBA_Human_Resources.html",
     "80_records/Portfolio/Resume_Education/Ivy_Tech_AAS_Network_Infrastructure.html",
     "80_records/Portfolio/Resume_Education/IUPUI_Education_Record.html",
-    "80_records/Portfolio/Cody_Rice_Velasquez_Headshot.png",
+    "80_records/Portfolio/imgs/Cody_Rice_Velasquez_Headshot.png",
     "80_records/Portfolio/Resume_Education_Records.csv",
-    "80_records/Portfolio/Resume_Education",
     "80_records/Portfolio/resumelogo.png",
-    "80_records/Portfolio/portfolio_thumbnail.jfif",
-    "80_records/Portfolio/Cody_Rice_Velasquez_Portfolio.html",
-    "80_records/Portfolio",
     "30_empowerqnow713/I am the plan.png",
-    "99_archive/ingested_sources/logs/work-activity/INGESTED_Work Summary - Wednesday February 19th, 2025.html",
     "01_inbox/Cody Rice-Velasquez Portfolio/resumelogo.png",
     "01_inbox/Cody Rice-Velasquez Portfolio/Cody_Cody_Rice-Velasquez.png",
     "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000d9dc71f5810e3ffd648934f4-sanitized.png",
     "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000ca5871f681a2543c43b2de54-sanitized.png",
-    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000c9f071f894bd4d139fceb231-sanitized.jpeg",
-    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_0000000012c471fda6a547922ecc8a94-sanitized.jpeg",
-    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_0000000009b071fdb8fac27bc3218f8a-sanitized.jpg"
+    "01_inbox/ai_chats/ChatGPT/data_exports/6001/file_00000000c9f071f894bd4d139fceb231-sanitized.jpeg"
   ]
 }

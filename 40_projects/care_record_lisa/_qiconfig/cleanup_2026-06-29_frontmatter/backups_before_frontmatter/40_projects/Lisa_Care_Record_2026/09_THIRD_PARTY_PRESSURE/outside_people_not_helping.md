@@ -1,2 +1,0 @@
-﻿# outside people not helping
-

@@ -3,12 +3,12 @@ title: "03 — You Thought You Knew Me"
 type: index
 status: active
 generated_by: qilabs-housekeeping
-generated_at: "20260701-200047"
+generated_at: "20260731-020103"
 layout: page
 slug: 03-you-thought-you-knew-me
 summary: ""
 created_at: "2026-07-01T21:06:50-04:00"
-updated_at: "2026-07-16T06:49:35-04:00"
+updated_at: "2026-07-31T02:01:03-04:00"
 author: ""
 owner: ""
 tags: []
@@ -31,12 +31,8 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[03_you_thought_you_knew_me|03 you thought you knew me]]
-- [[16_10_you_thought_you_knew_me|16 10 you thought you knew me]]
 - [[living_between_worlds|living between worlds]]
 - [[part_vi_collapse_continues_2024_present|part vi collapse continues 2024 present]]
-- [[part_vi_collapse_continues_2024present|part vi collapse continues 2024present]]
 - [[you_thought_you_knew|you thought you knew]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
-

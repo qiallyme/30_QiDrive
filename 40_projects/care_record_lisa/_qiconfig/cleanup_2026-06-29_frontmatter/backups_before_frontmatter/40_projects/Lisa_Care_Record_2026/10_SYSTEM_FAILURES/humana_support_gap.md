@@ -1,2 +1,0 @@
-﻿# humana support gap
-

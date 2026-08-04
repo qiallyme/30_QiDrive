@@ -1,2 +1,0 @@
-﻿# dashboard care record
-

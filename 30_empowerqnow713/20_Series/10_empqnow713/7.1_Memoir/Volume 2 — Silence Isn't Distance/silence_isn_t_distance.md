@@ -4,10 +4,10 @@ title: Silence Isn't Distance
 slug: silence-isnt-distance
 summary: ""
 status: active
-created_at: "2026-07-04T20:36:22-04:00"
-updated_at: "2026-07-18T11:03:17-04:00"
-author: ""
-owner: ""
+created_at: 2026-07-04T20:36:22-04:00
+updated_at: 2026-07-18T11:03:17-04:00
+author: Cody J. Rice-Velasquez
+owner: Cody
 tags: []
 keywords: []
 aliases: []

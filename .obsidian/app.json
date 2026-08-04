@@ -14,7 +14,7 @@
   "showUnsupportedFiles": true,
   "deleteUnlinkedAttachments": "never",
   "defaultViewMode": "source",
-  "propertiesInDocument": "visible",
+  "propertiesInDocument": "hidden",
   "foldHeading": true,
   "showLineNumber": true
 }

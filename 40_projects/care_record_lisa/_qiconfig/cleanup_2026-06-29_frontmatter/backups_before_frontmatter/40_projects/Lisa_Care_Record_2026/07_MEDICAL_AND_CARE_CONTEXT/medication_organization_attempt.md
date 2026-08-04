@@ -1,2 +1,0 @@
-﻿# medication organization attempt
-
