@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Lisa-related financial support period begins / ongoing transfers
+title: Lisa-related financial support period begins / ongoing transfers
 slug: lisa-related-financial-support-period-begins-ongoing-transfers
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: 5e744d5875a643938089c9e41a662e8a
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Lisa-related financial support period begins / ongoing transfers
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Lisa hospitalized May 21–26
+title: Lisa hospitalized May 21–26
 slug: lisa-hospitalized-may-21-26
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: 995d68644d51495caff25c1fa344a754
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Lisa hospitalized May 21–26
 

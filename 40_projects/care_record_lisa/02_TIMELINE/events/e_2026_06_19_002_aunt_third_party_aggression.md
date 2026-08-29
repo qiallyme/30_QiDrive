@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Aunt / third-party aggression escalates
+title: Aunt / third-party aggression escalates
 slug: aunt-third-party-aggression-escalates
 status: publish
 updated_at: "2026-07-18T11:03:19-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: da09432de8e54e2285c15a5929ca6342
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Aunt / third-party aggression escalates
 

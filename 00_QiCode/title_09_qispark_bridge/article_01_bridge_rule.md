@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Article 1. Bridge Rule
 slug: qicode-title-09-article-01-bridge-rule

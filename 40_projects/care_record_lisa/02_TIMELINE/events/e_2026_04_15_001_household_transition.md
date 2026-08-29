@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Household transition / tenant context begins
+title: Household transition / tenant context begins
 slug: household-transition-tenant-context-begins
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: ef894c7532c94180aa0baf5092946fed
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Household transition / tenant context begins
 

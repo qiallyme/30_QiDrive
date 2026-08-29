@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Target discharge to rehab / mobility support context
+title: Target discharge to rehab / mobility support context
 slug: target-discharge-to-rehab-mobility-support-context
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: b482f67299fb4cc5b160d29fc0e4a6c6
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Target discharge to rehab / mobility support context
 

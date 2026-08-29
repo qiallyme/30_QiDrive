@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Cody seeks urgent care-support escalation language
+title: Cody seeks urgent care-support escalation language
 slug: cody-seeks-urgent-care-support-escalation-language
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: 2b8950edf1934e95adc09c94eeff2379
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Cody seeks urgent care-support escalation language
 

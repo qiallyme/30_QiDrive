@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Family reality / money ledger source created
+title: Family reality / money ledger source created
 slug: family-reality-money-ledger-source-created
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: 9a7878125a894cba855dcc66bfa2bfb0
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Family reality / money ledger source created
 

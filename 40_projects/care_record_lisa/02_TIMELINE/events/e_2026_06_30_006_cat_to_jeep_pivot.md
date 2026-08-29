@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Lisa pivots from cat to Jeep/money/animals
+title: Lisa pivots from cat to Jeep/money/animals
 slug: lisa-pivots-from-cat-to-jeep-money-animals
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: 3087ca86609d462e984f65caad66a2d6
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Lisa pivots from cat to Jeep/money/animals
 

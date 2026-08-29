@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Lyft/Hertz sticker resolved and LDW removal attempted
+title: Lyft/Hertz sticker resolved and LDW removal attempted
 slug: lyft-hertz-sticker-resolved-and-ldw-removal-attempted
 status: publish
 updated_at: "2026-07-18T11:03:19-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: 6e56beb976ea47f1b117cd963e59a696
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Lyft/Hertz sticker resolved and LDW removal attempted
 

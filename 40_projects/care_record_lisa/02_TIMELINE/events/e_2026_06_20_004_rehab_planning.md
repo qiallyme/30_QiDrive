@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Rehab/discharge planning visible in MyChart
+title: Rehab/discharge planning visible in MyChart
 slug: rehab-discharge-planning-visible-in-mychart
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: be97b59aa69445bc82fd2008870cfe27
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Rehab/discharge planning visible in MyChart
 

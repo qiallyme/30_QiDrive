@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Funds/password/police-threat escalation
+title: Funds/password/police-threat escalation
 slug: funds-password-police-threat-escalation
 status: Needs screenshots
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: 75a7dd11749c4189906a4f0ae4a41988
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Funds/password/police-threat escalation
 

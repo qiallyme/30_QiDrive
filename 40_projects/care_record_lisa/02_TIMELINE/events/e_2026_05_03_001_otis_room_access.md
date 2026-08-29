@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Otis room/property access incident
+title: Otis room/property access incident
 slug: otis-room-property-access-incident
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: f01dd3881be14761b845c430e5e96323
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Otis room/property access incident
 

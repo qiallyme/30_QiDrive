@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Lisa messages about Frank not getting in / social workers / access
+title: Lisa messages about Frank not getting in / social workers / access
 slug: lisa-messages-about-frank-not-getting-in-social-workers-access
 status: publish
 updated_at: "2026-07-18T11:03:19-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: 5daae903fe494168b20fff04a2b3fa93
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Lisa messages about Frank not getting in / social workers / access
 

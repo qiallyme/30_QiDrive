@@ -2,7 +2,7 @@
 layout: section
 title: Title 1. My Truth and Source
 slug: qicode-title-01-my-truth-and-source
-summary: The source doctrine of QiCode: truth, unity, EmpowerQNow, and the personal law that everything else must serve.
+summary: "The source doctrine of QiCode: truth, unity, EmpowerQNow, and the personal law that everything else must serve."
 status: publish
 updated_at: "2026-06-29"
 tags:

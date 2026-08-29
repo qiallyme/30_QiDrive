@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Cody at hotel; disengaging from direct help
+title: Cody at hotel; disengaging from direct help
 slug: cody-at-hotel-disengaging-from-direct-help
 status: publish
 updated_at: "2026-07-18T11:03:19-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: fc07191f23ca4caabd4dcfa8288e63c3
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Cody at hotel; disengaging from direct help
 

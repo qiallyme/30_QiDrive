@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Security measures after access concerns
+title: Security measures after access concerns
 slug: security-measures-after-access-concerns
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: cd482eb37fb54cc6a0758543f2275b46
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Security measures after access concerns
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Couch purchase / pickup / household reset
+title: Couch purchase / pickup / household reset
 slug: couch-purchase-pickup-household-reset
 status: Needs date/source
 updated_at: "2026-07-18T11:03:19-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: f4b00a60a1e24b88a3161ced366cffbf
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Couch purchase / pickup / household reset
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Lisa says Mr. Link had no food/water and asks if he was alive
+title: Lisa says Mr. Link had no food/water and asks if he was alive
 slug: lisa-says-mr-link-had-no-food-water-and-asks-if-he-was-alive
 status: publish
 updated_at: "2026-07-18T11:03:19-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: d9a631b642674ce6ae31a63928b32437
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Lisa says Mr. Link had no food/water and asks if he was alive
 

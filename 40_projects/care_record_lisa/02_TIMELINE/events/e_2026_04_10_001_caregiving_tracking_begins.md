@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Caregiving tracking begins
+title: Caregiving tracking begins
 slug: caregiving-tracking-begins
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: ca88bf0ee3ea4c91b580aaeb8dab6f73
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Caregiving tracking begins
 

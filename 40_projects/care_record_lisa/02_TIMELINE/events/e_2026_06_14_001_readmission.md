@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Lisa readmission / renewed hospitalization period begins
+title: Lisa readmission / renewed hospitalization period begins
 slug: lisa-readmission-renewed-hospitalization-period-begins
 status: publish
 updated_at: "2026-07-18T11:03:18-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: 97eb579e3a5d4d4ea75984c24c488c3f
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Lisa readmission / renewed hospitalization period begins
 

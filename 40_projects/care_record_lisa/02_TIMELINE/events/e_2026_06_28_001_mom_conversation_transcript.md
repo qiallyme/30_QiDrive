@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event: Conversation with mom transcript preserved
+title: Conversation with mom transcript preserved
 slug: conversation-with-mom-transcript-preserved
 status: publish
 updated_at: "2026-07-18T11:03:19-04:00"
@@ -22,8 +22,7 @@ realm_label: ""
 uid: 2499398e6d2a467186ebd9cf91c11a43
 canonical_ref: ""
 template_key: master-template
-type: note
----
+type: note---
 
 # Event: Conversation with mom transcript preserved
 
